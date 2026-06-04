@@ -1,0 +1,86 @@
+name: AP News to Bluesky
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # Every 5 minutes
+  workflow_dispatch:
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo with state
+        uses: actions/checkout@v4
+        with:
+          token: ${{ github.token }}
+
+      - name: Fetch feed and post next unposted story
+        run: |
+          set -euo pipefail
+
+          FEED_URL="https://aaronrdavis.news/api/rss?feed=apf-topnews"
+          POST_URL="https://aaronrdavis.news/api/post-to-bluesky"
+          STATE=".github/data/posted_urls.json"
+
+          [ -f "$STATE" ] || echo '{"posted_urls":[],"last_scrape":""}' > "$STATE"
+
+          # Fetch feed
+          curl -sS "$FEED_URL" > feed.json
+
+          # First run: extract all story URLs up to 10
+          jq -r '.items[:10] | .[].link' feed.json | sort > candidates.txt
+          TOTAL=$(wc -l <candidates.txt | tr -d ' ')
+          echo "Feed has $TOTAL candidate stories"
+
+          # Extract already posted URLs
+          jq -r '.posted_urls[] // empty' "$STATE" | sort > posted.txt || true
+          if [ ! -s posted.txt ]; then
+            echo "No prior posts found"
+            touch posted.txt
+          fi
+
+          # Find first candidate not in posted
+          NEW_URL=$(comm -23 candidates.txt posted.txt | head -1)
+
+          if [ -z "$NEW_URL" ]; then
+            echo "No new stories to post. All caught up."
+            exit 0
+          fi
+
+          # Get the title for this story
+          NEW_TITLE=$(jq -r --arg url "$NEW_URL" '.items[] | select(.link == $url) | .title' feed.json)
+          echo "Posting: $NEW_TITLE"
+          echo "URL: $NEW_URL"
+
+          # Post with specific story
+          RESPONSE=$(curl -sS -X POST "$POST_URL" \
+            -H "Content-Type: application/json" \
+            -d "{\"storyUrl\":\"$NEW_URL\",\"storyTitle\":\"$NEW_TITLE\"}")
+          echo "Response: $RESPONSE"
+
+          # Verify success
+          POSTED=$(echo "$RESPONSE" | jq -r '.success // false')
+          if [ "$POSTED" != "true" ]; then
+            ERROR=$(echo "$RESPONSE" | jq -r '.error // "Unknown error"')
+            echo "Post failed: $ERROR"
+            exit 1
+          fi
+
+          URI=$(echo "$RESPONSE" | jq -r '.uri')
+          echo "Posted to Bluesky: $URI"
+
+          # Update state with the story URL
+          jq --arg url "$NEW_URL" '.posted_urls += [$url]' "$STATE" > "$STATE.tmp"
+          jq --arg ts "$(date -u +%Y-%m-%dT%H:%M:%SZ)" '.last_scrape = $ts' "$STATE.tmp" > "$STATE"
+          rm -f "$STATE.tmp"
+
+      - name: Commit updated state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .github/data/posted_urls.json
+          if git diff --cached --quiet; then
+            echo "No state change to commit."
+          else
+            git commit -m "chore(bluesky): post digest at $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi
