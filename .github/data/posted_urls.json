@@ -1,5 +1,7 @@
 {
-  "posted_urls": [],
-  "last_scrape": "",
+  "posted_urls": [
+    "https://apnews.com/article/bolton-justice-department-trump-classified-information-3a92a8f87521cee9a7627db53a75e9c1"
+  ],
+  "last_scrape": "2026-06-04T19:08:12Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
