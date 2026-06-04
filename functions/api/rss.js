@@ -15,7 +15,8 @@ export async function onRequest(context) {
         'apf-entertainment': 'https://apnews.com/apf-entertainment',
         'apf-Health': 'https://apnews.com/apf-Health',
         'apf-science': 'https://apnews.com/apf-science',
-        'apf-oddities': 'https://apnews.com/apf-oddities'
+        'apf-oddities': 'https://apnews.com/apf-oddities',
+        'climate': 'https://apnews.com/climate-and-environment'
     };
     
     const apUrl = feedMap[feedName];
