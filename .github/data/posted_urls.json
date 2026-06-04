@@ -1,7 +1,8 @@
 {
   "posted_urls": [
-    "https://apnews.com/article/bolton-justice-department-trump-classified-information-3a92a8f87521cee9a7627db53a75e9c1"
+    "https://apnews.com/article/bolton-justice-department-trump-classified-information-3a92a8f87521cee9a7627db53a75e9c1",
+    "https://apnews.com/article/elijah-mcclain-ketamine-paramedics-homicide-appeal-48f989417c7df4a4947c722dd95c1770"
   ],
-  "last_scrape": "2026-06-04T19:08:12Z",
+  "last_scrape": "2026-06-04T21:03:52Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
