@@ -1,0 +1,7 @@
+name = "aaronrdavis-news"
+pages_build_output_dir = "."
+compatibility_date = "2026-06-04"
+
+[[kv_namespaces]]
+binding = "ANALYTICS_KV"
+id = "7fb0fa2ee6064bd388d59dfe45665b08"

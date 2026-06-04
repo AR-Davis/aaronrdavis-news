@@ -1,0 +1,5 @@
+Contact: https://aaronrdavis.news/contact.html
+Contact: mailto:security@aaronrdavis.news
+Expires: 2027-06-04T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://aaronrdavis.news/.well-known/security.txt
