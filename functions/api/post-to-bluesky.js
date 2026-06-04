@@ -1,5 +1,7 @@
-// Cloudflare Pages Function — Post top AP story to Bluesky
+// Cloudflare Pages Function — Post an AP story to Bluesky
 // Trigger: POST /api/post-to-bluesky (manually or via cron)
+// Body (optional): {"storyUrl":"https://apnews.com/article/...","storyTitle":"Headline"}
+// If body omitted, fetches top story from feed.
 // Requires secrets: BLUESKY_HANDLE, BLUESKY_APP_PASSWORD
 
 export async function onRequest(context) {
@@ -18,24 +20,41 @@ export async function onRequest(context) {
         }), { status: 500, headers: { 'Content-Type': 'application/json' } });
     }
 
-    try {
-        // 1. Fetch top AP story from our own API
-        const apiUrl = new URL(request.url);
-        apiUrl.pathname = '/api/rss';
-        apiUrl.searchParams.set('feed', 'apf-topnews');
-        const feedRes = await fetch(apiUrl.toString());
-        const feedData = await feedRes.json();
+    let storyUrl = '';
+    let storyTitle = '';
 
-        if (!feedData.items || feedData.items.length === 0) {
-            return new Response(JSON.stringify({ error: 'No AP stories available' }), {
-                status: 500, headers: { 'Content-Type': 'application/json' }
-            });
+    try {
+        // Try to read optional body
+        const body = await request.json().catch(() => ({}));
+        storyUrl = body.storyUrl || '';
+        storyTitle = body.storyTitle || '';
+    } catch {
+        storyUrl = '';
+        storyTitle = '';
+    }
+
+    try {
+        if (!storyUrl || !storyTitle) {
+            // No specific story passed — fetch top story from feed
+            const apiUrl = new URL(request.url);
+            apiUrl.pathname = '/api/rss';
+            apiUrl.searchParams.set('feed', 'apf-topnews');
+            const feedRes = await fetch(apiUrl.toString());
+            const feedData = await feedRes.json();
+
+            if (!feedData.items || feedData.items.length === 0) {
+                return new Response(JSON.stringify({ error: 'No AP stories available' }), {
+                    status: 500, headers: { 'Content-Type': 'application/json' }
+                });
+            }
+
+            storyTitle = feedData.items[0].title;
+            storyUrl = feedData.items[0].link;
         }
 
-        const story = feedData.items[0];
-        const text = `${story.title}\n\n${story.link}`;
+        const text = `${storyTitle}\n\n${storyUrl}`;
 
-        // 2. Authenticate with Bluesky
+        // 1. Authenticate with Bluesky
         const sessionRes = await fetch('https://bsky.social/xrpc/com.atproto.server.createSession', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -49,7 +68,7 @@ export async function onRequest(context) {
 
         const session = await sessionRes.json();
 
-        // 3. Create post (skeet)
+        // 2. Create post (skeet)
         const postRes = await fetch('https://bsky.social/xrpc/com.atproto.repo.createRecord', {
             method: 'POST',
             headers: {
@@ -77,8 +96,8 @@ export async function onRequest(context) {
         return new Response(JSON.stringify({
             success: true,
             uri: postData.uri,
-            posted: story.title,
-            link: story.link
+            posted: storyTitle,
+            link: storyUrl
         }), { headers: { 'Content-Type': 'application/json' } });
 
     } catch (error) {
