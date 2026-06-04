@@ -1,5 +1,7 @@
 {
-  "posted_urls": [],
-  "last_scrape": "",
+  "posted_urls": [
+    "https://apnews.com/article/ai-data-centers-environment-climate-footprint-a792f184a9f2833b5388dbae8b41ca95"
+  ],
+  "last_scrape": "2026-06-04T20:24:50Z",
   "note": "Tracks AP climate story URLs already posted to Bluesky."
 }
