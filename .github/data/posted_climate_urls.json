@@ -1,8 +1,9 @@
 {
   "posted_urls": [
     "https://apnews.com/article/ai-data-centers-environment-climate-footprint-a792f184a9f2833b5388dbae8b41ca95",
-    "https://apnews.com/article/ambler-access-road-alaska-takeaways-941d0f050728125567f9b7e3723f359e"
+    "https://apnews.com/article/ambler-access-road-alaska-takeaways-941d0f050728125567f9b7e3723f359e",
+    "https://apnews.com/article/ambler-access-road-alaska-trump-inupiaq-576396b002d65700b12a063b10569e90"
   ],
-  "last_scrape": "2026-06-04T23:07:33Z",
+  "last_scrape": "2026-06-05T03:32:43Z",
   "note": "Tracks AP climate story URLs already posted to Bluesky."
 }
