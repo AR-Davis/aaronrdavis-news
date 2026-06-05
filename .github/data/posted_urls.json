@@ -11,8 +11,9 @@
     "https://apnews.com/article/anthony-head-obit-buffy-vampire-lasso-a1c56edf560de048e730a2cf337e4223",
     "https://apnews.com/article/employment-economy-jobs-layoffs-iran-94068a0f4e441024b05e72eb370b3a15",
     "https://apnews.com/article/ice-homeland-security-immigration-congress-fb1ac7739e4f39fb719f5dab68512e66",
-    "https://apnews.com/article/james-handy-stabbing-death-arrest-3461bbb82a82b68342e5a9454d287f2b"
+    "https://apnews.com/article/james-handy-stabbing-death-arrest-3461bbb82a82b68342e5a9454d287f2b",
+    "https://apnews.com/article/lebanon-israel-hezbollah-airstrikes-ceasefire-303de2f806c493917150e9443ab99c03"
   ],
-  "last_scrape": "2026-06-05T22:04:15Z",
+  "last_scrape": "2026-06-05T23:35:26Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
