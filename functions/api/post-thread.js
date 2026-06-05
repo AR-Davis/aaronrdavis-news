@@ -61,7 +61,7 @@ async function fetchOgTags(url) {
     
     let title = getMeta('og:title');
     if (!title) {
-      const t = html.match(/<title>([^<]*)</title>/i);
+      const t = html.match(/<title>([^<]*)<\/title>/i);
       title = t ? t[1].trim() : '';
     }
     
