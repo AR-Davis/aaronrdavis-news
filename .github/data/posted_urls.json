@@ -8,8 +8,9 @@
     "https://apnews.com/article/cbs-scott-pelley-60-minutes-news-work-bosses-1f23c4cde8e2f0c5908d03d6febde363",
     "https://apnews.com/article/china-xi-north-korea-kim-4def48720a7cb66f820d3efc256a941c",
     "https://apnews.com/article/au-pair-affair-murder-sentence-brendan-banfield-b28c0b8d57a0faac3a7264b210b86e63",
-    "https://apnews.com/article/anthony-head-obit-buffy-vampire-lasso-a1c56edf560de048e730a2cf337e4223"
+    "https://apnews.com/article/anthony-head-obit-buffy-vampire-lasso-a1c56edf560de048e730a2cf337e4223",
+    "https://apnews.com/article/employment-economy-jobs-layoffs-iran-94068a0f4e441024b05e72eb370b3a15"
   ],
-  "last_scrape": "2026-06-05T16:42:49Z",
+  "last_scrape": "2026-06-05T18:31:41Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
