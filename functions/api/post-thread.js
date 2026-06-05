@@ -45,6 +45,51 @@ async function uploadImageBlob(accessJwt, imageUrl) {
   }
 }
 
+// Helper: Fetch AP image from article HTML
+async function fetchApImage(url) {
+  try {
+    // AP URLs are typically apnews.com
+    if (!url.includes('apnews.com')) return null;
+    
+    const res = await fetch(url, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' }
+    });
+    
+    if (!res.ok) return null;
+    
+    const html = await res.text();
+    
+    // Try AP's specific image structure first
+    // AP often uses: data-src or src on img.TagPage-image or similar
+    const apPatterns = [
+      /"imageUrl":\s*"([^"]+)"/i,
+      /"image_url":\s*"([^"]+)"/i,
+      /<meta[^>]+property="og:image"[^>]+content="([^"]+)"/i,
+      /<img[^>]+class="[^"]*Image[^"]*"[^>]+src="([^"]+)"/i,
+      /<img[^>]+data-src="([^"]+)"/i
+    ];
+    
+    for (const pattern of apPatterns) {
+      const match = html.match(pattern);
+      if (match && match[1]) {
+        let imageUrl = match[1];
+        // Handle relative URLs
+        if (imageUrl.startsWith('//')) {
+          imageUrl = 'https:' + imageUrl;
+        } else if (imageUrl.startsWith('/')) {
+          imageUrl = 'https://apnews.com' + imageUrl;
+        }
+        return imageUrl;
+      }
+    }
+    
+    return null;
+  } catch (e) {
+    console.log('AP image fetch error:', e.message);
+    return null;
+  }
+}
+
 // Helper: Fetch OG tags from URL
 async function fetchOgTags(url) {
   try {
@@ -202,11 +247,15 @@ export async function onRequest(context) {
       // If explicit URL provided, fetch OG and create external embed with image
       else if (hasUrl) {
         try {
+          // Try AP-specific image fetch first
+          const apImage = await fetchApImage(hasUrl);
+          
+          // Then fetch OG tags
           const og = await fetchOgTags(hasUrl);
           const displayTitle = posts[i].title || og.title || hasUrl;
           
-          // Upload image if available (explicit or from OG)
-          const imageToUpload = explicitImage || og.image;
+          // Upload image: explicit > AP > OG
+          const imageToUpload = explicitImage || apImage || og.image;
           const thumb = imageToUpload ? await uploadImageBlob(accessJwt, imageToUpload) : null;
           
           const external = {
