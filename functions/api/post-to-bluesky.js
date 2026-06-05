@@ -1,7 +1,86 @@
-// Cloudflare Pages Function — Post an AP story to Bluesky with rich link cards
+// Cloudflare Pages Function — Post an AP story to Bluesky with rich link cards and images
 // Trigger: POST /api/post-to-bluesky
 // Body: {"storyUrl":"https://...","storyTitle":"Headline"}
 // Requires secrets: BLUESKY_HANDLE, BLUESKY_APP_PASSWORD
+
+// Helper: Upload image blob to Bluesky
+async function uploadImageBlob(accessJwt, imageUrl) {
+  if (!imageUrl) return null;
+  
+  try {
+    const imgRes = await fetch(imageUrl, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' }
+    });
+    
+    if (!imgRes.ok) {
+      console.log(`Image fetch failed: ${imgRes.status} for ${imageUrl}`);
+      return null;
+    }
+    
+    const blob = await imgRes.arrayBuffer();
+    const contentType = imgRes.headers.get('content-type') || 'image/jpeg';
+    
+    const uploadRes = await fetch('https://bsky.social/xrpc/com.atproto.repo.uploadBlob', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${accessJwt}`,
+        'Content-Type': contentType
+      },
+      body: new Uint8Array(blob)
+    });
+    
+    if (!uploadRes.ok) {
+      const err = await uploadRes.text();
+      console.log(`Blob upload failed: ${err}`);
+      return null;
+    }
+    
+    return (await uploadRes.json()).blob;
+    
+  } catch (e) {
+    console.log('Image upload error:', e.message);
+    return null;
+  }
+}
+
+// Helper: Fetch AP image from article HTML
+async function fetchApImage(url) {
+  try {
+    if (!url.includes('apnews.com')) return null;
+    
+    const res = await fetch(url, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' }
+    });
+    
+    if (!res.ok) return null;
+    
+    const html = await res.text();
+    
+    // AP-specific patterns
+    const apPatterns = [
+      /"imageUrl":\s*"([^"]+)"/i,
+      /"image_url":\s*"([^"]+)"/i,
+      /<meta[^>]+property="og:image"[^>]+content="([^"]+)"/i,
+      /<img[^>]+class="[^"]*Image[^"]*"[^>]+src="([^"]+)"/i,
+      /<img[^>]+data-src="([^"]+)"/i
+    ];
+    
+    for (const pattern of apPatterns) {
+      const match = html.match(pattern);
+      if (match && match[1]) {
+        let imageUrl = match[1];
+        if (imageUrl.startsWith('//')) imageUrl = 'https:' + imageUrl;
+        else if (imageUrl.startsWith('/')) imageUrl = 'https://apnews.com' + imageUrl;
+        return imageUrl;
+      }
+    }
+    
+    return null;
+  } catch (e) {
+    console.log('AP image fetch error:', e.message);
+    return null;
+  }
+}
 
 // Helper: Fetch OG tags from target URL
 async function fetchOgTags(url) {
@@ -70,16 +149,13 @@ export async function onRequest(context) {
 
     // Fetch OG data for rich card
     const og = await fetchOgTags(storyUrl);
-    const displayTitle = storyTitle || og.title || 'News story';
-
-    // Build post text with URL (calculate byte positions for facets)
-    const text = `${displayTitle}\n\n${storyUrl}`;
-    const encoder = new TextEncoder();
-    const titlePrefix = `${displayTitle}\n\n`;
-    const urlStart = encoder.encode(titlePrefix).length;
-    const urlEnd = urlStart + encoder.encode(storyUrl).length;
-
-    // Authenticate with Bluesky
+    const displayTitle = storyUrl || og.title || 'News story';
+    
+    // Try AP-specific image fetch first
+    const apImage = await fetchApImage(storyUrl);
+    const imageToFetch = apImage || og.image;
+    
+    // Authenticate with Bluesky first (need accessJwt for image upload)
     const sessionRes = await fetch('https://bsky.social/xrpc/com.atproto.server.createSession', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -95,6 +171,28 @@ export async function onRequest(context) {
     }
 
     const session = await sessionRes.json();
+    
+    // Upload image if available
+    const thumb = imageToFetch ? await uploadImageBlob(session.accessJwt, imageToFetch) : null;
+
+    // Build post text with URL (calculate byte positions for facets)
+    const text = `${displayTitle}\n\n${storyUrl}`;
+    const encoder = new TextEncoder();
+    const titlePrefix = `${displayTitle}\n\n`;
+    const urlStart = encoder.encode(titlePrefix).length;
+    const urlEnd = urlStart + encoder.encode(storyUrl).length;
+
+    // Build external embed
+    const external = {
+      uri: storyUrl,
+      title: displayTitle.slice(0, 300),
+      description: og.description.slice(0, 300)
+    };
+    
+    // Add thumb if upload succeeded
+    if (thumb) {
+      external.thumb = thumb;
+    }
 
     // Build post with facets (clickable link) + embed (rich card)
     const postRecord = {
@@ -107,11 +205,7 @@ export async function onRequest(context) {
       }],
       embed: {
         $type: 'app.bsky.embed.external',
-        external: {
-          uri: storyUrl,
-          title: displayTitle.slice(0, 300),
-          description: og.description.slice(0, 300)
-        }
+        external: external
       }
     };
 
@@ -142,6 +236,7 @@ export async function onRequest(context) {
       posted: displayTitle,
       link: storyUrl,
       hasCard: true,
+      hasImage: !!thumb,
       ogTitle: og.title,
       ogDescription: og.description
     }), { headers: { 'Content-Type': 'application/json' } });
