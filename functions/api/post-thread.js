@@ -1,7 +1,86 @@
-// Cloudflare Pages Function — Post a thread to Bluesky
+// Cloudflare Pages Function — Post a thread to Bluesky with image support
 // Trigger: POST /api/post-thread
-// Body: {"posts": [{"text":"..."}, {"text":"..."}, ...]}
+// Body: {"posts": [{"text":"...", "url":"...", "image":"..."}, ...]}
 // Requires secrets: BLUESKY_HANDLE, BLUESKY_APP_PASSWORD
+
+// Helper: Upload image blob to Bluesky
+async function uploadImageBlob(accessJwt, imageUrl) {
+  if (!imageUrl) return null;
+  
+  try {
+    const imgRes = await fetch(imageUrl, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' }
+    });
+    
+    if (!imgRes.ok) {
+      console.log(`Image fetch failed: ${imgRes.status} for ${imageUrl}`);
+      return null;
+    }
+    
+    const blob = await imgRes.arrayBuffer();
+    const contentType = imgRes.headers.get('content-type') || 'image/jpeg';
+    
+    // Upload to Bluesky
+    const uploadRes = await fetch('https://bsky.social/xrpc/com.atproto.repo.uploadBlob', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${accessJwt}`,
+        'Content-Type': contentType
+      },
+      body: new Uint8Array(blob)
+    });
+    
+    if (!uploadRes.ok) {
+      const err = await uploadRes.text();
+      console.log(`Blob upload failed: ${err}`);
+      return null;
+    }
+    
+    const uploadData = await uploadRes.json();
+    return uploadData.blob;
+    
+  } catch (e) {
+    console.log('Image upload error:', e.message);
+    return null;
+  }
+}
+
+// Helper: Fetch OG tags from URL
+async function fetchOgTags(url) {
+  try {
+    const res = await fetch(url, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' }
+    });
+    const html = await res.text();
+    
+    const getMeta = (prop) => {
+      const r = new RegExp(`<meta[^>]+property=["']${prop}["'][^>]+content=["']([^"']+)["']`, 'i');
+      const m = html.match(r);
+      return m ? m[1] : '';
+    };
+    
+    let title = getMeta('og:title');
+    if (!title) {
+      const t = html.match(/<title>([^<]*)<\/title>/i);
+      title = t ? t[1].trim() : '';
+    }
+    
+    let desc = getMeta('og:description');
+    if (!desc) {
+      const d = html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i);
+      desc = d ? d[1] : '';
+    }
+    
+    return {
+      title: title.slice(0, 300),
+      description: desc.slice(0, 300),
+      image: getMeta('og:image')
+    };
+  } catch (e) {
+    console.log('OG fetch failed:', e.message);
+    return { title: '', description: '', image: '' };
+  }
+}
 
 export async function onRequest(context) {
   const { request, env } = context;
@@ -55,12 +134,13 @@ export async function onRequest(context) {
     for (let i = 0; i < posts.length; i++) {
       const postText = posts[i].text;
       const hasUrl = posts[i].url;
+      const explicitImage = posts[i].image; // Optional explicit image URL
       
       // Build facets and embed
       let facets = [];
       let embed = null;
       
-      // Check for URLs and create facets
+      // Check for URLs in text and create facets
       const urlRegex = /(https?:\/\/[^\s]+)/g;
       const urls = postText.match(urlRegex);
       
@@ -79,27 +159,34 @@ export async function onRequest(context) {
         }
       }
 
-      // If explicit URL provided, fetch OG and create external embed
+      // If explicit URL provided, fetch OG and create external embed with image
       if (hasUrl) {
         try {
-          const res = await fetch(hasUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
-          const html = await res.text();
-          const getMeta = (prop) => {
-            const r = new RegExp(`<meta[^>]+property=["']${prop}["'][^>]+content=["']([^"']+)["']`, 'i');
-            const m = html.match(r);
-            return m ? m[1] : '';
+          const og = await fetchOgTags(hasUrl);
+          const displayTitle = posts[i].title || og.title || hasUrl;
+          
+          // Upload image if available (explicit or from OG)
+          const imageToUpload = explicitImage || og.image;
+          const thumb = imageToUpload ? await uploadImageBlob(accessJwt, imageToUpload) : null;
+          
+          const external = {
+            uri: hasUrl,
+            title: displayTitle.slice(0, 300),
+            description: og.description.slice(0, 300)
           };
+          
+          // Add thumb blob if upload succeeded
+          if (thumb) {
+            external.thumb = thumb;
+          }
           
           embed = {
             $type: 'app.bsky.embed.external',
-            external: {
-              uri: hasUrl,
-              title: getMeta('og:title').slice(0, 300) || posts[i].title || hasUrl,
-              description: getMeta('og:description').slice(0, 300) || ''
-            }
+            external: external
           };
+          
         } catch (e) {
-          console.log('OG fetch failed:', e);
+          console.log('Embed creation failed:', e.message);
         }
       }
 
