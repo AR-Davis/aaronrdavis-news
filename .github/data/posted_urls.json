@@ -2,8 +2,14 @@
   "posted_urls": [
     "https://apnews.com/article/bolton-justice-department-trump-classified-information-3a92a8f87521cee9a7627db53a75e9c1",
     "https://apnews.com/article/elijah-mcclain-ketamine-paramedics-homicide-appeal-48f989417c7df4a4947c722dd95c1770",
-    "https://apnews.com/article/immigration-trump-family-separation-ice-71a610d15af5207a68f989fcafb55039"
+    "https://apnews.com/article/immigration-trump-family-separation-ice-71a610d15af5207a68f989fcafb55039",
+    "https://apnews.com/article/arkansas-sheriff-nominee-murder-charge-dropped-2653efe9b36053d0d93d915c072e4b9c",
+    "https://apnews.com/article/iran-us-war-israel-lebanon-hezbollah-ceasefire-06ea585ce43fd28e26c4d21d46a4df83",
+    "https://apnews.com/article/cbs-scott-pelley-60-minutes-news-work-bosses-1f23c4cde8e2f0c5908d03d6febde363",
+    "https://apnews.com/article/china-xi-north-korea-kim-4def48720a7cb66f820d3efc256a941c",
+    "https://apnews.com/article/au-pair-affair-murder-sentence-brendan-banfield-b28c0b8d57a0faac3a7264b210b86e63",
+    "https://apnews.com/article/anthony-head-obit-buffy-vampire-lasso-a1c56edf560de048e730a2cf337e4223"
   ],
-  "last_scrape": "2026-06-04T22:42:25Z",
+  "last_scrape": "2026-06-05T16:42:49Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }

@@ -1,7 +1,12 @@
 {
   "posted_urls": [
-    "https://apnews.com/article/ai-data-centers-environment-climate-footprint-a792f184a9f2833b5388dbae8b41ca95"
+    "https://apnews.com/article/ai-data-centers-environment-climate-footprint-a792f184a9f2833b5388dbae8b41ca95",
+    "https://apnews.com/article/ambler-access-road-alaska-takeaways-941d0f050728125567f9b7e3723f359e",
+    "https://apnews.com/article/ambler-access-road-alaska-trump-inupiaq-576396b002d65700b12a063b10569e90",
+    "https://apnews.com/article/climate-oceans-data-trump-science-a9539443dfaa32b3a67468a25f8b2674",
+    "https://apnews.com/article/colombia-indigenous-children-farc-drugs-recruitment-520cbff5c46a0959d134f5a0b14b0748",
+    "https://apnews.com/article/iowa-water-farming-epa-swim-summer-5b8ebd85449be7bdc9de122f59a7d18c"
   ],
-  "last_scrape": "2026-06-04T20:24:50Z",
+  "last_scrape": "2026-06-05T16:29:04Z",
   "note": "Tracks AP climate story URLs already posted to Bluesky."
 }
