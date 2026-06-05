@@ -1,6 +1,6 @@
-// Cloudflare Pages Function — Post a thread to Bluesky with image support
+// Cloudflare Pages Function — Post a thread to Bluesky with image support and alt text
 // Trigger: POST /api/post-thread
-// Body: {"posts": [{"text":"...", "url":"...", "image":"..."}, ...]}
+// Body: {"posts": [{"text":"...", "url":"...", "image":"...", "alt":"...", "images":[{...}]}, ...]}
 // Requires secrets: BLUESKY_HANDLE, BLUESKY_APP_PASSWORD
 
 // Helper: Upload image blob to Bluesky
@@ -61,7 +61,7 @@ async function fetchOgTags(url) {
     
     let title = getMeta('og:title');
     if (!title) {
-      const t = html.match(/<title>([^<]*)<\/title>/i);
+      const t = html.match(/<title>([^<]*)</title>/i);
       title = t ? t[1].trim() : '';
     }
     
@@ -135,6 +135,8 @@ export async function onRequest(context) {
       const postText = posts[i].text;
       const hasUrl = posts[i].url;
       const explicitImage = posts[i].image; // Optional explicit image URL
+      const imageAlt = posts[i].alt || posts[i].imageAlt || ''; // Alt text for images
+      const multiImages = posts[i].images; // Array of {url, alt} for multiple images
       
       // Build facets and embed
       let facets = [];
@@ -159,8 +161,46 @@ export async function onRequest(context) {
         }
       }
 
+      // Handle multiple images (native image embed with alt text)
+      if (multiImages && multiImages.length > 0) {
+        const imageUploads = [];
+        
+        for (const img of multiImages) {
+          const blob = await uploadImageBlob(accessJwt, img.url);
+          if (blob) {
+            imageUploads.push({
+              blob: blob,
+              alt: img.alt || ''
+            });
+          }
+        }
+        
+        if (imageUploads.length > 0) {
+          embed = {
+            $type: 'app.bsky.embed.images',
+            images: imageUploads.map(img => ({
+              image: img.blob,
+              alt: img.alt
+            }))
+          };
+        }
+      }
+      // Handle single image (backward compatibility or link card thumbnail)
+      else if (explicitImage && !hasUrl) {
+        // Native image embed with alt text (no link card)
+        const blob = await uploadImageBlob(accessJwt, explicitImage);
+        if (blob) {
+          embed = {
+            $type: 'app.bsky.embed.images',
+            images: [{
+              image: blob,
+              alt: imageAlt
+            }]
+          };
+        }
+      }
       // If explicit URL provided, fetch OG and create external embed with image
-      if (hasUrl) {
+      else if (hasUrl) {
         try {
           const og = await fetchOgTags(hasUrl);
           const displayTitle = posts[i].title || og.title || hasUrl;
