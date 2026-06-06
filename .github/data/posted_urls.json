@@ -13,8 +13,9 @@
     "https://apnews.com/article/ice-homeland-security-immigration-congress-fb1ac7739e4f39fb719f5dab68512e66",
     "https://apnews.com/article/james-handy-stabbing-death-arrest-3461bbb82a82b68342e5a9454d287f2b",
     "https://apnews.com/article/lebanon-israel-hezbollah-airstrikes-ceasefire-303de2f806c493917150e9443ab99c03",
-    "https://apnews.com/article/iran-war-hormuz-drones-a9495a8e67035b8596a3739c8cde0978"
+    "https://apnews.com/article/iran-war-hormuz-drones-a9495a8e67035b8596a3739c8cde0978",
+    "https://apnews.com/article/russia-putin-ukraine-st-petersburg-economy-a57c76d347f580eaf8325062ed13a6ec"
   ],
-  "last_scrape": "2026-06-06T01:32:22Z",
+  "last_scrape": "2026-06-06T05:37:49Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
