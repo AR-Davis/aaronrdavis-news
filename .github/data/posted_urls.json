@@ -25,8 +25,9 @@
     "https://apnews.com/article/lebanon-israel-hezbollah-airstrike-soldiers-killed-iran-6150614827e9f932807527799b50f5d0",
     "https://apnews.com/article/mideast-wars-west-bank-infant-killed-b398e9dc08d024870459c400e9fe7d16",
     "https://apnews.com/article/navy-promotions-women-hegseth-pentagon-e744efae3cc70902732fffce7ee1a69c",
-    "https://apnews.com/article/pope-spain-migration-sagrada-familia-650b269286ecf851ed51ebb0e7f5980c"
+    "https://apnews.com/article/pope-spain-migration-sagrada-familia-650b269286ecf851ed51ebb0e7f5980c",
+    "https://apnews.com/article/russia-ukraine-drones-st-petersburg-economic-forum-5d437293b65c413f231054bb1b04ce04"
   ],
-  "last_scrape": "2026-06-06T22:40:14Z",
+  "last_scrape": "2026-06-06T23:45:51Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
