@@ -21,8 +21,9 @@
     "https://apnews.com/article/boats-fuel-prices-summer-lake-war-442b17d875eb835408a6d03b385d0b90",
     "https://apnews.com/article/buyer-trump-pardon-congressman-illegal-stock-trades-26f4698e76d333ae66e041be590e5f85",
     "https://apnews.com/article/french-open-roland-garros-andreeva-chwalinska-f29087527d2a068cfaa1bd42e196bf09",
-    "https://apnews.com/article/iran-us-bahrain-kuwait-missiles-drones-df859624fb659cb28cec798200cc85d4"
+    "https://apnews.com/article/iran-us-bahrain-kuwait-missiles-drones-df859624fb659cb28cec798200cc85d4",
+    "https://apnews.com/article/lebanon-israel-hezbollah-airstrike-soldiers-killed-iran-6150614827e9f932807527799b50f5d0"
   ],
-  "last_scrape": "2026-06-06T17:39:15Z",
+  "last_scrape": "2026-06-06T18:54:31Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
