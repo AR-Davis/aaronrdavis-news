@@ -30,8 +30,9 @@
     "https://apnews.com/article/toledo-ohio-shooting-4fbc465161cf1d4e29f0f1b22d3fb9d3",
     "https://apnews.com/article/armenia-parliamentary-election-russia-eu-a6f863feb9f76b7ac355931c2715161c",
     "https://apnews.com/article/hurricanes-golden-knights-stanley-score-cup-final-c9968647bb82bb69fcf7a91edbc51ba4",
-    "https://apnews.com/article/congo-ebola-outbreak-health-workers-c0fa254aae429c6b2eb09d62527d6cca"
+    "https://apnews.com/article/congo-ebola-outbreak-health-workers-c0fa254aae429c6b2eb09d62527d6cca",
+    "https://apnews.com/article/iran-us-ceasefire-hezbollah-israel-28d80744e192ae0d5cce73a5a08af906"
   ],
-  "last_scrape": "2026-06-07T11:45:39Z",
+  "last_scrape": "2026-06-07T13:10:53Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
