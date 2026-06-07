@@ -33,8 +33,9 @@
     "https://apnews.com/article/congo-ebola-outbreak-health-workers-c0fa254aae429c6b2eb09d62527d6cca",
     "https://apnews.com/article/iran-us-ceasefire-hezbollah-israel-28d80744e192ae0d5cce73a5a08af906",
     "https://apnews.com/article/iran-war-consumer-economy-retailers-3fb28b7dfc4ba21689e6c7068a32c70e",
-    "https://apnews.com/article/israel-palestinians-west-bank-shooting-217b7d7ef034c99b091e01462357f296"
+    "https://apnews.com/article/israel-palestinians-west-bank-shooting-217b7d7ef034c99b091e01462357f296",
+    "https://apnews.com/article/nigeria-abducted-freed-army-borno-e5a331602145ff15c22ec486f43726bf"
   ],
-  "last_scrape": "2026-06-07T16:42:04Z",
+  "last_scrape": "2026-06-07T17:54:07Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
