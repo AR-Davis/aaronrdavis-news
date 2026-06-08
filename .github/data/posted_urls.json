@@ -39,8 +39,9 @@
     "https://apnews.com/article/spain-pope-mass-eaf544d7638034cc3afa2bad9ab443cc",
     "https://apnews.com/article/graham-platner-susan-collins-senate-elections-e766d280afbcc88e75830a78c344de22",
     "https://apnews.com/article/toledo-ohio-shooting-6fdbf9e7033b3eab21052070c9598e27",
-    "https://apnews.com/article/tony-awards-2026-broadway-plays-980347242888f35a0298bdf63ed9a36c"
+    "https://apnews.com/article/tony-awards-2026-broadway-plays-980347242888f35a0298bdf63ed9a36c",
+    "https://apnews.com/article/iran-us-ceasefire-hezbollah-israel-c16dc4917512f7436a3921a4b044b98b"
   ],
-  "last_scrape": "2026-06-08T01:34:55Z",
+  "last_scrape": "2026-06-08T06:22:40Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
