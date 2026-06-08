@@ -42,8 +42,9 @@
     "https://apnews.com/article/tony-awards-2026-broadway-plays-980347242888f35a0298bdf63ed9a36c",
     "https://apnews.com/article/iran-us-ceasefire-hezbollah-israel-c16dc4917512f7436a3921a4b044b98b",
     "https://apnews.com/article/apple-siri-wwdc-iphone-aa25d07c06d366ec5b62643a1f5b0db9",
-    "https://apnews.com/article/ap-poll-america-250-democracy-exceptional-474874cbb88c08908c8b6c01e386ba91"
+    "https://apnews.com/article/ap-poll-america-250-democracy-exceptional-474874cbb88c08908c8b6c01e386ba91",
+    "https://apnews.com/article/fisa-trump-pulte-expire-c9a56f80e041fef166fbc9526c92decc"
   ],
-  "last_scrape": "2026-06-08T14:58:35Z",
+  "last_scrape": "2026-06-08T18:06:34Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
