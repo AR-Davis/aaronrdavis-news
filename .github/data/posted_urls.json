@@ -54,8 +54,9 @@
     "https://apnews.com/article/congo-ebola-outbreak-bundibugyo-virus-392dced7e0da091699eeb980a4b54147",
     "https://apnews.com/article/graham-platner-maine-senate-primary-6e9b766d0940ce525cfd1845610b1d30",
     "https://apnews.com/article/charlotte-stabbing-ukrainian-refugee-iryna-zarutska-competency-2cf7df3eac305ea2264766b695e7a55a",
-    "https://apnews.com/article/cuba-trump-castro-sanctions-military-intervention-ambassador-a77e3fb0566d2f5ac7b75e2ac7d48a6a"
+    "https://apnews.com/article/cuba-trump-castro-sanctions-military-intervention-ambassador-a77e3fb0566d2f5ac7b75e2ac7d48a6a",
+    "https://apnews.com/article/ice-immigration-crackdown-texas-camp-montana-report-04bc547c02e7241fc73541a4d0ba26ad"
   ],
-  "last_scrape": "2026-06-09T21:41:50Z",
+  "last_scrape": "2026-06-09T23:05:33Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
