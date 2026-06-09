@@ -47,8 +47,9 @@
     "https://apnews.com/article/nba-finals-trump-knicks-new-york-7b43bea56ff57b48f72d365efd1b7ddb",
     "https://apnews.com/article/israel-netanyahu-us-trump-iran-war-2230178d2cd4aa6b96e3e022b734d498",
     "https://apnews.com/article/international-criminal-court-khan-suspended-8d7b68e361a27ef08cfe515a131af230",
-    "https://apnews.com/article/los-angeles-mayor-2026-election-e0ef2b83cd8f94556d1c532227bb49dd"
+    "https://apnews.com/article/los-angeles-mayor-2026-election-e0ef2b83cd8f94556d1c532227bb49dd",
+    "https://apnews.com/article/iran-us-ceasefire-helicopter-hezbollah-israel-9-june-2026-50d7a8ecbb2cf33836af152679adb40e"
   ],
-  "last_scrape": "2026-06-09T01:32:24Z",
+  "last_scrape": "2026-06-09T05:50:56Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
