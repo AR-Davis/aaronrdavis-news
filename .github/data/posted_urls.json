@@ -52,8 +52,9 @@
     "https://apnews.com/article/china-trade-exports-trump-iran-economy-33ee2ae323cb9bd8189bf1b13fbe9edf",
     "https://apnews.com/article/congo-beni-ebola-outbreak-bundibugyo-survivors-b04a7f882db83b806535f0a61dbb0e59",
     "https://apnews.com/article/congo-ebola-outbreak-bundibugyo-virus-392dced7e0da091699eeb980a4b54147",
-    "https://apnews.com/article/graham-platner-maine-senate-primary-6e9b766d0940ce525cfd1845610b1d30"
+    "https://apnews.com/article/graham-platner-maine-senate-primary-6e9b766d0940ce525cfd1845610b1d30",
+    "https://apnews.com/article/charlotte-stabbing-ukrainian-refugee-iryna-zarutska-competency-2cf7df3eac305ea2264766b695e7a55a"
   ],
-  "last_scrape": "2026-06-09T17:46:52Z",
+  "last_scrape": "2026-06-09T19:50:16Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
