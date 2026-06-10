@@ -55,8 +55,9 @@
     "https://apnews.com/article/graham-platner-maine-senate-primary-6e9b766d0940ce525cfd1845610b1d30",
     "https://apnews.com/article/charlotte-stabbing-ukrainian-refugee-iryna-zarutska-competency-2cf7df3eac305ea2264766b695e7a55a",
     "https://apnews.com/article/cuba-trump-castro-sanctions-military-intervention-ambassador-a77e3fb0566d2f5ac7b75e2ac7d48a6a",
-    "https://apnews.com/article/ice-immigration-crackdown-texas-camp-montana-report-04bc547c02e7241fc73541a4d0ba26ad"
+    "https://apnews.com/article/ice-immigration-crackdown-texas-camp-montana-report-04bc547c02e7241fc73541a4d0ba26ad",
+    "https://apnews.com/article/alabama-nitrogen-gas-execution-ban-cruel-8d5a7f3cf86313464b6c6d6017cc882b"
   ],
-  "last_scrape": "2026-06-09T23:05:33Z",
+  "last_scrape": "2026-06-10T01:29:33Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
