@@ -60,8 +60,9 @@
     "https://apnews.com/article/california-governor-election-primary-2026-ead2e489977a95692300735520cae195",
     "https://apnews.com/article/afghanistan-pakistan-airstrikes-children-killed-addc32b921147ed5bc1ee7b7b2cd5384",
     "https://apnews.com/article/bill-gates-jeffrey-epstein-house-investigation-d8d5c31739bb9452e979018be2fd4f35",
-    "https://apnews.com/article/consumer-prices-inflation-war-gas-878f6759c93fcb078aeefffe19d4dfa5"
+    "https://apnews.com/article/consumer-prices-inflation-war-gas-878f6759c93fcb078aeefffe19d4dfa5",
+    "https://apnews.com/article/chemical-plant-explosion-fbi-search-5cea31cc43e5eda3cb04955b6c07ff00"
   ],
-  "last_scrape": "2026-06-10T17:21:07Z",
+  "last_scrape": "2026-06-10T19:51:53Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
