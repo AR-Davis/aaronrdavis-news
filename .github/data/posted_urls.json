@@ -69,8 +69,9 @@
     "https://apnews.com/article/hortman-hoffman-boelter-minnesota-political-attack-c3e9d3e92eafbb9cfa4995935769898c",
     "https://apnews.com/article/britain-defense-secretary-john-healey-quits-533cb2637192f045ca6247ab5a402bac",
     "https://apnews.com/article/el-nino-climate-change-flood-drought-damage-7eafacd2bcf04ade9d7f555dfd488178",
-    "https://apnews.com/article/hantavirus-ship-evacuation-american-yacht-33ba5ddb8374d0083271669e7ba52b04"
+    "https://apnews.com/article/hantavirus-ship-evacuation-american-yacht-33ba5ddb8374d0083271669e7ba52b04",
+    "https://apnews.com/article/execution-alabama-nitrogen-d5b019f8837f937234bedd341a719354"
   ],
-  "last_scrape": "2026-06-11T21:07:49Z",
+  "last_scrape": "2026-06-11T22:58:44Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
