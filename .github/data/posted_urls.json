@@ -65,8 +65,9 @@
     "https://apnews.com/article/cross-burning-chicago-fire-department-e61c932c3633516f55e32da3fd294dec",
     "https://apnews.com/article/infantino-world-cup-news-conference-7725f0e7df91eeefcbf598bdd9e72f94",
     "https://apnews.com/article/iran-us-ceasefire-hezbollah-israel-10-june-2026-b7ec462890f3c2afa12bd5c0672f2b6b",
-    "https://apnews.com/article/fisa-bill-pulte-trump-democrats-spy-powers-066052a8521d68215497c1162f3dbd6c"
+    "https://apnews.com/article/fisa-bill-pulte-trump-democrats-spy-powers-066052a8521d68215497c1162f3dbd6c",
+    "https://apnews.com/article/hortman-hoffman-boelter-minnesota-political-attack-c3e9d3e92eafbb9cfa4995935769898c"
   ],
-  "last_scrape": "2026-06-11T07:03:11Z",
+  "last_scrape": "2026-06-11T11:45:56Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
