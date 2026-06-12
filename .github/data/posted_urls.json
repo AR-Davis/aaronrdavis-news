@@ -77,8 +77,9 @@
     "https://apnews.com/article/david-hockney-artist-death-79ddb3813406f21a8859d3b22e653852",
     "https://apnews.com/article/fisa-702-spy-powers-surveillance-congress-terrorism-063e0f03ca366eaa339f9c51755d943a",
     "https://apnews.com/article/fbi-ohio-voter-registration-investigation-4b241d64db0478c6a5852aa20d3e138f",
-    "https://apnews.com/article/iran-us-ceasefire-hezbollah-israel-12-june-2026-7085e386e1c40ee6cfe634210970143f"
+    "https://apnews.com/article/iran-us-ceasefire-hezbollah-israel-12-june-2026-7085e386e1c40ee6cfe634210970143f",
+    "https://apnews.com/article/midland-texas-shooting-1b4308bda97427c695623ed5cf988eee"
   ],
-  "last_scrape": "2026-06-12T20:27:37Z",
+  "last_scrape": "2026-06-12T22:09:42Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
