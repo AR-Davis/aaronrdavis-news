@@ -74,8 +74,9 @@
     "https://apnews.com/article/iran-us-ceasefire-hezbollah-israel-11-june-2026-3c2c6d356a1e25b4d7edf66b2edba57d",
     "https://apnews.com/article/jay-clayton-pulte-trump-national-intelligence-director-b9a89bd3f1cb9c70fcca79de4c42cc99",
     "https://apnews.com/article/eu-migration-asylum-rules-what-to-know-5c0ffb5bf614bdf899fa62d618da4709",
-    "https://apnews.com/article/david-hockney-artist-death-79ddb3813406f21a8859d3b22e653852"
+    "https://apnews.com/article/david-hockney-artist-death-79ddb3813406f21a8859d3b22e653852",
+    "https://apnews.com/article/fisa-702-spy-powers-surveillance-congress-terrorism-063e0f03ca366eaa339f9c51755d943a"
   ],
-  "last_scrape": "2026-06-12T12:37:39Z",
+  "last_scrape": "2026-06-12T15:54:50Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
