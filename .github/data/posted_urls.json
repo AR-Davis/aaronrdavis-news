@@ -85,8 +85,9 @@
     "https://apnews.com/article/bicentennial-200-years-america-250-3645e76b264e0978a05717da44a23644",
     "https://apnews.com/article/chad-sudan-civil-war-sexual-abuse-refugees-036f69088cd3a96cb3c970ddbfd00696",
     "https://apnews.com/article/iran-war-us-pakistan-ceasefire-what-to-know-949710df39e3f1033cbb6beda3955814",
-    "https://apnews.com/article/3d-printers-firearms-ghost-guns-737b48cd483da5394076bc99d94619ca"
+    "https://apnews.com/article/3d-printers-firearms-ghost-guns-737b48cd483da5394076bc99d94619ca",
+    "https://apnews.com/article/australia-shark-attack-sydney-coogee-swimmer-af77bb1a02990303c6bc3fbc8fb5ec6f"
   ],
-  "last_scrape": "2026-06-13T15:57:43Z",
+  "last_scrape": "2026-06-13T17:40:38Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
