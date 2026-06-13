@@ -90,8 +90,9 @@
     "https://apnews.com/article/china-companies-military-pentagon-us-5adea55a203024477e7c5204f1f650aa",
     "https://apnews.com/article/democrats-senate-fisa-trump-pulte-leverage-71d1d0e70c243e6e41cf3e7853670a02",
     "https://apnews.com/article/haiti-woman-homicide-ice-e31e7109eba053b41f6b0319640df042",
-    "https://apnews.com/article/iran-us-leader-funeral-khamenei-war-deal-1f4bfb01f91029f92787cbc2ec7ad81e"
+    "https://apnews.com/article/iran-us-leader-funeral-khamenei-war-deal-1f4bfb01f91029f92787cbc2ec7ad81e",
+    "https://apnews.com/article/lebanon-israel-iran-hezbollah-7423a633aad2c74378e3024110af0a09"
   ],
-  "last_scrape": "2026-06-13T22:49:38Z",
+  "last_scrape": "2026-06-13T23:57:35Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
