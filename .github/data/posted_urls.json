@@ -88,8 +88,9 @@
     "https://apnews.com/article/3d-printers-firearms-ghost-guns-737b48cd483da5394076bc99d94619ca",
     "https://apnews.com/article/australia-shark-attack-sydney-coogee-swimmer-af77bb1a02990303c6bc3fbc8fb5ec6f",
     "https://apnews.com/article/china-companies-military-pentagon-us-5adea55a203024477e7c5204f1f650aa",
-    "https://apnews.com/article/democrats-senate-fisa-trump-pulte-leverage-71d1d0e70c243e6e41cf3e7853670a02"
+    "https://apnews.com/article/democrats-senate-fisa-trump-pulte-leverage-71d1d0e70c243e6e41cf3e7853670a02",
+    "https://apnews.com/article/haiti-woman-homicide-ice-e31e7109eba053b41f6b0319640df042"
   ],
-  "last_scrape": "2026-06-13T20:23:13Z",
+  "last_scrape": "2026-06-13T21:44:56Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
