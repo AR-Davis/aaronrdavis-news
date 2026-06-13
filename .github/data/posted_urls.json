@@ -79,8 +79,9 @@
     "https://apnews.com/article/fbi-ohio-voter-registration-investigation-4b241d64db0478c6a5852aa20d3e138f",
     "https://apnews.com/article/iran-us-ceasefire-hezbollah-israel-12-june-2026-7085e386e1c40ee6cfe634210970143f",
     "https://apnews.com/article/midland-texas-shooting-1b4308bda97427c695623ed5cf988eee",
-    "https://apnews.com/article/musk-spacex-tesla-ipo-trillionaire-billionaire-worth-rockets-7723f82b6063a9a17c194e25982cd66d"
+    "https://apnews.com/article/musk-spacex-tesla-ipo-trillionaire-billionaire-worth-rockets-7723f82b6063a9a17c194e25982cd66d",
+    "https://apnews.com/article/spain-pope-migration-trafficking-c57eb42a62a602b6fec69633bae9db94"
   ],
-  "last_scrape": "2026-06-12T23:52:50Z",
+  "last_scrape": "2026-06-13T03:35:13Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
