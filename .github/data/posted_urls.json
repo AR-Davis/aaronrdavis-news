@@ -100,8 +100,9 @@
     "https://apnews.com/article/mideast-wars-gaza-death-toll-b9a278a4cf523c412e54f29764ea9060",
     "https://apnews.com/article/russia-ukraine-war-drones-oil-tanker-2e289b307a65ea3ad2f51d91d3feafe4",
     "https://apnews.com/article/butler-missouri-plane-crash-dead-0f074de40ce690e76c19ffbe183d1875",
-    "https://apnews.com/article/shadow-fleet-russia-uk-starmer-moscow-110f493f617176d64d84e588754db091"
+    "https://apnews.com/article/shadow-fleet-russia-uk-starmer-moscow-110f493f617176d64d84e588754db091",
+    "https://apnews.com/article/trump-80th-birthday-ufc-biden-e14d1bbccc1cbaaad42fd541b1fe833d"
   ],
-  "last_scrape": "2026-06-14T21:23:52Z",
+  "last_scrape": "2026-06-14T22:41:45Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
