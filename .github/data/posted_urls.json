@@ -95,8 +95,9 @@
     "https://apnews.com/article/brazil-morocco-score-f7c99c7947a903c46562344462d12057",
     "https://apnews.com/article/infant-botulism-byheart-formula-outbreak-90a0a08910d1162d77b9eb65d63ed667",
     "https://apnews.com/article/iran-us-war-ceasefire-deal-e0a9e4e1152ea8da10ea066ad174a23a",
-    "https://apnews.com/article/georgia-ballots-qr-codes-legislature-special-session-7197f763b090285a5fc2f471aa374505"
+    "https://apnews.com/article/georgia-ballots-qr-codes-legislature-special-session-7197f763b090285a5fc2f471aa374505",
+    "https://apnews.com/article/knicks-nba-celebration-new-york-f092e7cd2accdc31648557c3acfb3239"
   ],
-  "last_scrape": "2026-06-14T13:10:19Z",
+  "last_scrape": "2026-06-14T15:19:16Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
