@@ -103,8 +103,9 @@
     "https://apnews.com/article/shadow-fleet-russia-uk-starmer-moscow-110f493f617176d64d84e588754db091",
     "https://apnews.com/article/trump-80th-birthday-ufc-biden-e14d1bbccc1cbaaad42fd541b1fe833d",
     "https://apnews.com/article/trump-artificial-intelligence-chatbots-ai-23a0e44ab05402ddfe9cdfd0bffa0ade",
-    "https://apnews.com/article/g7-trump-macron-france-china-iran-persian-gulf-energy-7e7dfed708daa482c6079863758e6f95"
+    "https://apnews.com/article/g7-trump-macron-france-china-iran-persian-gulf-energy-7e7dfed708daa482c6079863758e6f95",
+    "https://apnews.com/article/aapi-asian-american-america-250-immigration-0e28e07969ff36211c28900721562bf8"
   ],
-  "last_scrape": "2026-06-15T04:19:49Z",
+  "last_scrape": "2026-06-15T10:42:13Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
