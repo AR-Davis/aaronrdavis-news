@@ -105,8 +105,9 @@
     "https://apnews.com/article/trump-artificial-intelligence-chatbots-ai-23a0e44ab05402ddfe9cdfd0bffa0ade",
     "https://apnews.com/article/g7-trump-macron-france-china-iran-persian-gulf-energy-7e7dfed708daa482c6079863758e6f95",
     "https://apnews.com/article/aapi-asian-american-america-250-immigration-0e28e07969ff36211c28900721562bf8",
-    "https://apnews.com/article/britain-starmer-plot-to-torch-houses-car-conviction-c3cda256ea9fe1ac3189915325235bde"
+    "https://apnews.com/article/britain-starmer-plot-to-torch-houses-car-conviction-c3cda256ea9fe1ac3189915325235bde",
+    "https://apnews.com/article/fox-roku-tubi-streaming-824089dbe16631fade634becdb164c94"
   ],
-  "last_scrape": "2026-06-15T16:10:43Z",
+  "last_scrape": "2026-06-15T19:56:52Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
