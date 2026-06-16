@@ -109,8 +109,9 @@
     "https://apnews.com/article/fox-roku-tubi-streaming-824089dbe16631fade634becdb164c94",
     "https://apnews.com/article/b52-crash-california-edwards-air-force-base-ea237a6eec587adbbf9e7a578014ca93",
     "https://apnews.com/article/iran-us-war-oil-june-15-2026-77406473da38c6c126818610a219dc20",
-    "https://apnews.com/article/cruise-ship-stepsister-killed-florida-245eaa09b1f47cf638c4869596149924"
+    "https://apnews.com/article/cruise-ship-stepsister-killed-florida-245eaa09b1f47cf638c4869596149924",
+    "https://apnews.com/article/china-trade-exports-tariffs-trump-germany-edd7a75a090afca912b4650bcceb562d"
   ],
-  "last_scrape": "2026-06-16T05:37:00Z",
+  "last_scrape": "2026-06-16T10:31:07Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
