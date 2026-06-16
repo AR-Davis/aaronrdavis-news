@@ -108,8 +108,9 @@
     "https://apnews.com/article/britain-starmer-plot-to-torch-houses-car-conviction-c3cda256ea9fe1ac3189915325235bde",
     "https://apnews.com/article/fox-roku-tubi-streaming-824089dbe16631fade634becdb164c94",
     "https://apnews.com/article/b52-crash-california-edwards-air-force-base-ea237a6eec587adbbf9e7a578014ca93",
-    "https://apnews.com/article/iran-us-war-oil-june-15-2026-77406473da38c6c126818610a219dc20"
+    "https://apnews.com/article/iran-us-war-oil-june-15-2026-77406473da38c6c126818610a219dc20",
+    "https://apnews.com/article/cruise-ship-stepsister-killed-florida-245eaa09b1f47cf638c4869596149924"
   ],
-  "last_scrape": "2026-06-16T00:12:13Z",
+  "last_scrape": "2026-06-16T05:37:00Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
