@@ -112,8 +112,9 @@
     "https://apnews.com/article/cruise-ship-stepsister-killed-florida-245eaa09b1f47cf638c4869596149924",
     "https://apnews.com/article/china-trade-exports-tariffs-trump-germany-edd7a75a090afca912b4650bcceb562d",
     "https://apnews.com/article/congress-senate-iran-trump-deal-graham-vance-00181f6ba851ad06d1f378946302379b",
-    "https://apnews.com/article/b52-stratofortress-crash-california-2cf849e75640a2e0b98ab94cc4a14430"
+    "https://apnews.com/article/b52-stratofortress-crash-california-2cf849e75640a2e0b98ab94cc4a14430",
+    "https://apnews.com/article/fbi-trump-ufc-white-house-b6a41e2e8fc7feb84440581c2535b000"
   ],
-  "last_scrape": "2026-06-16T19:05:54Z",
+  "last_scrape": "2026-06-16T21:47:27Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
