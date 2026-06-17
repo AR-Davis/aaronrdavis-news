@@ -120,8 +120,9 @@
     "https://apnews.com/article/elections-georgia-alabama-trump-california-dc-05568eca6a4e7493505a5351a3ade7fe",
     "https://apnews.com/article/iran-us-israel-war-oil-deal-june-17-2026-19652f4611b704c0a991bf1f5bc9a4b9",
     "https://apnews.com/article/bubonic-plague-black-death-outbreak-siberia-bc6f28c5c623a279100dacfbc3088595",
-    "https://apnews.com/article/federal-reserve-kevin-warsh-interest-rates-103325df845d2d6bde63dfa4b8093d35"
+    "https://apnews.com/article/federal-reserve-kevin-warsh-interest-rates-103325df845d2d6bde63dfa4b8093d35",
+    "https://apnews.com/article/g7-summit-trump-macron-takeaways-versailles-0b3127724dbbf16dd36353247290568e"
   ],
-  "last_scrape": "2026-06-17T19:51:58Z",
+  "last_scrape": "2026-06-17T21:57:20Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
