@@ -149,7 +149,7 @@ export async function onRequest(context) {
 
     // Fetch OG data for rich card
     const og = await fetchOgTags(storyUrl);
-    const displayTitle = storyUrl || og.title || 'News story';
+    const displayTitle = storyTitle || og.title || 'News story';
     
     // Try AP-specific image fetch first
     const apImage = await fetchApImage(storyUrl);
