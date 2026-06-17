@@ -118,8 +118,9 @@
     "https://apnews.com/article/iran-trump-agreement-talking-points-4166975ec5cf58ef4acaa370171f623f",
     "https://apnews.com/article/boat-strikes-drug-trafficking-us-military-4ca37443dc67a3fc69b7d6f53ea64156",
     "https://apnews.com/article/elections-georgia-alabama-trump-california-dc-05568eca6a4e7493505a5351a3ade7fe",
-    "https://apnews.com/article/iran-us-israel-war-oil-deal-june-17-2026-19652f4611b704c0a991bf1f5bc9a4b9"
+    "https://apnews.com/article/iran-us-israel-war-oil-deal-june-17-2026-19652f4611b704c0a991bf1f5bc9a4b9",
+    "https://apnews.com/article/bubonic-plague-black-death-outbreak-siberia-bc6f28c5c623a279100dacfbc3088595"
   ],
-  "last_scrape": "2026-06-17T14:49:09Z",
+  "last_scrape": "2026-06-17T17:42:16Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
