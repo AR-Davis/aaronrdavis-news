@@ -114,8 +114,9 @@
     "https://apnews.com/article/congress-senate-iran-trump-deal-graham-vance-00181f6ba851ad06d1f378946302379b",
     "https://apnews.com/article/b52-stratofortress-crash-california-2cf849e75640a2e0b98ab94cc4a14430",
     "https://apnews.com/article/fbi-trump-ufc-white-house-b6a41e2e8fc7feb84440581c2535b000",
-    "https://apnews.com/article/g7-iran-ukraine-trump-macron-zelenskyy-e7fad4eabaae8181f70fa5a0b9e499b2"
+    "https://apnews.com/article/g7-iran-ukraine-trump-macron-zelenskyy-e7fad4eabaae8181f70fa5a0b9e499b2",
+    "https://apnews.com/article/iran-trump-agreement-talking-points-4166975ec5cf58ef4acaa370171f623f"
   ],
-  "last_scrape": "2026-06-16T23:14:40Z",
+  "last_scrape": "2026-06-17T01:44:27Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
