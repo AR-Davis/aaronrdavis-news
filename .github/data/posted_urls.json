@@ -124,8 +124,9 @@
     "https://apnews.com/article/g7-summit-trump-macron-takeaways-versailles-0b3127724dbbf16dd36353247290568e",
     "https://apnews.com/article/gilgo-beach-ny-serial-killings-rex-heuermann-387005d77f2d7b699ee9692a81d1b0b7",
     "https://apnews.com/article/luigi-mangione-brian-thompson-united-healthcare-psychiatric-4ddb015ce3937689b41615571b3a1732",
-    "https://apnews.com/article/israel-palestinians-hamas-war-gaza-death-toll-casualties-07ecc0f22a1fb8332466ffc87f928cf4"
+    "https://apnews.com/article/israel-palestinians-hamas-war-gaza-death-toll-casualties-07ecc0f22a1fb8332466ffc87f928cf4",
+    "https://apnews.com/article/laredo-samaritan-rescuer-baer-plane-crash-6463740902031c959f781641871df159"
   ],
-  "last_scrape": "2026-06-18T07:04:44Z",
+  "last_scrape": "2026-06-18T11:16:49Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
