@@ -128,8 +128,9 @@
     "https://apnews.com/article/laredo-samaritan-rescuer-baer-plane-crash-6463740902031c959f781641871df159",
     "https://apnews.com/article/gas-iran-trump-aaa-72d8e7d7c9dcd0795c37a51864fce8a6",
     "https://apnews.com/article/lebanon-israel-hezbollah-iran-us-deal-b8fe65c97e30afc1424b8f00c3bfc377",
-    "https://apnews.com/article/iran-us-agreement-blockade-oil-vance-trump-888fd5ad6543ed9ec4189e609d7c53b1"
+    "https://apnews.com/article/iran-us-agreement-blockade-oil-vance-trump-888fd5ad6543ed9ec4189e609d7c53b1",
+    "https://apnews.com/article/arizona-fake-electors-2020-presidential-election-bd5ca470f910f18ad9e88ddd9c6d17bb"
   ],
-  "last_scrape": "2026-06-18T19:59:14Z",
+  "last_scrape": "2026-06-18T22:22:53Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
