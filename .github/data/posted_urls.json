@@ -127,8 +127,9 @@
     "https://apnews.com/article/israel-palestinians-hamas-war-gaza-death-toll-casualties-07ecc0f22a1fb8332466ffc87f928cf4",
     "https://apnews.com/article/laredo-samaritan-rescuer-baer-plane-crash-6463740902031c959f781641871df159",
     "https://apnews.com/article/gas-iran-trump-aaa-72d8e7d7c9dcd0795c37a51864fce8a6",
-    "https://apnews.com/article/lebanon-israel-hezbollah-iran-us-deal-b8fe65c97e30afc1424b8f00c3bfc377"
+    "https://apnews.com/article/lebanon-israel-hezbollah-iran-us-deal-b8fe65c97e30afc1424b8f00c3bfc377",
+    "https://apnews.com/article/iran-us-agreement-blockade-oil-vance-trump-888fd5ad6543ed9ec4189e609d7c53b1"
   ],
-  "last_scrape": "2026-06-18T17:43:45Z",
+  "last_scrape": "2026-06-18T19:59:14Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
