@@ -131,8 +131,9 @@
     "https://apnews.com/article/iran-us-agreement-blockade-oil-vance-trump-888fd5ad6543ed9ec4189e609d7c53b1",
     "https://apnews.com/article/arizona-fake-electors-2020-presidential-election-bd5ca470f910f18ad9e88ddd9c6d17bb",
     "https://apnews.com/article/iran-trump-republicans-cruz-66593c4f68ebd47dd626c5117882825a",
-    "https://apnews.com/article/moderna-flu-vaccine-mrna-fda-advisers-mflusiva-488c68fe39244ca5ebad441a815b4ba2"
+    "https://apnews.com/article/moderna-flu-vaccine-mrna-fda-advisers-mflusiva-488c68fe39244ca5ebad441a815b4ba2",
+    "https://apnews.com/article/boat-strikes-drug-trafficking-us-military-f224cc4a878aa0f61b914b2b43b66c0b"
   ],
-  "last_scrape": "2026-06-19T05:25:17Z",
+  "last_scrape": "2026-06-19T10:01:46Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
