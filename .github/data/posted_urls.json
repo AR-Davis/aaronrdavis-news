@@ -129,8 +129,9 @@
     "https://apnews.com/article/gas-iran-trump-aaa-72d8e7d7c9dcd0795c37a51864fce8a6",
     "https://apnews.com/article/lebanon-israel-hezbollah-iran-us-deal-b8fe65c97e30afc1424b8f00c3bfc377",
     "https://apnews.com/article/iran-us-agreement-blockade-oil-vance-trump-888fd5ad6543ed9ec4189e609d7c53b1",
-    "https://apnews.com/article/arizona-fake-electors-2020-presidential-election-bd5ca470f910f18ad9e88ddd9c6d17bb"
+    "https://apnews.com/article/arizona-fake-electors-2020-presidential-election-bd5ca470f910f18ad9e88ddd9c6d17bb",
+    "https://apnews.com/article/iran-trump-republicans-cruz-66593c4f68ebd47dd626c5117882825a"
   ],
-  "last_scrape": "2026-06-18T22:22:53Z",
+  "last_scrape": "2026-06-19T00:08:59Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
