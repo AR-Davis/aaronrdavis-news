@@ -148,8 +148,9 @@
     "https://apnews.com/article/iran-war-nuclear-deal-hegseth-trump-congress-c80ca2daf0492bac2b19939dbfdb8e29",
     "https://apnews.com/article/israel-palestinians-hamas-war-gaza-strike-f45ace109972b8c36364e7a75cc9bb7f",
     "https://apnews.com/article/measles-utah-outbreak-mmr-vaccine-a38602421ad658dfff468d9df0175cdc",
-    "https://apnews.com/article/rare-earth-minerals-leo-mining-goldfajn-8a44b7e7f89fb84d77f2d6cf472d600d"
+    "https://apnews.com/article/rare-earth-minerals-leo-mining-goldfajn-8a44b7e7f89fb84d77f2d6cf472d600d",
+    "https://apnews.com/article/russia-ukraine-war-kharkiv-strike-f386a7bfc8241504376e352097ff0cbb"
   ],
-  "last_scrape": "2026-06-20T20:23:47Z",
+  "last_scrape": "2026-06-20T21:47:25Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
