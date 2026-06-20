@@ -140,8 +140,9 @@
     "https://apnews.com/article/poll-trump-iran-economy-israel-7d7d79150f3da1cc28076604f8659b64",
     "https://apnews.com/article/bedford-train-collision-london-9d0d2b1c8a31e6d34c112b89f28fdeda",
     "https://apnews.com/article/james-burrows-obituary-80b0422bd2268e2aa8fb4b47755eda31",
-    "https://apnews.com/article/juneteenth-june-19-holiday-celebration-obama-center-52dcbf757afbf9e43ee71296c440e35f"
+    "https://apnews.com/article/juneteenth-june-19-holiday-celebration-obama-center-52dcbf757afbf9e43ee71296c440e35f",
+    "https://apnews.com/article/biden-special-counsel-heritage-foundation-ghostwriter-transcripts-6a23a9069bc65f9631074287afd6f567"
   ],
-  "last_scrape": "2026-06-20T01:56:39Z",
+  "last_scrape": "2026-06-20T06:38:04Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
