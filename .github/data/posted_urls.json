@@ -146,8 +146,9 @@
     "https://apnews.com/article/dominican-republic-resort-fire-wyndham-7aa1b38d50bf0c322370d663fdfa5658",
     "https://apnews.com/article/iran-us-israel-lebanon-hezbollah-june-20-2026-6e23fb5f37e23427dbfc2bc80c59bda8",
     "https://apnews.com/article/iran-war-nuclear-deal-hegseth-trump-congress-c80ca2daf0492bac2b19939dbfdb8e29",
-    "https://apnews.com/article/israel-palestinians-hamas-war-gaza-strike-f45ace109972b8c36364e7a75cc9bb7f"
+    "https://apnews.com/article/israel-palestinians-hamas-war-gaza-strike-f45ace109972b8c36364e7a75cc9bb7f",
+    "https://apnews.com/article/measles-utah-outbreak-mmr-vaccine-a38602421ad658dfff468d9df0175cdc"
   ],
-  "last_scrape": "2026-06-20T17:41:19Z",
+  "last_scrape": "2026-06-20T19:00:11Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
