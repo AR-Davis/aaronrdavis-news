@@ -160,8 +160,9 @@
     "https://apnews.com/article/iran-vance-trump-nuclear-negotiations-2edf9268aae550883252080014013963",
     "https://apnews.com/article/chicago-shooting-trump-pritzker-25134a3c18efe7861b908a5393dca263",
     "https://apnews.com/article/madison-square-garden-fall-death-concert-970aa027812d4f79d7a236328f61e072",
-    "https://apnews.com/article/brady-tkachuk-florida-panthers-eef8ef1a3b87088c8eccc06978d08587"
+    "https://apnews.com/article/brady-tkachuk-florida-panthers-eef8ef1a3b87088c8eccc06978d08587",
+    "https://apnews.com/article/taylor-swift-wedding-rhode-island-c14fe03bde7fea457e99745bf28ee96c"
   ],
-  "last_scrape": "2026-06-21T22:36:21Z",
+  "last_scrape": "2026-06-21T23:56:17Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
