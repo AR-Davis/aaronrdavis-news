@@ -152,8 +152,9 @@
     "https://apnews.com/article/russia-ukraine-war-kharkiv-strike-f386a7bfc8241504376e352097ff0cbb",
     "https://apnews.com/article/south-africa-nigerians-migration-protests-immigration-10c77656865f687abce962a651687371",
     "https://apnews.com/article/trump-meloni-nato-italy-g7-photo-ab350c75202462f5da33a1eb0a761dd1",
-    "https://apnews.com/article/extreme-heat-grand-canyon-8ab303cc459a96503c46708bfc12d262"
+    "https://apnews.com/article/extreme-heat-grand-canyon-8ab303cc459a96503c46708bfc12d262",
+    "https://apnews.com/article/britain-keir-starmer-future-burnham-labour-cc4567e307b4b3e6fbcb75c2c66a503c"
   ],
-  "last_scrape": "2026-06-21T05:19:35Z",
+  "last_scrape": "2026-06-21T09:05:54Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
