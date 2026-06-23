@@ -170,8 +170,9 @@
     "https://apnews.com/article/congress-road-to-housing-act-senate-21209cb780b76fe9a22881833c2dd535",
     "https://apnews.com/article/greenspan-federal-reserve-death-25f435cc747df7b76d0ff40844f8933f",
     "https://apnews.com/article/immigration-enforcement-minnesota-subpoenas-e5047e842da6181cbd5f071ab4bb1d7b",
-    "https://apnews.com/article/andy-burnham-uk-labour-leadership-contest-starmer-693acb49a71838b7acf3f8fa4663f8bc"
+    "https://apnews.com/article/andy-burnham-uk-labour-leadership-contest-starmer-693acb49a71838b7acf3f8fa4663f8bc",
+    "https://apnews.com/article/brexit-vote-10th-anniversary-broken-uk-politics-e9c14876e5e9a51fb57ba6d67e30582f"
   ],
-  "last_scrape": "2026-06-23T08:50:13Z",
+  "last_scrape": "2026-06-23T11:53:05Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
