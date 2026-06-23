@@ -175,8 +175,9 @@
     "https://apnews.com/article/donald-trump-mack-truck-pennsylvania-e1038facbf939c5eb97e2462e30b754d",
     "https://apnews.com/article/california-library-shooting-chico-13fca9e1652bc8f51debd65c0f9c4256",
     "https://apnews.com/article/iran-us-israel-lebanon-june-20-2026-e9271996cf8e1e774cbc4ddd7bd4e6b3",
-    "https://apnews.com/article/iran-world-cup-travel-20af86f0da8c29dd088ecdf4d2313b2e"
+    "https://apnews.com/article/iran-world-cup-travel-20af86f0da8c29dd088ecdf4d2313b2e",
+    "https://apnews.com/article/nancy-guthrie-missing-ransom-notes-savannah-mom-d5f09fc28310ee3c9031971cd595f19e"
   ],
-  "last_scrape": "2026-06-23T21:10:20Z",
+  "last_scrape": "2026-06-23T22:39:19Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
