@@ -172,8 +172,9 @@
     "https://apnews.com/article/immigration-enforcement-minnesota-subpoenas-e5047e842da6181cbd5f071ab4bb1d7b",
     "https://apnews.com/article/andy-burnham-uk-labour-leadership-contest-starmer-693acb49a71838b7acf3f8fa4663f8bc",
     "https://apnews.com/article/brexit-vote-10th-anniversary-broken-uk-politics-e9c14876e5e9a51fb57ba6d67e30582f",
-    "https://apnews.com/article/donald-trump-mack-truck-pennsylvania-e1038facbf939c5eb97e2462e30b754d"
+    "https://apnews.com/article/donald-trump-mack-truck-pennsylvania-e1038facbf939c5eb97e2462e30b754d",
+    "https://apnews.com/article/california-library-shooting-chico-13fca9e1652bc8f51debd65c0f9c4256"
   ],
-  "last_scrape": "2026-06-23T14:46:49Z",
+  "last_scrape": "2026-06-23T17:08:07Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
