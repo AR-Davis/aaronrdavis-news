@@ -169,8 +169,9 @@
     "https://apnews.com/article/clive-davis-obituary-music-mogul-45c9f57f7f764cbf815c9747cbff94e3",
     "https://apnews.com/article/congress-road-to-housing-act-senate-21209cb780b76fe9a22881833c2dd535",
     "https://apnews.com/article/greenspan-federal-reserve-death-25f435cc747df7b76d0ff40844f8933f",
-    "https://apnews.com/article/immigration-enforcement-minnesota-subpoenas-e5047e842da6181cbd5f071ab4bb1d7b"
+    "https://apnews.com/article/immigration-enforcement-minnesota-subpoenas-e5047e842da6181cbd5f071ab4bb1d7b",
+    "https://apnews.com/article/andy-burnham-uk-labour-leadership-contest-starmer-693acb49a71838b7acf3f8fa4663f8bc"
   ],
-  "last_scrape": "2026-06-23T05:43:37Z",
+  "last_scrape": "2026-06-23T08:50:13Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
