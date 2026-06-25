@@ -187,8 +187,9 @@
     "https://apnews.com/article/earthquake-northern-california-d49d72ec80d149b2fcd4c9b9ae84b37d",
     "https://apnews.com/article/nba-draft-2026-second-round-picks-09b7b724cacb091ab777adb63edb7a91",
     "https://apnews.com/article/stocks-markets-ai-us-iran-oil-b631564d3b359644eda586b047c9bcf0",
-    "https://apnews.com/article/trump-america-250-rally-75e2bb4f4d2b3f7ab8cdddb86879bec7"
+    "https://apnews.com/article/trump-america-250-rally-75e2bb4f4d2b3f7ab8cdddb86879bec7",
+    "https://apnews.com/article/trump-capitol-republican-senators-968c1454ede461d2db413790670c07df"
   ],
-  "last_scrape": "2026-06-24T22:58:07Z",
+  "last_scrape": "2026-06-25T00:19:21Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
