@@ -189,8 +189,9 @@
     "https://apnews.com/article/stocks-markets-ai-us-iran-oil-b631564d3b359644eda586b047c9bcf0",
     "https://apnews.com/article/trump-america-250-rally-75e2bb4f4d2b3f7ab8cdddb86879bec7",
     "https://apnews.com/article/trump-capitol-republican-senators-968c1454ede461d2db413790670c07df",
-    "https://apnews.com/article/trump-nato-mark-rutte-iran-5c2f88363f7a066c02103ab1ce1c8d6b"
+    "https://apnews.com/article/trump-nato-mark-rutte-iran-5c2f88363f7a066c02103ab1ce1c8d6b",
+    "https://apnews.com/article/han-kuoyu-taiwan-congress-china-tech-trump-70f1bed4dff61859126f517f458b7a5b"
   ],
-  "last_scrape": "2026-06-25T04:39:38Z",
+  "last_scrape": "2026-06-25T08:04:43Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
