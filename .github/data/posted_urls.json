@@ -195,8 +195,9 @@
     "https://apnews.com/article/heat-paris-unesco-roofs-attic-apartments-deaths-2232fd983a14d9415a0108e3827e83ea",
     "https://apnews.com/article/great-ape-human-laughter-gorilla-bonobo-d3fc226a0e2aeeb36cb146c5064953bc",
     "https://apnews.com/article/alligator-alcatraz-closure-florida-immigration-detention-3c371f51fe71ed64b7ae9d22d0fab5cb",
-    "https://apnews.com/article/david-clayton-thomas-84-died-singer-62acd793a277ff981d1635b80ed230b4"
+    "https://apnews.com/article/david-clayton-thomas-84-died-singer-62acd793a277ff981d1635b80ed230b4",
+    "https://apnews.com/article/dea-investigations-unseized-fentanyl-inspector-general-88200e171fdf4d5fa103a791aa42952e"
   ],
-  "last_scrape": "2026-06-25T20:32:31Z",
+  "last_scrape": "2026-06-25T22:08:31Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
