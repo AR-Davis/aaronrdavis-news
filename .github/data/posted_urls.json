@@ -199,8 +199,9 @@
     "https://apnews.com/article/dea-investigations-unseized-fentanyl-inspector-general-88200e171fdf4d5fa103a791aa42952e",
     "https://apnews.com/article/ecuador-germany-score-world-cup-a76afaec09bf5ff96e216265c2e18bc1",
     "https://apnews.com/article/inflation-federal-reserve-spending-d9348cc01b41c8de31051acf1b39268f",
-    "https://apnews.com/article/iran-us-israel-war-hormuz-strait-june-25-2026-862164c2aecbdc376dea434198eaf75f"
+    "https://apnews.com/article/iran-us-israel-war-hormuz-strait-june-25-2026-862164c2aecbdc376dea434198eaf75f",
+    "https://apnews.com/article/australia-social-media-children-ban-5087482f61cd948afc4f148f88d0e4c7"
   ],
-  "last_scrape": "2026-06-26T06:14:38Z",
+  "last_scrape": "2026-06-26T09:53:54Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
