@@ -198,8 +198,9 @@
     "https://apnews.com/article/david-clayton-thomas-84-died-singer-62acd793a277ff981d1635b80ed230b4",
     "https://apnews.com/article/dea-investigations-unseized-fentanyl-inspector-general-88200e171fdf4d5fa103a791aa42952e",
     "https://apnews.com/article/ecuador-germany-score-world-cup-a76afaec09bf5ff96e216265c2e18bc1",
-    "https://apnews.com/article/inflation-federal-reserve-spending-d9348cc01b41c8de31051acf1b39268f"
+    "https://apnews.com/article/inflation-federal-reserve-spending-d9348cc01b41c8de31051acf1b39268f",
+    "https://apnews.com/article/iran-us-israel-war-hormuz-strait-june-25-2026-862164c2aecbdc376dea434198eaf75f"
   ],
-  "last_scrape": "2026-06-26T01:54:40Z",
+  "last_scrape": "2026-06-26T06:14:38Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
