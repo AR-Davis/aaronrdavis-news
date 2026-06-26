@@ -201,8 +201,9 @@
     "https://apnews.com/article/inflation-federal-reserve-spending-d9348cc01b41c8de31051acf1b39268f",
     "https://apnews.com/article/iran-us-israel-war-hormuz-strait-june-25-2026-862164c2aecbdc376dea434198eaf75f",
     "https://apnews.com/article/australia-social-media-children-ban-5087482f61cd948afc4f148f88d0e4c7",
-    "https://apnews.com/article/america-250-trump-renovations-washington-dc-tour-7a01986959f79d0153c3225f43a375f3"
+    "https://apnews.com/article/america-250-trump-renovations-washington-dc-tour-7a01986959f79d0153c3225f43a375f3",
+    "https://apnews.com/article/bolton-justice-department-trump-classified-information-e95c29e7f8659d8b4b01d44148ae1ab4"
   ],
-  "last_scrape": "2026-06-26T12:11:58Z",
+  "last_scrape": "2026-06-26T14:48:56Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
