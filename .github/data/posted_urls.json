@@ -206,8 +206,9 @@
     "https://apnews.com/article/epstein-investor-leon-black-payments-house-deposition-2d369605ab3ea8d81d716f6c8e68b356",
     "https://apnews.com/article/iran-us-israel-war-hormuz-strait-june-26-2026-8c1a77eb82d25f00de814958114c7296",
     "https://apnews.com/article/mets-fire-mendoza-6cf52ffb9e81030b33d4b4acf8244481",
-    "https://apnews.com/article/rubio-israel-lebanon-c263a75ad99ef5120ad8f9f65bed5911"
+    "https://apnews.com/article/rubio-israel-lebanon-c263a75ad99ef5120ad8f9f65bed5911",
+    "https://apnews.com/article/supreme-court-sonia-sotomayor-samuel-alito-e956f6a00f05f1d5f21cf824909a6bf7"
   ],
-  "last_scrape": "2026-06-26T21:57:12Z",
+  "last_scrape": "2026-06-26T23:16:27Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
