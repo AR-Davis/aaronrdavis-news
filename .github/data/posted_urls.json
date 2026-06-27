@@ -209,8 +209,9 @@
     "https://apnews.com/article/rubio-israel-lebanon-c263a75ad99ef5120ad8f9f65bed5911",
     "https://apnews.com/article/supreme-court-sonia-sotomayor-samuel-alito-e956f6a00f05f1d5f21cf824909a6bf7",
     "https://apnews.com/article/trump-ai-openai-gpt56-sol-cybersecurity-mythos-065d5398baac7f16c8265c2cb8ba2baa",
-    "https://apnews.com/article/earthquake-venezuela-shoddy-construction-old-buildings-6ef83f995a311c03dbbbba413d046fa5"
+    "https://apnews.com/article/earthquake-venezuela-shoddy-construction-old-buildings-6ef83f995a311c03dbbbba413d046fa5",
+    "https://apnews.com/article/andy-burnham-prime-minister-starmer-uk-politics-3a7418c6bac69d631a3b25faa83936d9"
   ],
-  "last_scrape": "2026-06-27T05:30:23Z",
+  "last_scrape": "2026-06-27T08:12:18Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
