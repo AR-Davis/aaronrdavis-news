@@ -214,8 +214,9 @@
     "https://apnews.com/article/china-citic-tower-beijing-damage-plane-d32c909c5dffc32e124588c927482526",
     "https://apnews.com/article/drug-prices-pharmacy-benefit-managers-states-e44ae3a9f19fe55811fcb64f2849abf6",
     "https://apnews.com/article/america-250-voting-rights-supreme-court-south-51dde3f92534a35fcd3873312491abae",
-    "https://apnews.com/article/earthquakes-venezuela-rescues-survivors-92a3d6c13c0f9af9c1bfb4ff6d041254"
+    "https://apnews.com/article/earthquakes-venezuela-rescues-survivors-92a3d6c13c0f9af9c1bfb4ff6d041254",
+    "https://apnews.com/article/europe-heat-germany-france-uk-69b2d990486f4b645c9ad6ea4252888c"
   ],
-  "last_scrape": "2026-06-27T15:22:18Z",
+  "last_scrape": "2026-06-27T16:37:09Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
