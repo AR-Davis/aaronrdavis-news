@@ -218,8 +218,9 @@
     "https://apnews.com/article/europe-heat-germany-france-uk-69b2d990486f4b645c9ad6ea4252888c",
     "https://apnews.com/article/iran-us-israel-war-hormuz-strait-june-27-2026-dca83ec0b72f498eea7146df5311b39c",
     "https://apnews.com/article/japan-heavy-rainstorm-df10b99d3d979cc3b2c1a9060d78d72d",
-    "https://apnews.com/article/nhl-trades-blues-leafs-583f317ab51f83b8c3265641ad513668"
+    "https://apnews.com/article/nhl-trades-blues-leafs-583f317ab51f83b8c3265641ad513668",
+    "https://apnews.com/article/scratch-itch-mosquito-rash-antihistamine-23f9217afac22f78ebd43c9aa4efa90a"
   ],
-  "last_scrape": "2026-06-27T20:12:45Z",
+  "last_scrape": "2026-06-27T21:31:50Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
