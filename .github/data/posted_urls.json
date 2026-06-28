@@ -231,8 +231,9 @@
     "https://apnews.com/article/kennedy-center-maher-trump-mark-twain-prize-acb16f64d8ec2ea2c2904e9d8e30bb75",
     "https://apnews.com/article/lebanon-syria-trump-israel-hezbollah-war-1de06c560491e9e74d7f4febe195fd31",
     "https://apnews.com/article/canada-south-africa-score-world-cup-704407e25c4ec253daaa2803996d58b0",
-    "https://apnews.com/article/mamdani-democratic-socialists-jeffries-populism-ideology-race-a64a132ced15520345bd682768719d13"
+    "https://apnews.com/article/mamdani-democratic-socialists-jeffries-populism-ideology-race-a64a132ced15520345bd682768719d13",
+    "https://apnews.com/article/nasa-swift-satellite-rescue-mission-f715e10a93c1015e280a7ccd1028a9c4"
   ],
-  "last_scrape": "2026-06-28T22:31:52Z",
+  "last_scrape": "2026-06-28T23:42:53Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
