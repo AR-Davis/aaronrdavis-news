@@ -227,8 +227,9 @@
     "https://apnews.com/article/albania-kushner-trump-rallies-narta-resort-development-3762c3a19d75ed9221fffbe4a3d5bc8f",
     "https://apnews.com/article/america-250-trump-king-imperial-presidency-13c1b8f5ad2cb4c94d879d5738000e53",
     "https://apnews.com/article/europe-heat-temperature-records-france-deaths-germany-61f444317600cf1bd9af5af84cb582bd",
-    "https://apnews.com/article/iran-us-israel-war-hormuz-strait-june-28-2026-1132d316545db2cddb3928b6e7840f51"
+    "https://apnews.com/article/iran-us-israel-war-hormuz-strait-june-28-2026-1132d316545db2cddb3928b6e7840f51",
+    "https://apnews.com/article/kennedy-center-maher-trump-mark-twain-prize-acb16f64d8ec2ea2c2904e9d8e30bb75"
   ],
-  "last_scrape": "2026-06-28T17:35:59Z",
+  "last_scrape": "2026-06-28T18:49:10Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
