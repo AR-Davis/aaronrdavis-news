@@ -221,8 +221,9 @@
     "https://apnews.com/article/nhl-trades-blues-leafs-583f317ab51f83b8c3265641ad513668",
     "https://apnews.com/article/scratch-itch-mosquito-rash-antihistamine-23f9217afac22f78ebd43c9aa4efa90a",
     "https://apnews.com/article/taylor-swift-travis-kelce-wedding-what-know-7347c79528d2153b9110f57cef683950",
-    "https://apnews.com/article/western-wildfires-cottonwood-dry-weather-9ee4881aa90bc892d7be36706b1ea526"
+    "https://apnews.com/article/western-wildfires-cottonwood-dry-weather-9ee4881aa90bc892d7be36706b1ea526",
+    "https://apnews.com/article/western-wildfires-wind-dry-weather-a5fb3b05719d2a6b77feacffd2cbdba9"
   ],
-  "last_scrape": "2026-06-27T23:42:54Z",
+  "last_scrape": "2026-06-28T06:23:56Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
