@@ -238,8 +238,9 @@
     "https://apnews.com/article/comcast-nbcuniversal-sky-5dc27c2e6fe45eb78eae4336e025b4e2",
     "https://apnews.com/article/birthright-citizenship-trump-supreme-court-constitution-ed436346abc459fdea6c5cecc410bdc2",
     "https://apnews.com/article/firefighters-killed-colorado-utah-459ad012d96b3a149b1560897a31eba6",
-    "https://apnews.com/article/heat-wave-weather-warning-midwest-northeast-a47b8a4c9e74f7708309cd4af0fcd1c7"
+    "https://apnews.com/article/heat-wave-weather-warning-midwest-northeast-a47b8a4c9e74f7708309cd4af0fcd1c7",
+    "https://apnews.com/article/iran-us-war-strait-of-hormuz-june-29-2026-d1c0ec8aa84c0e5693b94f0cf0862bab"
   ],
-  "last_scrape": "2026-06-29T20:26:24Z",
+  "last_scrape": "2026-06-29T21:54:20Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
