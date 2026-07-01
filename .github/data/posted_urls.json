@@ -252,8 +252,9 @@
     "https://apnews.com/article/nutrition-apps-games-gamification-engagement-d6f91ade776e75bc83f18fb2fa67daac",
     "https://apnews.com/article/all-you-can-eat-buffet-las-vegas-168374cdad4ee476a89d981e75eebec8",
     "https://apnews.com/article/colorado-democratic-socialist-primary-degette-governor-8a77cdb9943f99b70c74fbf811f1bbe3",
-    "https://apnews.com/article/children-found-home-hamden-ohio-8d26cd1cf247c8cdcdaf664ac36bc2dd"
+    "https://apnews.com/article/children-found-home-hamden-ohio-8d26cd1cf247c8cdcdaf664ac36bc2dd",
+    "https://apnews.com/article/daveigh-chase-aids-cause-of-death-60133726cfe77ddc4c72510a66bfccee"
   ],
-  "last_scrape": "2026-07-01T06:08:59Z",
+  "last_scrape": "2026-07-01T10:14:23Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
