@@ -251,8 +251,9 @@
     "https://apnews.com/article/israel-eisenkot-elections-bennett-netanyahu-8e4855a1fc419a1d52315c9d9afd8705",
     "https://apnews.com/article/nutrition-apps-games-gamification-engagement-d6f91ade776e75bc83f18fb2fa67daac",
     "https://apnews.com/article/all-you-can-eat-buffet-las-vegas-168374cdad4ee476a89d981e75eebec8",
-    "https://apnews.com/article/colorado-democratic-socialist-primary-degette-governor-8a77cdb9943f99b70c74fbf811f1bbe3"
+    "https://apnews.com/article/colorado-democratic-socialist-primary-degette-governor-8a77cdb9943f99b70c74fbf811f1bbe3",
+    "https://apnews.com/article/children-found-home-hamden-ohio-8d26cd1cf247c8cdcdaf664ac36bc2dd"
   ],
-  "last_scrape": "2026-07-01T01:33:34Z",
+  "last_scrape": "2026-07-01T06:08:59Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
