@@ -264,8 +264,9 @@
     "https://apnews.com/article/career-gap-layoff-parenting-workforce-reentry-af2d49fab3d5d0d7d78e820989d5295b",
     "https://apnews.com/article/congo-ebola-outbreak-dispatch-10a0c2ea31cb66f06414bc8b76ce60e2",
     "https://apnews.com/article/fireworks-wildfires-july-fourth-afc67952b9eaf72bc7ecaf10eeb4227e",
-    "https://apnews.com/article/iran-strait-hormuz-oil-route-us-shipping-de981ef87afe8da617076fe494c37482"
+    "https://apnews.com/article/iran-strait-hormuz-oil-route-us-shipping-de981ef87afe8da617076fe494c37482",
+    "https://apnews.com/article/border-security-smart-wall-immigration-trump-e0ec5fd754a25d345dfb1e5f24a49b80"
   ],
-  "last_scrape": "2026-07-02T12:51:01Z",
+  "last_scrape": "2026-07-02T15:09:07Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
