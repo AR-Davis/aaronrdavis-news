@@ -268,8 +268,9 @@
     "https://apnews.com/article/border-security-smart-wall-immigration-trump-e0ec5fd754a25d345dfb1e5f24a49b80",
     "https://apnews.com/article/alex-ovechkin-capitals-contract-2f1410cc72e150169fe3b07cc51eb574",
     "https://apnews.com/article/ai-chatgpt-secretaries-administrative-assistants-jobs-c5988294ce6a2828e83ef7fe42706c48",
-    "https://apnews.com/article/extreme-heat-northeast-july-fourth-95b2bf4bcfcd7b1444bf2f5085e01947"
+    "https://apnews.com/article/extreme-heat-northeast-july-fourth-95b2bf4bcfcd7b1444bf2f5085e01947",
+    "https://apnews.com/article/hot-dog-american-objects-969c2bfd9b83250cb85bd00d14437f72"
   ],
-  "last_scrape": "2026-07-02T20:09:56Z",
+  "last_scrape": "2026-07-02T21:33:33Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
