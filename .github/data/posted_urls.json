@@ -270,8 +270,9 @@
     "https://apnews.com/article/ai-chatgpt-secretaries-administrative-assistants-jobs-c5988294ce6a2828e83ef7fe42706c48",
     "https://apnews.com/article/extreme-heat-northeast-july-fourth-95b2bf4bcfcd7b1444bf2f5085e01947",
     "https://apnews.com/article/hot-dog-american-objects-969c2bfd9b83250cb85bd00d14437f72",
-    "https://apnews.com/article/haruki-murakami-new-novel-tale-of-kaho-f2e5cd19bbc19ab2004a8e9e37a97709"
+    "https://apnews.com/article/haruki-murakami-new-novel-tale-of-kaho-f2e5cd19bbc19ab2004a8e9e37a97709",
+    "https://apnews.com/article/skywalkers-love-empire-state-building-felonies-be1e1053639886aef8b2058ab06f7fbc"
   ],
-  "last_scrape": "2026-07-02T22:43:57Z",
+  "last_scrape": "2026-07-02T23:47:45Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
