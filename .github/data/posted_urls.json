@@ -260,8 +260,9 @@
     "https://apnews.com/article/california-sell-by-food-labels-ban-bf426a5c0146cc9435d371c072e6a9d3",
     "https://apnews.com/article/celtics-free-agency-mitchell-robinson-d74a7eda931901e061f9cc545b3bc9b9",
     "https://apnews.com/article/children-abuse-home-deplorable-ohio-099cda8f0014adde4b87a7e86aeefe5f",
-    "https://apnews.com/article/student-loans-consolidate-save-parent-plus-28e7b41b9b3fbdbca564c7c77c774173"
+    "https://apnews.com/article/student-loans-consolidate-save-parent-plus-28e7b41b9b3fbdbca564c7c77c774173",
+    "https://apnews.com/article/career-gap-layoff-parenting-workforce-reentry-af2d49fab3d5d0d7d78e820989d5295b"
   ],
-  "last_scrape": "2026-07-02T00:18:51Z",
+  "last_scrape": "2026-07-02T04:35:48Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
