@@ -275,8 +275,9 @@
     "https://apnews.com/article/country-roads-john-denver-usmnt-world-cup-0809693fbe3fd71f9539633ea16675ac",
     "https://apnews.com/article/ali-khamenei-funeral-supreme-leader-iran-us-war-july-3-2026-554d4f05f43ebbb86f81821eb18c0927",
     "https://apnews.com/article/california-farmer-nectarines-lawsuit-patent-4f7bc8ab185e8b9cbdd6d6ad4f2aabd1",
-    "https://apnews.com/article/air-conditioning-settings-savings-heat-wave-535f0b7d38a2e1e68812d4c23450cef8"
+    "https://apnews.com/article/air-conditioning-settings-savings-heat-wave-535f0b7d38a2e1e68812d4c23450cef8",
+    "https://apnews.com/article/america-250-celebrations-heatwave-trump-9d84acb8bd36837b2f21fab9e1808fc0"
   ],
-  "last_scrape": "2026-07-03T11:13:50Z",
+  "last_scrape": "2026-07-03T13:15:40Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
