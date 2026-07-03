@@ -280,8 +280,9 @@
     "https://apnews.com/article/neil-elephant-seal-tasmania-australia-dd46ef42400dc85b92c103d5f10718ef",
     "https://apnews.com/article/invite-movie-seth-rogen-olivia-wilde-interview-64991c433f8e8693d302196f1c5a3b26",
     "https://apnews.com/article/brazil-world-cup-gambling-bets-sports-soccer-f68b603d355ac250da11d183f5cd71db",
-    "https://apnews.com/article/plane-crash-deaths-skydiving-ntsb-butler-missouri-5ec8b109cc7762843b566c4e8b873d87"
+    "https://apnews.com/article/plane-crash-deaths-skydiving-ntsb-butler-missouri-5ec8b109cc7762843b566c4e8b873d87",
+    "https://apnews.com/article/swift-nasa-satellite-rescue-katalyst-a7ddd740ca099587c58865f583c7245a"
   ],
-  "last_scrape": "2026-07-03T19:56:17Z",
+  "last_scrape": "2026-07-03T21:16:17Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
