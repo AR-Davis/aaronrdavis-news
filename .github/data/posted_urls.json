@@ -272,8 +272,9 @@
     "https://apnews.com/article/hot-dog-american-objects-969c2bfd9b83250cb85bd00d14437f72",
     "https://apnews.com/article/haruki-murakami-new-novel-tale-of-kaho-f2e5cd19bbc19ab2004a8e9e37a97709",
     "https://apnews.com/article/skywalkers-love-empire-state-building-felonies-be1e1053639886aef8b2058ab06f7fbc",
-    "https://apnews.com/article/country-roads-john-denver-usmnt-world-cup-0809693fbe3fd71f9539633ea16675ac"
+    "https://apnews.com/article/country-roads-john-denver-usmnt-world-cup-0809693fbe3fd71f9539633ea16675ac",
+    "https://apnews.com/article/ali-khamenei-funeral-supreme-leader-iran-us-war-july-3-2026-554d4f05f43ebbb86f81821eb18c0927"
   ],
-  "last_scrape": "2026-07-03T01:22:31Z",
+  "last_scrape": "2026-07-03T05:12:55Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
