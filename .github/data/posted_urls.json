@@ -282,8 +282,9 @@
     "https://apnews.com/article/brazil-world-cup-gambling-bets-sports-soccer-f68b603d355ac250da11d183f5cd71db",
     "https://apnews.com/article/plane-crash-deaths-skydiving-ntsb-butler-missouri-5ec8b109cc7762843b566c4e8b873d87",
     "https://apnews.com/article/swift-nasa-satellite-rescue-katalyst-a7ddd740ca099587c58865f583c7245a",
-    "https://apnews.com/article/trump-storytime-usha-vance-riffs-presidents-children-book-704aeba94c3ed2ff8167b5f1d7f445c5"
+    "https://apnews.com/article/trump-storytime-usha-vance-riffs-presidents-children-book-704aeba94c3ed2ff8167b5f1d7f445c5",
+    "https://apnews.com/article/new-york-city-beach-shark-attack-b5266237e989e03b5f8d5eac3f564ecc"
   ],
-  "last_scrape": "2026-07-03T22:29:27Z",
+  "last_scrape": "2026-07-03T23:38:10Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
