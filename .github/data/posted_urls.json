@@ -290,8 +290,9 @@
     "https://apnews.com/article/germany-afd-convention-far-right-protests-elections-5841f5e40a52bee3a56798807fda83fe",
     "https://apnews.com/article/lake-geneva-storm-capsized-boat-c940ab8fecffb6837ae21096602d8100",
     "https://apnews.com/article/movies-best-of-year-so-far-2107aefcf3cb8863a64f6d4752b7da4e",
-    "https://apnews.com/article/pope-july-4-immigration-migrants-lampedusa-1dd8b2964586f719e99faf4aaeaaf205"
+    "https://apnews.com/article/pope-july-4-immigration-migrants-lampedusa-1dd8b2964586f719e99faf4aaeaaf205",
+    "https://apnews.com/article/america-250-weekend-heat-united-states-1eeaf21e91ed583595611251649db93e"
   ],
-  "last_scrape": "2026-07-04T14:23:48Z",
+  "last_scrape": "2026-07-04T15:42:08Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
