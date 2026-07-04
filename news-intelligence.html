@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="News Intelligence Dashboard — sentiment analysis of AP News coverage across 12 categories.">
+    <meta name="robots" content="noindex">
+    <title>News Intelligence — aaronrdavis.news</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #1a1a2e;
+            --bg-card: #16213e;
+            --accent: #0f3460;
+            --highlight: #e94560;
+            --text: #eaeaea;
+            --text-muted: #a0a0a0;
+            --terminal-green: #00ff88;
+            --terminal-blue: #00d4ff;
+            --positive: #00ff88;
+            --negative: #e94560;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        .back-link {
+            color: var(--terminal-blue);
+            text-decoration: none;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        .back-link:hover { text-decoration: underline; }
+        
+        /* Summary cards */
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .summary-card {
+            background: var(--bg-card);
+            border-radius: 10px;
+            padding: 1.25rem;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .summary-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+        .summary-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+        .summary-value.positive { color: var(--positive); }
+        .summary-value.negative { color: var(--negative); }
+        
+        /* Feed breakdown */
+        .section-title {
+            font-size: 1.1rem;
+            margin: 2rem 0 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 0.5rem;
+        }
+        .feed-row {
+            display: grid;
+            grid-template-columns: 150px 1fr 80px 80px 60px;
+            gap: 1rem;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.03);
+            font-size: 0.85rem;
+        }
+        .feed-name {
+            font-weight: 500;
+        }
+        .bar-container {
+            height: 24px;
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            background: rgba(255,255,255,0.05);
+        }
+        .bar-positive {
+            background: var(--positive);
+            transition: width 0.5s;
+        }
+        .bar-negative {
+            background: var(--negative);
+            transition: width 0.5s;
+        }
+        .bar-neutral {
+            background: rgba(255,255,255,0.15);
+        }
+        .feed-pct {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            text-align: right;
+        }
+        .feed-pct.pos { color: var(--positive); }
+        .feed-pct.neg { color: var(--negative); }
+        .feed-total {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-align: right;
+        }
+        
+        /* Daily trend chart */
+        .trend-chart {
+            background: var(--bg-card);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .trend-bars {
+            display: flex;
+            gap: 2px;
+            height: 120px;
+            align-items: flex-end;
+            margin-top: 1rem;
+        }
+        .trend-bar {
+            flex: 1;
+            min-width: 4px;
+            border-radius: 3px 3px 0 0;
+            transition: height 0.5s;
+            position: relative;
+        }
+        .trend-bar.positive { background: var(--positive); opacity: 0.8; }
+        .trend-bar.negative { background: var(--negative); opacity: 0.8; }
+        .trend-bar:hover { opacity: 1; }
+        .trend-bar:hover::after {
+            content: attr(data-date) ' P:' attr(data-pos) '% N:' attr(data-neg) '%';
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent);
+            color: var(--text);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-family: 'JetBrains Mono', monospace;
+            white-space: nowrap;
+            z-index: 10;
+        }
+        .trend-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.5rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            color: var(--text-muted);
+        }
+        
+        /* Latest stories */
+        .story-list { list-style: none; }
+        .story-item {
+            display: grid;
+            grid-template-columns: 60px 1fr;
+            gap: 1rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.03);
+        }
+        .story-sentiment {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            text-align: center;
+            padding: 4px;
+            border-radius: 4px;
+            height: fit-content;
+        }
+        .story-sentiment.positive { background: rgba(0,255,136,0.15); color: var(--positive); }
+        .story-sentiment.negative { background: rgba(233,69,96,0.15); color: var(--negative); }
+        .story-title {
+            font-size: 0.85rem;
+            color: var(--text);
+        }
+        .story-title a { color: var(--text); text-decoration: none; }
+        .story-title a:hover { color: var(--terminal-blue); }
+        .story-meta {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+        
+        /* Highlights */
+        .highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .highlight-card {
+            background: var(--bg-card);
+            border-radius: 10px;
+            padding: 1.25rem;
+            border-left: 3px solid;
+        }
+        .highlight-card.positive { border-color: var(--positive); }
+        .highlight-card.negative { border-color: var(--negative); }
+        .highlight-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+        .highlight-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.1rem;
+        }
+        .highlight-pct {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+        }
+        .highlight-pct.pos { color: var(--positive); }
+        .highlight-pct.neg { color: var(--negative); }
+        
+        .loading { color: var(--text-muted); text-align: center; padding: 2rem; }
+        .error-msg { color: var(--negative); text-align: center; padding: 2rem; }
+        .refresh-btn {
+            background: var(--accent);
+            color: var(--text);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+        }
+        .refresh-btn:hover { background: var(--highlight); }
+        .last-updated {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .feed-row { grid-template-columns: 100px 1fr 50px; }
+            .feed-pct.neg { display: none; }
+            .highlights { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">← Back to aaronrdavis.news</a>
+    <h1>📊 News Intelligence</h1>
+    <p class="subtitle">Sentiment analysis of AP News coverage across 12 categories — powered by Cloudflare Workers AI (DistilBERT SST-2). AI for signals, not for sentences.</p>
+    <div class="last-updated" id="last-updated">Loading...</div>
+    <button class="refresh-btn" onclick="loadData()">↻ Refresh</button>
+
+    <div id="content">
+        <div class="loading">Loading sentiment data...</div>
+    </div>
+
+    <script>
+        async function loadData() {
+            const content = document.getElementById('content');
+            content.innerHTML = '<div class="loading">Loading sentiment data...</div>';
+            
+            try {
+                const res = await fetch('/api/news-intelligence?days=30');
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                const data = await res.json();
+                
+                document.getElementById('last-updated').textContent = 
+                    `Last analyzed: ${data.queriedAt} | Stories analyzed: ${data.totalStoriesAnalyzed}`;
+                
+                let html = '';
+                
+                // Summary cards
+                const totalPos = data.feedSummaries.reduce((s, f) => s + f.positive, 0);
+                const totalNeg = data.feedSummaries.reduce((s, f) => s + f.negative, 0);
+                const totalStories = data.totalStoriesAnalyzed;
+                const posPct = totalStories > 0 ? Math.round(totalPos / totalStories * 100) : 0;
+                const negPct = totalStories > 0 ? Math.round(totalNeg / totalStories * 100) : 0;
+                
+                html += `<div class="summary-grid">
+                    <div class="summary-card">
+                        <div class="summary-label">Stories Analyzed</div>
+                        <div class="summary-value">${totalStories}</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-label">Positive Coverage</div>
+                        <div class="summary-value positive">${posPct}%</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-label">Negative Coverage</div>
+                        <div class="summary-value negative">${negPct}%</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-label">Days of Data</div>
+                        <div class="summary-value">${data.daysWithData}</div>
+                    </div>
+                </div>`;
+                
+                // Highlights
+                if (data.highlights.mostPositiveDay || data.highlights.mostNegativeDay) {
+                    html += '<div class="highlights">';
+                    if (data.highlights.mostPositiveDay) {
+                        const h = data.highlights.mostPositiveDay;
+                        html += `<div class="highlight-card positive">
+                            <div class="highlight-label">Most Positive Day</div>
+                            <div class="highlight-date">${h.date}</div>
+                            <div class="highlight-pct pos">${Math.round(h.posPct * 100)}% positive (${h.total} stories)</div>
+                        </div>`;
+                    }
+                    if (data.highlights.mostNegativeDay) {
+                        const h = data.highlights.mostNegativeDay;
+                        html += `<div class="highlight-card negative">
+                            <div class="highlight-label">Most Negative Day</div>
+                            <div class="highlight-date">${h.date}</div>
+                            <div class="highlight-pct neg">${Math.round(h.negPct * 100)}% negative (${h.total} stories)</div>
+                        </div>`;
+                    }
+                    html += '</div>';
+                }
+                
+                // Feed breakdown
+                if (data.feedSummaries.length > 0) {
+                    html += '<div class="section-title">Sentiment by Category</div>';
+                    for (const feed of data.feedSummaries) {
+                        const posW = feed.positivePct;
+                        const negW = feed.negativePct;
+                        const neuW = 100 - posW - negW;
+                        html += `<div class="feed-row">
+                            <div class="feed-name">${feed.name}</div>
+                            <div class="bar-container">
+                                <div class="bar-positive" style="width:${posW}%"></div>
+                                <div class="bar-neutral" style="width:${neuW}%"></div>
+                                <div class="bar-negative" style="width:${negW}%"></div>
+                            </div>
+                            <div class="feed-pct pos">${posW}%</div>
+                            <div class="feed-pct neg">${negW}%</div>
+                            <div class="feed-total">${feed.total}</div>
+                        </div>`;
+                    }
+                }
+                
+                // Daily trend
+                if (data.dailyData.length > 0) {
+                    html += '<div class="section-title">Daily Sentiment Trend</div>';
+                    html += '<div class="trend-chart"><div class="trend-bars">';
+                    for (const day of data.dailyData) {
+                        let dayPos = 0, dayNeg = 0, dayTotal = 0;
+                        for (const fid in day.feeds) {
+                            dayPos += day.feeds[fid].positive;
+                            dayNeg += day.feeds[fid].negative;
+                            dayTotal += day.feeds[fid].total;
+                        }
+                        if (dayTotal === 0) continue;
+                        const posPct = Math.round(dayPos / dayTotal * 100);
+                        const negPct = Math.round(dayNeg / dayTotal * 100);
+                        const dominant = posPct > negPct ? 'positive' : 'negative';
+                        const height = Math.max(posPct, negPct);
+                        html += `<div class="trend-bar ${dominant}" 
+                            style="height:${height}%"
+                            data-date="${day.date}"
+                            data-pos="${posPct}"
+                            data-neg="${negPct}"></div>`;
+                    }
+                    html += '</div>';
+                    if (data.dailyData.length > 0) {
+                        html += `<div class="trend-labels">
+                            <span>${data.dailyData[0].date}</span>
+                            <span>${data.dailyData[data.dailyData.length-1].date}</span>
+                        </div>`;
+                    }
+                    html += '</div>';
+                }
+                
+                // Latest stories
+                if (data.latestStories.length > 0) {
+                    html += '<div class="section-title">Latest Stories with Sentiment</div>';
+                    html += '<ul class="story-list">';
+                    for (const story of data.latestStories) {
+                        const sentClass = story.sentiment === 'positive' ? 'positive' : 'negative';
+                        const emoji = story.sentiment === 'positive' ? '🟢' : '🔴';
+                        const date = story.pubDate ? story.pubDate.substring(5, 16) : '';
+                        html += `<li class="story-item">
+                            <div class="story-sentiment ${sentClass}">${emoji}</div>
+                            <div>
+                                <div class="story-title"><a href="${story.link}" target="_blank">${story.title}</a></div>
+                                <div class="story-meta">${story.feed} · ${date} · P:${(story.positive*100).toFixed(0)}% N:${(story.negative*100).toFixed(0)}%</div>
+                            </div>
+                        </li>`;
+                    }
+                    html += '</ul>';
+                }
+                
+                if (totalStories === 0) {
+                    html += '<div class="loading">No sentiment data yet. Run <code>GET /api/analyze-feed?all=true</code> to start collecting.</div>';
+                }
+                
+                content.innerHTML = html;
+            } catch (err) {
+                content.innerHTML = `<div class="error-msg">Failed to load: ${err.message}</div>`;
+                console.error(err);
+            }
+        }
+        
+        loadData();
+    </script>
+</body>
+</html>

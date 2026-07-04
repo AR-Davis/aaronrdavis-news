@@ -1,0 +1,21 @@
+name: Analyze News Feed Sentiment
+
+on:
+  schedule:
+    # Run every hour at :10
+    - cron: '10 * * * *'
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger feed analysis
+        run: |
+          echo "Triggering sentiment analysis for all feeds..."
+          RESPONSE=$(curl -sS --max-time 300 "https://aaronrdavis.news/api/analyze-feed?all=true")
+          echo "Response: $RESPONSE"
+          
+          # Check if it succeeded
+          echo "$RESPONSE" | jq -r '.results[] | "\(.feed): analyzed=\(.analyzed) pos=\(.positive) neg=\(.negative)"' 2>/dev/null || echo "Parse error or partial failure"
