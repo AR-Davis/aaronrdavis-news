@@ -293,8 +293,9 @@
     "https://apnews.com/article/pope-july-4-immigration-migrants-lampedusa-1dd8b2964586f719e99faf4aaeaaf205",
     "https://apnews.com/article/america-250-weekend-heat-united-states-1eeaf21e91ed583595611251649db93e",
     "https://apnews.com/article/nathans-famous-hot-dog-contest-chestnut-sudo-840ee635bac33d0bd88cd9b4a564c4db",
-    "https://apnews.com/article/drowning-children-stew-leonards-6e627bdbfc58fffbc5ac7b4e4a8978ef"
+    "https://apnews.com/article/drowning-children-stew-leonards-6e627bdbfc58fffbc5ac7b4e4a8978ef",
+    "https://apnews.com/article/mexico-england-azteca-stadium-world-cup-6ca0a31a933156e1985cdaaab8449bc1"
   ],
-  "last_scrape": "2026-07-04T17:47:49Z",
+  "last_scrape": "2026-07-04T18:46:08Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
