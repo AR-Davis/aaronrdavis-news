@@ -286,8 +286,9 @@
     "https://apnews.com/article/new-york-city-beach-shark-attack-b5266237e989e03b5f8d5eac3f564ecc",
     "https://apnews.com/article/philadelphia-slavery-exhibit-trump-washington-465cf8d6a81d00dd82242e7a2366bb65",
     "https://apnews.com/article/daniel-naroditsky-chess-kramnik-suspended-31ddc1be97e00504d517f864f2732439",
-    "https://apnews.com/article/guinea-autism-africa-health-ffb21412e57dd06485d5ed59e94dd9ca"
+    "https://apnews.com/article/guinea-autism-africa-health-ffb21412e57dd06485d5ed59e94dd9ca",
+    "https://apnews.com/article/germany-afd-convention-far-right-protests-elections-5841f5e40a52bee3a56798807fda83fe"
   ],
-  "last_scrape": "2026-07-04T07:53:30Z",
+  "last_scrape": "2026-07-04T10:09:34Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
