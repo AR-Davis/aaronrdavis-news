@@ -67,19 +67,42 @@ export async function onRequest(context) {
             text: text
         });
 
-        // Parse result — CF returns { response: [{ label: 'POSITIVE', score: 0.99 }, ...] }
+        // Debug: log raw result structure
+        console.log('AI result:', JSON.stringify(result));
+
+        // Parse result — CF Workers AI returns various formats depending on model
         let positive = 0, negative = 0;
-        if (result && result.response) {
-            // Some models return an array of label/score objects
-            const scores = Array.isArray(result.response) ? result.response : [result.response];
-            for (const s of scores) {
-                if (s.label === 'POSITIVE') positive = s.score;
-                if (s.label === 'NEGATIVE') negative = s.score;
+        
+        if (result) {
+            // Format 1: { response: [{ label: 'POSITIVE', score: 0.99 }, ...] }
+            if (result.response && Array.isArray(result.response)) {
+                for (const s of result.response) {
+                    if (s.label === 'POSITIVE') positive = s.score;
+                    if (s.label === 'NEGATIVE') negative = s.score;
+                }
             }
-        } else if (result && result.label) {
-            // Some models return a single label/score
-            if (result.label === 'POSITIVE') positive = result.score;
-            if (result.label === 'NEGATIVE') negative = result.score;
+            // Format 2: { response: { label: 'POSITIVE', score: 0.99 } }
+            else if (result.response && result.response.label) {
+                if (result.response.label === 'POSITIVE') positive = result.response.score;
+                if (result.response.label === 'NEGATIVE') negative = result.response.score;
+            }
+            // Format 3: { label: 'POSITIVE', score: 0.99 }
+            else if (result.label) {
+                if (result.label === 'POSITIVE') positive = result.score;
+                if (result.label === 'NEGATIVE') negative = result.score;
+            }
+            // Format 4: { name: 'POSITIVE', score: 0.99 } (some CF models use 'name')
+            else if (result.name) {
+                if (result.name === 'POSITIVE') positive = result.score;
+                if (result.name === 'NEGATIVE') negative = result.score;
+            }
+            // Format 5: raw array [{ label, score }, ...]
+            else if (Array.isArray(result)) {
+                for (const s of result) {
+                    if (s.label === 'POSITIVE') positive = s.score;
+                    if (s.label === 'NEGATIVE') negative = s.score;
+                }
+            }
         }
 
         // Normalize — DistilBERT is binary (positive/negative), no neutral
