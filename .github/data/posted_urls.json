@@ -288,8 +288,9 @@
     "https://apnews.com/article/daniel-naroditsky-chess-kramnik-suspended-31ddc1be97e00504d517f864f2732439",
     "https://apnews.com/article/guinea-autism-africa-health-ffb21412e57dd06485d5ed59e94dd9ca",
     "https://apnews.com/article/germany-afd-convention-far-right-protests-elections-5841f5e40a52bee3a56798807fda83fe",
-    "https://apnews.com/article/lake-geneva-storm-capsized-boat-c940ab8fecffb6837ae21096602d8100"
+    "https://apnews.com/article/lake-geneva-storm-capsized-boat-c940ab8fecffb6837ae21096602d8100",
+    "https://apnews.com/article/movies-best-of-year-so-far-2107aefcf3cb8863a64f6d4752b7da4e"
   ],
-  "last_scrape": "2026-07-04T11:46:26Z",
+  "last_scrape": "2026-07-04T12:50:16Z",
   "note": "Tracks AP story URLs already posted to Bluesky by the GitHub Actions digest."
 }
