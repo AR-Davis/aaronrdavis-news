@@ -44,16 +44,39 @@ export async function onRequest(context) {
           let label = 'neutral';
           let posScore = 0, negScore = 0;
 
+          // Parse all possible CF Workers AI result formats
           if (aiResult) {
+            // Format: { response: [{ label, score }, ...] }
             if (aiResult.response && Array.isArray(aiResult.response)) {
               for (const s of aiResult.response) {
                 if (s.label === 'POSITIVE') posScore = s.score;
                 if (s.label === 'NEGATIVE') negScore = s.score;
               }
-            } else if (aiResult.label) {
+            }
+            // Format: { response: { label, score } }
+            else if (aiResult.response && aiResult.response.label) {
+              if (aiResult.response.label === 'POSITIVE') posScore = aiResult.response.score;
+              if (aiResult.response.label === 'NEGATIVE') negScore = aiResult.response.score;
+            }
+            // Format: { label, score }
+            else if (aiResult.label) {
               if (aiResult.label === 'POSITIVE') posScore = aiResult.score;
               if (aiResult.label === 'NEGATIVE') negScore = aiResult.score;
             }
+            // Format: { name, score }
+            else if (aiResult.name) {
+              if (aiResult.name === 'POSITIVE') posScore = aiResult.score;
+              if (aiResult.name === 'NEGATIVE') negScore = aiResult.score;
+            }
+            // Format: raw array [{ label, score }]
+            else if (Array.isArray(aiResult)) {
+              for (const s of aiResult) {
+                if (s.label === 'POSITIVE') posScore = s.score;
+                if (s.label === 'NEGATIVE') negScore = s.score;
+              }
+            }
+            // Debug: log the raw result
+            console.log(`AI result for "${text.substring(0, 40)}...":`, JSON.stringify(aiResult));
           }
 
           label = posScore > negScore ? 'positive' : 'negative';
