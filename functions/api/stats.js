@@ -12,7 +12,10 @@ export async function onRequest(context) {
         queried: new Date().toISOString(),
         daily: [],
         pages: {},
-        hourly: {}
+        hourly: {},
+        countries: {},
+        referrers: {},
+        totalVisits: 0
     };
     
     try {
@@ -23,10 +26,10 @@ export async function onRequest(context) {
             const dayStr = d.toISOString().split('T')[0];
             const count = parseInt(await env.ANALYTICS_KV.get(`visits:${site}:${dayStr}`) || '0');
             stats.daily.push({ date: dayStr, visits: count });
+            stats.totalVisits += count;
         }
         
         // Get page stats (list all keys starting with page:{site}:)
-        // KV list is limited, so we do a best-effort scan
         const pageKeys = await env.ANALYTICS_KV.list({ prefix: `page:${site}:` });
         for (const key of pageKeys.keys || []) {
             const pageName = key.name.replace(`page:${site}:`, '');
@@ -38,6 +41,32 @@ export async function onRequest(context) {
         for (let h = 0; h < 24; h++) {
             const count = parseInt(await env.ANALYTICS_KV.get(`hourly:${site}:${today}:${h}`) || '0');
             if (count > 0) stats.hourly[h] = count;
+        }
+        
+        // Get country data for the last N days
+        for (let i = 0; i < days; i++) {
+            const d = new Date();
+            d.setUTCDate(d.getUTCDate() - i);
+            const dayStr = d.toISOString().split('T')[0];
+            const countryKeys = await env.ANALYTICS_KV.list({ prefix: `country:${site}:${dayStr}:` });
+            for (const key of countryKeys.keys || []) {
+                const country = key.name.replace(`country:${site}:${dayStr}:`, '');
+                const count = parseInt(await env.ANALYTICS_KV.get(key.name) || '0');
+                stats.countries[country] = (stats.countries[country] || 0) + count;
+            }
+        }
+        
+        // Get referrer data for the last N days
+        for (let i = 0; i < days; i++) {
+            const d = new Date();
+            d.setUTCDate(d.getUTCDate() - i);
+            const dayStr = d.toISOString().split('T')[0];
+            const refKeys = await env.ANALYTICS_KV.list({ prefix: `ref:${site}:${dayStr}:` });
+            for (const key of refKeys.keys || []) {
+                const ref = key.name.replace(`ref:${site}:${dayStr}:`, '');
+                const count = parseInt(await env.ANALYTICS_KV.get(key.name) || '0');
+                stats.referrers[ref] = (stats.referrers[ref] || 0) + count;
+            }
         }
         
     } catch (e) {

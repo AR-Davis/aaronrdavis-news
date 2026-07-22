@@ -27,6 +27,15 @@ export async function onRequest(context) {
         const hourKey = `hourly:${site}:${today}:${hour}`;
         await env.ANALYTICS_KV.put(hourKey, String((parseInt(await env.ANALYTICS_KV.get(hourKey) || '0') + 1)));
         
+        // Country tracking (daily)
+        const countryKey = `country:${site}:${today}:${country}`;
+        await env.ANALYTICS_KV.put(countryKey, String((parseInt(await env.ANALYTICS_KV.get(countryKey) || '0') + 1)), { expirationTtl: 86400 * 30 });
+        
+        // Referrer tracking (daily)
+        const refDomain = referrer.replace(/^https?:\/\//, '').split('/')[0] || referrer;
+        const refKey = `ref:${site}:${today}:${refDomain}`;
+        await env.ANALYTICS_KV.put(refKey, String((parseInt(await env.ANALYTICS_KV.get(refKey) || '0') + 1)), { expirationTtl: 86400 * 30 });
+        
     } catch (e) {
         // Silently fail - don't break the page
     }
