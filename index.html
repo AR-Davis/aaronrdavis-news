@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aaron R. Davis — News & Civic Tools</title>
+  <style>
+    :root {
+      --green: #00a652;
+      --dark: #222;
+      --gray: #7d8185;
+      --light: #f5f5f5;
+      --red: #bd261d;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #fff;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    header {
+      border-bottom: 4px solid var(--green);
+      padding: 2rem 1rem;
+      max-width: var(--maxw);
+      margin: 0 auto;
+    }
+    header h1 {
+      margin: 0 0 0.25rem;
+      font-size: 1.9rem;
+      font-weight: 700;
+    }
+    header .tagline {
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      color: var(--gray);
+      margin: 0;
+    }
+    main {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 2.5rem;
+      border-bottom: 2px solid var(--green);
+      padding-bottom: 0.25rem;
+    }
+    p, li {
+      font-size: 1rem;
+    }
+    a { color: var(--green); }
+    a:hover { text-decoration: underline; }
+
+    /* Widget container */
+    .widget-stage {
+      display: flex;
+      justify-content: center;
+      padding: 1.5rem 0;
+    }
+    .widget {
+      width: 300px;
+      min-height: 250px;
+      background: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .widget-header {
+      background: var(--green);
+      color: #fff;
+      padding: 0.5rem;
+      margin: -1rem -1rem 0.75rem -1rem;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+    .widget label {
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      color: var(--gray);
+      margin-bottom: 0.25rem;
+    }
+    .widget input[type="text"] {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    .widget button {
+      width: 100%;
+      background: var(--green);
+      color: #fff;
+      border: none;
+      padding: 0.5rem;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .widget button:hover { background: #009c4d; }
+    .forecast {
+      flex-grow: 1;
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+    .forecast .period {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      color: var(--dark);
+      margin-top: 0.5rem;
+    }
+    .forecast .temp {
+      color: var(--red);
+      font-weight: bold;
+    }
+    .nws-link {
+      margin-top: 0.75rem;
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+    }
+    .nws-link a {
+      color: var(--green);
+      text-decoration: none;
+    }
+    .nws-link a:hover { text-decoration: underline; }
+    .loading, .error {
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      color: var(--gray);
+      margin-top: 0.5rem;
+    }
+    .error { color: var(--red); }
+
+    .note {
+      background: var(--light);
+      border-left: 4px solid var(--green);
+      padding: 1rem;
+      margin: 1.5rem 0;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    footer {
+      max-width: var(--maxw);
+      margin: 3rem auto 0;
+      padding: 1.5rem 1rem;
+      border-top: 1px solid #ddd;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      color: var(--gray);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aaron R. Davis</h1>
+    <p class="tagline">Investigative reporting, newsroom operations, and lightweight civic tools for New Hampshire.</p>
+  </header>
+
+  <main>
+    <p>
+      I’m a New Hampshire native returning from Texas to help rebuild local accountability journalism.
+      This site hosts working prototypes of small, fast tools for newsrooms and readers — starting with a live New Hampshire weather widget.
+    </p>
+
+    <h2>New Hampshire Weather</h2>
+    <p>
+      A 300×250, keyless widget that pulls the official National Weather Service forecast for any ZIP code
+      and links to the matching NWS local page. Built to drop into a WordPress sidebar or embed on any page.
+    </p>
+
+    <div class="widget-stage">
+      <div class="widget" id="weatherWidget">
+        <div class="widget-header">New Hampshire Weather</div>
+        <label for="zipInput">Enter your ZIP code</label>
+        <input type="text" id="zipInput" placeholder="e.g. 03301" maxlength="5">
+        <button onclick="getWeather()">Get Forecast</button>
+        <div class="forecast" id="forecastArea"></div>
+        <div class="nws-link" id="nwsLink"></div>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>No API key required.</strong> Uses Zippopotam.us for ZIP-to-coordinates and the
+      <a href="https://api.weather.gov/" target="_blank" rel="noopener">National Weather Service API</a>.
+      Drop the widget code into any WordPress Custom HTML block, newsletter embed, or static page.
+    </div>
+
+    <h2>Get in touch</h2>
+    <p>
+      I’m currently exploring newsroom operations, editing, and investigative projects in New Hampshire.
+      <br>
+      <a href="mailto:aaron.davis8@gmail.com">aaron.davis8@gmail.com</a>
+    </p>
+  </main>
+
+  <footer>
+    © 2026 Aaron R. Davis. Built with plain HTML, CSS, and JavaScript. Hosted on Cloudflare Pages.
+  </footer>
+
+  <script>
+    async function getWeather() {
+      const zip = document.getElementById('zipInput').value.trim();
+      const forecastArea = document.getElementById('forecastArea');
+      const nwsLink = document.getElementById('nwsLink');
+      forecastArea.innerHTML = '<div class="loading">Looking up location...</div>';
+      nwsLink.innerHTML = '';
+
+      if (!/^\d{5}$/.test(zip)) {
+        forecastArea.innerHTML = '<div class="error">Please enter a 5-digit ZIP code.</div>';
+        return;
+      }
+
+      try {
+        const geoRes = await fetch(`https://api.zippopotam.us/us/${zip}`);
+        if (!geoRes.ok) throw new Error('ZIP not found');
+        const geoData = await geoRes.json();
+        const place = geoData.places[0];
+        const lat = parseFloat(place.latitude);
+        const lon = parseFloat(place.longitude);
+
+        const pointRes = await fetch(`https://api.weather.gov/points/${lat},${lon}`);
+        if (!pointRes.ok) throw new Error('NWS point lookup failed');
+        const pointData = await pointRes.json();
+        const forecastUrl = pointData.properties.forecast;
+        const locationName = `${pointData.properties.relativeLocation.properties.city}, ${pointData.properties.relativeLocation.properties.state}`;
+
+        const forecastRes = await fetch(forecastUrl);
+        if (!forecastRes.ok) throw new Error('Forecast unavailable');
+        const forecastData = await forecastRes.json();
+        const periods = forecastData.properties.periods.slice(0, 3);
+
+        let html = `<div style="font-family:Arial,sans-serif;font-weight:bold;color:#333;margin-bottom:0.5rem;">${locationName}</div>`;
+        periods.forEach(p => {
+          html += `
+            <div class="period">${p.name}</div>
+            <div>${p.shortForecast}, <span class="temp">${p.temperature}°${p.temperatureUnit}</span></div>
+            <div style="font-size:0.75rem;color:#666;">${p.windSpeed} ${p.windDirection}</div>
+          `;
+        });
+        forecastArea.innerHTML = html;
+
+        const nwsLocalUrl = pointData.properties.forecastOffice || `https://forecast.weather.gov/zipcity.php?inputstring=${zip}`;
+        nwsLink.innerHTML = `<a href="${nwsLocalUrl}" target="_blank" rel="noopener">Full forecast from National Weather Service →</a>`;
+
+      } catch (err) {
+        forecastArea.innerHTML = `<div class="error">Could not load forecast. <a href="https://forecast.weather.gov/zipcity.php?inputstring=${zip}" target="_blank" rel="noopener">Try NWS directly</a>.</div>`;
+      }
+    }
+
+    document.getElementById('zipInput').value = '03301';
+    getWeather();
+  </script>
+</body>
+</html>
