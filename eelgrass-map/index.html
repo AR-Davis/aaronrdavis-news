@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Great Bay Eelgrass Coverage by Year</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    #map { height: 85vh; width: 100%; }
+    #controls {
+      height: 15vh;
+      padding: 12px 20px;
+      background: #f8f9fa;
+      border-top: 1px solid #dee2e6;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #year-display {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #212529;
+      margin-bottom: 4px;
+    }
+    #stats {
+      font-size: 0.9rem;
+      color: #495057;
+      margin-bottom: 8px;
+      min-height: 1.2em;
+    }
+    #error {
+      font-size: 0.85rem;
+      color: #c00;
+      min-height: 1.2em;
+      margin-bottom: 4px;
+    }
+    #year-slider {
+      width: 100%;
+      max-width: 800px;
+    }
+    .slider-labels {
+      display: flex;
+      justify-content: space-between;
+      max-width: 800px;
+      font-size: 0.72rem;
+      color: #6c757d;
+      margin-top: 3px;
+    }
+    #loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 12px 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div id="map">
+    <div id="loading">Loading eelgrass data...</div>
+  </div>
+  <div id="controls">
+    <div id="year-display">Year: 2025</div>
+    <div id="stats"></div>
+    <div id="error"></div>
+    <input type="range" id="year-slider" min="0" max="17" value="17" step="1">
+    <div class="slider-labels" id="slider-labels"></div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const years = [2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2019, 2021, 2022, 2023, 2024, 2025];
+    const basePath = 'GIS_eelgrass_map/historical_geojson_wgs84/';
+    const summaryPath = 'GIS_eelgrass_map/eelgrass_yearly_summary.json';
+
+    const map = L.map('map').setView([43.075, -70.85], 12);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors',
+      maxZoom: 19
+    }).addTo(map);
+
+    const layers = {};
+    const slider = document.getElementById('year-slider');
+    const yearDisplay = document.getElementById('year-display');
+    const stats = document.getElementById('stats');
+    const errorEl = document.getElementById('error');
+    const labels = document.getElementById('slider-labels');
+    const loading = document.getElementById('loading');
+
+    slider.max = years.length - 1;
+    slider.value = years.length - 1;
+
+    const labelStep = Math.ceil(years.length / 8);
+    years.forEach((year, i) => {
+      if (i === 0 || i === years.length - 1 || i % labelStep === 0) {
+        const span = document.createElement('span');
+        span.textContent = year;
+        labels.appendChild(span);
+      }
+    });
+
+    let summaryData = {};
+    let currentLayer = null;
+    let allBounds = null;
+
+    async function loadData() {
+      try {
+        const resp = await fetch(summaryPath);
+        if (resp.ok) {
+          const data = await resp.json();
+          data.forEach(row => summaryData[row.year] = row);
+        } else {
+          console.warn('Summary fetch failed:', resp.status);
+        }
+      } catch (e) {
+        console.warn('Could not load summary:', e);
+      }
+
+      let loadedCount = 0;
+      let failedYears = [];
+
+      for (const year of years) {
+        try {
+          const resp = await fetch(`${basePath}eelgrass_${year}.geojson`);
+          if (!resp.ok) {
+            failedYears.push(`${year} (${resp.status})`);
+            continue;
+          }
+          const geojson = await resp.json();
+          const layer = L.geoJSON(geojson, {
+            style: {
+              color: '#1b5e20',
+              fillColor: '#2e7d32',
+              weight: 2,
+              opacity: 1.0,
+              fillOpacity: 0.65
+            },
+            onEachFeature: (feature, layer) => {
+              const props = feature.properties;
+              const acres = props.acres || props.Acres || 'N/A';
+              const label = props.label || props.LABEL || props.density || props.cover || '';
+              const name = props.name || props.Name || '';
+              const typ = props.type || props.Type || '';
+              layer.bindPopup(`<b>Year: ${year}</b><br>Area: ${acres} acres<br>Label: ${label}<br>Name: ${name}<br>Type: ${typ}`);
+            }
+          });
+          layers[year] = layer;
+          if (layer.getBounds().isValid()) {
+            const b = layer.getBounds();
+            if (!allBounds) {
+              allBounds = b;
+            } else {
+              allBounds.extend(b);
+            }
+          }
+          loadedCount++;
+        } catch (e) {
+          console.error(`Failed to load ${year}:`, e);
+          failedYears.push(`${year} (${e.message})`);
+        }
+      }
+
+      loading.style.display = 'none';
+
+      if (failedYears.length > 0) {
+        errorEl.textContent = `Failed to load: ${failedYears.join(', ')}`;
+      }
+
+      if (loadedCount === 0) {
+        errorEl.textContent = 'No eelgrass data loaded. Are you viewing this through a local web server? (File:// URLs may block fetch.)';
+        return;
+      }
+
+      if (allBounds && allBounds.isValid()) {
+        map.fitBounds(allBounds.pad(0.05));
+      }
+
+      showYear(years[years.length - 1]);
+    }
+
+    function showYear(year) {
+      if (currentLayer) {
+        map.removeLayer(currentLayer);
+        currentLayer = null;
+      }
+      if (layers[year]) {
+        currentLayer = layers[year];
+        currentLayer.addTo(map);
+      }
+      yearDisplay.textContent = `Year: ${year}`;
+
+      const info = summaryData[year];
+      if (info) {
+        let text = `Total eelgrass: ${info.total_acres.toLocaleString()} acres`;
+        if (info.great_bay_acres > 0) {
+          text += ` · Great Bay proper: ${info.great_bay_acres.toLocaleString()} acres`;
+        }
+        if (info.eelgrass_type1_acres > 0) {
+          text += ` · Eelgrass ≥10% cover: ${info.eelgrass_type1_acres.toLocaleString()} acres`;
+        }
+        text += ` · Polygons: ${info.polygons}`;
+        stats.textContent = text;
+      } else {
+        stats.textContent = 'Summary data not available';
+      }
+    }
+
+    slider.addEventListener('input', (e) => {
+      const idx = parseInt(e.target.value, 10);
+      showYear(years[idx]);
+    });
+
+    loadData();
+  </script>
+</body>
+</html>

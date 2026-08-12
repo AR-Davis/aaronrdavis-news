@@ -1,0 +1,146 @@
+[
+  {
+    "year": 2006,
+    "file": "Eelgrass2006.shp",
+    "total_acres": 1645.49,
+    "great_bay_acres": 0,
+    "eelgrass_type1_acres": 0,
+    "polygons": 150
+  },
+  {
+    "year": 2007,
+    "file": "Eelgrass2007.shp",
+    "total_acres": 1497.2,
+    "great_bay_acres": 0,
+    "eelgrass_type1_acres": 0,
+    "polygons": 148
+  },
+  {
+    "year": 2008,
+    "file": "Eelgrass2008.shp",
+    "total_acres": 1626.56,
+    "great_bay_acres": 0,
+    "eelgrass_type1_acres": 0,
+    "polygons": 129
+  },
+  {
+    "year": 2009,
+    "file": "Eelgrass2009.shp",
+    "total_acres": 1894.74,
+    "great_bay_acres": 0,
+    "eelgrass_type1_acres": 0,
+    "polygons": 143
+  },
+  {
+    "year": 2010,
+    "file": "Eelgrass2010.shp",
+    "total_acres": 1897.78,
+    "great_bay_acres": 0,
+    "eelgrass_type1_acres": 0,
+    "polygons": 146
+  },
+  {
+    "year": 2011,
+    "file": "Eelgrass2011.shp",
+    "total_acres": 1891.42,
+    "great_bay_acres": 0,
+    "eelgrass_type1_acres": 0,
+    "polygons": 175
+  },
+  {
+    "year": 2012,
+    "file": "eelgrass2012.shp",
+    "total_acres": 1817.93,
+    "great_bay_acres": 0,
+    "eelgrass_type1_acres": 0,
+    "polygons": 155
+  },
+  {
+    "year": 2013,
+    "file": "eelgrass2013.shp",
+    "total_acres": 1452.52,
+    "great_bay_acres": 0,
+    "eelgrass_type1_acres": 0,
+    "polygons": 144
+  },
+  {
+    "year": 2014,
+    "file": "eelgrass_2014.shp",
+    "total_acres": 1621.36,
+    "great_bay_acres": 0,
+    "eelgrass_type1_acres": 0,
+    "polygons": 151
+  },
+  {
+    "year": 2015,
+    "file": "eelgrass2015.shp",
+    "total_acres": 1535.34,
+    "great_bay_acres": 0,
+    "eelgrass_type1_acres": 0,
+    "polygons": 153
+  },
+  {
+    "year": 2016,
+    "file": "eelgrass2016.shp",
+    "total_acres": 1689.03,
+    "great_bay_acres": 1489.92,
+    "eelgrass_type1_acres": 0,
+    "polygons": 156
+  },
+  {
+    "year": 2017,
+    "file": "eelgrass2017.shp",
+    "total_acres": 1546.66,
+    "great_bay_acres": 1362.42,
+    "eelgrass_type1_acres": 0,
+    "polygons": 124
+  },
+  {
+    "year": 2019,
+    "file": "eelgrass2019.shp",
+    "total_acres": 1825.24,
+    "great_bay_acres": 1594.01,
+    "eelgrass_type1_acres": 1570.87,
+    "polygons": 149
+  },
+  {
+    "year": 2021,
+    "file": "eelgrass2021.shp",
+    "total_acres": 1827.83,
+    "great_bay_acres": 1516.64,
+    "eelgrass_type1_acres": 1566.47,
+    "polygons": 210
+  },
+  {
+    "year": 2022,
+    "file": "eelgrass2022.shp",
+    "total_acres": 1850.74,
+    "great_bay_acres": 1619.25,
+    "eelgrass_type1_acres": 1606.74,
+    "polygons": 189
+  },
+  {
+    "year": 2023,
+    "file": "eelgrass2023.shp",
+    "total_acres": 1159.21,
+    "great_bay_acres": 979.07,
+    "eelgrass_type1_acres": 1024.51,
+    "polygons": 119
+  },
+  {
+    "year": 2024,
+    "file": "eelgrass2024.shp",
+    "total_acres": 1223.98,
+    "great_bay_acres": 1061.06,
+    "eelgrass_type1_acres": 1063.34,
+    "polygons": 174
+  },
+  {
+    "year": 2025,
+    "file": "eelgrass_2025.shp",
+    "total_acres": 257.08,
+    "great_bay_acres": 57.42,
+    "eelgrass_type1_acres": 211.25,
+    "polygons": 209
+  }
+]
