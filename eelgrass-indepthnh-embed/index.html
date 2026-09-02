@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Great Bay Eelgrass Disappearance — InDepthNH</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    :root {
+      --navy: #1a2b4a;
+      --green: #2e7d32;
+      --green-dark: #1b5e20;
+      --red: #bd261d;
+      --gray: #6c757d;
+      --light: #f8f9fa;
+      --border: #dee2e6;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; height: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .embed-wrapper { height: 100%; display: flex; flex-direction: column; border: 1px solid var(--border); }
+    #map { flex: 1 1 auto; min-height: 300px; }
+    .controls {
+      flex: 0 0 auto;
+      padding: 12px 16px;
+      background: var(--light);
+      border-top: 1px solid var(--border);
+    }
+    .top-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+    .year-display {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--navy);
+    }
+    .stats {
+      font-size: 0.95rem;
+      color: var(--navy);
+    }
+    .stats .number { font-weight: 700; }
+    .stats .decline { color: var(--red); font-weight: 700; }
+    .slider-wrap { margin-top: 6px; }
+    #year-slider {
+      width: 100%;
+      cursor: pointer;
+    }
+    .slider-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.7rem;
+      color: var(--gray);
+      margin-top: 2px;
+    }
+    .note {
+      font-size: 0.75rem;
+      color: var(--gray);
+      margin-top: 8px;
+      line-height: 1.4;
+    }
+    #loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 10px 16px;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+      font-size: 0.9rem;
+    }
+    .error {
+      color: var(--red);
+      font-size: 0.85rem;
+      min-height: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <div class="embed-wrapper">
+    <div id="map">
+      <div id="loading">Loading eelgrass data…</div>
+    </div>
+    <div class="controls">
+      <div class="top-row">
+        <div class="year-display" id="year-display">2025</div>
+        <div class="stats" id="stats"></div>
+      </div>
+      <div class="error" id="error"></div>
+      <div class="slider-wrap">
+        <input type="range" id="year-slider" min="0" max="0" value="0" step="1">
+        <div class="slider-labels" id="slider-labels"></div>
+      </div>
+      <div class="note">
+        Drag the slider to see eelgrass coverage change. Data: PREP/UNH annual eelgrass surveys.
+        Dense eelgrass (≥10% cover) shown. No surveys in 2018 or 2020.
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    // Absolute paths to data already published at /eelgrass-map/
+    const basePath = '/eelgrass-map/GIS_eelgrass_map/historical_geojson_wgs84/';
+    const summaryPath = '/eelgrass-map/GIS_eelgrass_map/eelgrass_yearly_summary.json';
+
+    // Years for which we have usable dense-cover data for the story headline
+    const years = [2016, 2017, 2019, 2021, 2022, 2023, 2024, 2025];
+
+    const map = L.map('map', { scrollWheelZoom: false }).setView([43.075, -70.85], 11);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors',
+      maxZoom: 17
+    }).addTo(map);
+
+    const slider = document.getElementById('year-slider');
+    const yearDisplay = document.getElementById('year-display');
+    const stats = document.getElementById('stats');
+    const errorEl = document.getElementById('error');
+    const labels = document.getElementById('slider-labels');
+    const loading = document.getElementById('loading');
+
+    slider.max = years.length - 1;
+    slider.value = years.length - 1;
+
+    const layers = {};
+    let summaryData = {};
+    let currentLayer = null;
+    let allBounds = null;
+
+    function formatAcres(n) {
+      return n ? Math.round(n).toLocaleString() : '—';
+    }
+
+    function renderStats(year) {
+      const info = summaryData[year];
+      if (!info) {
+        stats.textContent = '';
+        return;
+      }
+      // eelgrass_type1_acres matches the story's headline "total eelgrass" number
+      const total = info.eelgrass_type1_acres || info.total_acres || 0;
+      const gb = info.great_bay_acres || 0;
+      const pct = year === 2025 && summaryData[2024]
+        ? Math.round(((summaryData[2024].eelgrass_type1_acres - total) / summaryData[2024].eelgrass_type1_acres) * 100)
+        : null;
+      let html = `<span class="number">${formatAcres(total)} acres</span>`;
+      if (gb > 0) html += ` · Great Bay: ${formatAcres(gb)} acres`;
+      if (pct && pct > 0) html += ` <span class="decline">(−${pct}% since 2024)</span>`;
+      stats.innerHTML = html;
+    }
+
+    function showYear(year) {
+      if (currentLayer) {
+        map.removeLayer(currentLayer);
+        currentLayer = null;
+      }
+      if (layers[year]) {
+        currentLayer = layers[year];
+        currentLayer.addTo(map);
+      }
+      yearDisplay.textContent = year;
+      renderStats(year);
+    }
+
+    async function loadData() {
+      try {
+        const resp = await fetch(summaryPath);
+        if (resp.ok) {
+          const data = await resp.json();
+          data.forEach(row => summaryData[row.year] = row);
+        } else {
+          console.warn('Summary fetch failed:', resp.status);
+        }
+      } catch (e) {
+        console.warn('Could not load summary:', e);
+      }
+
+      let loadedCount = 0;
+      let failedYears = [];
+
+      for (const year of years) {
+        try {
+          const resp = await fetch(`${basePath}eelgrass_${year}.geojson`);
+          if (!resp.ok) {
+            failedYears.push(`${year} (${resp.status})`);
+            continue;
+          }
+          const geojson = await resp.json();
+          const layer = L.geoJSON(geojson, {
+            style: {
+              color: varCSS('--green-dark'),
+              fillColor: varCSS('--green'),
+              weight: 1.5,
+              opacity: 0.9,
+              fillOpacity: 0.6
+            },
+            onEachFeature: (feature, layer) => {
+              const props = feature.properties;
+              const acres = props.acres || props.Acres || 'N/A';
+              layer.bindPopup(`<b>${year}</b><br>Area: ${acres} acres`);
+            }
+          });
+          layers[year] = layer;
+          if (layer.getBounds().isValid()) {
+            const b = layer.getBounds();
+            if (!allBounds) allBounds = b;
+            else allBounds.extend(b);
+          }
+          loadedCount++;
+        } catch (e) {
+          console.error(`Failed to load ${year}:`, e);
+          failedYears.push(`${year} (${e.message})`);
+        }
+      }
+
+      loading.style.display = 'none';
+
+      if (failedYears.length > 0) {
+        errorEl.textContent = `Failed to load: ${failedYears.join(', ')}`;
+      }
+
+      if (loadedCount === 0) {
+        errorEl.textContent = 'No eelgrass data loaded.';
+        return;
+      }
+
+      // Build slider labels
+      const step = Math.max(1, Math.floor(years.length / 6));
+      years.forEach((year, i) => {
+        if (i === 0 || i === years.length - 1 || i % step === 0) {
+          const span = document.createElement('span');
+          span.textContent = year;
+          labels.appendChild(span);
+        }
+      });
+
+      if (allBounds && allBounds.isValid()) {
+        map.fitBounds(allBounds.pad(0.05));
+      }
+
+      showYear(years[years.length - 1]);
+    }
+
+    function varCSS(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim() || '#2e7d32';
+    }
+
+    slider.addEventListener('input', (e) => {
+      const idx = parseInt(e.target.value, 10);
+      showYear(years[idx]);
+    });
+
+    loadData();
+  </script>
+</body>
+</html>
