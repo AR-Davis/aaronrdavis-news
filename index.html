@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aaron R. Davis — Resume</title>
+  <title>Aaron R. Davis — News &amp; Civic Tools</title>
   <style>
     :root {
       --green: #00a652;
@@ -11,7 +11,7 @@
       --gray: #7d8185;
       --light: #f5f5f5;
       --red: #bd261d;
-      --maxw: 760px;
+      --maxw: 720px;
     }
     * { box-sizing: border-box; }
     body {
@@ -19,11 +19,8 @@
       font-family: Georgia, "Times New Roman", serif;
       background: #fff;
       color: var(--dark);
-      line-height: 1.55;
+      line-height: 1.6;
     }
-    a { color: var(--green); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
     .owner-bar {
       background: var(--green);
       color: #fff;
@@ -37,125 +34,41 @@
       font-weight: 600;
       text-decoration: underline;
     }
-
     header {
       border-bottom: 4px solid var(--green);
-      padding: 2.5rem 1rem 1.5rem;
+      padding: 2rem 1rem;
       max-width: var(--maxw);
       margin: 0 auto;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.2rem;
+      margin: 0 0 0.25rem;
+      font-size: 1.9rem;
       font-weight: 700;
     }
-    header .contact {
+    header .tagline {
       font-family: Arial, sans-serif;
-      font-size: 0.95rem;
+      font-size: 1rem;
       color: var(--gray);
-      margin-top: 0.5rem;
-      line-height: 1.6;
+      margin: 0;
     }
-
     main {
       max-width: var(--maxw);
       margin: 0 auto;
-      padding: 1.5rem 1rem 3rem;
+      padding: 2rem 1rem;
     }
-
     h2 {
-      font-size: 1.25rem;
-      margin-top: 2rem;
+      font-size: 1.4rem;
+      margin-top: 2.5rem;
       border-bottom: 2px solid var(--green);
       padding-bottom: 0.25rem;
     }
-    h3 {
-      font-size: 1.05rem;
-      margin: 1.25rem 0 0.25rem;
-      font-weight: 700;
-    }
-    .role-meta {
-      font-family: Arial, sans-serif;
-      font-size: 0.9rem;
-      color: var(--gray);
-      margin: 0 0 0.5rem;
-    }
-    ul {
-      margin: 0.4rem 0 1rem;
-      padding-left: 1.25rem;
-    }
-    li {
-      margin-bottom: 0.4rem;
-      font-size: 0.98rem;
-    }
-    p {
-      font-size: 0.98rem;
-      margin: 0.5rem 0;
-    }
-
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
-      margin-top: 0.75rem;
-    }
-    .skill-group {
-      font-family: Arial, sans-serif;
-      font-size: 0.88rem;
-      background: var(--light);
-      padding: 0.75rem;
-      border-radius: 4px;
-    }
-    .skill-group strong {
-      display: block;
-      color: var(--dark);
-      margin-bottom: 0.25rem;
-      font-size: 0.9rem;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    .project-card {
-      border: 1px solid #ddd;
-      padding: 1rem;
-      border-radius: 4px;
-      background: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-      transition: box-shadow 0.2s ease, transform 0.2s ease;
-      text-decoration: none;
-      color: inherit;
-    }
-    .project-card:hover {
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transform: translateY(-2px);
-      text-decoration: none;
-    }
-    .project-card h3 {
-      margin: 0 0 0.5rem;
-      color: var(--green);
-      font-family: Arial, sans-serif;
+    p, li {
       font-size: 1rem;
     }
-    .project-card p {
-      margin: 0;
-      font-size: 0.88rem;
-      color: #444;
-    }
+    a { color: var(--green); }
+    a:hover { text-decoration: underline; }
 
-    .note {
-      background: var(--light);
-      border-left: 4px solid var(--green);
-      padding: 1rem;
-      margin: 1.5rem 0;
-      font-family: Arial, sans-serif;
-      font-size: 0.9rem;
-      color: #444;
-    }
-
+    /* Widget container */
     .widget-stage {
       display: flex;
       justify-content: center;
@@ -225,6 +138,11 @@
       font-family: Arial, sans-serif;
       font-size: 0.8rem;
     }
+    .nws-link a {
+      color: var(--green);
+      text-decoration: none;
+    }
+    .nws-link a:hover { text-decoration: underline; }
     .loading, .error {
       font-family: Arial, sans-serif;
       font-size: 0.8rem;
@@ -232,6 +150,16 @@
       margin-top: 0.5rem;
     }
     .error { color: var(--red); }
+
+    .description {
+      background: var(--light);
+      border-left: 4px solid var(--green);
+      padding: 1rem;
+      margin: 1.5rem 0;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      color: #444;
+    }
 
     footer {
       max-width: var(--maxw);
@@ -241,13 +169,6 @@
       font-family: Arial, sans-serif;
       font-size: 0.85rem;
       color: var(--gray);
-      text-align: center;
-    }
-
-    @media print {
-      .owner-bar, .projects, .widget-stage, footer, .note { display: none; }
-      body { font-size: 11pt; }
-      a { color: var(--dark); text-decoration: none; }
     }
   </style>
 </head>
@@ -258,99 +179,31 @@
 
   <header>
     <h1>Aaron R. Davis</h1>
-    <div class="contact">
-      New Hampshire / Texas · 603-793-2654 · <a href="mailto:aaron.davis.work@proton.me">aaron.davis.work@proton.me</a><br>
-      <a href="https://linkedin.com/in/aaronrobertdavis" target="_blank" rel="noopener">linkedin.com/in/aaronrobertdavis</a> ·
-      <a href="https://aaronrdavis.news">aaronrdavis.news</a>
-    </div>
+    <p class="tagline">Investigative reporting, newsroom operations, and lightweight civic tools for New Hampshire.</p>
   </header>
 
   <main>
-    <h2>Summary</h2>
+    <div class="description">
+      <strong>What this is:</strong> A personal data-journalism workspace — interactive stories, civic tools, and investigative notebooks built from public data and documented methodology. Nothing is paywalled or gated.
+    </div>
+
     <p>
-      Veteran journalist with 13+ years of experience driving editorial operations, SEO strategy, and data-informed content development.
-      Proven track record managing editorial workflows on breaking deadlines, leading distributed editorial teams, and translating complex data into usable plans.
-      Currently focused on rebuilding local accountability journalism in New Hampshire through data-driven investigations and newsroom tooling.
+      I’m a New Hampshire native returning from Texas to help rebuild local accountability journalism.
+      This site hosts working prototypes of small, fast tools for newsrooms and readers — starting with a live New Hampshire weather widget and an interactive eelgrass map for InDepthNH.
     </p>
 
-    <h2>Experience</h2>
-
-    <h3>Independent Securities Consultant</h3>
-    <div class="role-meta">Remote · 2026–Present</div>
+    <h2>Projects</h2>
     <ul>
-      <li>Used journalistic sourcing and OSINT tools to locate, contact, and interview confidential witnesses for plaintiff law firms in class-action securities litigation (ad tech, biotech, high-tech manufacturing).</li>
-      <li>Built systematic tracking workflows for litigation deadlines and discovery requirements.</li>
+      <li><strong><a href="./nhweather">New Hampshire Weather Widget</a></strong> — A 300×250, keyless embeddable forecast for any ZIP code.</li>
+      <li><strong><a href="./eelgrass-indepthnh-embed/">Great Bay Eelgrass Disappearance Slider</a></strong> — Before/after slider showing the collapse of eelgrass beds in the Great Bay estuary.</li>
     </ul>
 
-    <h3>Assignment Editor — Investing Vertical, U.S. News &amp; World Report</h3>
-    <div class="role-meta">Remote · 2021–2025</div>
-    <ul>
-      <li>Managed editorial operations for the Investing vertical, leading a team of 6 freelance writers producing 40–50 articles monthly.</li>
-      <li>Served as SEO lead, building GA4 dashboards and data visualizations that informed editorial strategy.</li>
-      <li>Integrated Airtable, GA4, and SEMrush into cross-platform productivity workflows.</li>
-    </ul>
+    <h2>New Hampshire Weather</h2>
+    <p>
+      A 300×250, keyless widget that pulls the official National Weather Service forecast for any ZIP code
+      and links to the matching NWS local page. Built to drop into a WordPress sidebar or embed on any page.
+    </p>
 
-    <h3>State Tax Reporter, Tax Notes (Tax Analysts)</h3>
-    <div class="role-meta">Washington, D.C. · 2017–2020</div>
-    <ul>
-      <li>Covered tax policy, regulations, and litigation in 25 states and D.C.</li>
-      <li>Developed a public database tracking COVID-19 state tax regulations across 50+ jurisdictions.</li>
-      <li>Initiated and assisted with successful FOIA litigation against D.C. (2020 CA 001999 B), securing release of private tax letter rulings.</li>
-    </ul>
-
-    <h3>Reporter, East Bay Times (Bay Area News Group)</h3>
-    <div class="role-meta">Oakland, CA · 2016–2018</div>
-    <ul>
-      <li>Member of the Pulitzer Prize-winning breaking-news team (2017) for Ghost Ship fire coverage.</li>
-      <li>Broke exclusives on local law enforcement collaboration with federal immigration enforcement and covered the Wine Country fires on the ground.</li>
-    </ul>
-
-    <h3>Earlier Roles</h3>
-    <p class="role-meta">Reporter, Amarillo Globe-News (Morris Communications) · Exeter News-Letter (NH) · Queens Times Ledger (NY)</p>
-
-    <h2>Recognition</h2>
-    <ul>
-      <li><strong>Pulitzer Prize</strong> — Breaking News Reporting, 2017 (East Bay Times, Ghost Ship fire coverage)</li>
-    </ul>
-
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="skill-group">
-        <strong>Analytics &amp; SEO</strong>
-        GA4, SEMrush, Datawrapper, Tableau, Canva
-      </div>
-      <div class="skill-group">
-        <strong>Content &amp; Workflow</strong>
-        WordPress, Airtable, Google Workspace, CMS platforms
-      </div>
-      <div class="skill-group">
-        <strong>Research &amp; Investigation</strong>
-        FOIA, public records, PACER, securities databases
-      </div>
-      <div class="skill-group">
-        <strong>Reporting &amp; Editing</strong>
-        Legislative/budget processes, interviewing, transcribing, team leadership
-      </div>
-    </div>
-
-    <h2>Selected Projects</h2>
-    <div class="projects">
-      <a class="project-card" href="./nhweather">
-        <h3>New Hampshire Weather Widget</h3>
-        <p>Embeddable 300×250 forecast widget using the National Weather Service API, no API key required.</p>
-      </a>
-      <a class="project-card" href="./eelgrass-indepthnh-embed/">
-        <h3>Great Bay Eelgrass Disappearance Slider</h3>
-        <p>Interactive before/after slider showing the collapse of eelgrass beds in the Great Bay estuary, built for InDepthNH.</p>
-      </a>
-      <a class="project-card" href="https://dashboard.aaronrdavis.news" target="_blank" rel="noopener">
-        <h3>Data Journalism Dashboard</h3>
-        <p>Public workspace with accountability trackers, FOIA logs, court monitors, and campaign-finance tools for New Hampshire reporting.</p>
-      </a>
-    </div>
-
-    <h2>Weather Demo</h2>
-    <p>A 300×250, keyless widget that pulls the official National Weather Service forecast for any ZIP code and links to the matching NWS local page.</p>
     <div class="widget-stage">
       <div class="widget" id="weatherWidget">
         <div class="widget-header">New Hampshire Weather</div>
@@ -365,14 +218,19 @@
     <div class="note">
       <strong>No API key required.</strong> Uses Zippopotam.us for ZIP-to-coordinates and the
       <a href="https://api.weather.gov/" target="_blank" rel="noopener">National Weather Service API</a>.
+      Drop the widget code into any WordPress Custom HTML block, newsletter embed, or static page.
     </div>
 
-    <h2>Education</h2>
-    <p><strong>Bachelor of Arts in English, Minor in Political Science</strong>, Connecticut College, New London, CT</p>
+    <h2>Get in touch</h2>
+    <p>
+      I’m currently exploring newsroom operations, editing, and investigative projects in New Hampshire.
+      <br>
+      <a href="mailto:aaron.davis8@gmail.com">aaron.davis8@gmail.com</a>
+    </p>
   </main>
 
   <footer>
-    © 2026 Aaron R. Davis. Resume + personal data-journalism projects. Hosted on Cloudflare Pages.
+    © 2026 Aaron R. Davis. Personal data-journalism workspace. Built with plain HTML, CSS, and JavaScript. Hosted on Cloudflare Pages.
   </footer>
 
   <script>
