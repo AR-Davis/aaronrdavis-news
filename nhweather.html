@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NH Weather Widget</title>
+  <style>
+    :root {
+      --green: #00a652;
+      --dark: #222;
+      --gray: #7d8185;
+      --red: #bd261d;
+      --yellow: #f4b400;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 1rem;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .widget {
+      width: 300px;
+      min-height: 280px;
+      background: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .widget-header {
+      background: var(--green);
+      color: #fff;
+      padding: 0.5rem;
+      margin: -1rem -1rem 0.75rem -1rem;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+    .widget label {
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      color: var(--gray);
+      margin-bottom: 0.25rem;
+    }
+    .widget input[type="text"] {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    .widget button {
+      width: 100%;
+      background: var(--green);
+      color: #fff;
+      border: none;
+      padding: 0.5rem;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .widget button:hover { background: #009c4d; }
+    .alerts {
+      margin-top: 0.75rem;
+    }
+    .alert {
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      padding: 0.5rem;
+      margin-bottom: 0.35rem;
+      border-radius: 2px;
+      line-height: 1.3;
+    }
+    .alert a {
+      color: inherit;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    .alert.extreme { background: #7c1b1b; color: #fff; }
+    .alert.severe { background: var(--red); color: #fff; }
+    .alert.warning { background: var(--yellow); color: #222; }
+    .alert.advisory { background: #e7f3ff; color: #004085; border: 1px solid #b8daff; }
+    .alert.watch { background: #fff3cd; color: #856404; border: 1px solid #ffeaa7; }
+    .no-alerts {
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      color: var(--gray);
+      margin-top: 0.5rem;
+    }
+    .forecast {
+      flex-grow: 1;
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+    .forecast .period {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      color: var(--dark);
+      margin-top: 0.5rem;
+    }
+    .forecast .temp {
+      color: var(--red);
+      font-weight: bold;
+    }
+    .nws-link {
+      margin-top: 0.75rem;
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+    }
+    .nws-link a {
+      color: var(--green);
+      text-decoration: none;
+    }
+    .nws-link a:hover { text-decoration: underline; }
+    .loading, .error {
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      color: var(--gray);
+      margin-top: 0.5rem;
+    }
+    .error { color: var(--red); }
+  </style>
+</head>
+<body>
+  <div class="widget" id="weatherWidget">
+    <div class="widget-header">New Hampshire Weather</div>
+    <label for="zipInput">Enter your ZIP code</label>
+    <input type="text" id="zipInput" placeholder="e.g. 03301" maxlength="5">
+    <button onclick="getWeather()">Get Forecast</button>
+    <div class="alerts" id="alertsArea"></div>
+    <div class="forecast" id="forecastArea"></div>
+    <div class="nws-link" id="nwsLink"></div>
+  </div>
+
+  <script>
+    function severityClass(event) {
+      // Map NWS event names to a CSS class
+      const e = event.toLowerCase();
+      if (e.includes('tornado') || e.includes('extreme')) return 'extreme';
+      if (e.includes('warning') && !e.includes('watch')) return 'warning';
+      if (e.includes('watch')) return 'watch';
+      return 'advisory';
+    }
+
+    async function getAlerts(lat, lon) {
+      const alertsArea = document.getElementById('alertsArea');
+      alertsArea.innerHTML = '<div class="loading">Checking alerts...</div>';
+      try {
+        const res = await fetch(`https://api.weather.gov/alerts/active?point=${lat},${lon}`);
+        if (!res.ok) throw new Error('Alerts unavailable');
+        const data = await res.json();
+        const alerts = data.features || [];
+        if (alerts.length === 0) {
+          alertsArea.innerHTML = '<div class="no-alerts">No active alerts for this area.</div>';
+          return;
+        }
+        let html = '';
+        alerts.slice(0, 2).forEach(a => {
+          const p = a.properties;
+          const cls = severityClass(p.event);
+          const until = new Date(p.expires).toLocaleString('en-US', {
+            weekday: 'short', hour: 'numeric', minute: '2-digit'
+          });
+          html += `<div class="alert ${cls}">
+            <strong>${p.event}</strong> until ${until}
+            <br><a href="${p.id || p.url || '#' }" target="_blank" rel="noopener">Details →</a>
+          </div>`;
+        });
+        if (alerts.length > 2) {
+          html += `<div class="no-alerts">+${alerts.length - 2} more alert(s)</div>`;
+        }
+        alertsArea.innerHTML = html;
+      } catch (err) {
+        alertsArea.innerHTML = '';
+      }
+    }
+
+    async function getWeather() {
+      const zip = document.getElementById('zipInput').value.trim();
+      const forecastArea = document.getElementById('forecastArea');
+      const nwsLink = document.getElementById('nwsLink');
+      const alertsArea = document.getElementById('alertsArea');
+      forecastArea.innerHTML = '<div class="loading">Looking up location...</div>';
+      nwsLink.innerHTML = '';
+      alertsArea.innerHTML = '';
+
+      if (!/^\d{5}$/.test(zip)) {
+        forecastArea.innerHTML = '<div class="error">Please enter a 5-digit ZIP code.</div>';
+        return;
+      }
+
+      try {
+        const geoRes = await fetch(`https://api.zippopotam.us/us/${zip}`);
+        if (!geoRes.ok) throw new Error('ZIP not found');
+        const geoData = await geoRes.json();
+        const place = geoData.places[0];
+        const lat = parseFloat(place.latitude);
+        const lon = parseFloat(place.longitude);
+
+        const pointRes = await fetch(`https://api.weather.gov/points/${lat},${lon}`);
+        if (!pointRes.ok) throw new Error('NWS point lookup failed');
+        const pointData = await pointRes.json();
+        const forecastUrl = pointData.properties.forecast;
+        const locationName = `${pointData.properties.relativeLocation.properties.city}, ${pointData.properties.relativeLocation.properties.state}`;
+
+        // Fetch forecast and alerts in parallel
+        const [forecastRes] = await Promise.all([
+          fetch(forecastUrl),
+          getAlerts(lat, lon)
+        ]);
+        if (!forecastRes.ok) throw new Error('Forecast unavailable');
+        const forecastData = await forecastRes.json();
+        const periods = forecastData.properties.periods.slice(0, 3);
+
+        let html = `<div style="font-family:Arial,sans-serif;font-weight:bold;color:#333;margin-bottom:0.5rem;">${locationName}</div>`;
+        periods.forEach(p => {
+          html += `
+            <div class="period">${p.name}</div>
+            <div>${p.shortForecast}, <span class="temp">${p.temperature}°${p.temperatureUnit}</span></div>
+            <div style="font-size:0.75rem;color:#666;">${p.windSpeed} ${p.windDirection}</div>
+          `;
+        });
+        forecastArea.innerHTML = html;
+
+        const nwsLocalUrl = `https://forecast.weather.gov/MapClick.php?lat=${lat}&lon=${lon}`;
+        nwsLink.innerHTML = `<a href="${nwsLocalUrl}" target="_blank" rel="noopener">Full forecast from National Weather Service →</a>`;
+
+      } catch (err) {
+        forecastArea.innerHTML = `<div class="error">Could not load forecast. <a href="https://forecast.weather.gov/zipcity.php?inputstring=${zip}" target="_blank" rel="noopener">Try NWS directly</a>.</div>`;
+      }
+    }
+
+    document.getElementById('zipInput').value = '03301';
+    getWeather();
+  </script>
+</body>
+</html>

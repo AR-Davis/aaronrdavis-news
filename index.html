@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aaron R. Davis — News & Civic Tools</title>
+  <title>Aaron R. Davis — Personal Data Journalism</title>
   <style>
     :root {
       --green: #00a652;
@@ -54,6 +54,59 @@
     }
     a { color: var(--green); }
     a:hover { text-decoration: underline; }
+
+    .description {
+      background: var(--light);
+      border-left: 4px solid var(--green);
+      padding: 1.25rem;
+      margin: 0 0 2rem;
+      font-family: Arial, sans-serif;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    /* Project dashboard */
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .project-card {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+    }
+    .project-card:hover {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+    .project-card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.1rem;
+      color: var(--green);
+      font-family: Arial, sans-serif;
+    }
+    .project-card p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #444;
+      line-height: 1.5;
+    }
+    .project-card .meta {
+      margin-top: auto;
+      padding-top: 0.75rem;
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      color: var(--gray);
+    }
 
     /* Widget container */
     .widget-stage {
@@ -162,14 +215,36 @@
 <body>
   <header>
     <h1>Aaron R. Davis</h1>
-    <p class="tagline">Investigative reporting, newsroom operations, and lightweight civic tools for New Hampshire.</p>
+    <p class="tagline">Personal data journalism project.</p>
   </header>
 
   <main>
-    <p>
-      I’m a New Hampshire native returning from Texas to help rebuild local accountability journalism.
-      This site hosts working prototypes of small, fast tools for newsrooms and readers — starting with a live New Hampshire weather widget.
-    </p>
+    <div class="description">
+      <strong>What this is:</strong> A public workspace for interactive data stories, civic tools, and investigative notebooks — mostly about New Hampshire. Each project is built from public data, documented methodology, and reusable code. Nothing here is paywalled or gated; the point is to make the data and the process visible.
+    </div>
+
+    <h2>Project dashboard</h2>
+    <p>Working tools and published interactives. Click a card to open the project.</p>
+
+    <div class="dashboard">
+      <a class="project-card" href="./nhweather">
+        <h3>New Hampshire Weather Widget</h3>
+        <p>A 300×250 embeddable forecast widget for any New Hampshire ZIP code. Uses the National Weather Service API with no API key required.</p>
+        <div class="meta">Live demo below</div>
+      </a>
+
+      <a class="project-card" href="./eelgrass-indepthnh-embed/">
+        <h3>Great Bay Eelgrass Disappearance Slider</h3>
+        <p>An interactive before/after slider showing the collapse of eelgrass beds in the Great Bay estuary, built for InDepthNH.</p>
+        <div class="meta">Leaflet + GRANIT data</div>
+      </a>
+
+      <a class="project-card" href="./eelgrass-map/">
+        <h3>Great Bay Eelgrass Historical Map</h3>
+        <p>A year-by-year map of eelgrass coverage from 2006 to 2025, drawn from the N.H. GRANIT coastal data archive.</p>
+        <div class="meta">Historical coverage</div>
+      </a>
+    </div>
 
     <h2>New Hampshire Weather</h2>
     <p>
@@ -203,7 +278,7 @@
   </main>
 
   <footer>
-    © 2026 Aaron R. Davis. Built with plain HTML, CSS, and JavaScript. Hosted on Cloudflare Pages.
+    © 2026 Aaron R. Davis. Personal data journalism project. Built with plain HTML, CSS, and JavaScript. Hosted on Cloudflare Pages.
   </footer>
 
   <script>
