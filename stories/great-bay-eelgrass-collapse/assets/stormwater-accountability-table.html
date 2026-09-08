@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Great Bay Stormwater Accountability Table</title>
+  <style>
+:root {
+  --color-text: #1a202c;
+  --color-muted: #4a5568;
+  --color-border: #d1d5db;
+  --color-header-bg: #4a5568;
+  --color-header-text: #ffffff;
+  --color-row-alt: #f7fafc;
+  --color-accent: #3182ce;
+  --color-accent-hover: #2b6cb0;
+  --color-note-bg: #fffbeb;
+  --color-note-border: #f59e0b;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--color-text);
+  background: #fff;
+  margin: 0;
+  padding: 1rem;
+}
+
+.stormwater-table-wrap {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.stormwater-table-wrap h2 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+}
+
+.stormwater-table-wrap p {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  margin: 0 0 1rem;
+}
+
+.note {
+  background: var(--color-note-bg);
+  border-left: 4px solid var(--color-note-border);
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.note strong {
+  color: #92400e;
+}
+
+.stormwater-search {
+  width: 100%;
+  max-width: 320px;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+.stormwater-search:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+}
+
+.stormwater-table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.stormwater-table th,
+.stormwater-table td {
+  padding: 0.75rem 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.stormwater-table thead th {
+  position: sticky;
+  top: 0;
+  background: var(--color-header-bg);
+  color: var(--color-header-text);
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+
+.stormwater-table thead th:hover {
+  background: #3a4454;
+}
+
+.stormwater-table th.sortable::after {
+  content: " ▲▼";
+  font-size: 0.7em;
+  opacity: 0.5;
+}
+
+.stormwater-table th.asc::after {
+  content: " ▲";
+  opacity: 1;
+}
+
+.stormwater-table th.desc::after {
+  content: " ▼";
+  opacity: 1;
+}
+
+.stormwater-table tbody tr:nth-child(even) {
+  background: var(--color-row-alt);
+}
+
+.stormwater-table tbody tr:hover {
+  background: #edf2f7;
+}
+
+.stormwater-table a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.stormwater-table a:hover {
+  color: var(--color-accent-hover);
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.status-full { background: #c6f6d5; color: #22543d; }
+.status-waiver { background: #feebc8; color: #7c2d12; }
+.status-none { background: #edf2f7; color: var(--color-muted); }
+
+.swa-yes { color: #22543d; font-weight: 600; }
+.swa-partial { color: #744210; font-weight: 600; }
+.swa-no { color: var(--color-muted); }
+
+.meta {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.footnote {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  body { padding: 0.5rem; }
+  .stormwater-search { max-width: 100%; }
+  .stormwater-table { font-size: 0.9rem; }
+  .stormwater-table th,
+  .stormwater-table td { padding: 0.6rem; }
+}
+</style>
+</head>
+<body>
+  <div class="stormwater-table-wrap" role="region" aria-label="Stormwater accountability table">
+    <h2>Stormwater accountability in Great Bay watershed towns</h2>
+    <p>Search and sort the table to see which New Hampshire towns have adopted stormwater model standards and how their regulations compare.</p>
+
+    <div class="note">
+      <strong>Note:</strong> SWA Model Standards adoption status is preliminary and pending confirmation from PREP, NHDES, or the NH Stormwater Alliance.
+    </div>
+
+    <input type="search"
+           id="stormwaterSearch"
+           class="stormwater-search"
+           placeholder="Search towns or statuses..."
+           aria-label="Search stormwater table" />
+
+    <div class="table-scroll">
+      <table class="stormwater-table">
+        <thead>
+          <tr>
+            <th data-type="text" class="sortable">Town</th>
+            <th data-type="status" class="sortable">MS4 status</th>
+            <th data-type="swa" class="sortable">SWA Model Standards adopted</th>
+            <th data-type="year" class="sortable">Year of reviewed stormwater regs</th>
+            <th data-type="category" class="sortable">Impervious cover category</th>
+            <th data-type="text" class="sortable">Stormwater regulations</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr>
+        <td data-sort="barrington">Barrington</td>
+        <td data-sort="1"><span class="status-badge status-waiver">Waiver</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2024">2024</td>
+        <td data-sort="2" title="All development projects (Article 13); no explicit size threshold">—</td>
+        <td data-sort="barrington"><a href="https://www.barrington.nh.gov/sites/g/files/vyhlif2766/f/uploads/barrington_subdivision_regulations_2_apr_2024.pdf" target="_blank" rel="noopener" title="Stormwater regulations for Barrington">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="brentwood">Brentwood</td>
+        <td data-sort="1"><span class="status-badge status-waiver">Waiver</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2010">2010</td>
+        <td data-sort="0" title="&gt;40,000 sq ft disturbance OR &gt;5,000 sq ft impervious area (excluding single/duplex roof)">10% cap</td>
+        <td data-sort="brentwood"><a href="https://www.brentwoodnh.gov/files/documents/ZoningLandUseOrdinance%E2%80%93SubdivisionSitePlanRegulations1437084838012124AM.pdf" target="_blank" rel="noopener" title="Stormwater regulations for Brentwood">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="brookfield">Brookfield</td>
+        <td data-sort="2"><span class="status-badge status-none">Not designated</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2026">2026</td>
+        <td data-sort="2" title="Cumulative disturbed area &gt;20,000 sq ft, road, or major subdivision">—</td>
+        <td data-sort="brookfield"><a href="https://www.brookfieldnh.gov/DocumentCenter/View/256/Subdivision-Regulations" target="_blank" rel="noopener" title="Stormwater regulations for Brookfield">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="candia">Candia</td>
+        <td data-sort="1"><span class="status-badge status-waiver">Waiver</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2019">2019</td>
+        <td data-sort="2" title="Cumulative disturbed area &gt;20,000 sq ft, road, major subdivision, or critical areas">—</td>
+        <td data-sort="candia"><a href="https://www.candianh.org/DocumentCenter/View/1965/Subdivision-Regulations-PDF" target="_blank" rel="noopener" title="Stormwater regulations for Candia">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="chester">Chester</td>
+        <td data-sort="1"><span class="status-badge status-waiver">Waiver</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2025">2025</td>
+        <td data-sort="2" title="Groundwater Protection District: &gt;15% impervious OR &gt;10,000 sq ft, whichever greater">—</td>
+        <td data-sort="chester"><a href="https://www.chesternh.org/DocumentCenter/View/372/2025-Zoning-Ordinance--Amended-5-13-25" target="_blank" rel="noopener" title="Stormwater regulations for Chester">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="danville">Danville</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2025">2025</td>
+        <td data-sort="2" title="&gt;1 acre land disturbance in EPA MS4 regulated area">—</td>
+        <td data-sort="danville"><a href="https://www.townofdanville.org/DocumentCenter/View/414/2025zofinal" target="_blank" rel="noopener" title="Stormwater regulations for Danville">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="deerfield">Deerfield</td>
+        <td data-sort="2"><span class="status-badge status-none">Not designated</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="9999">—</td>
+        <td data-sort="2" title="Major subdivision (no explicit size threshold)">—</td>
+        <td data-sort="deerfield"><a href="https://www.deerfieldnh.gov/DocumentCenter/View/426/Subdivision-Regulations-PDF" target="_blank" rel="noopener" title="Stormwater regulations for Deerfield">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="dover">Dover</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2025">2025</td>
+        <td data-sort="2">—</td>
+        <td data-sort="dover"><a href="https://www.dover.nh.gov/Assets/government/city-operations/2document/planning/Regulations/amendments/SubRegulations%202025Posted3.11.25.pdf" target="_blank" rel="noopener" title="Stormwater regulations for Dover">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="durham">Durham</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2023">2023</td>
+        <td data-sort="2" title="Developments disturbing &gt;=10,000 sq ft (Board may require smaller)">—</td>
+        <td data-sort="durham"><a href="https://www.durhamnh.gov/DocumentCenter/View/8808/Subdivision-Regulations-Updated-November-8-2023-PDF-Version" target="_blank" rel="noopener" title="Stormwater regulations for Durham">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="east kingston">East Kingston</td>
+        <td data-sort="1"><span class="status-badge status-waiver">Waiver</span></td>
+        <td data-sort="0"><span class="swa-yes">Yes</span></td>
+        <td data-sort="2025">2025</td>
+        <td data-sort="2" title="Subdivisions creating private/public road; roadside drainage from lots on existing roads">—</td>
+        <td data-sort="east kingston"><a href="https://www.eknh.org/DocumentCenter/View/509/Subdivision-Regulations" target="_blank" rel="noopener" title="Stormwater regulations for East Kingston">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="epping">Epping</td>
+        <td data-sort="1"><span class="status-badge status-waiver">Waiver</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2020">2020</td>
+        <td data-sort="2" title="Subdivision (no explicit size threshold)">—</td>
+        <td data-sort="epping"><a href="https://www.eppingnh.gov/DocumentCenter/View/401/Planning-Board-Subdivision-Regulations-PDF" target="_blank" rel="noopener" title="Stormwater regulations for Epping">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="exeter">Exeter</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="0"><span class="swa-yes">Yes</span></td>
+        <td data-sort="2026">2026</td>
+        <td data-sort="2" title="Land disturbance &gt;=1 acre (or less if part of larger common plan)">—</td>
+        <td data-sort="exeter"><a href="https://www.exeternh.gov/sites/default/files/fileattachments/planning_board/page/14051/2026_site_subdivision_regs_rev._1-8-26.pdf" target="_blank" rel="noopener" title="Stormwater regulations for Exeter">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="farmington">Farmington</td>
+        <td data-sort="2"><span class="status-badge status-none">Not designated</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="1976">1976</td>
+        <td data-sort="2" title="Subdivision (no explicit size threshold)">—</td>
+        <td data-sort="farmington"><a href="https://www.farmington.nh.us/DocumentCenter/View/432/Subdivision-Regulations-PDF" target="_blank" rel="noopener" title="Stormwater regulations for Farmington">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="fremont">Fremont</td>
+        <td data-sort="1"><span class="status-badge status-waiver">Waiver</span></td>
+        <td data-sort="0"><span class="swa-yes">Yes</span></td>
+        <td data-sort="2021">2021</td>
+        <td data-sort="2" title="Subdivisions creating private/public road; roadside drainage from lots on existing roads">—</td>
+        <td data-sort="fremont"><a href="https://www.fremont.nh.gov/DocumentCenter/View/709/Subdivision-Regulations-Amended-2021" target="_blank" rel="noopener" title="Stormwater regulations for Fremont">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="greenland">Greenland</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2025">2025</td>
+        <td data-sort="2" title="Not stated in fetched Site Plan regs; cross-reference to Subdivision Regs Section V (07.2017)">—</td>
+        <td data-sort="greenland"><a href="https://greenland.nh.gov/DocumentCenter/View/2080/2025-Site-Plan-Review-Regulations-Updated-042025-PDF" target="_blank" rel="noopener" title="Stormwater regulations for Greenland">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="hampton">Hampton</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2026">2026</td>
+        <td data-sort="2" title="Stormwater management plan required for site plan/subdivision; &gt;15% impervious cover OR &gt;10,000 sq ft of any lot">—</td>
+        <td data-sort="hampton"><a href="https://www.hamptonnh.gov/DocumentCenter/View/10521/Site-Plan-Review-Regulations-" target="_blank" rel="noopener" title="Stormwater regulations for Hampton">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="hampton falls">Hampton Falls</td>
+        <td data-sort="1"><span class="status-badge status-waiver">Waiver</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2025">2025</td>
+        <td data-sort="2" title="Subdivision (no explicit size threshold)">—</td>
+        <td data-sort="hampton falls"><a href="https://www.hamptonfalls.org/DocumentCenter/View/194/Subdivision-Regulations---April-2025-PDF" target="_blank" rel="noopener" title="Stormwater regulations for Hampton Falls">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="kensington">Kensington</td>
+        <td data-sort="2"><span class="status-badge status-none">Not designated</span></td>
+        <td data-sort="0"><span class="swa-yes">Yes</span></td>
+        <td data-sort="2016">2016</td>
+        <td data-sort="2" title="&gt;5,000 sq ft disturbance OR &gt;2,500 sq ft within 100 ft of surface water">—</td>
+        <td data-sort="kensington"><a href="https://www.kensingtonnh.gov/DocumentCenter/View/265/Site-Plan-Review-Regulations-Revised-May-2024-PDF" target="_blank" rel="noopener" title="Stormwater regulations for Kensington">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="kingston">Kingston</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="9999">—</td>
+        <td data-sort="2">—</td>
+        <td data-sort="kingston"><a href="https://www.kingstonnh.gov/media/1956" target="_blank" rel="noopener" title="Stormwater regulations for Kingston">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="lee">Lee</td>
+        <td data-sort="1"><span class="status-badge status-waiver">Waiver</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2023">2023</td>
+        <td data-sort="0" title="No explicit stormwater size threshold">10% cap</td>
+        <td data-sort="lee"><a href="https://www.leenh.org/sites/g/files/vyhlif776/f/uploads/2023_zoning_ordinance.pdf" target="_blank" rel="noopener" title="Stormwater regulations for Lee">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="madbury">Madbury</td>
+        <td data-sort="1"><span class="status-badge status-waiver">Waiver</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2017">2017</td>
+        <td data-sort="2" title="Site plan review disturbing &gt;40000 sq ft or &gt;25000 sq ft within 100 ft of a waterbody">—</td>
+        <td data-sort="madbury"><a href="https://www.madburynh.org/Madbury/docs/Booklet_2017/pdfs/Part_6_Site_Plan_Review_Regulations_2017.pdf" target="_blank" rel="noopener" title="Stormwater regulations for Madbury">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="middleton">Middleton</td>
+        <td data-sort="2"><span class="status-badge status-none">Not designated</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2026">2026</td>
+        <td data-sort="2" title="Multi-family/non-residential/mixed-use site plan review; no fixed sq-ft threshold; construction NPDES over 1 acre; drainage plan where Board determines control needed">—</td>
+        <td data-sort="middleton"><a href="https://middletonnh.gov/uploads/development-regulations-as-of-may-19-2026.pdf" target="_blank" rel="noopener" title="Stormwater regulations for Middleton">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="milton">Milton</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="0"><span class="swa-yes">Yes</span></td>
+        <td data-sort="2022">2022</td>
+        <td data-sort="2" title="Site plan review disturbing &gt;5000 sq ft or &gt;2500 sq ft within 100 ft of a public water body and construction/reconstruction of street/road/parking lot">—</td>
+        <td data-sort="milton"><a href="https://www.miltonnh-us.com/sites/g/files/vyhlif916/f/uploads/milton_site_plan_review_regulations_final_adopted_5-3-2022.pdf" target="_blank" rel="noopener" title="Stormwater regulations for Milton">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="new castle">New Castle</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="0"><span class="swa-yes">Yes</span></td>
+        <td data-sort="2021">2021</td>
+        <td data-sort="2" title="Subdivisions creating private/public road; lots fronting existing roads with discharge to municipal MS4 drainage">—</td>
+        <td data-sort="new castle"><a href="https://www.newcastle.nh.gov/sites/g/files/vyhlif956/f/news/2025_subdivision_final061125.pdf" target="_blank" rel="noopener" title="Stormwater regulations for New Castle">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="new durham">New Durham</td>
+        <td data-sort="2"><span class="status-badge status-none">Not designated</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2024">2024</td>
+        <td data-sort="2" title="Multi-family/non-residential/mixed-use site plan review; no fixed sq-ft threshold">—</td>
+        <td data-sort="new durham"><a href="https://newdurhamnh.gov/uploads/site-plan-regulations-amended-07-16-2024-signed.pdf" target="_blank" rel="noopener" title="Stormwater regulations for New Durham">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="newfields">Newfields</td>
+        <td data-sort="1"><span class="status-badge status-waiver">Waiver</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2014">2014</td>
+        <td data-sort="2" title="&gt;10000 sq ft disturbance; or &gt;5000 sq ft total impervious if site does not disturb within 250 ft of surface water/wetland (Board may grant exemption)">—</td>
+        <td data-sort="newfields"><a href="https://www.newfieldsnh.gov/DocumentCenter/View/496/Subdivision-Regulations" target="_blank" rel="noopener" title="Stormwater regulations for Newfields">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="newington">Newington</td>
+        <td data-sort="1"><span class="status-badge status-waiver">Waiver</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="9999">—</td>
+        <td data-sort="2">—</td>
+        <td data-sort="newington"><a href="https://www.newingtonnh.gov/DocumentCenter/View/251/Subdivision-Regulations" target="_blank" rel="noopener" title="Stormwater regulations for Newington">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="newmarket">Newmarket</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="1"><span class="swa-partial">Partial</span></td>
+        <td data-sort="9999">—</td>
+        <td data-sort="2" title="Projects disturbing &gt;=1 acre and discharging into municipal storm drain system (per SWMP description of Chapter 32 Appendix C)">—</td>
+        <td data-sort="newmarket"><a href="https://library.municode.com/nh/newmarket/codes/code_of_ordinances?nodeId=PTIICOOR_APXCSTMARE" target="_blank" rel="noopener" title="Stormwater regulations for Newmarket">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="north hampton">North Hampton</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2017">2017</td>
+        <td data-sort="2" title="Aquifer Protection Overlay District triggers site plan/subdivision review (except single/two-family residential not involving subdivision); elsewhere drainage addressed through zoning review">—</td>
+        <td data-sort="north hampton"><a href="https://www.northhampton-nh.gov/sites/g/files/vyhlif996/f/uploads/zo_2017_0.pdf" target="_blank" rel="noopener" title="Stormwater regulations for North Hampton">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="northwood">Northwood</td>
+        <td data-sort="2"><span class="status-badge status-none">Not designated</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2026">2026</td>
+        <td data-sort="2" title="Wellhead Protection Overlay District and Steep Slope Protection Overlay District trigger additional drainage/erosion review; general stormwater standards not found">—</td>
+        <td data-sort="northwood"><a href="https://www.northwoodnh.org/file/6433/Northwood_Development_Ordinances_2026.pdf" target="_blank" rel="noopener" title="Stormwater regulations for Northwood">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="nottingham">Nottingham</td>
+        <td data-sort="2"><span class="status-badge status-none">Not designated</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2026">2026</td>
+        <td data-sort="0" title="Aquifer Protection Overlay District; conditional use if impervious &gt;15% or &gt;2500 sq ft of lot; subdivision/site plan review triggers">10% cap</td>
+        <td data-sort="nottingham"><a href="https://www.nottingham-nh.gov/sites/g/files/vyhlif3611/f/pages/zoning_ordinance_regs_amended_10_march_2026.pdf" target="_blank" rel="noopener" title="Stormwater regulations for Nottingham">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="portsmouth">Portsmouth</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2006">2006</td>
+        <td data-sort="2" title="All discharges into publicly owned Storm Drainage System">—</td>
+        <td data-sort="portsmouth"><a href="https://files.portsmouthnh.gov/files/cityclerk/ordinances/Chapter16.pdf" target="_blank" rel="noopener" title="Stormwater regulations for Portsmouth">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="raymond">Raymond</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="9999">—</td>
+        <td data-sort="2">—</td>
+        <td data-sort="raymond"><a href="https://ecode360.com/13941729" target="_blank" rel="noopener" title="Stormwater regulations for Raymond">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="rochester">Rochester</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2018">2018</td>
+        <td data-sort="2" title="All non-residential/multi-family site plan review regardless of area; detailed standards in Chapter 50 of City Code">—</td>
+        <td data-sort="rochester"><a href="https://www.rochesternh.net/sites/g/files/vyhlif9211/f/uploads/site_plan_regs_-_6-13-2019_0.pdf" target="_blank" rel="noopener" title="Stormwater regulations for Rochester">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="rollinsford">Rollinsford</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2018">2018</td>
+        <td data-sort="2" title="Planning Board review under Site Plan Review Regulations and Subdivision Regulations that create new roads or shared driveways">—</td>
+        <td data-sort="rollinsford"><a href="https://drive.google.com/file/d/1jhyRLFfm6tT5bnlwSCW9v9zu7JDKP7LM/view?usp=share_link" target="_blank" rel="noopener" title="Stormwater regulations for Rollinsford">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="rye">Rye</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="0"><span class="swa-yes">Yes</span></td>
+        <td data-sort="2022">2022</td>
+        <td data-sort="2" title="Site plan &gt;5000 sq ft or &gt;2500 sq ft within 100 ft of surface water; subdivisions creating private/public road">—</td>
+        <td data-sort="rye"><a href="https://www.ryenh.gov/DocumentCenter/View/5460" target="_blank" rel="noopener" title="Stormwater regulations for Rye">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="sandown">Sandown</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2021">2021</td>
+        <td data-sort="2" title="Stormwater Management Permit required for land-disturbing activity &gt;1 acre (or part of common plan &gt;1 acre); redevelopment defined as &gt;1 acre earth disturbance">—</td>
+        <td data-sort="sandown"><a href="https://www.sandown.us/DocumentCenter/View/370/Zoning-Ordinance" target="_blank" rel="noopener" title="Stormwater regulations for Sandown">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="seabrook">Seabrook</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2020">2020</td>
+        <td data-sort="2" title="Stormwater Pollution Plan required for &gt;1 acre disturbance; stormwater management standards apply to subdivisions; redevelopment defined as &gt;5000 sq ft disturbance of existing impervious area for non-residential uses">—</td>
+        <td data-sort="seabrook"><a href="https://seabrooknh.info/wp-content/uploads/2020/12/Subdivision-Regs-dated-17Nov2020.pdf" target="_blank" rel="noopener" title="Stormwater regulations for Seabrook">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="somersworth">Somersworth</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2021">2021</td>
+        <td data-sort="2" title="Subdivision involving more than 3 lots/units; general drainage/street standards">—</td>
+        <td data-sort="somersworth"><a href="https://www.somersworth.com/sites/g/files/vyhlif1226/f/uploads/chapter_22._subdivision_regulations_2-2021_rev.pdf" target="_blank" rel="noopener" title="Stormwater regulations for Somersworth">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="strafford">Strafford</td>
+        <td data-sort="2"><span class="status-badge status-none">Not designated</span></td>
+        <td data-sort="1"><span class="swa-partial">Partial</span></td>
+        <td data-sort="2026">2026</td>
+        <td data-sort="0" title="Subdivisions with new roads; non-residential/multi-family creating &gt;=5000 sq ft impervious surface; redevelopment disturbing &gt;=20000 sq ft ground">10% cap</td>
+        <td data-sort="strafford"><a href="https://strafford.nh.gov/wp-content/uploads/2026/04/20260310ZoningOrdinances.pdf" target="_blank" rel="noopener" title="Stormwater regulations for Strafford">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="stratham">Stratham</td>
+        <td data-sort="0"><span class="status-badge status-full">Full MS4</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2026">2026</td>
+        <td data-sort="2" title="Subdivision/site plan requiring stormwater/erosion plan if cumulative disturbed area &gt;20000 sq ft construction of street/road subdivision of 3+ lots/units or disturbed critical areas">—</td>
+        <td data-sort="stratham"><a href="https://www.strathamnh.gov/Documents/Departments/Planning%20and%20Zoning/Zoning%20Ordinance%20and%20Regulations/2026.04.15%20Subdivision%20Regulations%20FINAL.pdf?t=202605131255030" target="_blank" rel="noopener" title="Stormwater regulations for Stratham">View regs</a></td>
+      </tr>
+      <tr>
+        <td data-sort="wakefield">Wakefield</td>
+        <td data-sort="2"><span class="status-badge status-none">Not designated</span></td>
+        <td data-sort="2"><span class="swa-no">No</span></td>
+        <td data-sort="2026">2026</td>
+        <td data-sort="2" title="Conditional uses in Aquifer/Wellhead Conservation Overlay District: &gt;15% impervious cover OR &gt;2,500 sq ft; general performance standards require stormwater BMPs for all applicable development">—</td>
+        <td data-sort="wakefield"><a href="https://www.wakefieldnh.gov/sites/g/files/vyhlif1366/f/pages/wakefield_zoning_ordinance_march_2026.pdf" target="_blank" rel="noopener" title="Stormwater regulations for Wakefield">View regs</a></td>
+      </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="meta" id="rowCount"></div>
+    <div class="footnote" id="yearFootnote">
+      “Year of reviewed stormwater regs” is the year of the town regulation document we reviewed.
+      It is <em>not</em> the year EPA designated the MS4, nor the year the SWA model standards were first adopted.
+    </div>
+  </div>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const table = document.querySelector('.stormwater-table');
+  const tbody = table.querySelector('tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  const searchInput = document.getElementById('stormwaterSearch');
+  const countDisplay = document.getElementById('rowCount');
+  const headers = Array.from(table.querySelectorAll('thead th'));
+  let sortCol = 0;
+  let sortDir = 1;
+
+  function updateCount() {
+    const visible = rows.filter(r => r.style.display !== 'none').length;
+    countDisplay.textContent = visible + ' of ' + rows.length + ' towns shown';
+  }
+
+  function getValue(row, index) {
+    const cell = row.cells[index];
+    if (cell.hasAttribute('data-sort')) {
+      return cell.getAttribute('data-sort');
+    }
+    return cell.textContent.trim().toLowerCase();
+  }
+
+  function sortBy(index, type) {
+    const dir = (sortCol === index) ? -sortDir : 1;
+    sortCol = index;
+    sortDir = dir;
+
+    rows.sort((a, b) => {
+      let av = getValue(a, index);
+      let bv = getValue(b, index);
+      if (type === 'year') {
+        av = parseInt(av, 10) || 0;
+        bv = parseInt(bv, 10) || 0;
+      }
+      if (av < bv) return -dir;
+      if (av > bv) return dir;
+      return a.cells[0].textContent.trim().localeCompare(b.cells[0].textContent.trim());
+    });
+
+    rows.forEach(r => tbody.appendChild(r));
+
+    headers.forEach(h => h.classList.remove('asc', 'desc'));
+    headers[index].classList.add(dir === 1 ? 'asc' : 'desc');
+  }
+
+  headers.forEach((th, i) => {
+    th.setAttribute('tabindex', '0');
+    th.addEventListener('click', () => sortBy(i, th.dataset.type || 'text'));
+    th.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        sortBy(i, th.dataset.type || 'text');
+      }
+    });
+  });
+
+  searchInput.addEventListener('input', () => {
+    const q = searchInput.value.toLowerCase();
+    rows.forEach(row => {
+      const text = row.textContent.toLowerCase();
+      row.style.display = text.includes(q) ? '' : 'none';
+    });
+    updateCount();
+  });
+
+  sortBy(0, 'text');
+  updateCount();
+});
+</script>
+</body>
+</html>
