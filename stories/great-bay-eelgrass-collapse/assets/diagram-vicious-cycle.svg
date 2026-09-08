@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-labelledby="cycleTitle cycleDesc">
+  <title id="cycleTitle">The vicious cycle of eelgrass collapse</title>
+  <desc id="cycleDesc">A circular diagram showing how nutrients, algae, sediment, and eelgrass loss reinforce each other in Great Bay.</desc>
+
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8f9fa" />
+      <stop offset="100%" stop-color="#e8f0f2" />
+    </linearGradient>
+
+    <linearGradient id="nutrientGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#bd261d" />
+      <stop offset="100%" stop-color="#d64535" />
+    </linearGradient>
+    <linearGradient id="algaeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7fb069" />
+      <stop offset="100%" stop-color="#5a8f46" />
+    </linearGradient>
+    <linearGradient id="sedimentGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a08b6c" />
+      <stop offset="100%" stop-color="#7d6a52" />
+    </linearGradient>
+    <linearGradient id="oxygenGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2166ac" />
+      <stop offset="100%" stop-color="#4a90d9" />
+    </linearGradient>
+    <linearGradient id="eelgrassGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a8a5a" />
+      <stop offset="100%" stop-color="#2e5c3b" />
+    </linearGradient>
+    <linearGradient id="lightGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6d365" />
+      <stop offset="100%" stop-color="#e6b94f" />
+    </linearGradient>
+
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#555" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="720" height="720" fill="url(#bgGradient)" rx="8" />
+
+  <!-- Title -->
+  <text x="360" y="42" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="bold" fill="#1a2b4a">The Vicious Cycle</text>
+  <text x="360" y="66" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#5a6c7d">How nutrients, algae, and sediment reinforce eelgrass loss in Great Bay</text>
+
+  <!-- Central hub: Eelgrass loss -->
+  <circle cx="360" cy="360" r="62" fill="url(#eelgrassGrad)" />
+  <text x="360" y="348" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#fff">EELGRASS</text>
+  <text x="360" y="365" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#fff">LOSS</text>
+  <text x="360" y="385" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#d4edda">less oxygen, less filtering,</text>
+  <text x="360" y="398" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#d4edda">weaker sediment hold</text>
+
+  <!-- Nodes arranged in a circle around center -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" text-anchor="middle">
+
+    <!-- 1. Nutrients -->
+    <circle cx="360" cy="145" r="55" fill="url(#nutrientGrad)" />
+    <text x="360" y="138" font-size="13" font-weight="bold" fill="#fff">NUTRIENTS</text>
+    <text x="360" y="155" font-size="10" fill="#ffe5e5">N + P from runoff,</text>
+    <text x="360" y="168" font-size="10" fill="#ffe5e5">septic, fertilizer</text>
+
+    <!-- 2. Algae blooms -->
+    <circle cx="555" cy="245" r="55" fill="url(#algaeGrad)" />
+    <text x="555" y="238" font-size="13" font-weight="bold" fill="#fff">ALGAE</text>
+    <text x="555" y="255" font-size="10" fill="#e8f5e0">blooms block</text>
+    <text x="555" y="268" font-size="10" fill="#e8f5e0">sunlight</text>
+
+    <!-- 3. Less light -->
+    <circle cx="600" cy="430" r="55" fill="url(#lightGrad)" />
+    <text x="600" y="423" font-size="13" font-weight="bold" fill="#4a3728">LESS LIGHT</text>
+    <text x="600" y="440" font-size="10" fill="#6b5a3a">sediment + algae</text>
+    <text x="600" y="453" font-size="10" fill="#6b5a3a">cloud water</text>
+
+    <!-- 4. Sediment resuspension -->
+    <circle cx="475" cy="595" r="55" fill="url(#sedimentGrad)" />
+    <text x="475" y="588" font-size="12" font-weight="bold" fill="#fff">SEDIMENT</text>
+    <text x="475" y="605" font-size="10" fill="#f0e6d6">weaker rhizome hold →</text>
+    <text x="475" y="618" font-size="10" fill="#f0e6d6">mud restirs, clouds water</text>
+
+    <!-- 5. Low oxygen -->
+    <circle cx="245" cy="595" r="55" fill="url(#oxygenGrad)" />
+    <text x="245" y="588" font-size="13" font-weight="bold" fill="#fff">LOW O₂</text>
+    <text x="245" y="605" font-size="10" fill="#dbe9f7">decomposing algae</text>
+    <text x="245" y="618" font-size="10" fill="#dbe9f7">steals oxygen</text>
+
+    <!-- 6. Carbon locked in sediment -->
+    <circle cx="120" cy="430" r="55" fill="#6b5a4a" />
+    <text x="120" y="423" font-size="11" font-weight="bold" fill="#fff">CARBON LOCKED</text>
+    <text x="120" y="440" font-size="10" fill="#e8ddd0">legacy pollution</text>
+    <text x="120" y="453" font-size="10" fill="#e8ddd0">stays for decades</text>
+
+    <!-- 7. Storms / climate whiplash -->
+    <circle cx="165" cy="245" r="55" fill="#7d9eb5" />
+    <text x="165" y="238" font-size="12" font-weight="bold" fill="#fff">HARD RAINS</text>
+    <text x="165" y="255" font-size="10" fill="#e6f0f7">prolonged drought →</text>
+    <text x="165" y="268" font-size="10" fill="#e6f0f7">intense storms</text>
+  </g>
+
+  <!-- Curved arrows connecting nodes, following cycle logic -->
+  <g fill="none" stroke="#555" stroke-width="3" marker-end="url(#arrowhead)" opacity="0.8">
+    <!-- Nutrients → Algae -->
+    <path d="M405,170 Q475,175 510,205" />
+    <!-- Algae → Less light -->
+    <path d="M590,300 Q610,345 605,375" />
+    <!-- Less light → Eelgrass loss -->
+    <path d="M555,460 Q500,430 415,395" />
+    <!-- Eelgrass loss → Sediment -->
+    <path d="M400,405 Q450,475 475,540" />
+    <!-- Sediment → Low oxygen -->
+    <path d="M425,590 Q340,600 300,595" />
+    <!-- Low oxygen → Carbon locked -->
+    <path d="M195,565 Q160,510 150,485" />
+    <!-- Carbon locked → Nutrients -->
+    <path d="M120,375 Q135,270 165,200" />
+
+    <!-- Eelgrass loss → Hard rains (sediment storms) -->
+    <path d="M315,380 Q230,330 195,295" />
+    <!-- Hard rains → Carbon/sediment resuspension -->
+    <path d="M190,295 Q240,350 300,395" />
+  </g>
+
+  <!-- Small reinforcement arrow labels -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#555">
+    <text x="445" y="175" text-anchor="middle"><tspan fill="#bd261d" font-weight="bold">feeds</tspan></text>
+    <text x="620" y="340" text-anchor="middle"><tspan fill="#5a8f46" font-weight="bold">blocks</tspan></text>
+    <text x="540" y="455" text-anchor="middle"><tspan fill="#6b5a3a" font-weight="bold">kills</tspan></text>
+    <text x="500" y="550" text-anchor="middle"><tspan fill="#a08b6c" font-weight="bold">weakens</tspan></text>
+    <text x="360" y="620" text-anchor="middle"><tspan fill="#2166ac" font-weight="bold">depletes</tspan></text>
+    <text x="170" y="530" text-anchor="middle"><tspan fill="#6b5a4a" font-weight="bold">stores</tspan></text>
+    <text x="140" y="290" text-anchor="middle"><tspan fill="#7d9eb5" font-weight="bold">stirs up</tspan></text>
+  </g>
+
+  <!-- Bottom caption / source -->
+  <text x="360" y="695" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#6c757d">Simplified from PREP, UNH, and Danish estuary research. Illustration: Aaron R. Davis.</text>
+</svg>
