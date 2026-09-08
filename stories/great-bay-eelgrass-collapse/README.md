@@ -2,6 +2,8 @@
 
 A self-contained HTML version of the rough draft, ready to preview or host.
 
+**Live URL:** `https://aaronrdavis.news/stories/great-bay-eelgrass-collapse/`
+
 ## Files
 
 | File | Purpose |
@@ -13,37 +15,39 @@ A self-contained HTML version of the rough draft, ready to preview or host.
 | `assets/ms4-waiver-map.html` | Existing interactive map embed |
 | `assets/ms4-waiver-map.png` | Map fallback PNG |
 | `assets/ms4-waiver-epa.png` | EPA MS4 screenshot |
+| `assets/gb2030-watershed-map.jpg` | Converted Great Bay 2030 watershed map |
 
-## Visuals still to create
+## Visuals Status
 
-The following are shown as placeholders in `index.html`:
-
-- Top visual from Denisha
-- Eelgrass coverage slider (year-to-year)
-- Cross-section graphic of eelgrass in water/soil with rhizome
-- Great Bay 2030 watershed map
-- Stormwater regulation Tableau embed
+| Asset | Status |
+|:---|:---|
+| Eelgrass year-slider map | ✅ Live iframe embed |
+| Great Bay 2030 watershed map | ✅ Live image embed |
+| Stormwater accountability table | ✅ Live iframe embed |
+| MS4/waiver map | ✅ Bundled |
+| Top hero visual | ❌ Placeholder — to be supplied by Denisha |
+| Cross-section eelgrass diagram | ❌ Placeholder — to be created |
 
 ## Hosting
 
-This is a static package. To host it:
-
-1. Upload the entire `story-package/` directory to your web server.
-2. Link to `index.html`.
-3. Replace placeholder `<div class="visual-placeholder">` elements with real images, sliders, or embeds as they are created.
+This is a static package. The live version is deployed on Cloudflare Pages. To host it elsewhere, upload the entire directory and link to `index.html`.
 
 ## Regenerating
 
-The conversion script is saved at:
-`/home/kinch/Desktop/INDNH-stories/great-bay-eelgrass/story-package/build_from_draft.py`
-
-Run it from the story-package directory if the source draft changes:
+The conversion script is saved at `build_from_draft.py`. Run it from this directory if the source draft changes:
 
 ```bash
-cd /home/kinch/Desktop/INDNH-stories/great-bay-eelgrass/story-package
 python3 build_from_draft.py
+```
+
+Then re-deploy from the site repo root on the `main` branch:
+
+```bash
+cd /home/kinch/Projects/aaronrdavis-news
+git checkout main
+npm run deploy
 ```
 
 ## Note
 
-This is a **rough draft**. Typos and placeholder visuals are expected. The HTML has been lightly cleaned for pitching but the canonical source remains `../the writing`.
+This is a **rough draft**. The canonical source remains `../the writing`.

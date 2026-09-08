@@ -2,9 +2,10 @@
 
 ## Status
 
-✅ **Deployed to Cloudflare Pages** at `https://master.aaronrdavis-news.pages.dev/stories/great-bay-eelgrass-collapse/`
-
-⚠️ **Custom domain `aaronrdavis.news` routing issue detected** — all subpaths (e.g. `/stories/...`, `/eelgrass-indepthnh-embed/`) currently return the homepage HTML instead of the requested asset. This appears to be a Cloudflare zone/page rule or custom-domain configuration problem, not a code problem. The Pages deployment alias URL works correctly.
+✅ **Deployed and live on the custom domain:**
+```
+https://aaronrdavis.news/stories/great-bay-eelgrass-collapse/
+```
 
 ## Goal
 
@@ -15,6 +16,7 @@ Publish the rough-draft eelgrass story and its supporting graphics as a public, 
 - **Site:** `aaronrdavis.news`
 - **Platform:** Cloudflare Pages
 - **Repo:** `/home/kinch/Projects/aaronrdavis-news/`
+- **Production branch:** `main` (the Cloudflare Pages project is configured to treat `main` as the production branch)
 - **Deploy tool:** Wrangler (`wrangler.toml` + `npm run deploy`)
 - **Auth:** Currently public; `_worker.js` has a disabled basic-auth gate
 - **Existing eelgrass assets already on the site:**
@@ -25,10 +27,10 @@ Publish the rough-draft eelgrass story and its supporting graphics as a public, 
 
 | URL | Status |
 |:---|:---|
-| `https://master.aaronrdavis-news.pages.dev/stories/great-bay-eelgrass-collapse/` | ✅ Live, story renders correctly |
-| `https://aaronrdavis.news/stories/great-bay-eelgrass-collapse/` | ⚠️ Returns homepage (custom domain issue) |
-| `https://master.aaronrdavis-news.pages.dev/eelgrass-indepthnh-embed/` | ✅ Live, embed renders correctly |
-| `https://aaronrdavis.news/eelgrass-indepthnh-embed/` | ⚠️ Returns homepage (custom domain issue) |
+| `https://aaronrdavis.news/stories/great-bay-eelgrass-collapse/` | ✅ Live |
+| `https://aaronrdavis.news/eelgrass-indepthnh-embed/` | ✅ Live |
+| `https://aaronrdavis.news/eelgrass-map/` | ✅ Live |
+| `https://aaronrdavis.news/` | ✅ Live, with Featured Story section |
 
 ## Files Added
 
@@ -77,17 +79,11 @@ stories/great-bay-eelgrass-collapse/
    - Replaced the stormwater Tableau placeholder with the existing accountability table iframe.
    - Kept placeholders for the hero visual and cross-section diagram.
 4. Updated `aaronrdavis-news/index.html` homepage with a "Featured Story" section and updated Projects list.
-5. Committed and deployed via `npm run deploy`.
+5. Committed and deployed via `npm run deploy` from the `main` branch.
 
-## How to Fix the Custom Domain
+## Branch Note
 
-1. Open the Cloudflare dashboard for `aaronrdavis.news`.
-2. Go to **Pages** → `aaronrdavis-news` → **Custom domains**.
-3. Verify `aaronrdavis.news` is listed and active. If it shows a warning, re-validate or remove/re-add.
-4. Check **Rules** → **Page Rules** and **Transform Rules** for any wildcard redirect to `/`.
-5. Check **Workers & Pages** → **Triggers/Routes** to ensure no worker route overrides the Pages deployment.
-6. If a Cloudflare Access or redirect rule is catching all paths, disable or narrow it.
-7. After fixing, purge cache (**Caching** → **Purge Everything**) and test with `curl -s https://aaronrdavis.news/stories/great-bay-eelgrass-collapse/`.
+The Cloudflare Pages project is configured to treat `main` as the production branch. The repo was originally on `master`, so deploying from `master` created only Preview deployments that did not serve on `aaronrdavis.news`. We now have a local `main` branch at the same commit. **Future deploys should run from `main`.**
 
 ## Regenerating
 
@@ -98,16 +94,17 @@ cd /home/kinch/Projects/aaronrdavis-news/stories/great-bay-eelgrass-collapse
 python3 build_from_draft.py
 ```
 
-Then re-deploy from the repo root:
+Then deploy from the `main` branch:
 
 ```bash
 cd /home/kinch/Projects/aaronrdavis-news
+git checkout main
 npm run deploy
 ```
 
 ## Next Steps
 
-1. Fix custom-domain routing so `https://aaronrdavis.news/stories/great-bay-eelgrass-collapse/` resolves correctly.
-2. Create/receive the top hero visual and eelgrass cross-section diagram.
-3. Replace the two remaining placeholders in `index.html`.
-4. Share the final `aaronrdavis.news` URL with NH publications and funders.
+1. Create/receive the top hero visual and eelgrass cross-section diagram.
+2. Replace the two remaining placeholders in `index.html`.
+3. Re-deploy from `main`.
+4. Share the final `aaronrdavis.news/stories/great-bay-eelgrass-collapse/` URL with NH publications and funders.
