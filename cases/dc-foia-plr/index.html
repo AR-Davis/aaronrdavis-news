@@ -16,7 +16,7 @@
       --gold: #a67c52;
       --text: #2b2622;
       --muted: #6e6056;
-      --maxw: 900px;
+      --maxw: 960px;
     }
     * { box-sizing: border-box; }
     body {
@@ -119,7 +119,7 @@
       width: 100%;
       border-collapse: collapse;
       font-family: Arial, sans-serif;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       margin: 1rem 0;
     }
     .doc-table th, .doc-table td {
@@ -136,7 +136,7 @@
     .doc-table tr:hover { background: rgba(139,109,83,0.06); }
     .doc-type {
       display: inline-block;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       text-transform: uppercase;
       letter-spacing: 0.03em;
       padding: 0.15rem 0.4rem;
@@ -149,6 +149,33 @@
     .doc-type.brief { background: #d8cfc1; color: var(--ink); }
     .doc-type.motion { background: #e9e3d9; color: var(--ink); }
     .doc-type.record { background: #f0e9df; color: var(--ink); }
+    .doc-type.transcript { background: #ebe6db; color: var(--ink); }
+
+    .plr-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+      margin: 1rem 0;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+    }
+    @media (min-width: 620px) {
+      .plr-list { grid-template-columns: 1fr 1fr; }
+    }
+    .plr-item {
+      background: #fff;
+      border: 1px solid var(--tan);
+      padding: 0.75rem 0.9rem;
+      border-radius: 2px;
+    }
+    .plr-date {
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .plr-topic {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
 
     .disclaimer {
       font-family: Arial, sans-serif;
@@ -215,112 +242,239 @@
         <tr>
           <th>Document</th>
           <th>Type</th>
-          <th>Date / Note</th>
+          <th>Filed / Date</th>
+          <th>Court / Party</th>
           <th>Original</th>
-          <th>Text extract</th>
+          <th>Text</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Reversed And Remanded</td>
           <td><span class="doc-type opinion">Opinion</span></td>
-          <td>D.C. Court of Appeals, July 27, 2023</td>
+          <td>July 27, 2023</td>
+          <td>D.C. Court of Appeals — per curiam judgment; opinion by Senior Judge Glickman</td>
           <td><a href="Reversed%20And%20Remanded.pdf">PDF</a></td>
           <td><a href="text-extracts/Reversed%20And%20Remanded.txt">TXT</a></td>
         </tr>
         <tr>
           <td>23_Decision</td>
           <td><span class="doc-type opinion">Opinion</span></td>
-          <td>Superior Court summary judgment, Jan. 13, 2021</td>
+          <td>January 13, 2021</td>
+          <td>Superior Court — granting District’s summary judgment motion</td>
           <td><a href="23_Decision.pdf">PDF</a></td>
           <td><a href="text-extracts/23_Decision.txt">TXT</a></td>
         </tr>
         <tr>
           <td>01_Remand order</td>
           <td><span class="doc-type motion">Order</span></td>
-          <td>Post-remand assignment to Judge Rigsby</td>
+          <td>August 21, 2023</td>
+          <td>Superior Court — post-remand assignment to Judge Rigsby</td>
           <td><a href="01_Remand%20order.pdf">PDF</a></td>
           <td><a href="text-extracts/01_Remand%20order.txt">TXT</a></td>
         </tr>
         <tr>
           <td>BRIEF - DC</td>
           <td><span class="doc-type brief">Brief</span></td>
-          <td>District’s brief defending summary judgment</td>
+          <td>June 14, 2021</td>
+          <td>D.C. Court of Appeals — appellee District of Columbia</td>
           <td><a href="BRIEF%20-%20DC.pdf">PDF</a></td>
           <td><a href="text-extracts/BRIEF%20-%20DC.txt">TXT</a></td>
         </tr>
         <tr>
           <td>Brief (plaintiffs)</td>
           <td><span class="doc-type brief">Brief</span></td>
-          <td>Tax Analysts reply brief (DOCX source)</td>
+          <td>March 2021 (estimated)</td>
+          <td>D.C. Court of Appeals — appellants Tax Analysts / Aaron Davis</td>
           <td><a href="Brief.docx">DOCX</a></td>
           <td><a href="text-extracts/Brief.txt">TXT</a></td>
         </tr>
         <tr>
           <td>BRIEF - TA reply brief</td>
           <td><span class="doc-type brief">Brief</span></td>
-          <td>Plaintiffs’ reply brief on appeal</td>
+          <td>July 2, 2021</td>
+          <td>D.C. Court of Appeals — appellants’ reply brief</td>
           <td><a href="BRIEF%20-%20TA%20reply%20brief.pdf">PDF</a></td>
           <td><a href="text-extracts/BRIEF%20-%20TA%20reply%20brief.txt">TXT</a></td>
         </tr>
         <tr>
           <td>Joint appendix_final</td>
           <td><span class="doc-type record">Appendix</span></td>
-          <td>Joint appendix submitted to Court of Appeals</td>
+          <td>March 9, 2021</td>
+          <td>D.C. Court of Appeals — joint appendix</td>
           <td><a href="Joint%20appendix_final.pdf">PDF</a></td>
           <td><a href="text-extracts/Joint%20appendix_final.txt">TXT</a></td>
         </tr>
         <tr>
-          <td>08_Vaughn response_July 15 2024</td>
-          <td><span class="doc-type motion">Response</span></td>
-          <td>District’s post-remand Vaughn response</td>
-          <td><a href="08_Vaughn%20response_July%2015%202024.pdf">PDF</a></td>
-          <td><a href="text-extracts/08_Vaughn%20response_July%2015%202024.txt">TXT</a></td>
-        </tr>
-        <tr>
           <td>22_OTR reply on in camera review</td>
           <td><span class="doc-type motion">Reply</span></td>
-          <td>OTR reply on in camera review</td>
+          <td>December 18, 2020</td>
+          <td>Superior Court — defendant District of Columbia reply</td>
           <td><a href="22_OTR%20reply%20on%20in%20camera%20review.pdf">PDF</a></td>
           <td><a href="text-extracts/22_OTR%20reply%20on%20in%20camera%20review.txt">TXT</a></td>
         </tr>
         <tr>
-          <td>Tax Analysts-Facchina affidavit-July 2024</td>
-          <td><span class="doc-type record">Affidavit</span></td>
-          <td>Plaintiff affidavit on redaction and public value</td>
-          <td><a href="Tax%20Analysts-Facchina%20affidavit-July%20%202024-executed%20(002).pdf">PDF</a></td>
-          <td><a href="text-extracts/Tax%20Analysts-Facchina%20affidavit-July%20%202024-executed%20(002).txt">TXT</a></td>
+          <td>08_Vaughn response_July 15 2024</td>
+          <td><span class="doc-type motion">Response</span></td>
+          <td>July 15, 2024</td>
+          <td>Superior Court — plaintiffs’ response to OTR’s revised Vaughn index</td>
+          <td><a href="08_Vaughn%20response_July%2015%202024.pdf">PDF</a></td>
+          <td><a href="text-extracts/08_Vaughn%20response_July%2015%202024.txt">TXT</a></td>
+        </tr>
+        <tr>
+          <td>6.27.24 Tax Analyst Praecipe</td>
+          <td><span class="doc-type motion">Praecipe</span></td>
+          <td>July 1, 2024</td>
+          <td>Superior Court — plaintiffs</td>
+          <td><a href="6.27.24%20Tax%20Analyst%20Praecipe.sr.pdf">PDF</a></td>
+          <td><a href="text-extracts/6.27.24%20Tax%20Analyst%20Praecipe.sr.txt">TXT</a></td>
+        </tr>
+        <tr>
+          <td>Tax Analysts Praecipe Amended Vaughn Index</td>
+          <td><span class="doc-type motion">Praecipe</span></td>
+          <td>April 8, 2024</td>
+          <td>Superior Court — District of Columbia</td>
+          <td><a href="Tax%20Analysts%20Praecipe%20Amended%20Vaughn%20Index_.sr.pdf">PDF</a></td>
+          <td><a href="text-extracts/Tax%20Analysts%20Praecipe%20Amended%20Vaughn%20Index_.sr.txt">TXT</a></td>
+        </tr>
+        <tr>
+          <td>Tax Analysts Ex. A- July 1 Amended Vaughn Index</td>
+          <td><span class="doc-type record">Index</span></td>
+          <td>July 1, 2024</td>
+          <td>Superior Court — District’s amended Vaughn index of 24 PLRs</td>
+          <td><a href="Tax%20Analysts%20Ex.%20A-%20July%201%20Amended%20Vaughn%20Index%20-BF%20edits%20(002).sr.pdf">PDF</a></td>
+          <td><a href="text-extracts/Tax%20Analysts%20Ex.%20A-%20July%201%20Amended%20Vaughn%20Index%20-BF%20edits%20(002).sr.txt">TXT</a></td>
         </tr>
         <tr>
           <td>Ex. A- Amended Vaughn Index</td>
           <td><span class="doc-type record">Index</span></td>
-          <td>Amended Vaughn index of withheld records</td>
+          <td>April 8, 2024</td>
+          <td>Superior Court — District’s amended Vaughn index</td>
           <td><a href="Ex.%20A-%20Amended%20Vaughn%20Index.sr.pdf">PDF</a></td>
           <td><a href="text-extracts/Ex.%20A-%20Amended%20Vaughn%20Index.sr.txt">TXT</a></td>
         </tr>
         <tr>
+          <td>Tax Analysts-Facchina affidavit-July 2024</td>
+          <td><span class="doc-type record">Affidavit</span></td>
+          <td>July 1, 2024</td>
+          <td>Superior Court — Bazil Facchina declaration for District</td>
+          <td><a href="Tax%20Analysts-Facchina%20affidavit-July%20%202024-executed%20(002).pdf">PDF</a></td>
+          <td><a href="text-extracts/Tax%20Analysts-Facchina%20affidavit-July%20%202024-executed%20(002).txt">TXT</a></td>
+        </tr>
+        <tr>
+          <td>Tax Analysts-FOIA-Facchina Declaration</td>
+          <td><span class="doc-type record">Declaration</span></td>
+          <td>April 5, 2024</td>
+          <td>Superior Court — Bazil Facchina declaration</td>
+          <td><a href="Tax%20Analysts-FOIA-Facchina%20Declaration-2020%20CA%20001999%20B.pdf">PDF</a></td>
+          <td><a href="text-extracts/Tax%20Analysts-FOIA-Facchina%20Declaration-2020%20CA%20001999%20B.txt">TXT</a></td>
+        </tr>
+        <tr>
+          <td>Tax Analysts-Facchina affidavit attachment</td>
+          <td><span class="doc-type record">Exhibit</span></td>
+          <td>June 27, 2024</td>
+          <td>Superior Court — revised redacted PLR pages</td>
+          <td><a href="Tax%20Analysts-Facchina%20affidavit%20attachment-revised%20redacted%20pages%20of%20OTR%20PLRs.pdf">PDF</a></td>
+          <td><a href="text-extracts/Tax%20Analysts-Facchina%20affidavit%20attachment-revised%20redacted%20pages%20of%20OTR%20PLRs.txt">TXT</a></td>
+        </tr>
+        <tr>
           <td>08B_PLRS-107 pages with pagination</td>
           <td><span class="doc-type record">Records</span></td>
-          <td>Redacted PLR pages produced for review (3 copies)</td>
+          <td>April 8, 2024</td>
+          <td>Superior Court — plaintiffs’ appendix of redacted PLR pages</td>
           <td><a href="08B_PLRS-107%20pages%20with%20pagination.pdf">PDF</a></td>
           <td><a href="text-extracts/08B_PLRS-107%20pages%20with%20pagination.txt">TXT</a></td>
         </tr>
         <tr>
+          <td>Tax Analysts-FOIA-DC OTR redacted rulings-final</td>
+          <td><span class="doc-type record">Records</span></td>
+          <td>March 19, 2024</td>
+          <td>Superior Court — OTR redacted ruling samples</td>
+          <td><a href="Tax%20Analysts-FOIA-DC%20OTR%20redacted%20rulings-final%202020%20CA%20001999%20B%20(FINAL).pdf">PDF</a></td>
+          <td><a href="text-extracts/Tax%20Analysts-FOIA-DC%20OTR%20redacted%20rulings-final%202020%20CA%20001999%20B%20(FINAL).txt">TXT</a></td>
+        </tr>
+        <tr>
+          <td>Vaughn appendix</td>
+          <td><span class="doc-type record">Appendix</span></td>
+          <td>April 20, 2024</td>
+          <td>Superior Court — Vaughn-index appendix</td>
+          <td><a href="Vaughn%20appendix.pdf">PDF</a></td>
+          <td><a href="text-extracts/Vaughn%20appendix.txt">TXT</a></td>
+        </tr>
+        <tr>
+          <td>08A_Annotation to revised Vaughn index</td>
+          <td><span class="doc-type record">Annotation</span></td>
+          <td>July 12, 2024</td>
+          <td>Superior Court — annotation to revised Vaughn index</td>
+          <td><a href="08A_Annotation%20to%20revised%20Vaughn%20index.pdf">PDF</a></td>
+          <td><a href="text-extracts/08A_Annotation%20to%20revised%20Vaughn%20index.txt">TXT</a></td>
+        </tr>
+        <tr>
           <td>Amended Redactions- January 2025</td>
           <td><span class="doc-type record">Redactions</span></td>
-          <td>Updated redaction submission after remand</td>
+          <td>January 2025</td>
+          <td>Superior Court — updated redaction submission</td>
           <td><a href="Amended%20Redactions-%20January%202025.pdf">PDF</a></td>
           <td><a href="text-extracts/Amended%20Redactions-%20January%202025.txt">TXT</a></td>
         </tr>
         <tr>
+          <td>08C_May 17 transcript</td>
+          <td><span class="doc-type transcript">Transcript</span></td>
+          <td>May 17, 2024</td>
+          <td>Superior Court — hearing transcript before Judge Matini</td>
+          <td><a href="08C_May%2017%20transcript.pdf">PDF</a></td>
+          <td><a href="text-extracts/08C_May%2017%20transcript.txt">TXT</a></td>
+        </tr>
+        <tr>
+          <td>Receipt_Vaughn response</td>
+          <td><span class="doc-type motion">Receipt</span></td>
+          <td>April 22, 2024</td>
+          <td>Superior Court — eFile receipt for Vaughn response</td>
+          <td><a href="Receipt_Vaughn%20response.pdf">PDF</a></td>
+          <td><a href="text-extracts/Receipt_Vaughn%20response.txt">TXT</a></td>
+        </tr>
+        <tr>
           <td>Calendar_Notice</td>
           <td><span class="doc-type motion">Notice</span></td>
-          <td>Hearing / calendar notice</td>
+          <td>January 25, 2022</td>
+          <td>D.C. Court of Appeals — notice of calendaring</td>
           <td><a href="Calendar_Notice.pdf">PDF</a></td>
           <td><a href="text-extracts/Calendar_Notice.txt">TXT</a></td>
         </tr>
       </tbody>
     </table>
+
+    <h2>The 24 Private Letter Rulings at Issue</h2>
+    <p>
+      OTR identified 24 PLRs responsive to the October 8, 2019 FOIA request. The following list is drawn from the District’s July 1, 2024 amended Vaughn index. Dates are the ruling dates; topics are the tax areas identified in the index.
+    </p>
+
+    <div class="plr-list">
+      <div class="plr-item"><span class="plr-date">Jan. 28, 2016</span> — <span class="plr-topic">Sales and Use Tax</span></div>
+      <div class="plr-item"><span class="plr-date">Feb. 3, 2016</span> — <span class="plr-topic">Sales and Use Tax</span></div>
+      <div class="plr-item"><span class="plr-date">Feb. 11, 2016</span> — <span class="plr-topic">QHTC Tax</span></div>
+      <div class="plr-item"><span class="plr-date">Feb. 19, 2016</span> — <span class="plr-topic">Franchise Tax</span></div>
+      <div class="plr-item"><span class="plr-date">Feb. 25, 2016</span> — <span class="plr-topic">Sales and Use Tax</span></div>
+      <div class="plr-item"><span class="plr-date">Nov. 3, 2016</span> — <span class="plr-topic">Franchise Tax</span></div>
+      <div class="plr-item"><span class="plr-date">Jan. 26, 2017</span> — <span class="plr-topic">Sales and Use Tax</span></div>
+      <div class="plr-item"><span class="plr-date">Feb. 23, 2017</span> — <span class="plr-topic">Sales and Use Tax</span></div>
+      <div class="plr-item"><span class="plr-date">May 9, 2017</span> — <span class="plr-topic">Sales and Use Tax</span></div>
+      <div class="plr-item"><span class="plr-date">July 5, 2017</span> — <span class="plr-topic">QHTC Tax</span></div>
+      <div class="plr-item"><span class="plr-date">July 7, 2017</span> — <span class="plr-topic">Sales and Use Tax</span></div>
+      <div class="plr-item"><span class="plr-date">Sept. 1, 2017</span> — <span class="plr-topic">Sales and Use Tax</span></div>
+      <div class="plr-item"><span class="plr-date">Mar. 20, 2018</span> — <span class="plr-topic">Sales and Use Tax</span></div>
+      <div class="plr-item"><span class="plr-date">May 10, 2018</span> — <span class="plr-topic">Sales and Use Tax</span></div>
+      <div class="plr-item"><span class="plr-date">June 28, 2018</span> — <span class="plr-topic">QHTC Tax</span></div>
+      <div class="plr-item"><span class="plr-date">Aug. 2, 2018</span> — <span class="plr-topic">Sales and Use Tax</span></div>
+      <div class="plr-item"><span class="plr-date">Oct. 12, 2018</span> — <span class="plr-topic">Individual Income Tax</span></div>
+      <div class="plr-item"><span class="plr-date">Dec. 7, 2018</span> — <span class="plr-topic">Estate Tax</span></div>
+      <div class="plr-item"><span class="plr-date">Feb. 14, 2019</span> — <span class="plr-topic">QHTC Tax</span></div>
+      <div class="plr-item"><span class="plr-date">Feb. 21, 2019</span> — <span class="plr-topic">Sales and Use Tax</span></div>
+      <div class="plr-item"><span class="plr-date">Feb. 28, 2019</span> — <span class="plr-topic">Franchise Tax</span></div>
+      <div class="plr-item"><span class="plr-date">Apr. 12, 2019</span> — <span class="plr-topic">Sales and Use Tax</span></div>
+      <div class="plr-item"><span class="plr-date">July 11, 2019</span> — <span class="plr-topic">Sales and Use Tax</span></div>
+      <div class="plr-item"><span class="plr-date">July 15, 2019</span> — <span class="plr-topic">Sales and Use Tax</span></div>
+    </div>
 
     <p>
       <a href="summary.md">Full case summary (Markdown)</a> ·
