@@ -4,26 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aaron R. Davis — Journalist, Investigator &amp; Researcher</title>
-  <meta name="description" content="Portfolio and investigative services of Aaron R. Davis, a Pulitzer-recognized journalist and licensed-pattern researcher offering private investigation, litigation support, and public-records research.">
+  <meta name="description" content="Portfolio and investigative services of Aaron R. Davis, a Pulitzer-recognized journalist and researcher offering private investigation, litigation support, and public-records research.">
   <style>
     :root {
-      --green: #00a652;
-      --dark: #222;
-      --gray: #7d8185;
-      --light: #f5f5f5;
-      --red: #bd261d;
-      --maxw: 760px;
+      --brown: #6b4f3c;
+      --brown-dark: #4a3729;
+      --brown-light: #8b6d53;
+      --vanilla: #f4f1ea;
+      --cream: #fffdf8;
+      --tan: #d8cfc1;
+      --text: #2b211b;
+      --muted: #6e6056;
+      --accent: #8b5a2b;
+      --maxw: 780px;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      background: #fff;
-      color: var(--dark);
+      background: var(--vanilla);
+      color: var(--text);
       line-height: 1.6;
     }
     .owner-bar {
-      background: var(--green);
+      background: var(--brown);
       color: #fff;
       font-family: Arial, sans-serif;
       font-size: 0.9rem;
@@ -36,46 +40,53 @@
       text-decoration: underline;
     }
     header {
-      border-bottom: 4px solid var(--green);
+      background: var(--cream);
+      border-bottom: 4px solid var(--brown);
       padding: 2.5rem 1rem 2rem;
+      max-width: 100%;
+    }
+    .header-inner {
       max-width: var(--maxw);
       margin: 0 auto;
     }
     header h1 {
       margin: 0 0 0.35rem;
-      font-size: 2.1rem;
+      font-size: 2.2rem;
       font-weight: 700;
+      color: var(--brown-dark);
     }
     header .tagline {
       font-family: Arial, sans-serif;
       font-size: 1.05rem;
-      color: var(--gray);
+      color: var(--muted);
       margin: 0 0 1rem;
     }
     header .contact {
       font-family: Arial, sans-serif;
       font-size: 0.92rem;
-      color: var(--gray);
+      color: var(--muted);
       line-height: 1.7;
     }
-    header .contact a { color: var(--green); }
+    header .contact a { color: var(--accent); }
     main {
       max-width: var(--maxw);
       margin: 0 auto;
       padding: 2rem 1rem;
     }
     h2 {
-      font-size: 1.35rem;
+      font-size: 1.3rem;
       margin-top: 2.75rem;
-      border-bottom: 2px solid var(--green);
-      padding-bottom: 0.25rem;
+      border-bottom: 2px solid var(--tan);
+      padding-bottom: 0.3rem;
+      color: var(--brown-dark);
     }
     h3 {
       font-size: 1.1rem;
       margin: 1.5rem 0 0.4rem;
+      color: var(--brown-dark);
     }
     p, li { font-size: 1rem; }
-    a { color: var(--green); }
+    a { color: var(--accent); }
     a:hover { text-decoration: underline; }
     .lead {
       font-size: 1.05rem;
@@ -83,7 +94,7 @@
     }
     .button {
       display: inline-block;
-      background: var(--green);
+      background: var(--brown);
       color: #fff;
       font-family: Arial, sans-serif;
       font-weight: 600;
@@ -91,18 +102,19 @@
       text-decoration: none;
       border-radius: 3px;
       margin: 0.5rem 0.75rem 0.5rem 0;
+      border: 2px solid var(--brown);
     }
-    .button:hover { background: #008c46; text-decoration: none; }
+    .button:hover { background: var(--brown-dark); text-decoration: none; }
     .button.secondary {
-      background: #fff;
-      color: var(--green);
-      border: 2px solid var(--green);
+      background: var(--cream);
+      color: var(--brown);
+      border: 2px solid var(--brown);
     }
-    .button.secondary:hover { background: var(--light); }
+    .button.secondary:hover { background: var(--vanilla); }
 
     .services {
-      background: var(--light);
-      border-left: 4px solid var(--green);
+      background: var(--cream);
+      border-left: 4px solid var(--brown);
       padding: 1.25rem;
       margin: 1.5rem 0;
     }
@@ -126,51 +138,66 @@
       .portfolio { grid-template-columns: 1fr 1fr; }
     }
     .card {
-      border: 1px solid #ddd;
+      border: 1px solid var(--tan);
       padding: 1.1rem;
       border-radius: 2px;
-      background: #fff;
+      background: var(--cream);
+      text-decoration: none;
+      display: block;
+      transition: border-color 0.15s;
     }
-    .card h3 { margin-top: 0; font-size: 1.05rem; }
+    .card:hover {
+      border-color: var(--brown);
+      text-decoration: none;
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.05rem;
+      color: var(--brown-dark);
+    }
     .card p {
       font-family: Arial, sans-serif;
       font-size: 0.92rem;
-      color: #444;
+      color: #4a3f36;
       margin: 0.4rem 0 0;
+    }
+    .card .impact {
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      color: var(--brown-light);
+      margin-top: 0.6rem;
+      font-style: italic;
     }
     .card .meta {
       font-family: Arial, sans-serif;
       font-size: 0.78rem;
-      color: var(--gray);
+      color: var(--muted);
       text-transform: uppercase;
       letter-spacing: 0.04em;
       margin-bottom: 0.35rem;
     }
+    .card.full-width { grid-column: 1 / -1; }
 
     .experience-list {
       margin: 0;
       padding-left: 1.25rem;
     }
-    .experience-list li {
-      margin-bottom: 0.75rem;
-    }
-    .role {
-      font-weight: 600;
-    }
+    .experience-list li { margin-bottom: 0.75rem; }
+    .role { font-weight: 600; }
     .role-meta {
       font-family: Arial, sans-serif;
       font-size: 0.88rem;
-      color: var(--gray);
+      color: var(--muted);
     }
 
     footer {
       max-width: var(--maxw);
       margin: 3rem auto 0;
       padding: 1.5rem 1rem;
-      border-top: 1px solid #ddd;
+      border-top: 1px solid var(--tan);
       font-family: Arial, sans-serif;
       font-size: 0.85rem;
-      color: var(--gray);
+      color: var(--muted);
     }
   </style>
 </head>
@@ -180,12 +207,14 @@
   </div>
 
   <header>
-    <h1>Aaron R. Davis</h1>
-    <p class="tagline">Journalist · Investigator · Researcher</p>
-    <div class="contact">
-      Austin, TX (relocating to VT / NH / ME / MA by Nov. 2026) · 603-793-2654<br>
-      <a href="mailto:aaron.davis.work@proton.me">aaron.davis.work@proton.me</a> ·
-      <a href="https://linkedin.com/in/aaronrobertdavis" target="_blank" rel="noopener">LinkedIn</a>
+    <div class="header-inner">
+      <h1>Aaron R. Davis</h1>
+      <p class="tagline">Journalist · Investigator · Researcher</p>
+      <div class="contact">
+        Austin, TX (relocating to VT / NH / ME / MA by Nov. 2026) · 603-793-2654<br>
+        <a href="mailto:aaron.davis.work@proton.me">aaron.davis.work@proton.me</a> ·
+        <a href="https://linkedin.com/in/aaronrobertdavis" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
   </header>
 
@@ -209,30 +238,36 @@
     </div>
 
     <h2>Selected Work</h2>
+
+    <a class="card full-width" href="https://dashboard.aaronrdavis.news" target="_blank" rel="noopener">
+      <div class="meta">Data Journalism Dashboard</div>
+      <h3>Accountability Tools &amp; Reporting Infrastructure</h3>
+      <p>A public data-journalism workspace with live trackers, source databases, FOIA logs, court monitors, campaign-finance browsers, and environmental-data prototypes — mostly focused on New Hampshire.</p>
+      <p class="impact">→ dashboard.aaronrdavis.news</p>
+    </a>
+
+    <h2>Investigative Portfolio</h2>
     <div class="portfolio">
-      <a class="card" href="./stories/great-bay-eelgrass-collapse/">
-        <div class="meta">Investigative Reporting</div>
-        <h3>Great Bay Eelgrass Collapse</h3>
-        <p>A data-driven story package on the loss of New Hampshire’s underwater meadows, with interactive maps, source notes, and public-data methodology.</p>
+      <a class="card" href="https://www.eastbaytimes.com/2018/03/29/experts-concerned-contra-costa-sheriff-tipping-off-ice-by-posting-release-dates-of-detained-immigrants/" target="_blank" rel="noopener">
+        <div class="meta">East Bay Times · 2018</div>
+        <h3>Sheriff Tipping Off ICE</h3>
+        <p>Reporters found the Contra Costa Sheriff was posting release dates online, effectively alerting ICE to detain immigrants.</p>
+        <p class="impact">Impact: Story prompted community reaction, public forum, and cancellation of ICE contract.</p>
       </a>
 
-      <a class="card" href="./nhweather">
-        <div class="meta">Civic Tool</div>
-        <h3>New Hampshire Weather Widget</h3>
-        <p>A 300×250 embeddable forecast widget for any NH ZIP code, built for newsrooms and newsletters. No API key required.</p>
+      <a class="card" href="https://web.archive.org/web/20180712091724/https://www.eastbaytimes.com/2017/03/24/exclusive-ghost-ship-owners-knew-of-dangerous-electrical-system-before-deadly-fire/" target="_blank" rel="noopener">
+        <div class="meta">East Bay Times · 2017</div>
+        <h3>Ghost Ship Fire Investigation</h3>
+        <p>Exclusive reporting that the warehouse owners knew of dangerous electrical conditions before the deadly Oakland fire.</p>
+        <p class="impact">Impact: Investigative work cited by public utility commissions and fire regulators in California.</p>
       </a>
 
-      <div class="card">
-        <div class="meta">Litigation Support</div>
-        <h3>Securities Class-Action Research</h3>
-        <p>Located and interviewed confidential witnesses for plaintiff law firms in ad tech, biotech, and high-tech manufacturing cases.</p>
-      </div>
-
-      <div class="card">
-        <div class="meta">Public Records</div>
-        <h3>FOIA Litigation — D.C. Tax Letter Rulings</h3>
-        <p>Co-drafted complaint and reply briefs in a successful public-records case opening private tax letter rulings to inspection (2020 CA 001999 B).</p>
-      </div>
+      <a class="card" href="https://web.archive.org/web/20260307020531/https://www.amarillo.com/story/news/crime/2016/04/20/ex-husband-arrested-helium-road-murder/13192556007/" target="_blank" rel="noopener">
+        <div class="meta">Amarillo Globe-News · 2016</div>
+        <h3>Helium Road Murder</h3>
+        <p>Cell tower data analysis and reporting helped show a woman had been framed for murder by her ex-husband.</p>
+        <p class="impact">Impact: Woman released from death row. Ex-husband charged for framing her.</p>
+      </a>
     </div>
 
     <h2>Experience</h2>
@@ -262,8 +297,7 @@
 
     <h2>Get in touch</h2>
     <p>
-      I’m currently taking on investigative, research, and litigation-support work in New England and remote roles.
-      <br>
+      I’m currently taking on investigative, research, and litigation-support work in New England and remote roles.<br>
       <a href="mailto:aaron.davis.work@proton.me">aaron.davis.work@proton.me</a> · 603-793-2654
     </p>
   </main>
