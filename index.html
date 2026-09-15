@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aaron R. Davis — News &amp; Civic Tools</title>
+  <title>Aaron R. Davis — Journalist, Investigator &amp; Researcher</title>
+  <meta name="description" content="Portfolio and investigative services of Aaron R. Davis, a Pulitzer-recognized journalist and licensed-pattern researcher offering private investigation, litigation support, and public-records research.">
   <style>
     :root {
       --green: #00a652;
@@ -11,7 +12,7 @@
       --gray: #7d8185;
       --light: #f5f5f5;
       --red: #bd261d;
-      --maxw: 720px;
+      --maxw: 760px;
     }
     * { box-sizing: border-box; }
     body {
@@ -36,129 +37,130 @@
     }
     header {
       border-bottom: 4px solid var(--green);
-      padding: 2rem 1rem;
+      padding: 2.5rem 1rem 2rem;
       max-width: var(--maxw);
       margin: 0 auto;
     }
     header h1 {
-      margin: 0 0 0.25rem;
-      font-size: 1.9rem;
+      margin: 0 0 0.35rem;
+      font-size: 2.1rem;
       font-weight: 700;
     }
     header .tagline {
       font-family: Arial, sans-serif;
-      font-size: 1rem;
+      font-size: 1.05rem;
       color: var(--gray);
-      margin: 0;
+      margin: 0 0 1rem;
     }
+    header .contact {
+      font-family: Arial, sans-serif;
+      font-size: 0.92rem;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+    header .contact a { color: var(--green); }
     main {
       max-width: var(--maxw);
       margin: 0 auto;
       padding: 2rem 1rem;
     }
     h2 {
-      font-size: 1.4rem;
-      margin-top: 2.5rem;
+      font-size: 1.35rem;
+      margin-top: 2.75rem;
       border-bottom: 2px solid var(--green);
       padding-bottom: 0.25rem;
     }
-    p, li {
-      font-size: 1rem;
+    h3 {
+      font-size: 1.1rem;
+      margin: 1.5rem 0 0.4rem;
     }
+    p, li { font-size: 1rem; }
     a { color: var(--green); }
     a:hover { text-decoration: underline; }
-
-    /* Widget container */
-    .widget-stage {
-      display: flex;
-      justify-content: center;
-      padding: 1.5rem 0;
+    .lead {
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
     }
-    .widget {
-      width: 300px;
-      min-height: 250px;
-      background: #fff;
-      border: 1px solid #ddd;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-    }
-    .widget-header {
+    .button {
+      display: inline-block;
       background: var(--green);
       color: #fff;
-      padding: 0.5rem;
-      margin: -1rem -1rem 0.75rem -1rem;
       font-family: Arial, sans-serif;
-      font-weight: bold;
-      font-size: 0.95rem;
-    }
-    .widget label {
-      font-family: Arial, sans-serif;
-      font-size: 0.8rem;
-      color: var(--gray);
-      margin-bottom: 0.25rem;
-    }
-    .widget input[type="text"] {
-      width: 100%;
-      padding: 0.5rem;
-      border: 1px solid #ccc;
-      font-size: 0.9rem;
-      margin-bottom: 0.5rem;
-    }
-    .widget button {
-      width: 100%;
-      background: var(--green);
-      color: #fff;
-      border: none;
-      padding: 0.5rem;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .widget button:hover { background: #009c4d; }
-    .forecast {
-      flex-grow: 1;
-      margin-top: 0.75rem;
-      font-size: 0.85rem;
-      line-height: 1.4;
-    }
-    .forecast .period {
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-      color: var(--dark);
-      margin-top: 0.5rem;
-    }
-    .forecast .temp {
-      color: var(--red);
-      font-weight: bold;
-    }
-    .nws-link {
-      margin-top: 0.75rem;
-      font-family: Arial, sans-serif;
-      font-size: 0.8rem;
-    }
-    .nws-link a {
-      color: var(--green);
+      font-weight: 600;
+      padding: 0.65rem 1.1rem;
       text-decoration: none;
+      border-radius: 3px;
+      margin: 0.5rem 0.75rem 0.5rem 0;
     }
-    .nws-link a:hover { text-decoration: underline; }
-    .loading, .error {
-      font-family: Arial, sans-serif;
-      font-size: 0.8rem;
-      color: var(--gray);
-      margin-top: 0.5rem;
+    .button:hover { background: #008c46; text-decoration: none; }
+    .button.secondary {
+      background: #fff;
+      color: var(--green);
+      border: 2px solid var(--green);
     }
-    .error { color: var(--red); }
+    .button.secondary:hover { background: var(--light); }
 
-    .description {
+    .services {
       background: var(--light);
       border-left: 4px solid var(--green);
-      padding: 1rem;
+      padding: 1.25rem;
       margin: 1.5rem 0;
+    }
+    .services ul {
+      margin: 0.5rem 0 0;
+      padding-left: 1.25rem;
+    }
+    .services li {
       font-family: Arial, sans-serif;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin: 1.25rem 0;
+    }
+    @media (min-width: 600px) {
+      .portfolio { grid-template-columns: 1fr 1fr; }
+    }
+    .card {
+      border: 1px solid #ddd;
+      padding: 1.1rem;
+      border-radius: 2px;
+      background: #fff;
+    }
+    .card h3 { margin-top: 0; font-size: 1.05rem; }
+    .card p {
+      font-family: Arial, sans-serif;
+      font-size: 0.92rem;
       color: #444;
+      margin: 0.4rem 0 0;
+    }
+    .card .meta {
+      font-family: Arial, sans-serif;
+      font-size: 0.78rem;
+      color: var(--gray);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.35rem;
+    }
+
+    .experience-list {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+    .experience-list li {
+      margin-bottom: 0.75rem;
+    }
+    .role {
+      font-weight: 600;
+    }
+    .role-meta {
+      font-family: Arial, sans-serif;
+      font-size: 0.88rem;
+      color: var(--gray);
     }
 
     footer {
@@ -179,119 +181,95 @@
 
   <header>
     <h1>Aaron R. Davis</h1>
-    <p class="tagline">Investigative reporting, newsroom operations, and lightweight civic tools for New Hampshire.</p>
+    <p class="tagline">Journalist · Investigator · Researcher</p>
+    <div class="contact">
+      Austin, TX (relocating to VT / NH / ME / MA by Nov. 2026) · 603-793-2654<br>
+      <a href="mailto:aaron.davis.work@proton.me">aaron.davis.work@proton.me</a> ·
+      <a href="https://linkedin.com/in/aaronrobertdavis" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
   </header>
 
   <main>
-    <div class="description">
-      <strong>What this is:</strong> A personal data-journalism workspace — interactive stories, civic tools, and investigative notebooks built from public data and documented methodology. Nothing is paywalled or gated.
+    <p class="lead">
+      I’m a Pulitzer-recognized reporter and investigator with 13+ years of experience in newsrooms, litigation support, and public-records research. I help law firms, news organizations, and clients find facts, locate people, and build documented cases.
+    </p>
+
+    <a class="button" href="./pi-services.html">Private Investigator &amp; Litigation Support Services</a>
+    <a class="button secondary" href="https://linkedin.com/in/aaronrobertdavis" target="_blank" rel="noopener">View LinkedIn</a>
+
+    <div class="services">
+      <h3 style="margin-top:0">How I can help</h3>
+      <ul>
+        <li>Witness location and confidential interviews</li>
+        <li>OSINT, public records, and court-file research</li>
+        <li>FOIA / RTK strategy and litigation support</li>
+        <li>Securities and class-action case investigation</li>
+        <li>Data journalism, fact-checking, and background research</li>
+      </ul>
     </div>
 
-    <p>
-      I’m a New Hampshire native returning from Texas to help rebuild local accountability journalism.
-      This site hosts working prototypes of small, fast tools for newsrooms and readers — starting with a live New Hampshire weather widget and an interactive eelgrass map for InDepthNH.
-    </p>
+    <h2>Selected Work</h2>
+    <div class="portfolio">
+      <a class="card" href="./stories/great-bay-eelgrass-collapse/">
+        <div class="meta">Investigative Reporting</div>
+        <h3>Great Bay Eelgrass Collapse</h3>
+        <p>A data-driven story package on the loss of New Hampshire’s underwater meadows, with interactive maps, source notes, and public-data methodology.</p>
+      </a>
 
-    <h2>Featured Story</h2>
-    <p>
-      <strong><a href="./stories/great-bay-eelgrass-collapse/">Great Bay Eelgrass Collapse</a></strong><br>
-      A rough draft on the loss of New Hampshire’s underwater meadows — the science, the lawsuit, the deal, and what it will take to bring them back. Includes the eelgrass year-slider map, the MS4/waiver map, and the Great Bay 2030 watershed map.
-    </p>
+      <a class="card" href="./nhweather">
+        <div class="meta">Civic Tool</div>
+        <h3>New Hampshire Weather Widget</h3>
+        <p>A 300×250 embeddable forecast widget for any NH ZIP code, built for newsrooms and newsletters. No API key required.</p>
+      </a>
 
-    <h2>Projects</h2>
-    <ul>
-      <li><strong><a href="./stories/great-bay-eelgrass-collapse/">Great Bay Eelgrass Collapse</a></strong> — A working draft story package with maps, data tables, and source notes.</li>
-      <li><strong><a href="./eelgrass-indepthnh-embed/">Great Bay Eelgrass Disappearance Slider</a></strong> — Standalone before/after slider showing the collapse of eelgrass beds in the Great Bay estuary.</li>
-      <li><strong><a href="./nhweather">New Hampshire Weather Widget</a></strong> — A 300×250, keyless embeddable forecast for any ZIP code.</li>
-    </ul>
+      <div class="card">
+        <div class="meta">Litigation Support</div>
+        <h3>Securities Class-Action Research</h3>
+        <p>Located and interviewed confidential witnesses for plaintiff law firms in ad tech, biotech, and high-tech manufacturing cases.</p>
+      </div>
 
-    <h2>New Hampshire Weather</h2>
-    <p>
-      A 300×250, keyless widget that pulls the official National Weather Service forecast for any ZIP code
-      and links to the matching NWS local page. Built to drop into a WordPress sidebar or embed on any page.
-    </p>
-
-    <div class="widget-stage">
-      <div class="widget" id="weatherWidget">
-        <div class="widget-header">New Hampshire Weather</div>
-        <label for="zipInput">Enter your ZIP code</label>
-        <input type="text" id="zipInput" placeholder="e.g. 03301" maxlength="5">
-        <button onclick="getWeather()">Get Forecast</button>
-        <div class="forecast" id="forecastArea"></div>
-        <div class="nws-link" id="nwsLink"></div>
+      <div class="card">
+        <div class="meta">Public Records</div>
+        <h3>FOIA Litigation — D.C. Tax Letter Rulings</h3>
+        <p>Co-drafted complaint and reply briefs in a successful public-records case opening private tax letter rulings to inspection (2020 CA 001999 B).</p>
       </div>
     </div>
 
-    <div class="note">
-      <strong>No API key required.</strong> Uses Zippopotam.us for ZIP-to-coordinates and the
-      <a href="https://api.weather.gov/" target="_blank" rel="noopener">National Weather Service API</a>.
-      Drop the widget code into any WordPress Custom HTML block, newsletter embed, or static page.
-    </div>
+    <h2>Experience</h2>
+    <ul class="experience-list">
+      <li>
+        <span class="role">On Point Investigations</span> — Private Investigator / Litigation Support Researcher
+        <div class="role-meta">Remote · Mar. 2026 – July 2026</div>
+      </li>
+      <li>
+        <span class="role">U.S. News &amp; World Report</span> — Assignment Editor, Investing Vertical
+        <div class="role-meta">Remote · Oct. 2021 – Sept. 2025</div>
+      </li>
+      <li>
+        <span class="role">Tax Notes (Tax Analysts)</span> — State Tax Reporter
+        <div class="role-meta">Washington, D.C. · Jan. 2019 – Dec. 2020</div>
+      </li>
+      <li>
+        <span class="role">East Bay Times</span> — Metro Reporter
+        <div class="role-meta">Oakland, CA · Sept. 2016 – Sept. 2018</div>
+      </li>
+    </ul>
+
+    <h2>Recognition</h2>
+    <ul class="experience-list">
+      <li><strong>Pulitzer Prize</strong> — Breaking News Reporting, 2017 (East Bay Times, Ghost Ship fire coverage)</li>
+    </ul>
 
     <h2>Get in touch</h2>
     <p>
-      I’m currently exploring newsroom operations, editing, and investigative projects in New Hampshire.
+      I’m currently taking on investigative, research, and litigation-support work in New England and remote roles.
       <br>
-      <a href="mailto:aaron.davis8@gmail.com">aaron.davis8@gmail.com</a>
+      <a href="mailto:aaron.davis.work@proton.me">aaron.davis.work@proton.me</a> · 603-793-2654
     </p>
   </main>
 
   <footer>
-    © 2026 Aaron R. Davis. Personal data-journalism workspace. Built with plain HTML, CSS, and JavaScript. Hosted on Cloudflare Pages.
+    © 2026 Aaron R. Davis. Personal portfolio and investigative-services site. Hosted on Cloudflare Pages.
   </footer>
-
-  <script>
-    async function getWeather() {
-      const zip = document.getElementById('zipInput').value.trim();
-      const forecastArea = document.getElementById('forecastArea');
-      const nwsLink = document.getElementById('nwsLink');
-      forecastArea.innerHTML = '<div class="loading">Looking up location...</div>';
-      nwsLink.innerHTML = '';
-
-      if (!/^\d{5}$/.test(zip)) {
-        forecastArea.innerHTML = '<div class="error">Please enter a 5-digit ZIP code.</div>';
-        return;
-      }
-
-      try {
-        const geoRes = await fetch(`https://api.zippopotam.us/us/${zip}`);
-        if (!geoRes.ok) throw new Error('ZIP not found');
-        const geoData = await geoRes.json();
-        const place = geoData.places[0];
-        const lat = parseFloat(place.latitude);
-        const lon = parseFloat(place.longitude);
-
-        const pointRes = await fetch(`https://api.weather.gov/points/${lat},${lon}`);
-        if (!pointRes.ok) throw new Error('NWS point lookup failed');
-        const pointData = await pointRes.json();
-        const forecastUrl = pointData.properties.forecast;
-        const locationName = `${pointData.properties.relativeLocation.properties.city}, ${pointData.properties.relativeLocation.properties.state}`;
-
-        const forecastRes = await fetch(forecastUrl);
-        if (!forecastRes.ok) throw new Error('Forecast unavailable');
-        const forecastData = await forecastRes.json();
-        const periods = forecastData.properties.periods.slice(0, 3);
-
-        let html = `<div style="font-family:Arial,sans-serif;font-weight:bold;color:#333;margin-bottom:0.5rem;">${locationName}</div>`;
-        periods.forEach(p => {
-          html += `
-            <div class="period">${p.name}</div>
-            <div>${p.shortForecast}, <span class="temp">${p.temperature}°${p.temperatureUnit}</span></div>
-            <div style="font-size:0.75rem;color:#666;">${p.windSpeed} ${p.windDirection}</div>
-          `;
-        });
-        forecastArea.innerHTML = html;
-
-        const nwsLocalUrl = pointData.properties.forecastOffice || `https://forecast.weather.gov/zipcity.php?inputstring=${zip}`;
-        nwsLink.innerHTML = `<a href="${nwsLocalUrl}" target="_blank" rel="noopener">Full forecast from National Weather Service →</a>`;
-
-      } catch (err) {
-        forecastArea.innerHTML = `<div class="error">Could not load forecast. <a href="https://forecast.weather.gov/zipcity.php?inputstring=${zip}" target="_blank" rel="noopener">Try NWS directly</a>.</div>`;
-      }
-    }
-
-    document.getElementById('zipInput').value = '03301';
-    getWeather();
-  </script>
 </body>
 </html>
