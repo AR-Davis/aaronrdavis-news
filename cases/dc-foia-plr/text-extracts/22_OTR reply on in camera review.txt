@@ -1,0 +1,239 @@
+                 SUPERIOR COURT OF THE DISTRICT OF COLUMBIA
+                                 Civil Division
+
+
+TAX ANALYSTS, et al.,
+
+               Plaintiffs,
+                                                  2020 CA 001999 B
+        v.                                        Judge Robert R. Rigsby
+
+DISTRICT OF COLUMBIA, et al.,
+
+               Defendants.
+
+
+    DEFENDANT DISTRICT OF COLUMBIA’S REPLY TO PLAINTIFFS’ OPPOSITION
+            TO DEFENDANT’S MOTION FOR SUMMARY JUDGMENT
+
+                                        INTRODUCTION
+
+        Defendant District of Columbia (the District) hereby replies to the portion of Plaintiffs’
+
+motion for in camera review that opposes the District’s motion for summary judgment.1 As
+
+explained below, Plaintiffs’ arguments in opposition to summary judgment are unavailing and
+
+summary judgment in favor of the District is appropriate.
+
+
+
+
+1
+        Plaintiffs filed their motion as one requesting in camera review, but the memorandum of
+points and authorities attached to the motion both argues for in camera review and makes
+substantive arguments in opposition to the District’s motion for summary judgment. See Pl.’s
+Mem. Points & Auth., filed Dec. 4, 2020. As stated in the District’s Praecipe filed December 15,
+2020, the District does not oppose Plaintiffs’ request for in camera review. However, the
+District submits this reply in response to Plaintiffs’ arguments in opposition to the District’s
+motion for summary judgment. Because Plaintiffs’ December 4, 2020 motion and
+accompanying memorandum was filed as a motion rather than an opposition, the District had 14
+days under Super. Ct. Civ. R. 12-I(e) to respond and now timely files this reply.
+                                             ARGUMENT
+
+I.         There Are No Material Factual Disputes that Preclude Granting Summary
+           Judgment to the District.
+
+           There are no material factual disputes that preclude entering judgment for the District at
+
+this stage of litigation. Plaintiffs argue that whether any material is reasonably segregable from
+
+exempt portions of the private letter rulings (PLRs) is a factual dispute. The District agrees that
+
+it is a dispute in this case, but not a factual one. Rather, segregability is a legal determination to
+
+be made by the Court. See, e.g., Washington Post Co. v. Minority Bus. Opportunity Comm'n,
+
+560 A.2d 517, 523 (D.C. 1989) (remanding for the trial judge to determine segregability).
+
+Accordingly, the parties’ disagreement on this issue is simply a legal dispute to be resolved at the
+
+summary judgment stage.
+
+II.        The PLRs Are Exempt from Disclosure.
+
+           The District asserts that two FOIA exemptions apply to the PLRs—the “other laws”
+
+exemption in conjunction with the District tax code and the personal privacy exemption. In
+
+response, Plaintiffs argue that the relevant provisions of the tax code do not preclude disclosure
+
+and that the personal privacy exemption applies only to names and identifiers. As explained
+
+below, Plaintiffs arguments are unavailing.
+
+           A.     Multiple Tax Secrecy Provisions Preclude Disclosure.
+
+           Plaintiffs acknowledge that various tax secrecy provisions govern “tax information”
+
+provided to the District. But Plaintiffs argue that the tax secrecy provisions should be given a
+
+narrow interpretation. For the reasons set forth in the District’s motion for summary judgment,
+
+the applicable language is expansive, and should thus be read to broadly cover “state[] or local
+
+tax information either submitted by the taxpayer or otherwise obtained.” Def.’s Mot. for Summ.
+
+J. at 5.
+
+                                                    2
+        But even under Plaintiffs’ interpretation of “tax information,” the documents would still
+
+be exempt. Plaintiffs argue that the “tax information” protected by the tax code should be
+
+interpreted consistently with the federal tax provisions,2 which bar disclosure of “a taxpayer’s
+
+identity, the nature, source, or amount of his income, payments, receipts, deductions,
+
+exemptions, credits assets, liabilities, net worth, tax liability, tax withheld, deficiencies,
+
+overassessments, or tax payments . . . . or any other data . . . furnished to [the relevant tax
+
+authority] . . . with respect to the determination of the existence, or possible existence, of liability
+
+. . .” Pls.’ Mot. at 6 (quoting 26 U.S.C. § 6103(b)(2)(A)) (emphasis added). Despite this,
+
+Plaintiffs argue that they are entitled to “the legal issue, the facts, and the agency’s analysis”
+
+contained in the PLRs. But Plaintiffs do not and cannot reconcile an entitlement to this
+
+information with the definition of exempt information they themselves quote. Plaintiffs are not
+
+entitled to the facts submitted by a taxpayer along with the analysis of those facts if “any other
+
+data . . . furnished to [OTR] . . . with respect to the determination of the existence, or possible
+
+existence, of liability” is exempt from disclosure. Pls.’ Mot. at 6 (quoting 26 U.S.C. §
+
+6103(b)(2)(A)). Thus, even under Plaintiffs’ reading of the tax secrecy provisions, Plaintiffs are
+
+not entitled to the information sought.
+
+
+
+
+2
+        Although the District looks to interpretations of the federal FOIA statute for guidance in
+interpreting the District’s FOIA statute, there is no analogous principle governing interpretation
+of the District tax code. Cf. Doe v. District of Columbia Metro. Police Dep’t, 948 A.2d 1210,
+1220 (D.C. 2008) (stating that “except where the two acts differ,” cases interpreting the federal
+FOIA are instructive); Sch. St. Assocs. Ltd. P'ship v. District of Columbia, 764 A.2d 798, 805
+(D.C. 2001) (“[W]e owe a level of deference to OTR’s interpretation of its governing statute.”).
+
+
+
+                                                   3
+       B.      The Personal Privacy Exemption Also Protects Tax Information.
+
+       The parties are in agreement that the personal privacy exemption precludes release of
+
+“names and personal identifiers.” Pls.’ Mot. at 8. Although Plaintiffs would stop there, this
+
+exemption applies more broadly than to mere names and identifiers.
+
+       Disclosing the details of information provided by individuals under the promise of
+
+confidentiality constitutes an unwarranted invasion of personal privacy. See District of
+
+Columbia v. Fraternal Order of Police, Metropolitan Police Dep’t Labor Committee (“FOP
+
+2013”), 75 A.3d 259, 267 (D.C. 2013) (“Like the D.C. Circuit, we conclude that a government
+
+pledge of confidentiality, made in good faith and consistently honored, should be given weight
+
+on the privacy side of the scale.”). As such, “the burden shifts to the requestor to demonstrate
+
+that the disclosure of the withheld information would advance a significant public interest, and
+
+that public interest in disclosure outweighs the privacy concern.” Fraternal Order of Police,
+
+Metropolitan Police Labor Committee v. District of Columbia (“FOP 2015”), 124 A.3d 69, 77
+
+(D.C. 2015) (footnote omitted).
+
+       Plaintiffs do not seriously argue that private letter rulings are not issued under a promise
+
+of confidentiality by the District. And contrary to Plaintiffs’ reliance on a single public guidance
+
+being “adapted” from a PLR, Plaintiffs point to no instance of a PLR being publicly released.
+
+Thus, the District has made a promise of confidentiality “in good faith and consistently.” FOP
+
+2013, 75 A.3d at 267. And Plaintiffs have failed to show that the public interest in disclosure
+
+would outweigh the privacy concerns. Plaintiffs acknowledge that the District routinely provides
+
+public tax guidance. See Pls.’ Mot. at 9; see also Def. Mot. for Summ. J. Ex. 8. Instead,
+
+Plaintiffs argue that the public has an interest in avoiding the development of “secret law.” Pls.’
+
+Mot. at 9. But it is undisputed that the District does not consider PLRs as having precedential
+
+
+
+                                                 4
+effect. See Def.’s Stmt. of Material Undisputed Facts ¶ 2. And although the PLRs “bind” OTR
+
+with respect to the taxpayer requesting the guidance, they are not truly binding as OTR can
+
+withdraw or revoke a PLR. Def. Mot. for Summ. J. Ex. 7. And OTR emphasizes that a PLR
+
+“may not be used by any other taxpayer.” Id. Thus, it is simply inaccurate to characterize PLRs
+
+as some sort of “secret law.”
+
+       Accordingly, Plaintiffs have not met their burden to show that the public interest
+
+outweighs the privacy concerns of the PLRs. The FOIA privacy exemption thus applies and
+
+precludes disclosure.
+
+                                        CONCLUSION
+
+       For these reasons, and for the reasons stated in the District’s moving memorandum of
+
+points and authorities in support of its motion for summary judgment, the Court should grant
+
+summary judgment in favor of the District after its review of the documents in camera.
+
+
+Date: December 18, 2020                             Respectfully submitted,
+
+                                                    KARL A. RACINE
+                                                    Attorney General for the District of Columbia
+
+                                                    CHAD COPELAND
+                                                    Deputy Attorney General
+                                                    Civil Litigation Division
+
+                                                    /s/ Christina Okereke
+                                                    CHRISTINA OKEREKE [219272]
+                                                    Chief, Civil Litigation Division Section I
+
+                                                    /s/ Matthew Trout
+                                                    MATTHEW TROUT [1030119]
+                                                    Assistant Attorney General
+                                                    400 Sixth Street, N.W.
+                                                    Washington, D.C. 20001
+                                                    (202) 724-5695
+                                                    (202) 724-6590 (fax)
+                                                    matthew.trout1@dc.gov
+
+                                                5
+    Counsel for Defendant District of Columbia
+
+
+
+
+6
+

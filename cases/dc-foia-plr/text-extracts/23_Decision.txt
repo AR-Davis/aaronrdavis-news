@@ -1,0 +1,356 @@
+                    SUPERIOR COURT OF THE DISTRICT OF COLUMBIA
+                                    Civil Division
+
+
+    TAX ANALYSTS, et al.,
+
+                    Plaintiffs,                                           Case No. 2020 CA 001999 B
+                                                                               Judge Robert R. Rigsby
+               v.
+
+    DISTRICT OF COLUMBIA, et. al.,
+
+                    Defendants.
+
+
+
+                                                    ORDER
+
+         This matter is before the Court on the Defendant District of Columbia’s (“the District”)
+
+Opposed Motion for Summary Judgment, filed on November 23, 2020.                              Plaintiff filed an
+
+Opposition on December 4, 2020, and Defendant filed a Reply on December 18, 2020.1 Upon
+
+consideration of the parties’ submissions and the entire record herein, Defendant’s Motion is
+
+granted.
+
+                                               BACKGROUND
+
+         Private Letter Rulings (PLRs) are the Office of Tax and Revenue’s (“OTR”) “response to
+
+taxpayer requests for guidance on specific tax matters. A ruling may be relied upon a taxpayer
+
+concerning a specific tax matter, since the ruling binds OTR as to the specific tax matter.” Def.
+
+Ex. 7, Private Letter Rulings – Tax Law and Guidance, Office of Tax and Revenue, available at
+
+https://otr.cfo.dc.gov/node/410292 (last accessed, Jan. 11, 2021). PLRs apply solely to the
+
+taxpayers requesting them, and OTR does not consider them as having precedential effect. See id.
+
+PLRs thus contrast with other types of tax guidance provided by OTR, such as tax notices, tax
+
+
+1
+  Along with their opposition, Plaintiffs filed a Motion for In Camera Review of Records to review the 24 PLRs at
+issue in the instant dispute.
+rulings, and declaratory orders, which provide generalized interpretive guidance or decisions made
+
+through public administrative proceedings, all of which are available online. See Def. Ex. 8, Tax
+
+Law and Guidance, Office of Tax and Revenue, available at https://otr.cfo.dc.gov/page/tax-law-
+
+and-guidance (last accessed Jan. 11, 2021).
+
+       On October 8, 2019, Plaintiffs submitted a District of Columbia Freedom of Information
+
+Act Request (“FOIA”) to the Office of the Chief Financial Officer (“OCFO”), of which OTR is a
+
+sub-agency. See DC. Code § 1-204.24a, seeking copies of all private letter rulings, general
+
+information letters, and technical advice memoranda prepared by OTR between January 1, 2016
+
+and October 8, 2019. Ex 2, Pls.’ Oct. 8, 2019 FOIA Request. On November 14, 2019, OCFO
+
+denied the request, citing FOIA exemptions 1 and 6, which respectively exempt from disclosure
+
+confidential business records and other records for which disclosure is specifically prohibited by
+
+statute. Def. Ex. 3, OCFO’s Nov. 14, 2019 Letter.
+
+       Plaintiffs appealed that decision to the Mayor on November 20, 2019. Def. Ex. 4 Pls.’
+
+Nov. 20, 2019 Appeal. In response to the appeal, OCFO submitted a letter stating that it did not
+
+locate any general information letters or technical advice memoranda but had located 24 private
+
+letter rulings responsive to Plaintiff’s request. Def. Ex. 5, OCFO’s Dec. 16, 2019 Response to
+
+Pls.’ Appeal, at 1. OCFO further indicated that FOIA exemption 2, which exempts disclosure of
+
+personal private information, also applied to portions of the PLRs Id. The Mayor denied the appeal
+
+on January 14, 2020, agreeing that the three FOIA exemptions cited by OCFO applied, and stating
+
+that any-nonexempt material was not reasonably segregable from the exempt portions of the
+
+letters. Ex. 6, Jan 14, 2020 Denial of Appeal. Plaintiffs now bring suit to compel disclosure of
+
+these Private Letter Rulings.
+
+
+
+
+                                                2
+                                        LEGAL STANDARD
+
+Summary Judgment
+
+       To prevail on a motion for summary judgment, the moving party has the burden of
+
+demonstrating, based on the entire record, that there is no genuine issue as to any material fact and
+
+that it is thus entitled to judgment as a matter of law. See Super. Ct. Civ. R. 56(c); see also Wash.
+
+Inv. Ptnrs. of Del., LLC v. Sec. House, 28 A.3d 566, 573 (D.C. 2011) (citing Grant v. May
+
+Department Stores Co., 786 A.2d 580, 583 (D.C. 2001)). “A genuine issue of material fact exists
+
+if the record contains ‘some significant probative evidence…so that a reasonable fact-finder would
+
+return a verdict for the non-moving party.’” See Brown v. 1301 K St. Ltd. P’ship, 31 A.3d 902, 908
+
+(D.C. 2011) (citing 1836 S St. Tenants Ass’n v. Estate of Battle, 965 A.2d 832, 836 (D.C. 2009)).
+
+       Once the movant satisfies this burden, the burden shifts to the non-moving party to show
+
+the existence of an issue of material fact. See id.; Bruno v. Western Union Fin. Servs., Inc., 973
+
+A.2d 713, 717 (D.C. 2009). To defeat summary judgment, the non-moving party “must produce at
+
+least enough evidence to make out a prima facie case in support of his position,” Bruno, 973 A.2d
+
+at 717 (internal quotations and citation omitted), and a showing of proof sufficient to create a
+
+genuine issue of a material fact. See Celotex Corp. v. Catrett, 477 U.S. 317, 322-23 (1986). “A
+
+movant is entitled to summary judgment when the evidence is such that a reasonable jury, drawing
+
+all reasonable inferences in the non-movant’s favor, could not return a verdict for the non-movant.”
+
+See Walker v. Johnson, 798 F.3d 1085, 1091 (D.C. Cir. 2015) (citing Anderson v. Liberty Lobby,
+
+Inc., 477 U.S. 242, 248, 255 (1986)).
+
+
+
+
+                                                 3
+District of Columbia Freedom of Information Act
+
+       “The District of Columbia FOIA. . . .was modeled on the corresponding federal statute, 5
+
+U.S.C. § 552 (1982), and many of its provisions closely parallel those of the federal act.” Barry
+
+v. Washington Post Co., 529 A.2d 319, 321 (D.C. 1987). Like the federal FOIA, the D.C. FOIA
+
+embodies a strong policy that favors the disclosure of information related to governmental affairs
+
+and the acts of public officials. Id. This policy “requires the courts to read narrowly any
+
+statutory exemptions from disclosure.” Id. (citing Dunhill v. Director, District of Columbia
+
+Department of Transportation, 416 A.2d 244, 247 n.5 (D.C. 1980)). “The act provides for full
+
+disclosure unless the information requested is exempted under a specific statutory provision; in
+
+the absence of a statutory exemption, a court has no general equitable power to prevent
+
+disclosure under FOIA of public documents and records.” Id. (citing Washington Post Co. v.
+
+United States Department of State, 222 U.S. App. D.C. 248, 250, 685 F.2d 698, 700 (1982), cert.
+
+granted, 464 U.S. 812, 104 S. Ct. 65, 78 L. Ed. 2d 80, vacated as moot, 464 U.S. 979, 104 S. Ct.
+
+418, 78 L. Ed. 2d 355 (1983)). The Court has no power to create additional exemptions from
+
+disclosure. Id Finally, “any doubts about the applicability of a particular exemption must be
+
+resolved in favor of disclosure.” Id. (citing Hawkes v. Internal Revenue Service, 467 F.2d 787,
+
+795-796 (6th Cir. 1972)). Judicial review of an agency’s decision under D.C. FOIA is de novo,
+
+the burden is on the agency to sustain its decision, and the court may examine the withheld
+
+documents in camera in order to assess any exemption claims. D.C. Code §2-537(b).
+
+                                         DISCUSSION
+
+Section 47-4406 Prohibits the Disclosure of PLRs
+
+       Defendants argue that summary judgment is appropriate because the documents at issue,
+
+24 PLRs, are exempt from disclosure under D.C. Code 47-4406, which governs the secrecy of tax
+
+
+
+
+                                                4
+returns and tax information. Defendants claim that the section 47-4406 is a separate statute that
+
+specifically exempts the PLRs from disclosure thus qualifying as an exemption under D.C. FOIA
+
+section § 2-534(a)(6)(A). The Court agrees.
+
+         Section 47-4406 states in relevant part that:
+
+         an officer, employee, or contractor, or former officer, employee, or contractor of the
+         District of Columbia shall not divulge or make known in any manner the amount of
+         reported value, or any information relating to value or the computation of value disclosed
+         in a [tax] return required to be filed under this title. . . . This subsection shall also be
+         applicable to federal, state, or local tax returns (or copies of these returns) and to federal,
+         state, or local tax information either submitted by the taxpayer or otherwise obtained.
+
+
+D.C. Code § 47-4406 (emphasis added)2
+
+         The face of the provision leaves no discretion to District officials and applies not only to
+
+“returns” but also to any “tax information” submitted by the taxpayer, whether it is included in the
+
+return or not. See id. There are instances where the statute contemplates disclosure. See id. § 47-
+
+4406 (b)-(e). However, FOIA is not listed among the exceptions to disclosure, and none of the
+
+other narrow exceptions apply. See id. There are also criminal penalties that attach to anyone who
+
+willingly discloses this tax information. § 47-4406 (f).
+
+         Here, it is undisputed that the Private Letter Rulings Plaintiffs seek are the Defendant’s
+
+responses to private requests by taxpayers for advice on their specific tax circumstances based on
+
+the information they provided to OTR. See Def. Ex. 7. This is “tax information. . .submitted by
+
+the taxpayer,” which the District of Columbia shall not divulge.” D.C. Code § 47-4406. Because
+
+this tax information is “specifically exempted from disclosure by statute” in a manner that
+
+
+
+2
+  In granting in part and denying in part the District’s motion to dismiss, the Court based its ruling on the first half of
+this clause relating to “any information relating to value or the computation of value, disclosed in a [tax] return.”
+See July 20, 2020 Order at 4-5. The District does not rely on this portion of the provision. Rather the District bases
+it’s argument on the latter half of this provision, which states that “[t]his subsection shall also be applicable to
+federal, state, or local tax returns . . and to federal, state or local tax information. . . .“ D.C. Code § 47-4406
+(emphasis added).
+
+
+                                                            5
+“leave[s] no discretion on this issue,” D.C. FOIA does not entitle Plaintiffs to this information.
+
+D.C. Code § 2-534(a)(6). Accordingly, the District is entitled to summary judgment on this basis.
+
+        Plaintiffs argue that the “tax information” protected by the tax code should be interpreted
+
+consistently with federal tax provisions which bar disclosure of “a taxpayer’s identity, the nature
+
+source or amount of his income, payments receipts, deductions, exemptions, credits assets,
+
+liabilities, net worth, tax liability, tax withheld, deficiencies, overassessments, or tax payments. . .
+
+. or any other data. . . furnished to [the relevant tax authority]. . . with respect to the determination
+
+of the existence or possible existence, of liability. . . Pls.’ Mot. At 6 (quoting 26 U.S.C. §
+
+6103(b)(2)(A) (emphasis added). Plaintiffs argue that they are entitled to “the legal issue, the facts,
+
+and the agency’s analysis” contained in the PLRs. Plaintiffs however cannot reconcile this
+
+entitlement with the definition of exempt information quoted above. Plaintiffs are not entitled to
+
+the facts submitted by a taxpayer along with the analysis of those facts if “any other data . . .
+
+furnished to [OTR]. . . with respect to the determination of the existence, or possible existence of
+
+liability” is exempt from disclosure. Pls.’ Mot. At 6 (quoting 26 U.S.C. § 6103(b)(2)(A). Thus
+
+even under Plaintiff’s reading of the tax secrecy provisions, Plaintiffs are not entitled to the
+
+information sought.
+
+        The PLRs Are Not Reasonably Segregable from Any-Non Exempt Information
+
+        FOIA requires disclosure of “[a]ny reasonably segregable portion of a public record” not
+
+exempt from disclosure. D.C. Code § 2-534(b). The D.C. Court of Appeals has not defined
+
+“reasonably segregable” but other Courts applying federal FOIA evaluate whether “exempt” and
+
+non-exempt information are ‘inextricably intertwined,’ such that the excision of the exempt
+
+information would impose significant costs on the agency and produce and edited document with
+
+little informational value.” Mays v. Drug Enforcement Admin., 234 F.3d 1324, 1327 (D.C. Cir.
+
+
+
+
+                                                   6
+2000) (quoting Neufeld v. IRS, 646 F.2d 661, 666 (D.C. Cir. 1981). “[I]n the context of FOIA
+
+cases, [the District] routinely look[s] to federal law to interpret analogous provisions in our own
+
+Act.” Fraternal Order of Police, Metro. Labor Comm. V. District of Columbia, 113 A.3d 195,
+
+199 (D.C. 2015). Under D.C. Code § 2-537(b), the Court may “examine the contents of such
+
+records or any part thereof shall be withheld under any of the exemptions set forth in 2-534.” Here,
+
+the PLRs are in their entirety an evaluation of the tax consequences of a taxpayer’s financial
+
+circumstances. See Def. Ex. 8. Redacting the tax-exempt information from an analysis of the same
+
+would “Produce an edited document with little informational value,” Mays, 243 F.3d at 1327, and
+
+therefore it is appropriate to withhold the documents in their entirety. See id.
+
+          In light of the above the Court also denies the Plaintiffs’ Motion for In Camera Review of
+
+the 24 PLRs at issue in this case.
+
+                                           CONCLUSION
+
+          Accordingly, and based on the entire record herein, it is this the 13th day of January, 2021,
+
+hereby
+
+          ORDERED that Defendants’ Motion for Summary Judgment is GRANTED; and it is
+
+further
+
+          ORDERED that Summary Judgment is GRANTED in favor of Defendant and against
+
+Plaintiffs; and it is further
+
+          ORDERED that Plaintiff’s Motion for In Camera Review of Records is DENIED;
+
+.
+
+          SO ORDERED.
+
+
+
+                                                _______________________________
+                                                Robert R. Rigsby, Associate Judge
+
+
+
+                                                   7
+                                       Superior Court of the District of Columbia
+
+
+
+
+Copies to:
+
+Counsel of Record Via CaseFileXpress
+
+
+
+
+                                          8
+

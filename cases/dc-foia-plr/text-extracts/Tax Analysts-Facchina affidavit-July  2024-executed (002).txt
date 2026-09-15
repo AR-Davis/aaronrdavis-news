@@ -1,0 +1,1304 @@
+                  SUPERIOR COURT OF THE DISTRICT OF COLUMBIA
+                                  Civil Division
+
+
+  TAX ANALYSTS, et al.,
+
+                  Plaintiffs,
+                                                    2020 CA 001999 B
+          v.                                        Judge Shana Frost Matini
+
+  DISTRICT OF COLUMBIA, et al.,
+
+                  Defendants.
+
+
+               SUPPLEMENTAL DECLARATION OF BAZIL FACCHINA
+
+       I, Bazil Facchina, declare that the following is true and correct to the best of my
+
+knowledge and belief:
+
+     1. I am over the age of 18 and competent to render testimony contained herein based upon
+
+my personal knowledge and upon documents of the District of Columbia Office of Tax and
+
+Revenue (OTR) that I have reviewed.
+
+     2. I am an Assistant General Counsel in the Office of the General Counsel of the Chief
+
+Financial Officer of the District of Columbia (OCFO). I work in the Office of Chief Counsel for
+
+OTR, which provides legal support to OTR. I have held that position since October 2007.
+
+Among my other duties, I am responsible for reviewing legal issues relating to requests received
+
+by OTR under the District’s Freedom of Information Act (FOIA). As such, I provide legal
+
+advice on issues relating to the FOIA, particularly relating to the applicability of the FOIA
+
+exemptions.
+
+     3. As a part of my responsibilities in processing and reviewing FOIA requests for OTR, I
+
+am familiar with the types of records maintained by OTR and the places in which and the
+persons by whom these records are maintained. I am knowledgeable about searching the variety
+
+of records that are kept by OTR in response to FOIA requests, familiar with FOIA and its
+
+requirements for, and exemptions from, disclosure, and experienced in judging whether
+
+documents are responsive and should be provided in full, redacted, or withheld in their entirety.
+
+Background
+
+     4. On October 8, 2019, Plaintiffs, Tax Analysts, and Aaron Davis, submitted a FOIA
+
+request to the Office of the Chief Financial Officer (OCFO), of which OTR is a sub-agency,
+
+seeking copies of all private letter rulings (PLRs), general information letters, and technical
+
+advice memoranda prepared by OTR between January 1, 2016, and October 8, 2019.
+
+     5. On November 14, 2019, OCFO denied the request, citing FOIA exemptions 1 and 6,
+
+which, respectively, exempt from disclosure confidential business records and other records for
+
+which disclosure is specifically prohibited by statute.
+
+     6. Plaintiffs appealed that decision to the Mayor’s Office of Legal Counsel (MOLC) on
+
+November 20, 2019. In response to the appeal, OCFO submitted a letter stating that it did not
+
+locate any general information letters or technical advice memoranda but had located 24 PLRs
+
+responsive to Plaintiffs’ request. OCFO further indicated that FOIA exemption 2, which exempts
+
+disclosure of personal private information, also applied to portions of the PLRs.
+
+     7. On January 14, 2020, the MOLC denied Plaintiff’s appeal, agreeing that the three FOIA
+
+exemptions OCFO cited were properly applied, and found that any non-exempt material was not
+
+reasonably segregable from the exempt portions of the letters.
+
+     8. I was involved in responding to the FOIA request made for the records at issue in this
+
+case, the preparation of OTR’s response to Plaintiffs’ appeal to the MOLC, and assisting the
+
+Office of the Attorney General in the subsequent litigation after Plaintiffs’ appeal was denied.
+
+
+
+                                                 2
+Accordingly, the statements in this declaration are based on my personal knowledge, on
+
+information made known to me in my official capacity as Assistant General Counsel, and upon
+
+conclusions and determinations reached and made in accordance therewith.
+
+Private Letter Rulings (PLRS)
+
+     9.     In preparing this declaration, I reviewed the 24 private letter rulings (PLRs) issued
+
+by OTR between January 1, 2016, and October 8, 2019, that are at issue in this case.
+
+     10.    The PLRs were issued in response to taxpayer requests for guidance on specific tax
+
+matters relating to the requesting taxpayer. A taxpayer may request a PLR by providing, under
+
+penalties of perjury, the taxpayer’s name, business address and federal taxpayer identification
+
+number, a statement of the facts and circumstances concerning the specific tax matter for which
+
+the taxpayer is requesting guidance, a statement of statutory or judicial authority upon which the
+
+taxpayer is relying, and the ruling requested.
+
+     11.    A PLR may be relied on by a taxpayer concerning such specific tax matter, since the
+
+ruling binds OTR as to such matter. However, no opinion is provided on the tax treatment of the
+
+matter except as expressly stated in the ruling. A PLR applies solely to the taxpayer requesting it
+
+and OTR does not consider PLRs as having precedential effect. A PLR may not be used or cited
+
+as precedent by any other taxpayer. A PLR may be withdrawn, revoked or modified if the
+
+taxpayer’s facts and circumstances change, the law changes or the ruling was issued in error. A
+
+PLR expires ten years from the date of the ruling. The taxpayer may request that the ruling be
+
+extended after being reviewed by OTR. PLRs thus contrast with other types of tax guidance
+
+provided by OTR, such as tax notices or other types of generalized interpretative guidance,
+
+which are publicly available. PLRs are also distinguishable from the field service advice
+
+memoranda at issue in Tax Analysts v. IRS 117 F.3d 607 (D.C. Cir. 1997) in that they do not
+
+
+
+                                                 3
+constitute guidance to agency personnel or constitute a body of law which OTR uses in its
+
+dealings with taxpayers. They are not updated after issuance and are not widely circulated
+
+within OTR. District law does not incorporate a provision like section 6110 of the Internal
+
+Revenue Code (IRC), which governs the disclosure of written determinations, including private
+
+letter rulings and Chief Counsel advice, prepared or issued by the Internal Revenue Service
+
+(IRS). Accordingly, the disclosure rules of IRC sec. 6110 are inapplicable to the PLRs. Because
+
+of this important difference between Federal and District law, I concluded that the narrow
+
+definition of protected “data” adopted by the D.C. Circuit in the 1997 Tax Analysts decision
+
+would not necessarily be applicable to the PLRs, since the D.C. Circuit’s conclusion that legal
+
+analysis of a taxpayer’s facts was not protected “data” was apparently driven by IRC sec. 6110,
+
+Landmark Legal Foundation v. IRS, 267 F.3d 1132, 1138 (D.C. Cir. 2001). I further concluded
+
+that District law does not afford OTR’s discussion of the information concerning the taxpayer
+
+seeking the ruling and the tax liability (or possible existence of liability) of the taxpayer any less
+
+protection than is afforded to other tax information concerning the taxpayer.
+
+     12.    PLRs are prepared by attorneys in the Office of Chief Counsel for OTR. To develop
+
+the ruling, the attorney applies governing law to the statement of facts describing the taxpayer’s
+
+own, unique transactions or activities to reach a conclusion as to the tax treatment of the
+
+taxpayer’s specific transactions or activities. A PLR does not provide guidance of general
+
+applicability on any matter. PLRs are not reviewed by OTR administration before issuance and
+
+do not constitute OTR policy or the “working law” of OTR.
+
+     13.    PLRs typically are comprised of the following sections: (1) A statement of the issues
+
+for which the taxpayer seeks a ruling as to the tax treatment of the taxpayer’s own, specific
+
+transactions or activities; (2) a statement of OTR’s conclusions as to the tax treatment of the
+
+
+
+                                                  4
+taxpayer’s own unique transactions or activities as described in the taxpayer’s statement of facts;
+
+(3) a recitation of the taxpayer-specific facts on which the ruling is to be based; (4) a statement of
+
+the applicable law; (5) and an analysis of the application of the governing law to the facts
+
+specific to the taxpayer.
+
+     14.      The PLR issued by OTR in response to the taxpayer’s request will accordingly
+
+incorporate personally identifying information and a statement of the facts describing the
+
+taxpayer’s transactions and activities on which the ruling is based, as well as OTR’s legal
+
+analysis and conclusion as to the tax treatment of the taxpayer with respect to the matters ruled
+
+upon. PLRs also include language advising the taxpayer of the limitations on the scope of the
+
+PLR and circumstances in which reliance on the ruling by the taxpayer may be limited.
+
+Accordingly, each PLR is tailored to the specific taxpayer requesting it and applies only to the
+
+taxpayer requesting it.
+
+     15.      As a result, PLRs contain data received or prepared by OTR with respect to a tax
+
+return or the determination of the existence, or possible existence, of liability (or the amount
+
+thereof) of any person under the District’s tax laws for any tax, penalty, interest or other
+
+imposition.
+
+     16.      In my review and redaction of the 24 responsive PLRs to Plaintiffs’ FOIA request, I
+
+reviewed the Court of Appeals decision in describing the nature of tax information that is
+
+protected from disclosure under D.C. Official Code § 47-4406 (protecting from disclosure, inter
+
+alia, “federal, state, or local tax information either submitted by the taxpayer or otherwise
+
+obtained”) which is accordingly protected from disclosure under D.C. Official Code § 2-
+
+534(a)(6). See Tax Analysts v. District of Columbia, 298 A.3d 334, 340 (D.C. 2023). The
+
+
+
+
+                                                  5
+statutes protecting tax information are intended to guard taxpayers’ privacy and to encourage
+
+candor in disclosing information to OTR for purposes of tax administration.
+
+      17.    The Court of Appeals ruled that protected “tax information” generally consists of the
+
+same type of information protected by Section 6103(b)(2) of the Internal Revenue Code (26
+
+U.S.C.), that is,
+
+                (A) a taxpayer’s identity, the nature, source, or amount of his
+                income, payments, receipts, deductions, exemptions, credits,
+                assets, liabilities, net worth, tax liability, tax withheld, deficiencies,
+                overassessments, or tax payments, whether the taxpayer’s return
+                was, is being, or will be examined or subject to other investigation
+                or processing, or any other data, received by, recorded by,
+                prepared by, furnished to, or collected by the Secretary with
+                respect to a return or with respect to the determination of the
+                existence, or possible existence, of liability (or the amount thereof)
+                of any person under this title for any tax, penalty, interest, fine,
+                forfeiture, or other imposition, or offense, [and]
+
+                (B) any part of any written determination or any background file
+                document relating to such written determination (as such terms are
+                defined in [26 U.S.C. § 6110(b)]) which is not open to public
+                inspection under section 6110.
+
+Id. (emphasis added). “Tax information” does not lose its protected status simply because
+
+information identifying the particular taxpayer has been removed. The Court of Appeals noted
+
+that such material is unique to a particular taxpayer, that is, it is “taxpayer specific.” I also noted
+
+that other tax secrecy provisions contain disclosure prohibitions which are stated in a manner
+
+similar to those of section 47-4406. See D.C. Code §§ 47-1805.04, 47-2018(a)(2), 47-3719.
+
+Protected “tax information” is not limited to factual material concerning a particular taxpayer, it
+
+can also include information prepared by OTR concerning the taxpayer.
+
+     18. I was also mindful of the Court of Appeals ruling that “non-taxpayer specific legal
+
+analysis,” that is, interpretations and conclusions respecting legal authorities that are not unique
+
+to a particular taxpayer, was not protected taxpayer information. Id. at 341.
+
+                                                    6
+    19. Accordingly, my review sought to identify the portions of the PLRs that constituted
+
+protected taxpayer-specific tax information, that is, information as to the taxpayer’s identity, tax
+
+items, finances, and tax liabilities, as well as any other data received by, recorded by, prepared
+
+by, or collected by OTR with respect to a return or the existence, or possible existence of liability
+
+(or the amount thereof) of any person for any District tax, penalty, interest or other imposition. I
+
+sought to distinguish this protected information from “non-taxpayer specific legal analysis”
+
+which was not unique to the taxpayer requesting the PLR.
+
+    20. Based on this, I concluded that any information in a PLR that concerned a specific
+
+taxpayer, including the taxpayer who requested the ruling, was protected from disclosure,
+
+including OTR’s discussion of the tax treatment of the taxpayer’s facts. Such discussion in a
+
+PLR constitutes data prepared by OTR concerning a tax return or the existence, or possible
+
+existence, of a tax liability (or the amount thereof) of the taxpayer requesting the PLR. The
+
+discussion is taxpayer-specific because it is based on and reflects the taxpayer’s own unique
+
+factual circumstances, and it would not automatically apply to, and could not be relied upon by,
+
+another taxpayer, even if such other taxpayer’s facts were similar. Accordingly, I concluded that
+
+disclosure of this discussion would directly or indirectly disclose protected tax information
+
+concerning the taxpayer. This protected tax information generally was contained in the sections
+
+of the PLRs containing the statement of issues to be ruled upon, OTR’s conclusion as to the tax
+
+treatment of the specific and unique transactions or activities concerning which the taxpayer
+
+sought the ruling, the statement of the facts pertaining to the taxpayer’s transactions, activities or
+
+other circumstances on which the ruling was based, and OTR’s analysis and discussion of the
+
+application of the law to the taxpayer’s situation as stated in the facts. To the extent that these
+
+
+
+
+                                                  7
+portions of the PLRs contained such protected information, I concluded that they were protected
+
+from disclosure and should be redacted from the PLRs.
+
+    21.    I further concluded that general statements as to the applicable law in the PLRs,
+
+which were usually found in the sections dealing with the applicable law and legal analysis, were
+
+“non-taxpayer specific legal analysis” that were not protected from disclosure. This information
+
+was not redacted from the PLRs.
+
+    22. I personally reviewed every page of the PLRs line by line to determine whether any
+
+reasonably segregable, non-exempt responsive information could meaningfully be segregated
+
+and disclosed. I did this in instances where I determined that it was possible and did not redact
+
+such information. This generally occurred in the portions of the PLRs stating the issues to be
+
+ruled upon and the analysis of the application of the law to the taxpayer’s facts, and the
+
+conclusions based on such facts and analysis.
+
+    23. I further determined that any remaining non-exempt responsive information that might
+
+exist within the withheld portions of the PLRs was so inextricably intertwined with exempt
+
+information that it could not reasonably be segregated. Moreover, this review of the withheld
+
+information showed that attempts to segregate information would result only in the release of
+
+disjointed words or phrases with minimal or no informational content.
+
+    24.    During my review, I also determined that personal identifying information of
+
+individuals in the PLRs (e.g., names, telephone numbers, addresses, and email addresses) were
+
+protected from disclosure because disclosure would constitute a clearly unwarranted invasion of
+
+personal privacy in violation of D.C. Official Code § 2-534(a)(2). I did not believe these privacy
+
+interests outweighed any public interest in disclosure. The identifying information does not shed
+
+any light upon the operations of OTR, and so there is minimal, if any, public interest in the
+
+
+
+                                                 8
+disclosure of this information. Accordingly, all names, addresses, telephone numbers, and email
+
+addresses of individuals named in the PLRs have been redacted.
+
+    25. Based on the foregoing, with respect to the January 28, 2016, ruling, I redacted
+
+personally identifying information as well as all data or information regarding the taxpayer that
+
+applied for the ruling from the Issue, Conclusion, Facts and Analysis sections of the ruling. I did
+
+not redact material from the Law section, since this constituted a general discussion of the sales
+
+tax law. The redactions from the Conclusion and Analysis sections contain an OTR discussion of
+
+the taxpayer’s facts and the tax treatment of those facts. The taxpayer information retains its
+
+protected character even though it is incorporated in OTR’s discussion, and even though
+
+information identifying the taxpayer is removed or not included in the discussion. The OTR
+
+discussion of the taxpayer’s information constitutes data prepared by OTR with respect to the
+
+taxpayer’s liability, or potential liability for tax. This is protected from disclosure under the
+
+District’s taxpayer confidentiality statutes, such as D.C. Code sec. 47-4406, to the same extent as
+
+other tax information concerning a particular taxpayer. This discussion was not a general
+
+analysis of the law, but applied only to the taxpayer seeking the ruling and was entirely based on
+
+the taxpayer’s protected information. Disclosure of OTR’s discussion of those facts would
+
+directly or indirectly disclose the taxpayer’s protected information. I also determined that any
+
+nonexempt information contained in the redacted portions was so inextricably intertwined with
+
+exempt information that segregation was not reasonably possible or would not yield meaningful
+
+information.
+
+    26. With respect to the February 3, 2016 ruling, I followed the same approach to
+
+redactions as in the prior ruling, redacting personally identifying information as well as all data
+
+or information regarding the taxpayer that applied for the ruling from the Facts, Issue,
+
+
+
+                                                  9
+Conclusion, Legal Analysis and Summary sections. The redactions from the Issue, Conclusion,
+
+Legal Analysis and Summary sections contain an OTR discussion of the taxpayer’s facts and the
+
+tax treatment of those facts. The taxpayer information retains its protected character even though
+
+it is incorporated in OTR’s discussion and even though information identifying the taxpayer is
+
+removed or not included in the discussion. The OTR discussion of the taxpayer’s information
+
+constitutes data prepared by OTR with respect to the taxpayer’s liability, or potential liability for
+
+tax. This is protected from disclosure under the District’s taxpayer confidentiality statutes, such
+
+as D.C. Code § 47-4406, to the same extent as other tax information concerning a particular
+
+taxpayer. This discussion was not a general analysis of the law, but applies only to the taxpayer
+
+seeking the ruling and was entirely based on the taxpayer’s protected information. Disclosure of
+
+OTR’s discussion of those facts would directly or indirectly disclose the taxpayer’s protected
+
+information. I also determined that any nonexempt information contained in the redacted
+
+portions was so inextricably intertwined with exempt information that segregation was not
+
+reasonably possible or would not yield meaningful information.
+
+    27. With respect to the February 11, 2016 ruling, I followed the same approach to
+
+redactions as in the prior rulings, redacting personally identifying information as well as all data
+
+or information regarding the taxpayer that applied for the ruling from the Issue, Facts, Law and
+
+Analysis and Conclusion sections. The redactions from the Law and Analysis and Conclusion
+
+sections contain an OTR discussion of the taxpayer’s facts and the tax treatment of those facts.
+
+The taxpayer information retains its protected character even though it is incorporated in OTR’s
+
+discussion and even though information identifying the taxpayer is removed or not included in
+
+the discussion. The OTR discussion of the taxpayer’s information constitutes data prepared by
+
+OTR with respect to the taxpayer’s liability, or potential liability for tax. This is protected from
+
+
+
+                                                 10
+disclosure under the District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to
+
+the same extent as other tax information concerning a particular taxpayer. This discussion was
+
+not a general analysis of the law but rather applies only to the taxpayer seeking the ruling and
+
+was entirely based on the taxpayer’s protected information. Disclosure of OTR’s discussion of
+
+those facts would directly or indirectly disclose the taxpayer’s protected information. I also
+
+determined that any nonexempt information contained in the redacted portions was so
+
+inextricably intertwined with exempt information that segregation was not reasonably possible or
+
+would not yield meaningful information. While reviewing this ruling, I identified some material
+
+on page three that constituted nontaxpayer-specific legal analysis and I have attached a revised
+
+page three of the ruling disclosing this information. I also identified a portion of the Conclusion
+
+section on page four of the ruling that should have been, but was inadvertently not, redacted from
+
+the ruling because it contains protected information. A corrected page four is attached to this
+
+declaration.
+
+    28. With respect to the February 19, 2016 ruling, I followed the same approach to
+
+redactions as in the prior rulings, redacting personally identifying information as well as all data
+
+or information regarding the taxpayer that applied for the ruling from the Issue, Facts, and Law
+
+and Analysis sections. The redactions from the Law and Analysis section contain an OTR
+
+discussion of the taxpayer’s facts and the tax treatment of those facts. The taxpayer information
+
+retains its protected character even though it is incorporated in OTR’s discussion and even
+
+though information identifying the taxpayer is removed or not included in the discussion. The
+
+OTR discussion of the taxpayer’s information constitutes data prepared by OTR with respect to
+
+the taxpayer’s liability, or potential liability for tax. This is protected from disclosure under the
+
+District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to the same extent as
+
+
+
+                                                  11
+other tax information concerning a particular taxpayer. This discussion was not a general
+
+analysis of the law but rather applies only to the taxpayer seeking the ruling and was entirely
+
+based on the taxpayer’s protected information. Disclosure of OTR’s discussion of those facts
+
+would directly or indirectly disclose the taxpayer’s protected information. I also determined that
+
+any nonexempt information contained in the redacted portions was so inextricably intertwined
+
+with exempt information that segregation was not reasonably possible or would not yield
+
+meaningful information.
+
+    29. With respect to the February 25, 2016 ruling, I followed the same approach to
+
+redactions as in the prior rulings, redacting personally identifying information as well as all data
+
+or information regarding the taxpayer that applied for the ruling from the Facts, Ruling
+
+Requested, Law and Analysis and Conclusion sections. The redactions from the Law and
+
+Analysis and Conclusion sections contain an OTR discussion of the taxpayer’s facts and the tax
+
+treatment of those facts. The taxpayer information retains its protected character even though it
+
+is incorporated in OTR’s discussion and even though information identifying the taxpayer is
+
+removed or not included in the discussion. The OTR discussion of the taxpayer’s information
+
+constitutes data prepared by OTR with respect to the taxpayer’s liability, or potential liability for
+
+tax. This is protected from disclosure under the District’s taxpayer confidentiality statutes, such
+
+as D.C. Code § 47-4406, to the same extent as other tax information concerning a particular
+
+taxpayer. This discussion was not a general analysis of the law but rather applies only to the
+
+taxpayer seeking the ruling and was entirely based on the taxpayer’s protected information.
+
+Disclosure of OTR’s discussion of those facts would directly or indirectly disclose the taxpayer’s
+
+protected information. I also determined that any nonexempt information contained in the
+
+
+
+
+                                                 12
+redacted portions was so inextricably intertwined with exempt information that segregation was
+
+not reasonably possible or would not yield meaningful information.
+
+    30. With respect to the November 3, 2016 ruling, I followed the same approach to
+
+redactions as in the prior rulings, redacting personally identifying information as well as all data
+
+or information regarding the taxpayer that applied for the ruling from the Issue, Conclusion,
+
+Facts, and Analysis sections. The redactions from the Analysis section contain an OTR
+
+discussion of the taxpayer’s facts and the tax treatment of those facts. The taxpayer information
+
+retains its protected character even though it is incorporated in OTR’s discussion and even
+
+though information identifying the taxpayer is removed or not included in the discussion. The
+
+OTR discussion of the taxpayer’s information constitutes data prepared by OTR with respect to
+
+the taxpayer’s liability, or potential liability for tax. This is protected from disclosure under the
+
+District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to the same extent as
+
+other tax information concerning a particular taxpayer. This discussion was not a general
+
+analysis of the law but rather applies only to the taxpayer seeking the ruling and was entirely
+
+based on the taxpayer’s protected information. Disclosure of OTR’s discussion of those facts
+
+would directly or indirectly disclose the taxpayer’s protected information. I also determined that
+
+any nonexempt information contained in the redacted portions was so inextricably intertwined
+
+with exempt information that segregation was not reasonably possible or would not yield
+
+meaningful information.
+
+    31. With respect to the January 26, 2017, ruling, I followed the same approach to
+
+redactions as in the prior rulings, redacting personally identifying information as well as all data
+
+or information regarding the taxpayer that applied for the ruling from the Issue, Facts, and Legal
+
+Analysis sections. The redactions from the Legal Analysis section contain an OTR discussion of
+
+
+
+                                                  13
+the taxpayer’s facts and the tax treatment of those facts. The taxpayer information retains its
+
+protected character even though it is incorporated in OTR’s discussion and even though
+
+information identifying the taxpayer is removed or not included in the discussion. The OTR
+
+discussion of the taxpayer’s information constitutes data prepared by OTR with respect to the
+
+taxpayer’s liability, or potential liability for tax. This is protected from disclosure under the
+
+District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to the same extent as
+
+other tax information concerning a particular taxpayer. This discussion was not a general
+
+analysis of the law but rather applies only to the taxpayer seeking the ruling and was entirely
+
+based on the taxpayer’s protected information. Disclosure of OTR’s discussion of those facts
+
+would directly or indirectly disclose the taxpayer’s protected information. I also determined that
+
+any nonexempt information contained in the redacted portions was so inextricably intertwined
+
+with exempt information that segregation was not reasonably possible or would not yield
+
+meaningful information.
+
+    32. With respect to the February 23, 2017 ruling, I followed the same approach to
+
+redactions as in the prior rulings, redacting personally identifying information as well as all data
+
+or information regarding the taxpayer that applied for the ruling from the Issue, Facts, Law and
+
+Analysis and Conclusion sections. The redactions from the Law and Analysis and Conclusion
+
+sections contain an OTR discussion of the taxpayer’s facts and the tax treatment of those facts.
+
+The taxpayer information retains its protected character even though it is incorporated in OTR’s
+
+discussion and even though information identifying the taxpayer is removed or not included in
+
+the discussion. The OTR discussion of the taxpayer’s information constitutes data prepared by
+
+OTR with respect to the taxpayer’s liability, or potential liability for tax. This is protected from
+
+disclosure under the District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to
+
+
+
+                                                  14
+the same extent as other tax information concerning a particular taxpayer. This discussion was
+
+not a general analysis of the law but rather applies only to the taxpayer seeking the ruling and
+
+was entirely based on the taxpayer’s protected information. Disclosure of OTR’s discussion of
+
+those facts would directly or indirectly disclose the taxpayer’s protected information. I also
+
+determined that any nonexempt information contained in the redacted portions was so
+
+inextricably intertwined with exempt information that segregation was not reasonably possible or
+
+would not yield meaningful information.
+
+    33. With respect to the May 9, 2017 ruling, I followed the same approach to redactions as
+
+in the prior rulings, redacting personally identifying information as well as all data or
+
+information regarding the taxpayer that applied for the ruling from the Issue, Facts, and
+
+Conclusion sections. The redactions from the Conclusion section contain an OTR discussion of
+
+the taxpayer’s facts and the tax treatment of those facts. The taxpayer information retains its
+
+protected character even though it is incorporated in OTR’s discussion and even though
+
+information identifying the taxpayer is removed or not included in the discussion. The OTR
+
+discussion of the taxpayer’s information constitutes data prepared by OTR with respect to the
+
+taxpayer’s liability, or potential liability for tax. This is protected from disclosure under the
+
+District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to the same extent as
+
+other tax information concerning a particular taxpayer. This discussion was not a general
+
+analysis of the law but rather applies only to the taxpayer seeking the ruling and was entirely
+
+based on the taxpayer’s protected information. Disclosure of OTR’s discussion of those facts
+
+would directly or indirectly disclose the taxpayer’s protected information. I also determined that
+
+any nonexempt information contained in the redacted portions was so inextricably intertwined
+
+
+
+
+                                                  15
+with exempt information that segregation was not reasonably possible or would not yield
+
+meaningful information.
+
+    34. With respect to the July 5, 2017 ruling, I followed the same approach to redactions as
+
+in the prior rulings, redacting personally identifying information as well as all data or
+
+information regarding the taxpayer that applied for the ruling from the Issue, Facts, Analysis and
+
+Conclusion sections. The redactions from the Analysis and Conclusion sections contain an OTR
+
+discussion of the taxpayer’s facts and the tax treatment of those facts. The taxpayer information
+
+retains its protected character even though it is incorporated in OTR’s discussion and even
+
+though information identifying the taxpayer is removed or not included in the discussion. The
+
+OTR discussion of the taxpayer’s information constitutes data prepared by OTR with respect to
+
+the taxpayer’s liability, or potential liability for tax. This is protected from disclosure under the
+
+District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to the same extent as
+
+other tax information concerning a particular taxpayer. This discussion was not a general
+
+analysis of the law but rather applies only to the taxpayer seeking the ruling and was entirely
+
+based on the taxpayer’s protected information. Disclosure of OTR’s discussion of those facts
+
+would directly or indirectly disclose the taxpayer’s protected information. I also determined that
+
+any nonexempt information contained in the redacted portions was so inextricably intertwined
+
+with exempt information that segregation was not reasonably possible or would not yield
+
+meaningful information.
+
+    35. With respect to the July 7, 2017 ruling, I followed the same approach to redactions as
+
+in the prior rulings, redacting personally identifying information as well as all data or
+
+information regarding the taxpayer that applied for the ruling from the Issue, Facts, and Law and
+
+Analysis sections. The redactions from the Law and Analysis section contain an OTR discussion
+
+
+
+                                                  16
+of the taxpayer’s facts and the tax treatment of those facts. The taxpayer information retains its
+
+protected character even though it is incorporated in OTR’s discussion and even though
+
+information identifying the taxpayer is removed or not included in the discussion. The OTR
+
+discussion of the taxpayer’s information constitutes data prepared by OTR with respect to the
+
+taxpayer’s liability, or potential liability for tax. This is protected from disclosure under the
+
+District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to the same extent as
+
+other tax information concerning a particular taxpayer. This discussion was not a general
+
+analysis of the law but rather applies only to the taxpayer seeking the ruling and was entirely
+
+based on the taxpayer’s protected information. Disclosure of OTR’s discussion of those facts
+
+would directly or indirectly disclose the taxpayer’s protected information. I also determined that
+
+any nonexempt information contained in the redacted portions was so inextricably intertwined
+
+with exempt information that segregation was not reasonably possible or would not yield
+
+meaningful information.
+
+    36. With respect to the September 1, 2017 ruling, I followed the same approach to
+
+redactions as in the prior rulings, redacting personally identifying information as well as all data
+
+or information regarding the taxpayer that applied for the ruling from the Issue, Facts, and
+
+Conclusion sections. The redactions from the Conclusion section contain an OTR discussion of
+
+the taxpayer’s facts and the tax treatment of those facts. The taxpayer information retains its
+
+protected character even though it is incorporated in OTR’s discussion and even though
+
+information identifying the taxpayer is removed or not included in the discussion. The OTR
+
+discussion of the taxpayer’s information constitutes data prepared by OTR with respect to the
+
+taxpayer’s liability, or potential liability for tax. This is protected from disclosure under the
+
+District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to the same extent as
+
+
+
+                                                  17
+other tax information concerning a particular taxpayer. This discussion was not a general
+
+analysis of the law but rather applies only to the taxpayer seeking the ruling and was entirely
+
+based on the taxpayer’s protected information. Disclosure of OTR’s discussion of those facts
+
+would directly or indirectly disclose the taxpayer’s protected information. I also determined that
+
+any nonexempt information contained in the redacted portions was so inextricably intertwined
+
+with exempt information that segregation was not reasonably possible or would not yield
+
+meaningful information.
+
+    37. With respect to the March 20, 2018 ruling, I followed the same approach to redactions
+
+as in the prior rulings, redacting personally identifying information as well as all data or
+
+information regarding the taxpayer that applied for the ruling from the Issue, Facts, and Law and
+
+Analysis sections. The redactions from the Law and Analysis section contain an OTR discussion
+
+of the taxpayer’s facts and the tax treatment of those facts. The taxpayer information retains its
+
+protected character even though it is incorporated in OTR’s discussion and even though
+
+information identifying the taxpayer is removed or not included in the discussion. The OTR
+
+discussion of the taxpayer’s information constitutes data prepared by OTR with respect to the
+
+taxpayer’s liability, or potential liability for tax. This is protected from disclosure under the
+
+District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to the same extent as
+
+other tax information concerning a particular taxpayer. This discussion was not a general
+
+analysis of the law but rather applies only to the taxpayer seeking the ruling and was entirely
+
+based on the taxpayer’s protected information. Disclosure of OTR’s discussion of those facts
+
+would directly or indirectly disclose the taxpayer’s protected information. I also determined that
+
+any nonexempt information contained in the redacted portions was so inextricably intertwined
+
+
+
+
+                                                  18
+with exempt information that segregation was not reasonably possible or would not yield
+
+meaningful information.
+
+    38. With respect to the May 10, 2018 ruling, I followed the same approach to redactions as
+
+in the prior rulings, redacting personally identifying information as well as all data or
+
+information regarding the taxpayer that applied for the ruling from the Issue, Facts, Law and
+
+Conclusion sections. The redactions from the Law and Conclusion sections contain an OTR
+
+discussion of the taxpayer’s facts and the tax treatment of those facts. The taxpayer information
+
+retains its protected character even though it is incorporated in OTR’s discussion and even
+
+though information identifying the taxpayer is removed or not included in the discussion. The
+
+OTR discussion of the taxpayer’s information constitutes data prepared by OTR with respect to
+
+the taxpayer’s liability, or potential liability for tax. This is protected from disclosure under the
+
+District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to the same extent as
+
+other tax information concerning a particular taxpayer. This discussion was not a general
+
+analysis of the law but rather applies only to the taxpayer seeking the ruling and was entirely
+
+based on the taxpayer’s protected information. Disclosure of OTR’s discussion of those facts
+
+would directly or indirectly disclose the taxpayer’s protected information. I also determined that
+
+any nonexempt information contained in the redacted portions was so inextricably intertwined
+
+with exempt information that segregation was not reasonably possible or would not yield
+
+meaningful information. A copy of the missing page two, with redactions, and an unredacted
+
+copy of the page are attached to this declaration.
+
+    39. With respect to the June 28, 2018 ruling, I followed the same approach to redactions as
+
+in the prior rulings, redacting personally identifying information as well as all data or
+
+information regarding the taxpayer that applied for the ruling from the Issue, Facts, Analysis and
+
+
+
+                                                  19
+Conclusion sections. The redactions from the Analysis and Conclusion sections contain an OTR
+
+discussion of the taxpayer’s facts and the tax treatment of those facts. The taxpayer information
+
+retains its protected character even though it is incorporated in OTR’s discussion and even
+
+though information identifying the taxpayer is removed or not included in the discussion. The
+
+OTR discussion of the taxpayer’s information constitutes data prepared by OTR with respect to
+
+the taxpayer’s liability, or potential liability for tax. This is protected from disclosure under the
+
+District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to the same extent as
+
+other tax information concerning a particular taxpayer. This discussion was not a general
+
+analysis of the law but rather applies only to the taxpayer seeking the ruling and was entirely
+
+based on the taxpayer’s protected information. Disclosure of OTR’s discussion of those facts
+
+would directly or indirectly disclose the taxpayer’s protected information. I also determined that
+
+any nonexempt information contained in the redacted portions was so inextricably intertwined
+
+with exempt information that segregation was not reasonably possible or would not yield
+
+meaningful information.
+
+    40. With respect to the August 2, 2018 ruling, I followed the same approach to redactions
+
+as in the prior rulings, redacting personally identifying information as well as all data or
+
+information regarding the taxpayer that applied for the ruling from the Issue, Conclusion, Facts,
+
+Law and Argument sections. The redactions from the Law and Argument section contain an
+
+OTR discussion of the taxpayer’s facts and the tax treatment of those facts. The taxpayer
+
+information retains its protected character even though it is incorporated in OTR’s discussion and
+
+even though information identifying the taxpayer is removed or not included in the discussion.
+
+The OTR discussion of the taxpayer’s information constitutes data prepared by OTR with respect
+
+to the taxpayer’s liability, or potential liability for tax. This is protected from disclosure under
+
+
+
+                                                  20
+the District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to the same extent
+
+as other tax information concerning a particular taxpayer. This discussion was not a general
+
+analysis of the law but rather applies only to the taxpayer seeking the ruling and was entirely
+
+based on the taxpayer’s protected information. Disclosure of OTR’s discussion of those facts
+
+would directly or indirectly disclose the taxpayer’s protected information. I also determined that
+
+any nonexempt information contained in the redacted portions was so inextricably intertwined
+
+with exempt information that segregation was not reasonably possible or would not yield
+
+meaningful information.
+
+    41. With respect to the October 12, 2018 ruling, I followed the same approach to
+
+redactions as in the prior rulings, redacting personally identifying information as well as all data
+
+or information regarding the taxpayer that applied for the ruling from the Facts and Conclusion
+
+sections. The redactions from the Conclusion section contain an OTR discussion of the
+
+taxpayer’s facts and the tax treatment of those facts. The taxpayer information retains its
+
+protected character even though it is incorporated in OTR’s discussion and even though
+
+information identifying the taxpayer is removed or not included in the discussion. The OTR
+
+discussion of the taxpayer’s information constitutes data prepared by OTR with respect to the
+
+taxpayer’s liability, or potential liability for tax. This is protected from disclosure under the
+
+District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to the same extent as
+
+other tax information concerning a particular taxpayer. This discussion was not a general
+
+analysis of the law but rather applies only to the taxpayer seeking the ruling and was entirely
+
+based on the taxpayer’s protected information. Disclosure of OTR’s discussion of those facts
+
+would directly or indirectly disclose the taxpayer’s protected information. I also determined that
+
+any nonexempt information contained in the redacted portions was so inextricably intertwined
+
+
+
+                                                  21
+with exempt information that segregation was not reasonably possible or would not yield
+
+meaningful information.
+
+    42. With respect to the December 7, 2018 ruling, I followed the same approach to
+
+redactions as in the prior rulings, redacting personally identifying information as well as all data
+
+or information regarding the taxpayer that applied for the ruling from the Facts, Law and
+
+Analysis and Conclusion sections. The redactions from the Law and Analysis and Conclusion
+
+sections contain an OTR discussion of the taxpayer’s facts and the tax treatment of those facts.
+
+The taxpayer information retains its protected character even though it is incorporated in OTR’s
+
+discussion and even though information identifying the taxpayer is removed or not included in
+
+the discussion. The OTR discussion of the taxpayer’s information constitutes data prepared by
+
+OTR with respect to the taxpayer’s liability, or potential liability for tax. This is protected from
+
+disclosure under the District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to
+
+the same extent as other tax information concerning a particular taxpayer. This discussion was
+
+not a general analysis of the law but rather applies only to the taxpayer seeking the ruling and
+
+was entirely based on the taxpayer’s protected information. Disclosure of OTR’s discussion of
+
+those facts would directly or indirectly disclose the taxpayer’s protected information. I also
+
+determined that any nonexempt information contained in the redacted portions was so
+
+inextricably intertwined with exempt information that segregation was not reasonably possible or
+
+would not yield meaningful information. While reviewing this ruling, I identified some material
+
+on pages two and four that constituted nontaxpayer-specific legal analysis, and I have attached
+
+revised pages two and four of the ruling disclosing this information.
+
+    43. With respect to the February 14, 2019 ruling, I followed the same approach to
+
+redactions as in the prior rulings, redacting personally identifying information as well as all data
+
+
+
+                                                 22
+or information regarding the taxpayer that applied for the ruling from the Issue, Facts, Law and
+
+Analysis and Conclusion sections. The redactions from the Law and Analysis and Conclusion
+
+sections contain an OTR discussion of the taxpayer’s facts and the tax treatment of those facts.
+
+The taxpayer information retains its protected character even though it is incorporated in OTR’s
+
+discussion and even though information identifying the taxpayer is removed or not included in
+
+the discussion. The OTR discussion of the taxpayer’s information constitutes data prepared by
+
+OTR with respect to the taxpayer’s liability, or potential liability for tax. This is protected from
+
+disclosure under the District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to
+
+the same extent as other tax information concerning a particular taxpayer. This discussion was
+
+not a general analysis of the law but rather applies only to the taxpayer seeking the ruling and
+
+was entirely based on the taxpayer’s protected information. Disclosure of OTR’s discussion of
+
+those facts would directly or indirectly disclose the taxpayer’s protected information. I also
+
+determined that any nonexempt information contained in the redacted portions was so
+
+inextricably intertwined with exempt information that segregation was not reasonably possible or
+
+would not yield meaningful information.
+
+    44. With respect to the February 21, 2019 ruling, I followed the same approach to
+
+redactions as in the prior rulings, redacting personally identifying information as well as all data
+
+or information regarding the taxpayer that applied for the ruling from the Issue, Conclusion,
+
+Facts, and Law and Analysis sections. The redactions from the Law and Analysis and
+
+Conclusion sections contain an OTR discussion of the taxpayer’s facts and the tax treatment of
+
+those facts. The taxpayer information retains its protected character even though it is
+
+incorporated in OTR’s discussion and even though information identifying the taxpayer is
+
+removed or not included in the discussion. The OTR discussion of the taxpayer’s information
+
+
+
+                                                 23
+constitutes data prepared by OTR with respect to the taxpayer’s liability, or potential liability for
+
+tax. This is protected from disclosure under the District’s taxpayer confidentiality statutes, such
+
+as D.C. Code § 47-4406, to the same extent as other tax information concerning a particular
+
+taxpayer. This discussion was not a general analysis of the law but rather applies only to the
+
+taxpayer seeking the ruling and was entirely based on the taxpayer’s protected information.
+
+Disclosure of OTR’s discussion of those facts would directly or indirectly disclose the taxpayer’s
+
+protected information. I also determined that any nonexempt information contained in the
+
+redacted portions was so inextricably intertwined with exempt information that segregation was
+
+not reasonably possible or would not yield meaningful information.
+
+    45. With respect to the February 28, 2019 ruling, I followed the same approach to
+
+redactions as in the prior rulings, redacting personally identifying information as well as all data
+
+or information regarding the taxpayer that applied for the ruling from the Issue, Facts, and Law
+
+and Argument sections. The redactions from the Law and Argument section contain an OTR
+
+discussion of the taxpayer’s facts and the tax treatment of those facts. The taxpayer information
+
+retains its protected character even though it is incorporated in OTR’s discussion and even
+
+though information identifying the taxpayer is removed or not included in the discussion. The
+
+OTR discussion of the taxpayer’s information constitutes data prepared by OTR with respect to
+
+the taxpayer’s liability, or potential liability for tax. This is protected from disclosure under the
+
+District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to the same extent as
+
+other tax information concerning a particular taxpayer. This discussion was not a general
+
+analysis of the law but rather applies only to the taxpayer seeking the ruling and was entirely
+
+based on the taxpayer’s protected information. Disclosure of OTR’s discussion of those facts
+
+would directly or indirectly disclose the taxpayer’s protected information. I also determined that
+
+
+
+                                                  24
+any nonexempt information contained in the redacted portions was so inextricably intertwined
+
+with exempt information that segregation was not reasonably possible or would not yield
+
+meaningful information.
+
+    46. With respect to the April 12, 2019 ruling, I followed the same approach to redactions
+
+as in the prior rulings, redacting personally identifying information as well as all data or
+
+information regarding the taxpayer that applied for the ruling from the Issue, Conclusion, Facts,
+
+and Analysis sections. The redactions from the Analysis and Conclusion sections contain an
+
+OTR discussion of the taxpayer’s facts and the tax treatment of those facts. The taxpayer
+
+information retains its protected character even though it is incorporated in OTR’s discussion and
+
+even though information identifying the taxpayer is removed or not included in the discussion.
+
+The OTR discussion of the taxpayer’s information constitutes data prepared by OTR with respect
+
+to the taxpayer’s liability, or potential liability for tax. This is protected from disclosure under
+
+the District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to the same extent
+
+as other tax information concerning a particular taxpayer. This discussion was not a general
+
+analysis of the law but rather applies only to the taxpayer seeking the ruling and was entirely
+
+based on the taxpayer’s protected information. Disclosure of OTR’s discussion of those facts
+
+would directly or indirectly disclose the taxpayer’s protected information. I also determined that
+
+any nonexempt information contained in the redacted portions was so inextricably intertwined
+
+with exempt information that segregation was not reasonably possible or would not yield
+
+meaningful information. In the course of reviewing this ruling, I identified some material on
+
+pages four and 6–12 that constituted nontaxpayer-specific legal analysis and I have attached
+
+revised pages four and 6–12 of the ruling disclosing this information.
+
+
+
+
+                                                  25
+    47. With respect to the July 11, 2019 ruling, I followed the same approach to redactions as
+
+in the prior rulings, redacting personally identifying information as well as all data or
+
+information regarding the taxpayer that applied for the ruling from the Facts, Issues and
+
+Application and Conclusions sections. The redactions from the Application and Conclusion
+
+section contain an OTR discussion of the taxpayer’s facts and the tax treatment of those facts.
+
+The taxpayer information retains its protected character even though it is incorporated in OTR’s
+
+discussion and even though information identifying the taxpayer is removed or not included in
+
+the discussion. The OTR discussion of the taxpayer’s information constitutes data prepared by
+
+OTR with respect to the taxpayer’s liability, or potential liability for tax. This is protected from
+
+disclosure under the District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to
+
+the same extent as other tax information concerning a particular taxpayer. This discussion was
+
+not a general analysis of the law but rather applies only to the taxpayer seeking the ruling and
+
+was entirely based on the taxpayer’s protected information. Disclosure of OTR’s discussion of
+
+those facts would directly or indirectly disclose the taxpayer’s protected information. I also
+
+determined that any nonexempt information contained in the redacted portions was so
+
+inextricably intertwined with exempt information that segregation was not reasonably possible or
+
+would not yield meaningful information. In the course of reviewing this ruling, I identified some
+
+material on page thre that constituted nontaxpayer-specific legal analysis and I have attached a
+
+revised page three of the ruling disclosing this information.
+
+    48. With respect to the July 15, 2019 ruling, I followed the same approach to redactions as
+
+in the prior rulings, redacting personally identifying information as well as all data or
+
+information regarding the taxpayer that applied for the ruling from the Facts, Issue, Conclusion
+
+and Application sections. The redactions from the Application and Conclusion sections contain
+
+
+
+                                                 26
+an OTR discussion of the taxpayer’s facts and the tax treatment of those facts. The taxpayer
+
+information retains its protected character even though it is incorporated in OTR’s discussion and
+
+even though information identifying the taxpayer is removed or not included in the discussion.
+
+The OTR discussion of the taxpayer’s information constitutes data prepared by OTR with respect
+
+to the taxpayer’s liability, or potential liability for tax. This is protected from disclosure under
+
+the District’s taxpayer confidentiality statutes, such as D.C. Code § 47-4406, to the same extent
+
+as other tax information concerning a particular taxpayer. This discussion was not a general
+
+analysis of the law but rather applies only to the taxpayer seeking the ruling and was entirely
+
+based on the taxpayer’s protected information. Disclosure of OTR’s discussion of those facts
+
+would directly or indirectly disclose the taxpayer’s protected information. I also determined that
+
+any nonexempt information contained in the redacted portions was so inextricably intertwined
+
+with exempt information that segregation was not reasonably possible or would not yield
+
+meaningful information.
+
+       I solemnly affirm under penalty of perjury that the contents of the foregoing are true to
+
+the best of my knowledge, information, and belief.
+
+
+       July 1, 2024
+       ___________
+       Date                                    Bazil Facchina, Esq.
+                                               Assistant General Counsel
+                                               Office of Tax and Revenue
+
+
+
+
+                                                  27
+

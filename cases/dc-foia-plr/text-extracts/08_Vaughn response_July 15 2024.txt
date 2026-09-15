@@ -1,0 +1,371 @@
+             SUPERIOR COURT OF THE DISTRICT OF COLUMBIA
+                             Civil Division
+
+TAX ANALYSTS and AARON DAVIS,                  )
+              Plaintiffs,                      )
+                                               )
+      v.                                       )   No. 2020 CA 1999 B
+                                               )   Judge Matini
+DISTRICT OF COLUMBIA,                          )   Next event: 26 July 2024, 10 A.M.
+               Defendant.                      )   (Further status conference)
+
+
+         PLAINTIFFS’ RESPONSE TO DEFENDANT DISTRICT OF
+       COLUMBIA’S REVISED VAUGHN INDEX AND DECLARATION
+
+      During the Watergate scandal, which ended 50 years ago this summer, the
+
+Nixon White House considered responding to demands for transparency by trying
+
+what one official called the “modified limited hangout route,” i.e., dribble out a
+
+limited set of facts and hope that this limited disclosure is enough to make the
+
+problem go away.1 That approach did not work then, and it should not work here.
+
+      The Office of Tax and Revenue (“OTR”) has responded to the Court’s
+
+statements on 17 May 2024 by disclosing limited portions of 16 of the 107 pages
+
+previously produced, consisting of:
+
+      - 65 lines of text – approximately two full pages of text, but with no new
+
+substantive disclosure of “facts” or “conclusions” and only scattered portions of the
+
+“analysis” sections that recite what a statute or rule says, but do not help the reader
+
+understand how OTR’s legal analysis applies to a specific factual setting; and
+
+
+
+
+      1
+        The phrase was uttered by a senior White House official in a March 1973
+meeting with the President about how the White House should respond to inquiries
+about the Watergate burglary. See American Dictionaries and Encyclopedias,
+“limited hangout,” available at https://en-academic.com/dic.nsf/enwiki/3065176.
+      - 21 footnotes that contain no analysis, but cite cases and other authorities.2
+
+      Everything else, OTR tells us, contains “taxpayer-specific” information that is
+
+“inextricably intertwined” with non-exempt information. Indeed, OTR’s new
+
+declaration uses the phrase “inextricably intertwined” 25 times (¶¶ 23, 35-48).
+
+      This response plainly inadequate. At the last hearing the Court identified six
+
+private letter rulings (“PLRs”) as “examples” of PLRs where non-taxpayer-specific
+
+information could be disclosed. Transcript, pp. 7-8. OTR responded by making
+
+modest changes in three of them and modest changes in two others not cited at the
+
+hearing.3
+
+      OTR’s error seems to stem from a belief that because a taxpayer seeking a
+
+PLR will recite specific aspects of his or her situation or propose various scenarios
+
+
+      2
+        OTR did not Bates-stamp its initial production of 107 pages, so to facilitate
+the Court’s review, we submit with this memorandum a paginated version of those
+107 pages, along with an annotated version of the 19-page supplement to the latest
+declaration from Bazil Facchina to show the location and extent of the new disclo-
+sures, keyed to the paginated version. Our estimate that 65 lines is approximately
+two pages of a PLR is based on a line count of text in several pages that OTR dis-
+closed in full, which have between 35 to 43 lines of text (PDF pp. 4, 12, 30, 34, 43).
+      3
+       This chart compares examples of PLRs cited by the Court for less redaction
+and the PLRs that were revised by OTR:
+
+PLRs identified by the Court:                  PLRs revised by OTR:
+                                               11 February 2016 (PDF pp. 10-13)
+9 May 2017 (PDF pp. 36-38)
+10 May 2018 (PDF pp. 56-57)                    10 May 2018 (PDF pp. 56-57 and p. 2)
+                                               7 December 2018 (pp. 70-74)
+14 February 2019 (PDF pp. 75-77)
+12 April 2019 (PDF pp. 87-98)                  12 April 2019 (PDF pp. 87-98)
+11 July 2019 (PDF pp. 99-102)                  11 July 2019 (PDF pp. 99-102)
+
+15 July 2019 (PDF pp. 103-107)
+
+                                           2
+for structuring a transaction, then virtually everything in the PLR is “taxpayer-
+
+specific.” The fatal flaw with this approach is well illustrated by a statement in
+
+OTR’s latest declaration (¶ 27) that OTR should not have released two lines of the
+
+conclusion dated 11 February 2016 (PDF p. 13). That text states:
+
+      Based on the description provided in the scenarios, scenario 4 is the
+      only one that conforms to the language and intent of the statute.
+
+But it is precisely that sort of conclusion – along with OTR’s analysis of the four
+
+hypothetical scenarios – that makes PLRs valuable to taxpayers. Which tax
+
+structures work? Which ones don’t? Such information can surely be disclosed
+
+without revealing the identity of the taxpayer, and OTR has done so in the past.
+
+      This is most apparent by examining Pl. Exs. 9, 11, 12, a point that OTR does
+
+not address. Consider Pl. Ex. 11, two declaratory orders that address whether tax-
+
+payers who petitioned for guidance qualify for favorable treatment as a “Qualified
+
+High Technology Company” or QHTC.” There are no individual identifiers, yet the
+
+salient facts about the taxpayer’s business operations and potential tax liability are
+
+disclosed – presumably without disclosing the taxpayer’s “tax information” or
+
+“return information” or anything else protected by statute. Compare Pl. Ex. 11 with
+
+four PLRs in OTR’s production that seek a ruling on whether a certain business
+
+structure qualifies as a QHTC. These four PLRs are heavily redacted, provide no
+
+facts, only a boilerplate recitation of the applicable law and no conclusion.4
+
+
+      4
+        The four QHTC PLRs are dated 11 February 2016 (PDF pp. 10-13); 5 July
+2017 (PDF pp. 39-45); 28 June 2018 (PDF pp. 58-63); and 14 February 2019 (PDF
+pp. 75-77).
+
+                                           3
+      Nor does OTR’s declaration try to square its current position with OTR’s
+
+statement in Pl. Ex. 10 (at p. 1) that private letter rulings are some times converted
+
+into notices and “published on our website under ‘Law and Guidance’”5 or the
+
+statement on OTR’s website that PLRs are “bind[ing]” on OTR as to the specific
+
+taxpayer, constitute OTR’s “official tax position,” and “provide guidance to other
+
+District taxpayers.” OTR, Private Letter Rulings – Tax and Law Guidance,
+
+available at https://otr.cfo.dc.gov/page/private-letter-rulings-tax-and-law-guidance
+
+(accessed 15 July 2024 and reproduced in the record as Pl. Ex. 6/Def. Ex. 8).
+
+      Official interpretations that are binding on the agency, but are not disclosed
+
+to the public, are the sort of “secret law” that the FOIA was intended to root out and
+
+open to public view. Fraternal Order of Police v. District of Columbia, 79 A.3d 347,
+
+355 n. 24 (D.C. 2013), citing Coastal States Gas Corp. v. Dep't of Energy, 617 F.2d
+
+854 (D.C. Cir. 1980), which stated (at 868, internal citation omitted):
+
+      [A]n agency will not be permitted to develop a body of “secret law,”
+      used by it in the discharge of its regulatory duties and in its dealings
+      with the public . . .. The theme was sounded as early as 1971 when the
+      court emphatically stated that agencies would be required to disclose
+      “orders and interpretations which it actually applies to cases before it,”
+      in order to prevent the development of “secret law.”6
+
+
+      5
+       Page 1 of Pl. Ex. 10 is reproduced at p. 13 of the appendix to our last filing,
+which also contains Pl. Exs. 9, 11 and 12.
+      6
+         In Coastal States the agency withheld memoranda in which agency lawyers
+responded to questions from agency auditors about how agency regulations apply to
+specific facts. The agency relied on the exemption for pre-decisional records that
+are part of an agency’s deliberative process (5 U.S.C. § 552(b)(5), the local analogue
+to which is D.C. Code § 2-534(a)(4)). Regardless of the exemption, the core principle
+– there shall be no “secret law” in agency decision making – remains the same.
+
+                                           4
+      How then does OTR justify its wholesale withholding of information?
+
+      The heart of OTR’s argument appears in paragraph 20 of the Facchina
+
+declaration, which states that “any information in a PLR that concerned a specific
+
+taxpayer, including the taxpayer who requested the ruling, was protected from
+
+disclosure.” This assertion rests on a number of claims, none of which persuades.
+
+      First, in an apparent effort to distinguish PLRs from Pl. Exs. 9, 11 and 12,
+
+OTR argues (at ¶ 11) that PLRs “contrast with other types of tax guidance” that
+
+OTR provides that are publicly available. Not so. In the first place, the line
+
+between different types of guidance is rather porous: Pl. Ex. 9, a “General Counsel
+
+Memorandum,” states that it was originally issued as a PLR; Pl. Exs. 11 and 12
+
+both had their origins in requests for guidance from an individual taxpayer.
+
+      More generally, the label that an agency attaches to a record is not
+
+determinative. D.C. Code § 2-532(a) mandates disclosure of all “records” unless
+
+there is an exemption in D.C. Code § 2-534. The fact that D.C.M.R. § 9-4200
+
+empowers OTR and other agencies to issue a type of document called a “declaratory
+
+order” does not override the agency’s obligation to respond to a proper FOIA
+
+request. Indeed, if the Council wanted agencies to decide for themselves which
+
+records to disclose and with what redactions, there would have been no need to
+
+enact a Freedom of Information Act.
+
+      Second, OTR’s declaration (at ¶ 17) over-reads the protections for “return
+
+information” in the federal statute that the Court of Appeals cited in defining OTR’s
+
+FOIA obligations. In brief, “return information” is defined in I.R.C. § 6103(b)(2)(A)
+
+
+                                          5
+as certain identifying items such as a taxpayer’s identity, source of income, tax
+
+payments and “any other data” collected by IRS “with respect to the determination
+
+of the existence, or possible existence of liability (or the amount thereof) . . . .” OTR
+
+gives a broad reading to the “any other data” language to embrace “any information
+
+in a PLR that concerned a specific taxpayer.” Id., ¶ 20 (emphasis added).
+
+      This is plainly incorrect. In each of Pl. Exs. 9, 11 and 12, a taxpayer
+
+petitioned OTR for an opinion about tax liability in the taxpayer’s situation, either
+
+actual or proposed. In each case OTR recited the facts, applied the law to the facts
+
+and stated a conclusion as to liability. These documents benefit other taxpayers
+
+without tying the facts or analysis or conclusion to a specific, identifiable taxpayer.7
+
+      Third, OTR tries to distinguish the key case upon which the Court of Appeals
+
+relied in defining “taxpayer-specific.” As noted in our prior memorandum (at pp. 7-
+
+8), the Court of Appeals cited approvingly Tax Analysts v. IRS, 117 F.3d 607, 615-16
+
+      7
+        Consider these examples showing that OTR understands how it is possible
+to provide useful guidance without disclosing an individual taxpayer’s liability:
+
+       - Pl. Ex. 9, p. 1 (A hotel’s attrition fee “is subject to District sales tax” in
+specified circumstances, while a cancellation fee in the form of a forfeited deposit “is
+not subject to District sales tax”);
+
+       - Pl. Ex. 11 (Declaratory Order 2015-2, p. 5, states that “Company is eligible
+to receive qualifications of QHTC because all the requirements of QHTC
+qualification have been met); (Declaratory Order 2013-1, p. 4 states that if
+petitioner meets specific requirements, it “will not be subject to the franchise tax for
+the lesser of $15 million or for the first five years the QHTC has taxable income”);
+
+      - Pl. Ex. 12, p. 1 (a taxpayer appointed by the President and confirmed by the
+Senate who cannot be removed before the end of the appointee’s term except for
+cause is liable for District income tax and cannot take advantage of a tax provision
+available only to those who serve at the pleasure of the President).
+
+                                            6
+(D.C. Cir. 1997), which ordered disclosure under the federal FOIA of non-
+
+precedential “field service advice” or “FSA” memoranda that IRS headquarters
+
+lawyers sent to field attorneys who were seeking advice on how federal tax law
+
+applies to a specific situation, with “return information” to be redacted to the same
+
+extent that OTR removed identifiers in the three exhibits upon which we rely here.
+
+      OTR argues (at ¶ 11) that PLRs “do not constitute guidance to agency per-
+
+sonnel or constitute a body of law which OTR uses in its dealings with taxpayers.”
+
+How does OTR square this with OTR’s statements that PLRs are a body of law that
+
+“binds” the agency and reflect OTR’s “official tax position”? See p. 4, supra.8
+
+      What to do?
+
+      At the May hearing, the Court stated that OTR should examine PLRs by
+
+“focusing on the unique language, unique to the taxpayer” (Tr. at 10), which OTR
+
+has clearly failed to do. The Court added that without a Vaughn index explaining
+
+why specific sections have been redacted, “I’m just prepared to order that a number
+
+of these PLRs be produced in unredacted form or in lesser redacted form” (Tr. 9).
+
+      We appear to be at that point. OTR has now had three opportunities (the
+
+first back in 2020) to file a proper Vaughn index, yet OTR has utterly failed to do so.
+
+It is therefore up to the Court to decide what matters should be disclosed.
+
+      8
+        OTR also argues (¶ 11) that the FSA case is different because D.C. law does
+not have a counterpart of 26 U.S.C. § 6110, which mandates IRS disclosure, with
+redactions, of certain non-precedential “written determinations,” even if no one has
+requested such determinations under the FOIA. As the FSA case illustrates,
+however, the IRS’s obligation to disclose certain specified records as a matter of
+course does not affect the agency’s obligation to disclose, upon request, other
+unspecified records under the FOIA.
+
+                                           7
+      What information may be withheld? Plaintiffs have never disputed that
+
+identifying words and phrases may be redacted. In note 9 below, we list certain
+
+words and phrases that constitute such identifiers, which are drawn from the
+
+definition of “return information” in I.R.C. § 6103(b)(2)(A), the redactions OTR
+
+made in Pl. Ex. 9, 11 and 12, and the Court’s comments at the last status hearing.9
+
+      We submit that the first step from here would be to remove these individual
+
+items (perhaps with the assistance of a Magistrate Judge). After that, the Court
+
+will be able to assess in camera whether additional portions of these PLRs
+
+“inextricably intertwine” exempt information with non-exempt information and
+
+then make the requisite finding that all “reasonably segregable” portions of the
+
+PLRs are being disclosed.
+
+                                         Respectfully submitted,
+
+
+                                         Cornish F. Hitchcock (D.C. Bar No. 238824)
+                                          Hitchcock Law Firm PLLC
+                                          5614 Connecticut Avenue, NW, No. 304
+                                          Washington, DC 20015
+                                          (202) 489-4813 • conh@hitchlaw.com
+15 July 2024                             Attorney for Plaintiffs
+
+      9
+       - Taxpayer’s name, address(es), telephone number(s), e-mail address(es),
+website, Social Security Number, Federal Employee Identification Number;
+
+        - The name of any customer or client and identifying information as
+identified above:
+
+        - The nature, source, or amount of the taxpayer’s income, payments,
+receipts, deductions, exemptions, credits, assets, liabilities, net worth, tax liability,
+tax withheld, deficiencies, overassessments, or tax payments,
+
+          - The month, date and year of any event or transaction.
+
+                                            8
+

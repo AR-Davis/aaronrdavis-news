@@ -1,0 +1,1192 @@
+No. 21-CV-31
+
+_____________________________
+
+District of Columbia Court of Appeals
+
+_____________________________
+
+TAX ANALYSTS AND AARON DAVIS,
+
+Plaintiffs-Appellants,
+
+v.
+
+DISTRICT OF COLUMBIA,
+
+Defendant-Appellee.
+
+_____________________________________________
+
+On Appeal from the Superior Court of
+
+of the District of Columbia, Civil Division
+
+_____________________________________________
+
+BRIEF FOR PLAINTIFFS-APPELLANTS
+
+____________________________________________
+
+Cornish F. Hitchcock
+
+(D.C. Bar No. 238824)
+
+HITCHCOCK LAW FIRM PLLC
+
+5614 Connecticut Avenue, NW, No. 304
+
+Washington, D.C. 20015-2604
+
+(202) 489-4813
+
+conh@hitchlaw.com
+
+31 March 2021 Attorney for Plaintiffs-Appellants
+
+District of Columbia Court of Appeals
+
+_________________________________________
+
+)
+
+TAX ANALYSTS and AARON DAVIS, )
+
+)
+
+  Plaintiffs-Appellants, )
+
+)
+
+v. ) No. 21-CV-31
+
+)
+
+DISTRICT OF COLUMBIA,, )
+
+)
+
+Defendant-Appellee )
+
+__________________________________________)
+
+CERTIFICATE PURSUANT TO RULE 28(a)(2)
+
+Plaintiffs-Appellants state that the following parties appeared below:
+
+Plaintiffs-Appellants
+
+Plaintiff Tax Analysts is a non-profit District of Columbia corporation.
+Pursuant to Rule 26.1(a), Tax Analysts states that it has no parent
+corporation and that no publicly held corporation owns 10% or more of
+its stock.
+
+Plaintiff Aaron Davis
+
+Plaintiffs-Appellants were and are represented by Hitchcock Law Firm
+PLLC and Cornish F. Hitchcock.
+
+Defendant-Appellee
+
+Defendant District of Columbia.
+
+Office of the Chief Financial Officer was named as a defendant, but was
+dismissed from the case in Superior Court.
+
+Defendants were and are represented by the Office of the Attorney
+General for the District of Columbia.
+
+­­­
+
+These representations are made, inter alia, so that judges of this Court
+may evaluate possible recusal.
+
+__________________________________
+
+Cornish F. Hitchcock
+
+Attorney for Plaintiffs-Appellants
+
+TABLE OF CONTENTS
+
+STATEMENT REGARDING FINALITY AND JURISDICTION 1
+
+BRIEF FOR PLAINTIFFS-APPELLANTS 1
+
+QUESTION PRESENTED 1
+
+STATEMENT OF THE CASE 1
+
+STATEMENT OF FACTS 2
+
+SUMMARY OF ARGUMENT
+
+ARGUMENT x
+
+THE TRIAL COURT ERRED IN DENYING ACCESS
+
+TO REDACTED PRIVATE LETTER RULINGS. X
+
+Standard of Review x
+
+A. Introduction and Overview x
+
+  B. The “Other Statutes” Exemption Does Not Permit
+
+Withholding Private Letter Rulings in Their Entirety. x
+
+C. The trial court erred in granting summary judgment
+
+  without first conducting an in camera review. x
+
+D. The personal privacy exception has no application here. x
+
+CONCLUSION x
+
+TABLE OF AUTHORITIES*
+
+Cases:
+
+Barry v. Washington Post Co.,
+
+529 A.2d 319 321 (D.C. 1987)
+
+Doe v. D.C. Metro. Police Dep't,
+
+948 A.2d 1210 (D.C. 2008) (Follow federal)
+
+Dunhill v. Director, District of Columbia Dep’t of Transportation,
+
+416 A.2d 244 (D.C. 1980)
+
+Fraternal Order of Police v. District of Columbia,
+
+79 A.3d 347, 360 (D.C. 2013) x
+
+Fraternal Order of Police, Metro. Labor Committee v. District of
+Columbia,
+
+82 A.3d 803 (D.C. 2014) x
+
+Fraternal Order of Police, Metro. Labor Comm. v. District of Columbia,
+113 A.3d 198, ___ (D.C. 2015) x
+
+Fraternal Order of Police, Metropolitan Police Labor Committee v.
+District of Columbia,
+
+124 A.3d 69 (D.C. 2015) X
+
+Fraternal Order of Police v. District of Columbia, 139 A.3d 853 (D.C.
+2016) reasonably describe; no void for volume exception
+
+Hines v. Bd. of Parole, 567 A.2d 909 (D.C. 1989);
+
+Kane v. District of Columbia, 180 A.3d 1073 (D.C. 2018)
+
+affidavits filed
+
+Mays v. Drug Enforcement Admin.,
+
+234 F.3d 1324 (D.C. Cir. 2000) x
+
+McReady v. Dep't of Consumer & Regulatory Affairs,
+
+618 A.2d 609 (D.C. 1992); fees
+
+Neufeld v. IRS,
+
+646 F.2d 661, 646 (D.C. Cir. 1981) x
+
+Newspapers, Inc. v. Metro. Police Dep't,
+
+546 A.2d 990 (D.C. 1988) x
+
+Padou v. District of Columbia,
+
+29 A.3d 973, 982 (D.C. 2011) x
+
+People for the American Way Foundation v. v. Nat'l Park Serv.,
+
+503 F. Supp. 2d 284, 307 (D.D.C. 2007) x
+
+Riley v. Fenty,
+
+7 A.3d 1014 (D.C. 2010) x
+
+Rugiero v. Department of Justice,
+
+234 F. Supp. 2d 697 (E.D. Mich. 2002) x
+
+Solar Sources, Inc. v. United States,
+
+142 F.3d 1033 (7th Cir. 1998) x
+
+Tax Analysts and Advocates v. IRS,
+
+505 F.2d 350 (D.C. Cir. 1974) x
+
+U.S. Dep’t of Defense v. Fed. Labor Relations Auth.,
+
+510 U.S. 487 (1993) x
+
+Vaughn v. Rosen, 484 F.2d 820, 827 (D.C. Cir.1973) x
+
+Vining v. District of Columbia, 198 A.3d 738, 743 (D.C. 2018); fees
+
+Vining v. Council of District of Columbia,
+
+140 A.3d 439 (D.C. 2016) x
+
+Washington Post Co. v. Minority Bus. Opportunity Comm'n,
+
+560 A.2d 517 (D.C. 1989) X
+
+Statutes:
+
+District of Columbia Freedom of Information Act,
+
+D.C. Code § 2-531 et seq.
+
+D.C. Code § 2-531 x
+
+D.C. Code § 2-532
+
+D.C. Code § 2-534(a)(1) x
+
+D.C. Code § 2-534(a)(2) x
+
+D.C. Code § 2-534(a)(6) x
+
+D.C. Code § 47-4406(a) x
+
+Internal Revenue Code, 26 U.S.C. § 1 et seq.
+
+I.R.C. § 6103 x
+
+I.R.C. § 6110 x
+
+*
+
+__________
+
+* Authorities principally relied upon are indicated by an asterisk.
+
+Court rules:
+
+Superior Court Rules of Civil Procedure
+
+Rule 12(b)(6) x
+
+Rule 56(a) x
+
+Other authorities:
+
+Joint Committee on Taxation, General Explanation of the Tax Reform Act
+of 1976, 94^(th) Cong., 2d Sess. 304, 305 (1976), available at
+https://archive.org/stream/generalexplanati00jcs3376/generalexplanati00jcs3376_djvu.txt.
+x
+
+District of Columbia Court of Appeals
+
+__________________________________________
+
+)
+
+TAX ANALYSTS and AARON DAVIS, )
+
+  )
+
+  Plaintiffs-Appellants, )
+
+)
+
+v. ) No. 21-CV-31
+
+)
+
+DISTRICT OF COLUMBIA,, )
+
+  )
+
+Defendant-Appellee. )
+
+_________________________________________ )
+
+BRIEF FOR PLAINTIFFS-APPELLANTS
+
+STATEMENT REGARDING FINALITY AND JURISDICTION
+
+This is an appeal from a final judgment that disposed of all parties’
+claims.
+
+QUESTION PRESENTED
+
+At issue in this Freedom of Information Act (“FOIA”) case is public
+access to “private letter rulings” issued by the Office of Tax and
+Revenue (”OTR”) in response to requests from a taxpayer (or other party)
+for guidance about how District of Columbia tax laws apply to a specific
+fact pattern. The questions presented are;
+
+1. Did the trial court err in denying access to private letter rulings,
+even with names and personal identifiers redacted, on the basis of D.C.
+Code § 47-4406, entitled Secrecy of Returns?
+
+2. Did the trial court err in denying to conduct an in camera review of
+these rulings to determine if any portions could be disclosed because
+they were “reasonably segregable” from any exempt portions?
+
+STATEMENT OF THE CASE
+
+Plaintiffs-appellants are Tax Analysts, a non-profit publisher of
+periodicals on taxation issues, and Aaron Davis, one of its reporters at
+the time of the request (collectively “Tax Analysts”). The Office of Tax
+and Revenue is an agency of defendant-appellee District of Columbia, and
+this brief will refer to the defendant-appellee as “OTR” unless the
+context dictates otherwise.
+
+In an opinion and judgment dated 13 January 2021 the Superior Court
+(Rigsby, J.) granted OTR’s contested motion for summary judgment and
+denied Tax Analysts’ cross-motion seeking an in camera review of the
+letter rulings. This appeal followed.
+
+STATEMENT OF FACTS
+
+Tax Analysts’ FOIA request and OTR’s response.
+
+On 8 October 2019 plaintiffs Tax Analysts and Aaron Davis filed an FOIA
+request with the Office of the Chief Financial Officer, OTR’s parent
+agency.[1] Complaint ¶ 3-4. Their FOIA request sought access to several
+types of records, including the only category at issue in this case:
+“All private letter rulings (PLRs) . . . created by the District of
+Columbia's Office of Tax and Revenue between January 1, 2016 and October
+8, 2019.” Complaint ¶ 7; Declaration of Aaron Davis (“Davis Decl.”) ¶ 3;
+Plaintiffs’ Exhibit (“Pl. Ex.”) 1.
+
+This request was denied on the basis of two FOIA exemptions:
+
+• Exemption 1, D.C. Code § 2-534(a)(1), which allows agencies with
+withhold records submitted by a third party if disclosure would cause
+substantial harm to that party’s competitive position; and
+
+• Exemption 6, D.C. Code § 2-534(a)(6), subsection (A) of which allows
+agencies to withhold information that is “specifically exempted from
+disclosure by statute (other than this section).” The trial court relied
+solely upon this exemption in entering judgment in OTR’s favor.
+
+Tax Analysts appealed to the Mayor. In response, OTR identified “24
+private letter rulings that are responsive to Tax Analysts’ request.”
+However, OTR denied access on the basis of the two exemptions cited
+previously, as well as a third exemption:
+
+•Exemption 2, which allows agencies to withhold information that would
+lead to a “clearly unwarranted invasion of personal privacy.”
+
+The Mayor’s office, after examining one of the 24 rulings in camera,
+upheld OTR’s denial. A request for reconsideration went unanswered.
+Complaint ¶¶ 8-13, 15; Davis Aff. ¶ 5; & Pl. Exs. 4-5.
+
+Independently of whether any of these exemptions apply here, another
+element of the FOIA is pertinent here, namely, the requirement that if a
+record contains exempt and non-exempt portions, an agency must make
+available the “reasonably segregable,” non-exempt portions. D.C. Code §
+2-534(b). Here OTR argued, and the Mayor agreed, that any non-exempt
+portions of the requested letter rulings were “inextricably intertwined”
+with exemption portions, thus rendering redaction “useless” and as
+providing “little or no informational value.” Complaint ¶ 14, Pl. Ex. ¶
+4 at 9.
+
+Before discussing proceedings in Superior Court and the legal issues, we
+it may be useful to describe briefly the nature of the records at issue
+here.
+
+Private letter rulings.
+
+OTR’s website describes private letter rulings as–
+
+. . . the official tax positions of the Office of Tax and Revenue (OTR).
+The rulings are OTR's response to taxpayer requests for guidance on
+specific tax matters. A ruling may be relied upon by a taxpayer in
+filing a return, as the ruling binds OTR with respect to the specific
+tax matter.
+
+Pl. Ex. 7.
+
+Letter rulings are an important element of federal and state tax laws,
+given the complexity of tax law and the fact that the application of tax
+laws to a specific individual’s situation is not always clear. Thus, the
+Internal Revenue Service and the revenue departments in the District of
+Columbia and over 40 states issue letter rulings as a means of providing
+guidance to taxpayers about how to structure a transaction, whether a
+deduction or credit is available in a specific situation, or whether a
+specific tax law applies to a particular event or situation. Private
+letter rulings are thus helpful not only to the individual who requests
+one, but to other taxpayers and practitioners, who can obtain an
+understanding how a revenue department construes specific provisions of
+the tax code, regardless of whether the letter rulings are binding or
+not.[2] Davis Decl. ¶¶ 7-9.
+
+At the federal level the IRS has been required since 1974 to disclose
+private letter rulings with names and identifiers redacted, Tax Analysts
+and Advocates v. IRS, 505 F.2d 350 (D.C. Cir. 1974). Private letter
+rulings and other “written determinations” that the IRS issues on
+various tax issues must be made public with redactions under 26 U.S.C.
+(“I.R.C.”) § 6110, and those documents are available online at the IRS’s
+“FOIA Library,” https://www.irs.gov/privacy-disclosure/foia-library.
+
+At the state level, 36 of the state revenue departments that issue
+letter rulings publish those rulings with personal identifiers redacted.
+The District of Columbia is one of only a small number of jurisdictions
+that do not routinely make such rulings available. Davis Decl. ¶ 13.
+
+Proceedings in Superior Court.
+
+Tax Analysts filed its complaint on 28 March 2020, and OTR moved to
+dismiss under Super. Ct. Civ. R. 12(b)(6), relying solely on Exemption
+6, the “other statutes” exemption. Tax Analysts opposed the motion and
+submitted exhibits demonstrating that OTR has in the past published
+redacted versions of private letter rulings and similar guidance.
+(CITE). Tax Analysts also requested an in camera review of the letter
+rulings in order to assess OTR’s claim that no “reasonably segregable”
+portions of the rulings could be made public.
+
+The “other statute” upon which OTR relied is D.C. Code § 47-4406,
+entitled Secrecy of Returns, subsection (a) of which states:
+
+  (a) Except as provided in subsections (b), (c), (d)(2), (e), (e-1),
+  and (e-2) of this section, and except as to an official of the
+  District of Columbia, having a right thereto in his official capacity,
+  an officer, employee, or contractor, or a former officer, employee, or
+  contractor, of the District of Columbia shall not divulge or make
+  known in any manner the amount of reported value, or any information
+  relating to value or the computation of value, disclosed in a return
+  required to be filed under this title. The original (or a copy) of a
+  tax return desired for use in litigation in court shall not be
+  furnished where the District of Columbia or the United States is not
+  interested in the result of the litigation, whether or not the request
+  is contained in an order of the court. Nothing contained in this
+  section shall prevent the furnishing to the taxpayer of a copy of his
+  or her return upon the payment of a fee as provided by the Mayor. This
+  subsection shall also be applicable to federal, state, or local tax
+  returns (or copies of these returns) and to federal, state, or local
+  tax information either submitted by the taxpayer or otherwise
+  obtained.
+
+The trial court denied OTR’s motion to dismiss, citing as relevant the
+language in D.C. Code § 47-4406 that--
+
+. . . an officer, employee, or contractor, or former officer, employee,
+or contractor of the District of Columbia shall not divulge or make
+known in any manner the amount of reported value, or any information
+relating to value or the computation of value disclosed in a [tax]
+return required to be filed under this title.
+
+(J.A. ___) The court added that, as indicated by its text and title,
+this statute governs the “secrecy of returns” or “the amount of reported
+value, or any information relating to value or computation of value”
+disclosed in a tax return. In this case, however, “private letter
+rulings predate tax returns, [and] therefore tax returns are not at
+issue (J.A. ___). The court continued:
+
+A taxpayer in a PLR is generally seeking advice on how a certain fact
+pattern should be treated under D.C. tax law when filing a hypothetical
+future return. As Plaintiffs point out in their opposition, the taxpayer
+may upon receipt of a PLR decide not to pursue a specific transaction,
+and thus there would be no information disclosed” about such a
+transaction in “a return to be filed.”
+
+(J.A. ____. Therefore, the court concluded, “section 47-4406 does not
+prevent the disclosure of the information contained in PLRs” (J.A. ___).
+
+The court declined to consider OTR’s request to hold that any non-exempt
+information in the letter rulings were not “reasonably segregable” from
+the exempt portions. The court found no reason to decide that issue,
+inasmuch as Section 47-4406 was “the only basis advanced by Defendants
+to withhold information” and that any determination about the
+segregability of specific documents would present “a question of fact
+that is not currently before the Court” (J.A. __). Tax Analysts’ in
+camera motion was thus denied as moot (J.A. __).
+
+Notwithstanding this decision rejecting OTR’s reliance on Exemption 6,
+OTR filed a Vaughn index[3] that identified the 24 letter rulings and
+re-iterated its position that all 24 rulings could be withheld in their
+entirety under the “other statutes” exemption plus the other two
+exemptions cited in its letter to the Mayor (J.A. __). OTR did not
+accompany this Vaughn index with an affidavit from an OTR official with
+relevant knowledge of the documents.
+
+OTR then moved for summary judgment on the basis of all three exemptions
+(J.A. __-__). Tax Analysts opposed and renewed its motion for in camera
+review of the 24 letters in order to address the segregability issue
+(J.A. __-__).[4]
+
+The trial court granted OTR’s motion for summary judgment and entered
+judgment in OTR’s favor (J.A. __-__). The court explained that its prior
+ruling had been based on OTR’s reliance on language in section 47-4406
+that “an officer, employee, or contractor, or former officer, employee,
+or contractor of the District of Columbia shall not divulge or make
+known in any manner the amount of reported value, or any information
+relating to value or the computation of value disclosed in a [tax]
+return required to be filed under this title.” For this ruling, the
+court relief on OTR’s citation of additional language in section 47-4406
+“shall also be applicable to federal, state, or local tax returns (or
+copies of these returns) and to federal, state, or local tax information
+either submitted by the taxpayer or otherwise obtained’” (J.A. __-__)
+(emphasis in decision).
+
+The court read this language as leaving OTR “no discretion” to disclose
+private letter rulings or any portion of them (J.A. __-__). The court
+also rejected Tax Analysts’ argument that the federal FOIA has been read
+to require disclosure of private letter rulings with redactions of names
+and personal identifiers, notwithstanding similar “tax information”
+language in the Internal Revenue Code, 26 U.S.C. § 6103 (“I.R.C. §
+1603”), entitled Confidentiality and disclosure of returns and return
+information (J.A. __-__).
+
+As for segregability, the trial court did not mention its prior
+statement that segregability is “a question of fact.” Instead, the court
+granted summary judgment based on the court’s view, unsupported by an
+affidavit from OTR or similar evidence, that “PLRs are in their entirety
+an evaluation of the tax consequences of a taxpayer’s financial
+circumstances,” such that redaction of exempt information would “produce
+an edited document of little or no informational value” (J.A. __-__ )
+(internal citation omitted). This appeal followed.
+
+SUMMARY OF ARGUMENT
+
+ARGUMENT
+
+THE TRIAL COURT ERRED IN DENYING ACCESS
+
+TO REDACTED PRIVATE LETTER RULINGS.
+
+Standard of Review.
+
+The standard of review on all issues in this FOIA case is de novo. D.C.
+Code § 2-537(b).
+
+A. Introduction and Overview.
+
+“The public policy of the District of Columbia is that all persons are
+entitled to full and complete information regarding the affairs of
+government and the official acts of those who represent them as public
+officials and employees,” and to that end the FOIA’s provisions “shall
+be construed with the view toward expansion of public access and the
+minimization of costs and time delays to persons requesting
+information.” D.C. Code § 2-531.
+
+The FOIA is structured to require disclosure in two situations:
+
+•First, and “[w]ithout limiting the meaning of other sections” of the
+FOIA, there are 12 “categories of information [that] are specifically
+made public information,” even without a request for access, D.C. Code §
+2-536(a), and one such category consists of “statements of policy and
+interpretations of policy, acts, and rules which have been adopted by a
+public body,” D.C. Code §§ 2-536(a)(4);
+
+• Second, agencies must respond to public requests for access to
+specific records, and those records must be provided except to the
+extent that a specific exemption allows withholding, D.C. Code §§
+2-532(a), 2-534.
+
+In order to promote the FOIA’s overarching disclosure policy, courts are
+required to construe exemptions “narrowly” and “with ambiguities
+resolved in favor of disclosure.” Fraternal Order of Police, Metro.
+Labor Comm. v. District of Columbia, 82 A.3d 803, 813 (D.C.2014)
+(internal citation and quotation omitted). Accord Washington Post Co. v.
+Minority Bus. Opportunity Comm'n, 560 A.2d 517, ___ (D.C. 1989) (“Just
+as the provisions of the Act giving citizens the right of access are to
+be generously construed, so the nine statutory exemptions must be
+approached with a jaundiced eye”).
+
+OTR has described private letter rulings as OTR’s “official tax
+positions,” which are prepared in “response to taxpayer requests for
+guidance on specific tax matters. A ruling may be relied upon by a
+taxpayer concerning a specific tax matter, since the ruling binds OTR as
+to the specific tax matter” (J.A. __). In other words, private letter
+rulings are the sort of “statements of policy and interpretations of
+policy, acts, and rules” that should be ordinarily be made public under
+D.C. Code § 2-536(a)(4), except to the extent an exemption may apply. In
+the sections that follow, we explain why none of the exemptions cited by
+OTR warrant withholding private letter rulings in their entirety and why
+the judgment should be reversed.
+
+  B. The “Other Statutes” Exemption Does Not Permit
+
+Withholding Private Letter Rulings in Their Entirety.
+
+In entering summary judgment on OTR’s favor, the trial court relied on
+Exemption 6 of the FOIA, D.C. Code § 2-534(a)(6), which allows agencies
+to withhold–
+
+Information specifically exempted from disclosure by statute (other than
+this section), provided that such statute:
+
+(A) Requires that the matters be withheld from the public in such a
+manner as to leave no discretion on the issue; or
+
+(B) Establishes particular criteria for withholding or refers to
+particular types of matters to be withheld.
+
+In considering Exemption 6 claims, “we are required to interpret this
+exemption ‘narrowly,’ ‘with ambiguities resolved in favor of
+disclosure.’” Vining v. Council of the District of Columbia, 140 A.3d
+439, 445 (D.C. 2016), quoting Fraternal Order of Police, Metro. Labor
+Comm. v. District of Columbia, 82 A.3d 803, 813 (D.C. 2014) (quoting in
+turn Fraternal Order of Police, Metro. Police Labor Comm. v. District of
+Columbia, 79 A.3d 347, 354 (D.C. 2013) (“FOP 2013”).
+
+Consistent with that general principle, this Court has generally
+rejected an agency’s resort to Exemption 6 except when the “other
+statute” is clear on its face. Compare, e.g., Vining (Legislative
+Privilege Act not covered by the exemption); Newspapers, Inc. v. Metro.
+Police Dep't, 546 A.2d 990 (D.C. 1988) (pre-home rule “Duncan Ordinance”
+not a “statute” under the exemption); Barry v. Washington Post Co., 529
+A.2d 319 321 (D.C. 1987) (statute creating mayor's discretionary and
+ceremonial funds does not exempt any material) with Riley v. Fenty, 7
+A.3d 1014 (D.C. 2010) (request for records that “pertain to” certain
+youths in custody barred by statute allowing agency to withhold “records
+pertaining to youths in custody”).
+
+There are two reasons why Exemption 6 does not permit withholding
+private letter rulings in their entirety.
+
+1. The cited statute does not protect rulings in their entirety.
+
+The statute upon which OTR and the trial court rely is D.C. Code §
+47-4406(a), quoted in full at p. __, supra. As the trial court noted,
+the two pertinent portions of that statute state that–
+
+. . . an officer, employee, or contractor, or a former officer,
+employee, or contractor, of the District of Columbia shall not divulge
+or make known in any manner the amount of reported value, or any
+information relating to value or the computation of value, disclosed in
+a return required to be filed under this title.
+
+and that–
+
+This subsection shall also be applicable to federal, state, or local tax
+returns (or copies of these returns) and to federal, state, or local tax
+information either submitted by the taxpayer or otherwise obtained.
+
+We address each part in turn.
+
+With respect to the first quoted excerpt, private letter rulings plainly
+fall outside the scope of the statutory text. The trial court
+acknowledged the point in denying OTR’s motion to dismiss (J.A. ___).
+The reason is that this portion of section 47-4406(a) bars disclosure of
+certain specified types of information that are “disclosed in a return
+required to be filed.” By contrast, private letter rulings predate
+returns. The person requesting the ruling is generally seeking advice on
+how a certain fact pattern should be treated under the tax laws when
+filing a future return. “Does the fact pattern in my request letter
+qualify for a certain tax credit?” “If I structure a proposed deal this
+way, will there by any tax liability?” OTR will respond by addressing
+the tax consequences of that hypothetical, and OTR’s conclusion is
+binding on OTR as to the requester.
+
+Private letter rulings do not, however, involve disclosure of a
+“return.” Indeed, if OTR’s conclusion is not to the taxpayer’s liking,
+the requester may choose not to pursue the transaction as laid out to
+OTR. As a result, the disclosure of a private letter ruling would not
+“disclose[ ]” any “information” that is in “a return required to be
+filed.” D.C. Code § 47-4406(a).
+
+This point is not theoretical: Plaintiffs’ Exhibit 12, which is a public
+OTR ruling (seemingly possibly taken from a private letter ruling, by
+judging the format, compare Pl. Ex. 10). In that exhibit OTR responded
+to a request for advice about whether the requester is required to file
+a District of Columbia income tax return; OTR concluded that, on the
+facts specified, the requester was not obligated to file such a return
+(Pl. Ex. 12).
+
+We turn now to second excerpt of D.C. Code § 47-4406(a), which allows
+OTR to withhold “federal, state, or local tax returns (or copies of
+these returns) and to federal, state, or local tax information either
+submitted by the taxpayer or otherwise obtained” (emphasis added). The
+trial court erred in reading this phrase as shielding private letter
+rulings in their entirely, with OTR having “no discretion” to release
+any portion of such rulings (J.A. __). Specifically, the trial court
+ignored a definition of “tax information” in section 47-4406 that
+suggests a more narrow scope of what may withheld. In addition, the
+trial court was clearly wrong on the facts in holding that OTR had “no
+discretion” to release private letter rulings, given record evidence
+that OTR can – and has – disclosed private letter rulings with names and
+identifiers redacted – which is precisely the result that Tax Analysts
+seeks here.[5] The phrase “tax information” is not defined in Title 47
+of the D.C. Code, and neither are the more specific phrases “state tax
+information” or “local tax information.” However, D.C. Code §
+47-4406(h)(3) does define “federal tax information” in a way that, as we
+shall demonstrate, argues in favor of disclosing the letter rulings at
+issue here.
+
+D.C. Code § 47-4406(h)(3) defines “federal tax information” as–
+
+a return or return information received directly from the Internal
+Revenue Service or obtained through an authorized secondary source, such
+as the Social Security Administration or any entity acting on behalf of
+the Internal Revenue Service pursuant to an Internal Revenue Code
+section 6103(p)(2)(B) agreement.
+
+By defining “federal tax information” as either a “return” or “return
+information,” section 47-4406 tracks I.R.C. § 6103, the key provision of
+the Internal Revenue Code with respect to taxpayer confidentiality.
+
+• I.R.C. § 6103(b)(1) defines a “return” as “any tax or information
+return, declaration of estimated tax, or claim for refund,” plus
+amendments, supplements, schedules and the like.
+
+• I.R.C. 6103(b)(2) defines “return information” in several contexts,
+along with a general definition in I.R.C. § 6103(b)(2)(A) bars
+disclosure of:
+
+a taxpayer’s identity, the nature, source, or amount of his income,
+payments, receipts, deductions, exemptions, credits, assets,
+liabilities, net worth, tax liability, tax withheld, deficiencies,
+overassessments, or tax payments, whether the taxpayer’s return was, is
+being, or will be examined or subject to other investigation or
+processing, or any other data, received by, recorded by, prepared by,
+furnished to, or collected by the Secretary with respect to a return or
+with respect to the determination of the existence, or possible
+existence, of liability (or the amount thereof) of any person under this
+title for any tax, penalty, interest, fine, forfeiture, or other
+imposition, or offense. . . .
+
+This language indicates the sort of specific, personal identifiers that
+can be redacted in order to protect taxpayer privacy.
+
+Tax Analysts’ position, in brief, is that D.C. Code § 47-4606(a) should
+be construed to require disclosure of private letter rulings with the
+names and similar identifiers redacted. This approach is consistent with
+the FOIA’s requirement that exemptions be narrowly construed in light of
+the pro-disclosure policy in the Act. Disclosure of identifiers redacted
+is an approach that harmonizes the two important policy goals that are
+implicated here: the FOIA’s goal of disclosing “statements of policy and
+interpretations of policy, acts, and rules” with section 47-4406’s goal
+of protecting individual taxpayer privacy.
+
+This approach is also consistent with how the IRS has been disclosing
+private letter rulings since the 1970s. As noted above (at p. _), in
+1974, the District of Columbia Circuit held in Tax Analysts and
+Advocates that private letter rulings are not protected from disclosure
+under I.R.C. § 6103, which IRS had argued was the sort of “other
+statute” that forbade disclosure under the federal FOIA’s analogue to
+Exemption 6 (5 U.S.C. § 552(b)(3)). Later that year, the Sixth Circuit
+reached the same conclusion in a similar case.
+
+Those decisions came at a time when the Watergate Congress was focused
+on striking the right balance between government transparency and the
+protection of personal privacy. The Watergate Congress in 1974 passed
+significant liberalizing amendments to the FOIA (Pub. L. 93-502, 93d
+Cong., 2d Sess., codified in various sections of 5 U.S.C. § 552), as it
+also passed the Privacy Act, which created significant protections with
+respect to information about individuals that were contained in
+government agencies (Pub. L. 93-579, 93d Cong., 2d Sess., codified as 5
+U.S.C. § 552a).
+
+The history was cited when the next Congress enacted the Tax Reform Act
+of 1976, which formed the framework for current federal disclosure
+policies with respect to tax returns and return information. A report
+accompanying that Act from the Joint Committee on Taxation explained
+that even with enactment of the Privacy Act, “Congress did not
+specifically focus on the unique aspects of tax returns in the Privacy
+Act.” Joint Committee on Taxation, General Explanation of the Tax Reform
+Act of 1976, 94^(th) Cong., 2d Sess. 315 (1976), available at
+https://archive.org/stream/generalexplanati00jcs3376/generalexplanati00jcs3376_djvu.txt.[6]
+
+The Joint Committee outlined the situation as follows:
+
+It has been argued that the private ruling system developed into a body
+of law known only to a few members of the tax
+
+profession. For example, an accounting or law firm with offices in
+Washington could have a library of all the private ruling letters issued
+to its clients. Such a firm was in a position to advise other clients as
+to the current IRS ruling position because of its special access to
+these rules of law. This, in turn, tended to reduce public confidence in
+the
+
+tax laws. Additionally, the secrecy surrounding letter rulings generated
+suspicion that the tax laws were not being applied on an even-handed
+basis. (303)
+
+Id. at 303. The Joint Committee then added:
+
+The Congress agrees with the previous court decisions that private
+rulings should be made public. Only in this way can all taxpayers be
+assured of access to the ruling positions of the IRS.
+
+Id. at 304.
+
+The 1976 Act struck the balance between disclosure vs. privacy by (1)
+amending I.R.C. § 6103 to provide more stringent privacy protections for
+“returns” and “return information” while (2) enacting a new I.R.C. §
+6110, entitled Public inspection of written determinations. This Code
+section 6110 mandated the disclosure of IRS private letter rulings and
+technical advice memoranda (the two types of guidance at issue in the
+cited litigation) and all other “written determinations” that the IRS
+may issue regarding the proper interpretation of federal tax law.[7] The
+Joint Committee report explained that the goal of these provisions was
+to make public IRS’s written guidance with the text of those
+determinations–
+
+. . . sanitized so that there are no identifying details, is to be made
+open to public inspection. Identifying details consist of names,
+addresses, and any other information which the Secretary determines
+could identify any person, including the taxpayer's representative.
+
+Joint Committee, supra, at 316). See I.R.C. § 6110(c).
+
+Why do we recount this history regarding the federal FOIA?
+
+This Court has stated, the District’s FOIA is “modeled on the
+corresponding federal statute patterned on and construed in accordance
+with the federal” Act. Barry v. Washington Post Co., 529 A.2d at 321
+(cited by the trial court at J.A. __). The trial court cited this
+language (J.A. __), but reached a result that is the exact opposite of
+how federal courts have construed parallel provisions of federal law –
+court rulings that Congress affirmatively endorsed and even went one
+step further by mandating disclosure not just to IRS private letter
+rulings, but to a whole range of IRS “written determinations” with names
+and personal identifiers redacted.
+
+Tax Analysts asks the Court to hold that Exemption 6 does not allow OTR
+to withhold private letter rulings in their entirety, but requires
+disclosure of those rulings with names and identifiers redacted.
+
+  2. OTR has discretion to disclose redacted private
+
+  letter rulings – and has done so previously.
+
+Independently of the reasons cited above, there is an independent basis
+for rejecting OTR’s broad reading of D.C. Code § 47-4406.
+
+FOIA Exemption (6)(A), which the trial court found dispositive, allows
+the withholding of “[i]nformation specifically exempted from disclosure
+by statute (other than this section), provided that such statute: (A)
+Requires that the matters be withheld from the public in such a manner
+as to leave no discretion on the issue.”
+
+As noted above, the record reveals clearly that OTR can – and has –
+exercised its “discretion” to disclose the contents of private letter
+rulings with redactions of names and identifiers. Indeed, an OTR
+official candidly admitted as much to Tax Analysts several years ago
+(Pl. Ex. 10):
+
+“We sometimes convert PLRs to Notices which are then published on our
+website under ‘Law & Guidance’” [the latter web page reproduced here as
+J.A. __]
+
+OTR’s public notices and rulings appear to redact only names and
+potential identifiers, thus undercutting OTR’s claim that the exempt
+portions of a private letter ruling are “inextricably intertwined” with
+the non-exempt portions, so much so that attempting to redact exempt
+information would produce a “useless” document. Pl. Ex. 4, p. 2. For
+example, Plaintiffs’ Exhibit 9, an OTR “General Counsel Memorandum,”
+states that it was “originally issued as a private letter ruling.” This
+memorandum addresses liability for certain fees as between an unnamed
+hotel and an unnamed client. The memorandum refers to these parties as
+“HOTEL” or “CLIENT” and contains statements such as “Convention CLIENT
+entered into a contract with HOTEL for the reservation of X number of
+rooms for Y number of days in the month of Z.” If this example is any
+indication, OTR knows full well how to redact identifiers and to issue
+rulings that protect taxpayer privacy while still providing significant
+guidance to taxpayers.
+
+Moreover, OTR allows taxpayers to request and obtain “declaratory
+orders” that opine on the tax treatment of certain events or
+transactions in much the same way as private letter rulings. As with
+PLRs, these orders omit or redact the name of the petitioner/taxpayer,
+and they are deemed binding on OTR as to the requesting taxpayer. As
+with PLRs, the format includes the issues presented, the pertinent facts
+and the legal analysis of the issue. Unlike PLRs, however, declaratory
+orders are posted on the OTR website. Davis Decl. ¶ 19; Pl. Ex. 11.
+Private letter rulings and declaratory orders are similar in format and
+substance, and OTR offers no explanation on its website as to why the
+former is kept secret while the latter is made public.[8]
+
+Accordingly, for these reasons, Tax Analysts submits that Exemption 1
+does not allow OTR to withhold private letter rulings in their entirety.
+
+C. The trial court erred in granting summary judgment
+
+  without first conducting an in camera review.
+
+It is axiomatic that summary judgment must be denied if there is “a
+genuine dispute as to any material fact.” Super. Ct. Civ. R. 56(a).
+Here, the trial court granted OTR’s motion for summary judgment, even
+though there is a genuine dispute about whether the private letter
+rulings contain non-exempt portions that are “reasonably segregable”
+from any exempt portions and therefore must be produced to Tax Analysts.
+D.C. Code § 2-534(b). Given that conflict, the trial court should have
+denied summary judgment and instead granted Tax Analysts’ consent motion
+to review the letter rulings in camera in order to resolve the
+segregability issue.
+
+The record plainly supports the need for such an in camera review. OTR
+did not file any affidavits on segregability, and its Vaughn index
+simply asserted (without supporting details) that each letter ruling was
+exempt in its entirety. Significantly, OTR never disputed that these
+letter rulings contain non-exempt portions; instead, OTR argued that any
+non-exempt portions were so “inextricably intertwined” with the exempt
+portions that redaction would produce a document having “little or no
+informational value,” relying upon Mays v. Drug Enforcement Admin., 234
+F.3d 1324, 1327 (D.C. Cir.2000), and Neufeld v. IRS, 646 F.2d 661, 666
+(D.C. Cir. 1981). Ex. P 24 (SJ memo pp 9- 10). To rebut this claim, Tax
+Analysts provided an affidavit from appellant Aaron Davis, who stated –
+without contradiction – that OTR can and does publish redacted versions
+of letter rulings and other forms of taxpayer guidance (J.A. __-__).
+This evidence included a statement from OTR that–
+
+“We sometimes convert PLRs to Notices which are then published on our
+website under ‘Law & Guidance.’”
+
+(J.A. __, referring to J.A. __). Mr. Davis also submitted examples of
+such published guidance, which indicate that redacting a taxpayer’s name
+and other identifiers can be accomplished while leaving 95 percent of
+the ruling intact and thus able to provide useful guidance to taxpayers
+about how OTR is construing the District’s tax laws (J.A. __).
+
+In camera review is the obvious way to resolve this issue. As this Court
+has explained, in camera review allows a court to conduct the sort of de
+novo review required by the FOIA, thus enabling “the court – not the
+agency – to be the final arbiter of the propriety of the agency's
+decision to withhold information.” Riley v. Fenty, 7 A.3d at ___. See
+also FOP 2013, which noted that a trial court “may and often does
+examine the document in camera to determine whether the Government has
+properly characterized the information as exempt.” 79 A.3d at 359 n.50
+(internal citation omitted).
+
+In rejecting in camera review, the trial court did not acknowledge its
+prior observation that segregability issues present questions of fact
+(J.A. __). Instead, the court declared that private letter rulings “are
+in their entirety an evaluation of the tax consequences of a taxpayer’s
+financial circumstances,” citing a page from the OTR web page (J.A. __,
+citing J.A. __). “Redacting the tax-exempt information from an analysis
+of the same would ‘[p]roduce an edited document with little
+informational value,’” Mays 243 F.3d at 1327, and therefore it is
+appropriate to withhold the documents in their entirety” J.A. __).
+
+In effect, the trial court treated the letter rulings as categorically
+exempt in their entirety, regardless of whether there are non-exempt
+portions. However, that was not what OTR argued. OTR argued that the
+non-exempt portions of the letter rulings are “inextricably intertwined”
+with the exempt portions and that excising the exempt portions would
+produce an edited document with little or no informational value. Ex. P
+24 (SJ memo p 10). The arguments are analytically distinct, and the
+cited case law, even if taken on its own terms, is irrelevant..
+
+Both OTR and the trial court relied on Mays v. Drug Enforcement Admin.,
+234 F.3d 1324, 1327 (D.C. Cir. 2000), which in turn quoted Neufeld v.
+IRS, 646 F.2d 661, 666 (D.C. Cir. 1981). However, Neufeld held that an
+“inextricably intertwined” argument is available only if the volume of
+requested records is significant and the non-exempt material is slight,
+such that any effort at redaction would significantly strain agency
+resources. Only in that situation has a court allowed a claim of
+“inextricably intertwined,” i.e., when the “excision of exempt
+information would impose significant costs on the agency and produce an
+edited document with little informational value.” Neufeld v. IRS, 646
+F.2d 661, 646 (D.C. Cir. 1981), quoted in Mays v. DEA, 234 F.3d 1324,
+1237 (D.C. Cir. 2000).
+
+Neither Neufeld nor Mays had occasion to rule on the specifics of when a
+burden might outweigh any value, but subsequent cases make it clear that
+OTR would need to make a far more compelling showing that it has made
+here. Compare Solar Sources, Inc. v. United States, 142 F.3d 1033, 1039
+(7th Cir. 1998) (records not “reasonably segregable” when it would take
+eight work-years to identify all nonexempt documents in millions of
+pages of files, and only a small percentage could be released) with
+Rugiero v. Department of Justice, 234 F. Supp. 2d 697, 707-09 (E.D.
+Mich. 2002) (segregating non-exempt portions is not a significant burden
+for a 364-page request).
+
+Here, by contrast, we deal with only 24 documents, and based on the
+rulings that OTR has published (J.A. __-__), each ruling is likely to be
+no more than a few pages in length, for a total of probably 100 or so
+pages. Moreover, since OTR does redact and publish these rulings, doing
+so here would hardly strain OTR’s resources to a point that the request
+must be denied in its entirety. See People for the American Way
+Foundation v. v. Nat'l Park Serv., 503 F. Supp. 2d 284, 307 (D.D.C.
+2007) (Sullivan, J.) (in camera review may be warranted when the number
+of records involved is relatively small, a disparity exists between the
+agency’ exemption claim and publicly available information, and the
+dispute turns on the contents of the documents). In short, there is no
+factual or legal basis for the trial court to reject an in camera review
+of records and to grant summary judgment without making a factual
+determination as to segregability.
+
+* * *
+
+A final observation In Fraternal Order of Police, Metropolitan Police
+Labor Committee v. District of Columbia, 124 A.3d ___ (D.C. 2015), this
+Court noted that in cases where trial courts “have reviewed records in
+camera to evaluate the government's claimed exemptions, appellate courts
+generally find it necessary to review the documents in camera as well.”
+Id. at 77 n.12.
+
+We respectfully submit that it would be appropriate for this Court to
+undertake an in camera review of the private letter rulings in this
+case, given the disparities in the parties’ descriptions of those
+documents. The volume of material is slight (100 pages or so), and it
+should be obvious from even a cursory review whether non-exempt material
+is “inextricably intertwined” with personal identifying information or
+whether the rulings more closely resemble those rulings that OTR has in
+the past made public with names and identifiers redacted (J.A. __-__).
+
+D. The personal privacy exception has no application here.
+
+OTR also sought summary judgment under Exemption 2, which allows
+agencies to withhold information that would lead to a “clearly
+unwarranted invasion of personal privacy.” D.C. Code § 2-534(a)(2).
+Although the trial court did not rule on this issue, we ask this Court
+to do so because, as we demonstrated in Part B above, a proper
+application of D.C. Code § 47-4406 is more than adequate to protect
+taxpayer privacy. Indeed, OTR has already demonstrated its ability to
+protect sensitive information in the redacted guidance it has been
+making available for years (J.A. __-__).
+
+Moreover, the text of the privacy exemption is limited to disclosures
+that “would constitute” a “clearly unwarranted” invasion of personal
+privacy. This is a very stringent standard,[9] and it requires the
+
+agency to identify a privacy interest, which the court will then balance
+against the public interest in disclosure. Padou v. District of
+Columbia, 29 A.3d 973, 982 (D.C. 2011).
+
+When OTR raised this argument in the trial court, it relied upon
+
+Fraternal Order of Police, Metro. Labor Comm’n v. District of Columbia,
+124 A.3d 69 (D.C. 2015), but the case supports the sort of disclosure
+Tax Analysts seeks here.
+
+At issue in FOP 2015 were internal disciplinary records of MPD
+lieutenants, captains and senior officer. The requester agreed that
+names and identifying information (such as address, SSN, rank, district
+and birth date) could be redacted, 124 A.3d at 72, and the only issue
+was whether MPD had to disclose the gender and race of the disciplined
+
+officials and the date of the event.
+
+In conducting the requisite balancing of public interests versus private
+interest, this Court agreed that a significant privacy interest was at
+stake in disclosing names and personal identifiers, particularly
+
+given the ability of the requester’s members (who were police officers,
+after all) to use this information to ferret out the identities of the
+individuals in the “small subset” of senior officials who might have
+been disciplined. 124 A.3d at 79. However, this Court found no
+countervailing public interest (although disclosure might have served
+the FOP’s private interest). Access was thus denied. Accord U.S. Dep’t
+of Defense
+
+v. Fed. Labor Relations Auth., 510 U.S. 487, 795 (1993) (unions' request
+for home addresses of agency employees – many of whom are not union
+members – may advance unions’ interest, but would not inform citizens
+about “what their government is up to”) (internal citation omitted).
+
+Here, Tax Analysts agrees that OTR can redact names and personal
+identifiers of the sort that OTR now redacts when it publishes these
+documents. That will address any privacy concerns. The countervailing
+public interest is obvious, as evidenced by the fact that the IRS and 36
+state revenue departments publish similar rulings with redactions that
+protect taxpayer privacy.
+
+But the Court need not take our word for it. Perhaps the best argument
+for disclosure appears in that portion of the OTR web site that the
+trial court did not quote in its opinion, i.e., the statement in which
+OTR acknowledges that private letter rulings are valuable because they 7
+(the OTR website) acknowledges the public interest in access to PLRs
+because they “provide guidance to other District taxpayers as to the
+interpretation and development of the D.C. tax code” (J.A. __).
+
+Tax Analysts agrees. That is why we are pursuing this case and that is
+why we ask this Court to reverse the judgment and to order disclosure of
+the requested private letter rulings and names and personal identifiers
+redacted.
+
+CONCLUSION
+
+For these reasons the judgment should be reversed.
+
+  Respectfully submitted,
+
+  _________________________________________
+
+Cornish F. Hitchcock (D.C. Bar No. 238824)
+
+HITCHCOCK LAW FIRM PLLC
+
+5614 Connecticut Avenue, NW No. 304
+
+Washington, D.C. 20015-2604
+
+(202) 489-4813 Fax: (202) 315-3552
+
+E-mail: conh@hitchlaw.com
+
+Attorney for Plaintiffs-Appellants
+
+__ March 2021
+
+CERTIFICATE OF SERVICE
+
+I hereby certify that copies of this brief and the joint appendix were
+served electronically and by courier this _____ day of March, 2021 upon
+Caroline Van Zile, Principal Deputy Solicitor General, 400 Sixth Street,
+NW, Washington, DC 20001.
+
+  _________________________________________
+
+Cornish F. Hitchcock
+
+[1] ¹ The Office of the Chief Financial Officer was named as an
+additional defendant in the complaint, but was dismissed as a party for
+being non sui juris (J.A. __).
+
+[2] ² OTR’s private letter rulings are binding on OTR as to the
+individual taxpayer, but not necessarily as to other taxpayers or
+situations. (J.A. ___).
+
+[3] ³ “A Vaughn index itemizes any withheld documents and explains why
+each document is exempt from disclosure. See Vaughn v. Rosen, 484 F.2d
+820, 827 (D.C.Cir.1973).” Fraternal Order of Police, Metro. Labor Comm.
+v. District of Columbia, 113 A.3d 198, ___ (D.C. 2015).
+
+[4] ⁴ The motion for in camera review erred in stating that OTR opposed
+in camera review. A praecipe was filed to advise the court and correct
+the record (J.A. __), to which OTR responded with a praecipe confirming
+that OTR consented to in camera review, though not to Tax Analysts’
+request that summary judgment be denied (J.A. __-__).
+
+[5] ⁵ Indeed, in its motion to dismiss (at p. 8), OTR noted that D.C.
+Code § 47-4406(f) makes it a criminal offense for anyone to “willfully”
+disclose information that is protected by section 47-4406. OTR never
+tried to square its publication of documents Tax Analysts produced (J.A.
+__-__) with this criminal statute.
+
+[6] ⁶ Joint Committee reports are particularly influential in explaining
+tax legislation. The staff assists the tax writing committees as
+legislation is developed, and when a House-Senate conference committee
+has completed its work, the Joint Committee staff prepares “the
+statement of managers and the final revenue table” and then assists “the
+tax-writing committee staffs in preparation of explanatory materials of
+the conferees' decisions.” Joint Committee on Taxation, Role of JCT,
+available at https://www.jct.gov/operations/role-of-jct/.
+
+[7] ⁷ Technical advice memoranda are another form of IRS written
+guidance that the FOIA requesters had sought in both the D.C. Circuit
+case and the Sixth Circuit case. The former court held that these
+memoranda were exempt from disclosure and the latter court holding that
+they must be disclosed. Joint Committee Report at ___.
+
+[8] ⁸ We emphasize what Tax Analysts is not arguing. Plaintiffs’ Exhibit
+9 is an edited version of a private letter ruling in which OTR
+substituted the word “HOTEL” for the name of the taxpayer and made
+similar changes for other identifiers. Tax Analysts’ request does not
+ask OTR to create a new document in this fashion, but simply to take the
+existing PLRs and delete names and personal identifiers. Redaction
+software or a Sharpie pen should suffice.
+
+[9] ⁹ The “clearly unwarranted” standard contrasts with the FOIA’s
+exemption protecting law enforcement records if disclosure of those
+records would produce an “unwarranted” invasion of personal privacy.
+D.C. Code ' 2-534(a)(3)(C).

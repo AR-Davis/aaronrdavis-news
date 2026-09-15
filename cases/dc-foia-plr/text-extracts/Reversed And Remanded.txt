@@ -1,0 +1,774 @@
+No. 21-CV-0031
+                           7JBts'trtct of QColumbta
+                              (!Court of �ppeal9'
+                                                                  f   I   OJUL �7 2�3
+
+                                                                    DISTRICT OF COLUMBIA
+                                                                                          I�
+                                                                     COURT OF APPEALS
+TAX ANALYSTS, et al.,
+                          Appellants,
+
+      V.                                             2020-CA-001999-B
+
+DISTRICT OF COLUMBIA,
+                  Appellee.
+
+                          On Appeal from the Superior Court
+                            of the District of Columbia
+                                   Civil Division
+
+BEFORE: Deahl, Associate Judge, and Steadman and Glickman,* Senior Judges.
+
+                                 JUDGMENT
+
+       This case came to be heard on the transcript of record and the briefs filed, and
+it was argued by counsel. On consideration whereof, and as set forth in the opinion
+filed this date, it is now hereby
+
+       ORDERED and ADJUDGED that the grant of summary judgment by the
+Superior Court, in favor of the District, is reversed and the case is remanded for
+further proceedings consistent with this opinion.
+
+                                              For the Court:
+
+                                                         a.�
+                                                      A. CASTILLO
+                                                      f the Court
+
+
+
+Dated: July 27, 2023.
+Opinion by Senior Judge Glickman.
+
+
+
+      * Judge Glickman was an Associate Judge at the time of argument.
+Notice: This opinion is subject to formal revision before publication in the
+Atlantic and Maryland Reporters. Users are requested to notify the Clerk of the
+Court of any formal errors so that corrections may be made before the bound
+volumes go to press.
+
+               DISTRICT OF COLUMBIA COURT OF APPEALS
+
+                                  No. 21-CV-0031
+
+                                TAX ANALYSTS
+                                     and
+                            AARON DAVIS, APPELLANTS,
+
+                                         V.
+
+                         DISTRICT OF COLUMBIA, APPELLEE.
+
+                           Appeal from the Superior Court
+                            of the District of Columbia
+                               (2020-CA-001999-B)
+
+                        (Hon. Robert R. Rigsby, Trial Judge)
+
+(Argued March 8, 2022                                       Decided July 27, 2023)
+
+      Cornish F. Hitchcock for appellants.
+
+       Richard S. Love, Senior Assistant Attorney General, with whom Karl Racine,
+Attorney General at the time of argument, Loren L. AliKhan, Solicitor General at the
+time of submission of the briefs, Caroline S. Van Zile, Principal Deputy Solicitor
+General at the time of submission of the briefs, and Ashwin P. Phatak, Deputy
+Solicitor General, were on the brief, for appellee.
+
+     Before DEAHL, Associate Judge, and STEADMAN and GLICKMAN, * Senior
+Judges.
+
+
+
+      *
+          Judge Glickman was an Associate Judge at the time of argument.
+                                           2
+
+      GLICKMAN, Senior Judge:           Tax Analysts, a nonprofit publisher of tax
+
+periodicals, and its reporter Aaron Davis (hereinafter referred to jointly as “Tax
+
+Analysts”), seek disclosure pursuant to the District of Columbia Freedom of
+
+Information Act (FOIA) 1 of 24 private letter rulings (PLRs) issued by the District of
+
+Columbia Government’s Office of Tax and Revenue (OTR). Such rulings are
+
+provided by OTR in response to taxpayers’ requests for guidance on specific tax
+
+matters. The requestors are entitled to rely upon the PLRs’ guidance in filing their
+
+returns because the responses are binding on OTR with respect to the specific tax
+
+matters and taxpayers involved.
+
+
+
+          The District claims that the rulings constitute or contain “tax information”
+
+that is specifically exempted from disclosure by D.C. Code § 47-4406, and that the
+
+exempt material either cannot be segregated and redacted or, even if that could be
+
+done, it would leave the requested rulings with no informational value. Tax Analysts
+
+disputes this latter claim, arguing that the statute merely requires deletion of data in
+
+the PLRs that would directly or indirectly identify the taxpayers who requested them.
+
+We do not entirely agree with either party’s position on appeal. We hold that the
+
+Superior Court erred in granting summary judgment to the District without first
+
+
+
+      1
+          D.C. Code §§ 2-531 to -540.
+                                          3
+
+examining the PLRs in camera to determine whether any non-exempt portions of the
+
+documents were reasonably segregable from the exempt tax information (a category
+
+that is not as limited as Tax Analysts contends), such that the PLRs should be
+
+disclosed in redacted form.
+
+
+
+                                          I
+
+
+
+      In October 2019, Tax Analysts filed its FOIA request with the Office of the
+
+Chief Financial Officer (OCFO), which oversees OTR. The request sought, among
+
+other things not at issue here, all PLRs issued by OTR between January 1, 2016, and
+
+October 8, 2019. OTR identified 24 PLRs that were responsive to this request.
+
+However, OTR and OCFO denied the request on November 14, 2019, on the stated
+
+ground that the information requested was statutorily exempt from disclosure under
+
+FOIA exemptions for confidential business records and for records specifically
+
+protected from disclosure by other statutes. 2 OCFO subsequently added that it also
+
+relied on the FOIA exemption applicable where disclosure would constitute a clearly
+
+unwarranted invasion of personal privacy. 3
+
+
+
+
+      2
+          D.C. Code §§ 2-534(a)(1) and (6), respectively.
+      3
+          Id. § 2-534(a)(2).
+                                          4
+
+      Pursuant to D.C. Code § 2-537(a), Tax Analysts appealed the denial to the
+
+Mayor’s Office of Legal Counsel. The Mayor’s Office requested OTR to select and
+
+produce for its inspection one sample “PLR with the information identifying the
+
+taxpayer, the tax or financial information provided by the taxpayer, and any analysis
+
+which includes the tax information provided by the taxpayer redacted.” Based on
+
+its review of that one expurgated PLR, the Mayor’s Office upheld the denial of Tax
+
+Analysts’ FOIA request; without having seen what was redacted, it agreed with OTR
+
+that the cited FOIA exemptions applied and that the necessary “redactions of
+
+taxpayer identification information, financial data and analysis drawing on the
+
+financial data left the document with little to no informational value.”
+
+
+
+      Tax Analysts then filed its complaint in Superior Court to compel production
+
+of the 24 responsive PLRs. The District moved to dismiss the complaint, arguing
+
+only that the PLRs were exempt under FOIA Exemption (6) because D.C. Code
+
+§ 47-4406 barred disclosure of the tax information in the requested PLRs and the
+
+documents could not reasonably be redacted to eliminate that obstacle. Tax Analysts
+
+opposed the motion and moved for in camera review of the withheld PLRs. It
+
+submitted an affidavit and exhibits showing that OTR previously had published
+
+redacted versions of at least one PLR and other “functionally” equivalent rulings;
+
+that OTR’s own web page stated that even though private letter rulings apply only
+                                           5
+
+to the taxpayers that request them, the “rulings provide guidance to other District
+
+taxpayers as to the interpretation and development of the DC Tax Code”; and that
+
+OTR also had stated it will “sometimes convert PLRs” to notices that are published
+
+on its website to provide public legal guidance. 4
+
+
+
+      The court denied both motions. In addition to expressing skepticism about
+
+the applicability of D.C. Code § 47-4406, it reasoned that “any determination of
+
+whether a document contains exempt information that is reasonably segregable from
+
+non-exempt information requires review of the specific document at issue, which is
+
+a question of fact that is not currently before the Court.”
+
+
+
+      OTR then filed its Vaughn index. 5 The index listed each of the 24 responsive
+
+PLRs by date and stated that the “entire record” of each one was withheld pursuant
+
+
+
+
+      4
+         Tax Analysts also pointed out that many other (state) jurisdictions do publish
+their private letter rulings in redacted form. The pertinence of this observation is at
+best uncertain, since Tax Analysts did not address whether those other jurisdictions
+have applicable disclosure-restricting statutes comparable to ours.
+      5
+       A proper Vaughn index, first described in Vaughn v. Rosen, 484 F.2d 820
+(D.C. Cir. 1973), is composed of “detailed indexes itemizing each item withheld, the
+exemptions claimed for that item, and the reasons why the exemption applies to that
+item.” Lykins v. Dep’t of Justice, 725 F.2d 1455, 1463 (D.C. Cir. 1984).
+                                          6
+
+to “statutes protecting the confidentiality of tax information.” 6 The index was not
+
+accompanied by an affidavit from an OTR official or other person with knowledge
+
+of the contents of the responsive documents, and its descriptions of the documents
+
+stated only that there were 13 PLRs “on Sales and Use Tax,” 3 PLRs “on QHTC
+
+Tax,” 3 PLRs “on Franchise Tax,” 3 PLRs “on Sales Tax,” 1 PLR “on Individual
+
+Income Tax,” and 1 PLR “on Estate Tax.”
+
+
+
+      The District then moved for summary judgment, relying primarily on D.C.
+
+Code § 47-4406. 7 Appellants opposed that motion and renewed their request for the
+
+court to conduct an in camera review to evaluate whether there were “reasonably
+
+
+
+
+      6
+        In addition to D.C. Code § 47-4406, the Vaughn index cited FOIA
+Exemptions (1), (2), and (6), and a few other provisions of the D.C. Code that
+provide for the confidentiality of tax-related information. See D.C. Code
+§§ 47-2018, -1805.04, -3719. (Except for Exemption (2), the District has not
+otherwise relied on these latter statutes in this litigation, and has not claimed they
+extend protection from disclosure beyond that provided by § 47-4406.)
+      7
+         The District also relied on FOIA Exemption (2), the exemption for
+“[i]nformation of a personal nature where the public disclosure thereof would
+constitute a clearly unwarranted invasion of personal privacy.” However, the trial
+court did not address the applicability of this exemption in its summary judgment
+ruling, and we therefore do not consider that question to be properly before us in this
+appeal. That said, it would appear that the redaction necessary to satisfy § 47-4406
+would also avoid disclosure of any information covered by FOIA Exemption (2), so
+the applicability of Exemption (2) would seem to be a moot point.
+                                         7
+
+segregable” non-exempt portions of the PLRs. The District did not oppose in camera
+
+review for that purpose.
+
+
+
+      On January 13, 2021, the court denied Tax Analysts’ motion for in camera
+
+review and granted summary judgment in the District’s favor. Accepting the
+
+agency’s description of the PLRs, the court concluded that they were entirely exempt
+
+from disclosure under D.C. Code § 47-4406 because PLRs “are in their entirety an
+
+evaluation of the tax consequences of a taxpayer’s financial circumstances” based
+
+on “tax information submitted by the taxpayer.” Although the court did not inspect
+
+the PLRs, it ruled that even if they do contain some non-exempt information,
+
+redacting it would leave them with “little informational value.” Tax Analysts timely
+
+appealed.
+
+
+
+                                         II
+
+
+
+      Tax Analysts disputes the trial court’s ruling that the PLRs responsive to its
+
+FOIA request are wholly exempted from disclosure by D.C. Code § 47-4406. While
+
+that statute prohibits disclosure of “federal, state, or local tax information either
+
+submitted by the taxpayer or otherwise obtained,” Tax Analysts contends that PLRs
+
+may contain additional useful and segregable information that is not “tax
+
+information” within the meaning of the statute, such as OTR’s legal interpretations
+                                          8
+
+and analyses of generally applicable District tax laws and regulations; and that
+
+§ 47-4406 should be construed to require disclosure of PLRs with only personal
+
+identifying information redacted to protect taxpayer privacy. Tax Analysts argues
+
+that the court therefore erred in granting summary judgment for the District without
+
+conducting an in camera review to determine whether there are non-exempt and
+
+reasonably segregable portions of the PLRs that could be disclosed. By contrast, the
+
+District maintains that § 47-4406 exempts PLRs from disclosure in their entirety
+
+because they are responses to taxpayers’ requests for tax guidance based on the
+
+taxpayers’ particular circumstances, and that any non-exempt portions of the PLRs
+
+are inextricably intertwined with exempt information such that the necessary
+
+redactions would produce a document with little or no informational value.
+
+
+
+      We review the grant of summary judgment de novo, conducting an
+
+independent review of the record, and applying the same substantive standard as the
+
+trial court. 8 Summary judgment is appropriate only where there is no genuine issue
+
+of material fact and the movant is entitled to judgment as a matter of law. 9
+
+
+
+
+      8
+          Murphy v. Schwankhaus, 924 A.2d 988, 991 (D.C. 2007).
+      9
+          See Super. Ct. Civ. R. 56(a).
+                                           9
+
+      Because FOIA “is designed to promote the disclosure of information, not to
+
+inhibit it,” 10 the burden is on the government agency to justify its withholding, and
+
+courts review such actions de novo.11 To meet its burden when claiming a FOIA
+
+exemption, an agency must provide “sufficient information in the form of affidavits,
+
+so-called Vaughn indexes, oral testimony, or an in camera review of responsive
+
+documents to enable the court — not the agency — to be the final arbiter of the
+
+propriety of the agency’s decision to withhold information.” 12 Summary judgment
+
+is appropriate where the agency “describes the documents and the justifications for
+
+nondisclosure with reasonably specific detail, demonstrates that the information
+
+withheld logically falls within the claimed exemption, and is not controverted by
+
+either contrary evidence in the record nor by evidence of agency bad faith.” 13 An
+
+agency may justify withholding entire documents rather than only exempt portions
+
+
+
+      10
+        Wash. Post Co. v. Minority Bus. Opportunity Comm’n, 560 A.2d 517, 521
+(D.C. 1989).
+      11
+         Padou v. District of Columbia, 29 A.3d 973, 980 (D.C. 2011) (“D.C. Code
+§ 2-537(b) not only places the burden on the administrative agency to sustain its
+action, but also authorizes this court to review the agency’s withholding of requested
+FOIA information de novo.” (internal quotation marks and citation omitted)).
+      12
+           Riley v. Fenty, 7 A.3d 1014, 1018 (D.C. 2010) (footnote omitted).
+      13
+        Fraternal Ord. of Police v. District of Columbia, 79 A.3d 347, 355-56 (D.C.
+2013) (alterations omitted).
+                                         10
+
+by showing that “the exempt and non-exempt information are inextricably
+
+intertwined, such that the excision of exempt information would impose significant
+
+costs on the agency and produce an edited document with little informational
+
+value.” 14
+
+
+
+                                         III
+
+
+
+       We have said that “the provisions of [FOIA] giving citizens the right of access
+
+are to be generously construed, while the statutory exemptions from disclosure are
+
+to be narrowly construed, with ambiguities resolved in favor of disclosure.” 15 The
+
+exemptions from disclosure are listed in D.C. Code § 2-534(a). Exemption (6)
+
+authorizes withholding of “[i]nformation specifically exempted from disclosure by
+
+[another] statute . . . , provided that such statute: (A) Requires that the matters be
+
+
+       14
+        District of Columbia v. Fraternal Ord. of Police Metro. Police Lab. Comm.,
+33 A.3d 332, 346 (D.C. 2011) (Ruiz, J., concurring) (internal quotation marks
+omitted) (quoting Antonelli v. Fed. Bureau of Prisons, 623 F. Supp. 2d 55, 60
+(D.D.C. 2009)).
+       15
+         Riley, 7 A.3d at 1018 (internal quotation marks and citation omitted); see
+also D.C. Code § 2-531 (“The public policy of the District of Columbia is that all
+persons are entitled to full and complete information regarding the affairs of
+government and the official acts of those who represent them as public officials and
+employees. To that end, provisions of this subchapter shall be construed with the
+view toward expansion of public access and the minimization of costs and time
+delays to persons requesting information.”).
+                                          11
+
+withheld from the public in such a manner as to leave no discretion on the issue; or
+
+(B) Establishes particular criteria for withholding or refers to particular types of
+
+matters to be withheld.” 16 Subsection (b) of § 2-534 provides that “[a]ny reasonably
+
+segregable portion of a public record shall be provided to any person requesting the
+
+record after deletion of those portions which may be withheld from disclosure
+
+pursuant to subsection (a) of this section.”
+
+
+
+      The statutory exemption invoked by OTR pursuant to FOIA Exemption (6) is
+
+in D.C. Code § 47-4406, a tax code provision entitled “Secrecy of returns.” There
+
+is no question that this statute satisfies the proviso in Exemption (6); the question is
+
+what specific information § 47-4406 protects. As pertinent here, and subject to some
+
+inapplicable exceptions, § 47-4406(a) prohibits agents of the District of Columbia
+
+from divulging not only “federal, state, or local tax returns” (which do not appear to
+
+be involved here), but also “federal, state, or local tax information either submitted
+
+by the taxpayer or otherwise obtained.” 17 The statute does not define what is meant
+
+
+
+
+      16
+           D.C. Code § 2-534(a)(6) (emphasis added).
+      17
+          Section 47-4406(a) also restricts the disclosure of “the amount of reported
+value, or any information relating to value or the computation of value, disclosed in
+a return required to be filed under this title.” Such information does not appear to
+be at issue here.
+                                           12
+
+by “state, or local tax information,” but it specifically defines “federal tax
+
+information” to mean “a return or return information received directly from the
+
+Internal Revenue Service or obtained through an authorized secondary source.” 18
+
+To be consistent, we construe “state, or local tax information” to have a similar
+
+meaning, i.e., we conclude that it, too, refers to “a return or return information.”
+
+
+
+      D.C. Code § 47-4406 does not define “return information,” and the scope of
+
+that term is not self-evident. We have said that where there is doubt as to the
+
+meaning of a specific District tax statute, we will “endeavor to conform its
+
+interpretation to comparable provisions of the federal Internal Revenue Code.” 19
+
+The federal analogue to D.C. Code § 47-4406, 26 U.S.C. § 6103 (“Confidentiality
+
+and disclosure of returns and return information”), defines “return information.” In
+
+pertinent part, § 6103(b)(2) states that the term means
+
+
+               (A) a taxpayer’s identity, the nature, source, or amount of
+               his income, payments, receipts, deductions, exemptions,
+               credits, assets, liabilities, net worth, tax liability, tax
+               withheld, deficiencies, overassessments, or tax payments,
+               whether the taxpayer’s return was, is being, or will be
+
+      18
+           § 47-4406(h)(3).
+      19
+         District of Columbia v. Nat’l Bank of Wash., 431 A.2d 1, 4 (D.C. 1981)
+(citing District of Columbia v. ACF Indus., Inc., 350 F.2d 795, 798 (D.C. Cir. 1965));
+see also ACF Indus. Inc., 350 F.2d at 798 (“Where no policies appear to require
+otherwise, we have generally, if implicitly, assumed that Congress intended similar
+construction of both the local and the federal tax statutes.”).
+                                          13
+
+             examined or subject to other investigation or processing,
+             or any other data, received by, recorded by, prepared by,
+             furnished to, or collected by the Secretary with respect to
+             a return or with respect to the determination of the
+             existence, or possible existence, of liability (or the amount
+             thereof) of any person under this title for any tax, penalty,
+             interest, fine, forfeiture, or other imposition, or offense,
+             [and]
+
+             (B) any part of any written determination or any
+             background file document relating to such written
+             determination (as such terms are defined in [26 U.S.C. §
+             6110(b)]) which is not open to public inspection under
+             section 6110.
+
+Subsection (b)(2) goes on to state that “such term [i.e., ‘return information’] does
+
+not include data in a form which cannot be associated with, or otherwise identify,
+
+directly or indirectly, a particular taxpayer.” This subsection lends some support to
+
+Tax Analysts’ position; however, it does not mean that all non-identifying data is
+
+outside of the definition of “return information,” or that the removal of such
+
+identifying data would necessarily suffice to make otherwise protected “return
+
+information” subject to disclosure. 20
+
+
+
+
+      20
+         See Church of Scientology of Cal. v. IRS, 484 U.S. 9, 18 (1987) (concluding
+that the deletion of identifiable data from “return information” as defined under 26
+U.S.C. § 6103 “would not make otherwise protected return information
+discloseable” because such deletion does not automatically deprive “return
+information” of the protection from other statutory provisions that forbid disclosure).
+                                         14
+
+      The terms “written determination” and “background file document” in
+
+subparagraph (B) of § 6103(b)(2) encompass private letter rulings and requests for
+
+such rulings. 21 Such documents may well contain information within subparagraph
+
+(A), such as “data,” furnished by taxpayers in requesting PLRs, “with respect to the
+
+determination of the existence, or possible existence, of liability (or the amount
+
+thereof).” Thus, conforming our interpretation of D.C. Code § 47-4406 to 26 U.S.C.
+
+§ 6103(b), we conclude that a PLR may contain “return information” (and, therefore,
+
+“tax information”) within the meaning of § 47-4406.
+
+
+      That does not necessarily mean, however, that everything in a PLR falls within
+
+the category of “return information,” or that (as the District asserts) “[t]he ruling
+
+itself is tax information that D.C. Code § 47-4406(a) prohibits the District from
+
+disclosing.” The D.C. Circuit has held that non-taxpayer-specific legal analyses in
+
+
+      21
+          Section 6110 provides that the term “written determination” means “a
+ruling, determination letter, technical advice memorandum, or Chief Counsel
+advice,” and that the term “background file document” includes “the request for that
+written determination” and “any written material submitted in support of the
+request.” 26 U.S.C. § 6110(b)(1)(A), (b)(2). Sections 6110(a) and (c) specifically
+state that written determinations and related background file documents shall be
+available for public inspection, provided they are redacted to delete sensitive
+information, including identifying details of the person to whom the determinations
+pertain, privileged and confidential financial and other information, and information
+the disclosure of which would constitute a clearly unwarranted invasion of personal
+privacy. The District of Columbia Code does not have a specific statutory provision
+comparable to § 6110(a) and (c), however.
+                                           15
+
+IRS written determinations — interpretations and conclusions respecting statutes,
+
+rules, regulations, and judicial opinions, which are not unique to a particular
+
+taxpayer — are not “return information” within the meaning of § 6103. 22 Such legal
+
+discussions are not, for example, financial or tax-related data submitted by a
+
+taxpayer seeking a private letter ruling, and in themselves they do not (or may not)
+
+disclose such particular data or the identity of the taxpayer merely because they are
+
+
+      22
+          Tax Analysts v. IRS, 117 F.3d 607, 615-16 (D.C. Cir. 1997). The court of
+appeals rejected IRS’s contention that “data” within the meaning of § 6103(b)(2)(A)
+“might signify even legal discussions” or other non-taxpayer-specific information,
+stating that “[w]hy § 6103 should protect such non-taxpayer-specific information is
+a mystery the IRS has not offered to solve.” Id. at 615. Among the reasons the D.C.
+Circuit gave for its conclusion, the court noted that
+
+              Each of the specific items mentioned in the beginning of
+              § 6103(b)(2)(A) is not only factual but unique to the
+              particular taxpayer. And each of the more general items
+              in § 6103(b)(2)(A) — “any other data, received by,
+              recorded by, prepared by, furnished to, or collected by the
+              Secretary with respect to a return” or the liability “of any
+              person” — is of the same character, that is, unique to a
+              particular taxpayer. The IRS has itself drawn this very
+              distinction in propounding its view of what constitutes
+              return information. . . . Yet legal analyses and conclusions
+              . . . cannot be viewed as unique to a particular taxpayer, or
+              as the IRS puts it, “taxpayer-specific.” If the Office of
+              Chief Counsel renders an interpretation of a certain section
+              in the tax code, . . . that interpretation should apply to all
+              other taxpayers who are, in material respects, similarly
+              situated.
+
+Id. at 614.
+                                          16
+
+relevant in responding to the taxpayer’s request for guidance.         Based on our
+
+examination of the statutory language, we agree with the D.C. Circuit’s conclusion,
+
+and we note that, in our view, the District has not offered a reasoned explanation for
+
+holding otherwise. 23 We therefore do not view such legal analyses as within the
+
+meaning of “return information” in § 47-4406.
+
+
+
+      The issue before us, then, comes down to whether the District demonstrated
+
+its entitlement to summary judgment by establishing that the 24 PLRs responsive to
+
+the FOIA request do not contain segregable, non-taxpayer-specific legal analysis.
+
+The District clearly did not do so.      Its bare-bones Vaughn index was purely
+
+conclusory and did not address the legal analysis in the PLRs, redaction, or
+
+reasonable segregability at all, and the District furnished the court with no affidavit
+
+discussing those matters from anyone familiar with the contents of the PLRs. The
+
+mere fact that the PLRs provided tax guidance based on the requesting taxpayers’
+
+particular circumstances does not answer the questions of whether the PLRs contain
+
+
+      23
+         For that reason, and because we review legal issues de novo, we do not
+believe we owe deference to OTR’s and the District’s conclusory assertion that
+“[e]very aspect of a private letter ruling — whether the facts, the legal analysis, or
+the conclusion” — is tax information covered by D.C. Code § 47-4406(a). See, e.g.,
+D.C. Off. of Hum. Rts. v. D.C. Dep’t of Corr., 40 A.3d 917, 925 (D.C. 2012)
+(“[W]hen it appears that the agency did not conduct any analysis of the language,
+structure, or purpose of the statutory provision, it would be incongruous to accord
+substantial weight to the agency’s interpretation.” (cleaned up)).
+                                           17
+
+non-exempt legal analyses, and if so, whether those analyses are so inextricably
+
+intertwined with exempt material as to defeat any attempt at redaction.
+
+
+
+      On the record as it stands, therefore, we cannot conclude that the PLRs contain
+
+no segregable, non-taxpayer-specific legal analysis. Arguably, moreover, there is
+
+evidence in the record that they may contain such material. Tax Analysts presented
+
+unrebutted evidence that OTR has published redacted PLRs or similar documents in
+
+the past and has considered them to provide useful legal guidance to other taxpayers;
+
+and the fact that the Internal Revenue Service (and many states) do make PLRs
+
+publicly available (with taxpayer-specific information redacted) may be a further
+
+indication that it would be possible for OTR to do so too. An in camera review
+
+presumably could have resolved this question, but the court did not conduct one even
+
+though Tax Analysts requested it and the District was amenable to it. 24
+
+
+
+      We conclude that a genuine issue of material fact remains as to whether OTR
+
+can invoke D.C. Code § 47-4406 to withhold the 24 responsive PLRs in their entirety
+
+
+
+      24
+         It does not appear that in camera review would be unduly burdensome
+(assuming it remains necessary after this opinion). It is estimated that the total length
+of the 24 responsive rulings is only approximately 100 pages, and the question of
+whether the rulings contain segregable legal analysis is a narrow and manageable
+one.
+                                        18
+
+from disclosure under FOIA. Accordingly, we must reverse the grant of summary
+
+judgment in favor of the District and remand this case to the Superior Court for
+
+further consideration, which may well call for the court to conduct an in camera
+
+review of the PLRs. 25
+
+
+
+                                                                        So ordered.
+
+
+
+
+      25
+         We decline Tax Analysts’ invitation to perform the in camera review
+ourselves. “[W]e are a court of review, not of first view.” Cutter v. Wilkinson, 544
+U.S. 709, 718 n.7 (2005).
+
