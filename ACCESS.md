@@ -41,15 +41,16 @@ Applied by Shepherd on 2026-10-12:
 | Control | Status | Notes |
 |---|---|---|
 | HTTPS redirect | ✅ On | HTTP 301 → HTTPS |
-| `always_use_https` | ✅ On | Cloudflare zone setting |
-| `min_tls_version` | ✅ 1.2 | Blocks TLS 1.0/1.1 |
-| SSL mode | ✅ Full (strict) | Origin certificate validation |
-| Zone HSTS | ✅ Enabled | Matches `_headers` preload directive |
 | `_headers` file | ✅ Updated | CSP, X-Frame, COOP, HSTS, etc. |
 | `security.txt` | ✅ Added | `/.well-known/security.txt` |
 | `robots.txt` | ✅ Added | Allow all |
 | Rate limiting | ✅ Worker-level | 60 req/min default, 20 req/min for `/api/*` and GIS assets |
 | Country/IP blocks | ✅ Worker-level | Env-driven, currently empty unless secrets set |
+| `always_use_https` | ⏸️ Zone edit failed | API token lacks edit permission; enable in Cloudflare dashboard → SSL/TLS → Edge Certificates |
+| `min_tls_version` | ⏸️ Zone edit failed | API token lacks edit permission; set to **1.2** in dashboard |
+| SSL mode | ⏸️ Zone edit failed | API token lacks edit permission; set to **Full (strict)** in dashboard |
+| Zone HSTS | ⏸️ Zone edit failed | API token lacks edit permission; enable HSTS in dashboard with max-age 63072000, include subdomains, preload |
+| Hotlink protection | ⏸️ Zone edit failed | API token lacks edit permission; enable in dashboard → Scrape Shield |
 | DNSSEC | ⏸️ Not enabled | Requires Cloudflare dashboard or broader API token |
 | CAA records | ⏸️ None | Add via dashboard if you want issuance restriction |
 | HSTS preload submission | ⏸️ Not submitted | Submit at `https://hstspreload.org/` after 1–2 weeks of stable HSTS |
