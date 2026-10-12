@@ -1,20 +1,28 @@
 // Worker-level gate for aaronrdavis.news
 // - Optional basic-auth login (disabled by default)
-// - Country/IP blocks
-// - Per-IP sliding-window rate limiting (isolate-local, no KV cost)
+// - Country/IP blocks via env secrets
+// - Two-tier rate limiting: isolate-local window + KV-backed global window
+//
+// Rate limit tiers:
+//   /api/*          20 req/min
+//   /GIS_eelgrass_map/*  20 req/min
+//   everything else 60 req/min
+//
+// If ANALYTICS_KV is bound, suspicious IPs that exceed the local trigger are
+// checked against a global per-minute KV counter and blocked globally.
+
+const BUCKETS = {
+  api: { windowMs: 60_000, max: 20, localTrigger: 10 },
+  gis: { windowMs: 60_000, max: 20, localTrigger: 10 },
+  default: { windowMs: 60_000, max: 60, localTrigger: 30 },
+};
+
+// Isolate-local request window. Catches repeated abuse within one isolate.
+const requestLog = new Map();
 
 function parseBlockedSet(value) {
   return new Set((value || '').split(',').map(s => s.trim()).filter(Boolean));
 }
-
-// Isolate-local request window. Not perfect across isolates, but catches repeated abuse
-// from a single IP within one isolate without extra cost.
-const requestLog = new Map();
-const LIMITS = {
-  api: { windowMs: 60_000, max: 20 },      // /api/*
-  gis: { windowMs: 60_000, max: 20 },      // /GIS_eelgrass_map/*
-  default: { windowMs: 60_000, max: 60 }   // everything else
-};
 
 function getClientIP(request) {
   return request.headers.get('CF-Connecting-IP') || request.headers.get('X-Forwarded-For') || 'unknown';
@@ -34,25 +42,53 @@ function isBlocked(request, env) {
   return null;
 }
 
-function getRateLimit(path) {
-  if (path.startsWith('/api/')) return LIMITS.api;
-  if (path.startsWith('/GIS_eelgrass_map/')) return LIMITS.gis;
-  return LIMITS.default;
+function getBucket(path) {
+  if (path.startsWith('/api/')) return 'api';
+  if (path.startsWith('/GIS_eelgrass_map/')) return 'gis';
+  return 'default';
 }
 
-function checkRateLimit(request) {
+function nowBucket() {
+  return Math.floor(Date.now() / 60_000); // one-minute bucket
+}
+
+async function checkRateLimit(request, env) {
   const ip = getClientIP(request);
   const path = new URL(request.url).pathname;
-  const limit = getRateLimit(path);
+  const bucket = getBucket(path);
+  const cfg = BUCKETS[bucket];
   const now = Date.now();
-  const key = `${ip}:${path.split('/')[1] || 'root'}`;
-  let times = requestLog.get(key) || [];
-  times = times.filter(t => now - t < limit.windowMs);
-  if (times.length >= limit.max) {
-    return { allowed: false, retryAfter: Math.ceil((times[0] + limit.windowMs - now) / 1000) };
+  const key = `${ip}:${bucket}`;
+
+  // 1. Update isolate-local window
+  let local = requestLog.get(key) || [];
+  local = local.filter(t => now - t < cfg.windowMs);
+  local.push(now);
+  requestLog.set(key, local);
+
+  if (local.length >= cfg.max) {
+    return { allowed: false, retryAfter: Math.ceil(cfg.windowMs / 1000), reason: 'local-window' };
   }
-  times.push(now);
-  requestLog.set(key, times);
+
+  // 2. If KV is bound and local count crossed the trigger, check global counter
+  const kv = env.ANALYTICS_KV || env.RATE_LIMIT_KV;
+  if (kv && local.length >= cfg.localTrigger) {
+    const kvKey = `rl:${ip}:${nowBucket()}`;
+    try {
+      const stored = await kv.get(kvKey);
+      let globalCount = stored ? parseInt(stored, 10) : 0;
+      if (Number.isNaN(globalCount)) globalCount = 0;
+      const total = globalCount + local.length;
+      if (total >= cfg.max) {
+        return { allowed: false, retryAfter: Math.ceil(cfg.windowMs / 1000), reason: 'global-window' };
+      }
+      // Write back updated global count, expire after two minutes
+      await kv.put(kvKey, String(globalCount + 1), { expirationTtl: 120 });
+    } catch (e) {
+      // If KV fails, fall back to local window (already checked)
+    }
+  }
+
   return { allowed: true };
 }
 
@@ -78,14 +114,15 @@ export default {
       });
     }
 
-    // 3. Best-effort rate limiting
-    const rate = checkRateLimit(request);
+    // 3. Rate limiting
+    const rate = await checkRateLimit(request, env);
     if (!rate.allowed) {
       return new Response('Too many requests', {
         status: 429,
         headers: {
           'Content-Type': 'text/plain',
-          'Retry-After': String(rate.retryAfter)
+          'Retry-After': String(rate.retryAfter),
+          'X-Rate-Reason': rate.reason
         }
       });
     }
