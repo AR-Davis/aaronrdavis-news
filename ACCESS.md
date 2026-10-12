@@ -1,8 +1,13 @@
-# Access control for aaronrdavis.news
+:# Access control for aaronrdavis.news
 
 ## Current status
 
 The site is **public**. No login is required for any page or asset.
+
+The `_worker.js` gate also applies:
+- Optional basic-auth login (disabled by default)
+- Country / IP block lists via `BLOCKED_COUNTRIES` / `BLOCKED_IPS` secrets
+- Two-tier rate limiting (per-isolate window + optional KV-backed global window)
 
 ## Re-enabling login in the future
 
@@ -15,7 +20,7 @@ To turn login back on:
    - `AUTH_USER` = the username you want
    - `AUTH_PASS` = the password you want
 
-2. Uncomment the login block in `_worker.js` (or leave the secrets absent and simply set `LOGIN_REQUIRED=1`, since the code already reads them).
+2. Leave the secrets absent and simply set `LOGIN_REQUIRED=1`, since `_worker.js` already reads them.
 
 3. Redeploy:
    ```bash
@@ -28,6 +33,26 @@ You can also restrict the site through the Cloudflare dashboard:
 - Go to **Cloudflare dashboard** → Select the `aaronrdavis.news` zone → **Zero Trust** → **Access** → **Applications**.
 - Create an Access application for `aaronrdavis.news` and configure an identity provider or one-time PIN.
 - If you use this method, delete or disable `_worker.js` so it does not conflict.
+
+## Security configuration
+
+Applied by Shepherd on 2026-10-12:
+
+| Control | Status | Notes |
+|---|---|---|
+| HTTPS redirect | ✅ On | HTTP 301 → HTTPS |
+| `always_use_https` | ✅ On | Cloudflare zone setting |
+| `min_tls_version` | ✅ 1.2 | Blocks TLS 1.0/1.1 |
+| SSL mode | ✅ Full (strict) | Origin certificate validation |
+| Zone HSTS | ✅ Enabled | Matches `_headers` preload directive |
+| `_headers` file | ✅ Updated | CSP, X-Frame, COOP, HSTS, etc. |
+| `security.txt` | ✅ Added | `/.well-known/security.txt` |
+| `robots.txt` | ✅ Added | Allow all |
+| Rate limiting | ✅ Worker-level | 60 req/min default, 20 req/min for `/api/*` and GIS assets |
+| Country/IP blocks | ✅ Worker-level | Env-driven, currently empty unless secrets set |
+| DNSSEC | ⏸️ Not enabled | Requires Cloudflare dashboard or broader API token |
+| CAA records | ⏸️ None | Add via dashboard if you want issuance restriction |
+| HSTS preload submission | ⏸️ Not submitted | Submit at `https://hstspreload.org/` after 1–2 weeks of stable HSTS |
 
 ## Notes
 

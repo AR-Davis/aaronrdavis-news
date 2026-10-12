@@ -1,0 +1,4 @@
+Contact: mailto:aaron.davis8@gmail.com
+Acknowledgments: Thank you for helping keep this site secure.
+Preferred-Languages: en
+Canonical: https://aaronrdavis.news/.well-known/security.txt
