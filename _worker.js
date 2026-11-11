@@ -92,6 +92,21 @@ async function checkRateLimit(request, env) {
   return { allowed: true };
 }
 
+// --- Files that must never be served -------------------------------------------
+// The deploy root is the repo root, so repo documentation was being published:
+// ACCESS.md (security runbook), README.md, the story planning docs, and dev
+// metadata. None of it is secret, and none of it belongs on a portfolio.
+// Blocked by shape rather than by name so a new notes file cannot slip out.
+function isPrivatePath(pathname) {
+  const p = pathname.toLowerCase();
+  if (p.endsWith('.md') || p.endsWith('.toml') || p.endsWith('.lock')) return true;
+  if (p === '/package.json' || p === '/package-lock.json') return true;
+  if (p === '/_headers' || p === '/_worker.js' || p === '/_redirects' || p === '/_routes.json') return true;
+  // dotfiles and dot-directories, but keep /.well-known/ (security.txt is meant to be public)
+  if (/\/\./.test(p) && !p.startsWith('/.well-known/')) return true;
+  return false;
+}
+
 export default {
   async fetch(request, env, ctx) {
     // 1. Optional basic-auth login (disabled by default)
@@ -124,6 +139,15 @@ export default {
           'Retry-After': String(rate.retryAfter),
           'X-Rate-Reason': rate.reason
         }
+      });
+    }
+
+    // 4. Private files: repo docs and dev metadata are not part of the site
+    const pathname = new URL(request.url).pathname;
+    if (isPrivatePath(pathname)) {
+      return new Response('Not found', {
+        status: 404,
+        headers: { 'Content-Type': 'text/plain', 'Cache-Control': 'no-store' }
       });
     }
 
