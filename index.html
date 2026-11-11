@@ -202,6 +202,21 @@
       margin-bottom: 0.4rem;
     }
     .card.full-width { grid-column: 1 / -1; }
+
+    /* Cards with artwork */
+    .card.has-thumb { padding: 0; overflow: hidden; }
+    .card .thumb {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: var(--parchment);
+      border-bottom: 1px solid rgba(166, 124, 82, 0.3);
+      transition: transform 0.35s ease;
+    }
+    .card.has-thumb:hover .thumb { transform: scale(1.015); }
+    .card .card-body { padding: 1.2rem 1.25rem 1.3rem; }
+
     .card.featured {
       border-left: 4px solid var(--gold);
       background: #fff;
@@ -317,11 +332,14 @@
 
     <h2>Selected Work</h2>
 
-    <a class="card full-width featured" href="./cases/dc-foia-plr/">
-      <div class="meta">FOIA Litigation Record · 2020–2024</div>
-      <h3>Tax Analysts v. District of Columbia — OTR Private Letter Rulings</h3>
-      <p>Built a public litigation record for the D.C. FOIA case seeking disclosure of 24 Office of Tax and Revenue private letter rulings. The D.C. Court of Appeals reversed and remanded in July 2023, holding that PLRs are not categorically exempt under D.C. Code § 47-4406.</p>
-      <p class="impact">→ 26 source documents, text extracts, and a 24-PLR index</p>
+    <a class="card full-width featured has-thumb" href="./cases/dc-foia-plr/">
+      <img class="thumb" src="./assets/thumbs/foia-record.jpg" alt="Hearing transcript, D.C. Superior Court, May 17, 2024: appearances list Aaron Davis, Esquire, on behalf of the plaintiffs.">
+      <div class="card-body">
+        <div class="meta">FOIA Litigation Record · 2020–2024</div>
+        <h3>Tax Analysts v. District of Columbia — OTR Private Letter Rulings</h3>
+        <p>Built a public litigation record for the D.C. FOIA case seeking disclosure of 24 Office of Tax and Revenue private letter rulings. The D.C. Court of Appeals reversed and remanded in July 2023, holding that PLRs are not categorically exempt under D.C. Code § 47-4406.</p>
+        <p class="impact">→ 26 source documents, text extracts, and a 24-PLR index</p>
+      </div>
     </a>
 
     <div class="portfolio">
@@ -385,11 +403,14 @@
 
     <h2>Side Projects</h2>
     <div class="portfolio">
-      <a class="card" href="./eelgrass-map/">
-        <div class="meta">Data Visualization · Great Bay, NH</div>
-        <h3>Eelgrass Coverage, 2006&ndash;2025</h3>
-        <p>A year-slider map of two decades of eelgrass survey data &mdash; Leaflet, GeoJSON, and a plain-JavaScript timeline.</p>
-        <p class="impact">&rarr; eelgrass-map/</p>
+      <a class="card has-thumb" href="./eelgrass-map/">
+        <img class="thumb" src="./assets/thumbs/eelgrass-acreage.jpg" alt="Chart: eelgrass coverage in the Great Bay estuary, 2006 to 2025, falling from about 1,850 acres to 211.">
+        <div class="card-body">
+          <div class="meta">Data Visualization · Great Bay, NH</div>
+          <h3>Eelgrass Coverage, 2006&ndash;2025</h3>
+          <p>A year-slider map of two decades of eelgrass survey data &mdash; Leaflet, GeoJSON, and a plain-JavaScript timeline.</p>
+          <p class="impact">&rarr; eelgrass-map/</p>
+        </div>
       </a>
       <a class="card" href="https://github.com/AR-Davis" target="_blank" rel="noopener">
         <div class="meta">Code &amp; Data Projects</div>
