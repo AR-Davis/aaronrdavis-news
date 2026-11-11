@@ -151,7 +151,25 @@ export default {
       });
     }
 
-    return env.ASSETS.fetch(request);
+    const response = await env.ASSETS.fetch(request);
+
+    // 5. Framing policy, set per path because Cloudflare Pages merges _headers rules and
+    //    a path-specific rule cannot loosen a global one. The portfolio must not be
+    //    frameable; the year-slider embed is the single exception, and only by us.
+    const headers = new Headers(response.headers);
+    const frameable = pathname.startsWith('/eelgrass-indepthnh-embed/');
+    headers.set('X-Frame-Options', frameable ? 'SAMEORIGIN' : 'DENY');
+    const csp = headers.get('Content-Security-Policy');
+    if (csp) {
+      const withoutFrames = csp.replace(/;?\s*frame-ancestors[^;]*;?/gi, ';').replace(/;;+/g, ';');
+      headers.set('Content-Security-Policy',
+        `${withoutFrames.replace(/;\s*$/, '')}; frame-ancestors ${frameable ? "'self'" : "'none'"}`);
+    }
+    return new Response(response.body, {
+      status: response.status,
+      statusText: response.statusText,
+      headers
+    });
   }
 };
 
